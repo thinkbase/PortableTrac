@@ -1,0 +1,29 @@
+/* Warning: this file is auto-generated. If you edit it, changes will be lost the next time you use the simple customizer. */
+body, .milestone .info h2 *:link, .milestone .info h2 *:visited {
+  color: #050733;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+*:link, *:visited, #tabs *:link, #tabs *:visited, .milestone .info h2 em {
+  color: #BB0000;
+}
+
+*:link:hover, *:visited:hover, #tabs *:link:hover, #tabs *:visited:hover {
+  color: #555555;
+}
+
+#mainnav {
+  background-color: #FFFFFF;
+}
+
+#mainnav .active *:link, #mainnav .active *:visited {
+  background-color: #000000;
+}
+
+#mainnav *:link:hover, #mainnav *:visited:hover {
+  background-color: #CCCCCC;
+}
+

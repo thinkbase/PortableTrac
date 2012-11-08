@@ -1,0 +1,3 @@
+[trac.plugins]
+tracaddheaders.plugin = tracaddheaders.plugin
+

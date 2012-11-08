@@ -1,0 +1,1205 @@
+E:\PortableTrac>easy_install Genshi
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" Genshi
+    Creating e:\portabletrac\trac\lib\site-packages\site.py
+    Searching for Genshi
+    Reading http://pypi.python.org/simple/Genshi/
+    Reading http://genshi.edgewall.org/
+    Reading http://genshi.edgewall.org/wiki/Download
+    Best match: Genshi 0.6
+    Downloading http://ftp.edgewall.com/pub/genshi/Genshi-0.6.win32.exe
+    Processing Genshi-0.6.win32.exe
+    creating 'd:\temp\easy_install-i2fapa\Genshi-0.6-py2.7-win32.egg' and adding 'd:\temp\easy_install-i2fapa\Genshi-0.6-py2
+    .7-win32.egg.tmp' to it
+    Moving Genshi-0.6-py2.7-win32.egg to e:\portabletrac\trac\lib\site-packages
+    Adding Genshi 0.6 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\genshi-0.6-py2.7-win32.egg
+    Processing dependencies for Genshi
+    Finished processing dependencies for Genshi
+
+E:\PortableTrac>easy_install Babel
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" Babel
+    Searching for Babel
+    Reading http://pypi.python.org/simple/Babel/
+    Reading http://babel.edgewall.org/
+    Reading http://babel.edgewall.org/wiki/Download
+    Best match: Babel 0.9.6
+    Downloading http://ftp.edgewall.com/pub/babel/Babel-0.9.6-py2.7.egg
+    Processing Babel-0.9.6-py2.7.egg
+    creating e:\portabletrac\trac\lib\site-packages\Babel-0.9.6-py2.7.egg
+    Extracting Babel-0.9.6-py2.7.egg to e:\portabletrac\trac\lib\site-packages
+    Adding Babel 0.9.6 to easy-install.pth file
+    Installing pybabel-script.py script to E:\PortableTrac\trac/Scripts
+    Installing pybabel.exe script to E:\PortableTrac\trac/Scripts
+    Installing pybabel.exe.manifest script to E:\PortableTrac\trac/Scripts
+
+    Installed e:\portabletrac\trac\lib\site-packages\babel-0.9.6-py2.7.egg
+    Processing dependencies for Babel
+    Finished processing dependencies for Babel
+
+
+E:\PortableTrac>easy_install docutils
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" docutils
+    Searching for docutils
+    Reading http://pypi.python.org/simple/docutils/
+    Reading http://docutils.sourceforge.net/
+    Download error: [Errno 10060]  -- Some packages may not be found!
+    Best match: docutils 0.9.1
+    Downloading http://sourceforge.net/projects/docutils/files/docutils/0.9.1/docutils-0.9.1.tar.gz/download
+    Processing download
+    Running docutils-0.9.1\setup.py -q bdist_egg --dist-dir d:\temp\easy_install-ksrq87\docutils-0.9.1\egg-dist-tmp-xaxjyb
+    warning: no files found matching 'MANIFEST'
+    warning: no files found matching '*' under directory 'extras'
+    warning: no previously-included files matching '.cvsignore' found under directory '*'
+    warning: no previously-included files matching '*.pyc' found under directory '*'
+    warning: no previously-included files matching '*~' found under directory '*'
+    warning: no previously-included files matching '.DS_Store' found under directory '*'
+    zip_safe flag not set; analyzing archive contents...
+    docutils.parsers.rst.directives.misc: module references __file__
+    docutils.writers.html4css1.__init__: module references __file__
+    docutils.writers.latex2e.__init__: module references __file__
+    docutils.writers.odf_odt.__init__: module references __file__
+    docutils.writers.pep_html.__init__: module references __file__
+    docutils.writers.s5_html.__init__: module references __file__
+    Adding docutils 0.9.1 to easy-install.pth file
+    Installing rst2html.py script to E:\PortableTrac\trac/Scripts
+    Installing rst2latex.py script to E:\PortableTrac\trac/Scripts
+    Installing rst2man.py script to E:\PortableTrac\trac/Scripts
+    Installing rst2odt.py script to E:\PortableTrac\trac/Scripts
+    Installing rst2odt_prepstyles.py script to E:\PortableTrac\trac/Scripts
+    Installing rst2pseudoxml.py script to E:\PortableTrac\trac/Scripts
+    Installing rst2s5.py script to E:\PortableTrac\trac/Scripts
+    Installing rst2xetex.py script to E:\PortableTrac\trac/Scripts
+    Installing rst2xml.py script to E:\PortableTrac\trac/Scripts
+    Installing rstpep2html.py script to E:\PortableTrac\trac/Scripts
+
+    Installed e:\portabletrac\trac\lib\site-packages\docutils-0.9.1-py2.7.egg
+    Processing dependencies for docutils
+    Finished processing dependencies for docutils
+
+
+E:\PortableTrac>easy_install Pygments
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" Pygments
+    Searching for Pygments
+    Reading http://pypi.python.org/simple/Pygments/
+    Reading http://pygments.org/
+    Reading http://pygments.pocoo.org/
+    Best match: Pygments 1.5
+    Downloading http://pypi.python.org/packages/2.7/P/Pygments/Pygments-1.5-py2.7.egg#md5=8ea02c2eafb2580336b7637be629f7ce
+    Processing Pygments-1.5-py2.7.egg
+    creating e:\portabletrac\trac\lib\site-packages\Pygments-1.5-py2.7.egg
+    Extracting Pygments-1.5-py2.7.egg to e:\portabletrac\trac\lib\site-packages
+    Adding Pygments 1.5 to easy-install.pth file
+    Installing pygmentize-script.py script to E:\PortableTrac\trac/Scripts
+    Installing pygmentize.exe script to E:\PortableTrac\trac/Scripts
+    Installing pygmentize.exe.manifest script to E:\PortableTrac\trac/Scripts
+
+    Installed e:\portabletrac\trac\lib\site-packages\pygments-1.5-py2.7.egg
+    Processing dependencies for Pygments
+    Finished processing dependencies for Pygments
+
+
+E:\PortableTrac>easy_install http://pypi.python.org/packages/2.7/p/pytz/pytz-2012h-py2.7.egg#md5=4258fcfc023e9ff0057405d935fc6e1d
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://pypi.python.org/packages/2.7/p/pytz/pytz-2012h-py2.7.eg
+    g#md5=4258fcfc023e9ff0057405d935fc6e1d
+    Downloading http://pypi.python.org/packages/2.7/p/pytz/pytz-2012h-py2.7.egg#md5=4258fcfc023e9ff0057405d935fc6e1d
+    Processing pytz-2012h-py2.7.egg
+    Moving pytz-2012h-py2.7.egg to e:\portabletrac\trac\lib\site-packages
+    Adding pytz 2012h to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\pytz-2012h-py2.7.egg
+    Processing dependencies for pytz==2012h
+    Finished processing dependencies for pytz==2012h
+
+
+E:\PortableTrac>easy_install Trac==1.0
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" Trac==1.0
+    Searching for Trac==1.0
+    Reading http://pypi.python.org/simple/Trac/
+    Reading http://trac.edgewall.org/
+    Reading http://trac.edgewall.org/wiki/TracDownload
+    Reading http://trac.edgewall.com/
+    Reading http://projects.edgewall.com/trac
+    Reading http://projects.edgewall.com/trac/wiki/TracDownload
+    Best match: Trac 1.0
+    Downloading http://download.edgewall.org/trac/Trac-1.0.win32.exe
+    Processing Trac-1.0.win32.exe
+    Deleting d:\temp\easy_install-2tqg2t\Trac-1.0-py2.7-win32.egg.tmp\EGG-INFO\scripts\trac-admin-script.py
+    Deleting d:\temp\easy_install-2tqg2t\Trac-1.0-py2.7-win32.egg.tmp\EGG-INFO\scripts\trac-admin.exe
+    Deleting d:\temp\easy_install-2tqg2t\Trac-1.0-py2.7-win32.egg.tmp\EGG-INFO\scripts\tracd-script.py
+    Deleting d:\temp\easy_install-2tqg2t\Trac-1.0-py2.7-win32.egg.tmp\EGG-INFO\scripts\tracd.exe
+    creating 'd:\temp\easy_install-2tqg2t\Trac-1.0-py2.7-win32.egg' and adding 'd:\temp\easy_install-2tqg2t\Trac-1.0-py2.7-w
+    in32.egg.tmp' to it
+    Moving Trac-1.0-py2.7-win32.egg to e:\portabletrac\trac\lib\site-packages
+    Adding Trac 1.0 to easy-install.pth file
+    Installing trac-admin-script.pyc script to E:\PortableTrac\trac/Scripts
+    Installing tracd-script.pyc script to E:\PortableTrac\trac/Scripts
+    Installing trac-admin-script.py script to E:\PortableTrac\trac/Scripts
+    Installing trac-admin.exe script to E:\PortableTrac\trac/Scripts
+    Installing trac-admin.exe.manifest script to E:\PortableTrac\trac/Scripts
+    Installing tracd-script.py script to E:\PortableTrac\trac/Scripts
+    Installing tracd.exe script to E:\PortableTrac\trac/Scripts
+    Installing tracd.exe.manifest script to E:\PortableTrac\trac/Scripts
+
+    Installed e:\portabletrac\trac\lib\site-packages\trac-1.0-py2.7-win32.egg
+    Processing dependencies for Trac==1.0
+    Finished processing dependencies for Trac==1.0
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/accountmanagerplugin/trunk/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/accountmanagerplugin/trunk/
+    Downloading http://trac-hacks.org/svn/accountmanagerplugin/trunk/
+    Doing subversion checkout from http://trac-hacks.org/svn/accountmanagerplugin/trunk/ to d:\temp\easy_install-a4afqm\trunk
+    Processing trunk
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-a4afqm\trunk\egg-dist-tmp-ccfu94
+    Adding tracaccountmanager 0.4dev-r12139 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracaccountmanager-0.4dev_r12139-py2.7.egg
+    Processing dependencies for tracaccountmanager==0.4dev-r12139
+    Finished processing dependencies for tracaccountmanager==0.4dev-r12139
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/macropostplugin/0.11
+:: AddCommentMacro 依赖于 MacroPostPlugin.
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/macropostplugin/0.11
+    Downloading http://trac-hacks.org/svn/macropostplugin/0.11
+    Doing subversion checkout from http://trac-hacks.org/svn/macropostplugin/0.11 to d:\temp\easy_install-d4seaf\0.11
+    Processing 0.11
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-d4seaf\0.11\egg-dist-tmp-khr237
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracmacropost 0.2 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracmacropost-0.2-py2.7.egg
+    Processing dependencies for tracmacropost==0.2
+    Finished processing dependencies for tracmacropost==0.2
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/addcommentmacro/0.11
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/addcommentmacro/0.11
+    Downloading http://trac-hacks.org/svn/addcommentmacro/0.11
+    Doing subversion checkout from http://trac-hacks.org/svn/addcommentmacro/0.11 to d:\temp\easy_install-a9f5_b\0.11
+    Processing 0.11
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-a9f5_b\0.11\egg-dist-tmp-ncfofi
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracaddcommentmacro 0.3 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracaddcommentmacro-0.3-py2.7.egg
+    Processing dependencies for tracaddcommentmacro==0.3
+    Finished processing dependencies for tracaddcommentmacro==0.3
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/tagsplugin/tags/0.6
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/tagsplugin/tags/0.6
+    Downloading http://trac-hacks.org/svn/tagsplugin/tags/0.6
+    Doing subversion checkout from http://trac-hacks.org/svn/tagsplugin/tags/0.6 to d:\temp\easy_install-uszpjg\0.6
+    Processing 0.6
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-uszpjg\0.6\egg-dist-tmp-aukt7u
+    zip_safe flag not set; analyzing archive contents...
+    Adding tractags 0.6 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tractags-0.6-py2.7.egg
+    Processing dependencies for tractags==0.6
+    Finished processing dependencies for tractags==0.6
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/sectioneditplugin/0.12
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/sectioneditplugin/0.12
+    Downloading http://trac-hacks.org/svn/sectioneditplugin/0.12
+    Doing subversion checkout from http://trac-hacks.org/svn/sectioneditplugin/0.12 to d:\temp\easy_install-uh0ytn\0.12
+    Processing 0.12
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-uh0ytn\0.12\egg-dist-tmp-a3hyqa
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracsectioneditplugin 0.2.6-r11208 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracsectioneditplugin-0.2.6_r11208-py2.7.egg
+    Processing dependencies for tracsectioneditplugin==0.2.6-r11208
+    Finished processing dependencies for tracsectioneditplugin==0.2.6-r11208
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/includepagesplugin/0.11/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/includepagesplugin/0.11/
+    Downloading http://trac-hacks.org/svn/includepagesplugin/0.11/
+    Doing subversion checkout from http://trac-hacks.org/svn/includepagesplugin/0.11/ to d:\temp\easy_install-vayzza\0.11
+    Processing 0.11
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-vayzza\0.11\egg-dist-tmp-6q5s16
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracincludepagesmacro 0.1 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracincludepagesmacro-0.1-py2.7.egg
+    Processing dependencies for tracincludepagesmacro==0.1
+    Finished processing dependencies for tracincludepagesmacro==0.1
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/tracwysiwygplugin/0.12
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/tracwysiwygplugin/0.12
+    Downloading http://trac-hacks.org/svn/tracwysiwygplugin/0.12
+    Doing subversion checkout from http://trac-hacks.org/svn/tracwysiwygplugin/0.12 to d:\temp\easy_install-4z1ilj\0.12
+    Processing 0.12
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-4z1ilj\0.12\egg-dist-tmp-9mpfwg
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracwysiwyg 0.12.0.4-r11158 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracwysiwyg-0.12.0.4_r11158-py2.7.egg
+    Processing dependencies for tracwysiwyg==0.12.0.4-r11158
+    Finished processing dependencies for tracwysiwyg==0.12.0.4-r11158
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/tractweakuiplugin/0.11
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/tractweakuiplugin/0.11
+    Downloading http://trac-hacks.org/svn/tractweakuiplugin/0.11
+    Doing subversion checkout from http://trac-hacks.org/svn/tractweakuiplugin/0.11 to d:\temp\easy_install-mapvvq\0.11
+    Processing 0.11
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-mapvvq\0.11\egg-dist-tmp-ke0u4v
+    zip_safe flag not set; analyzing archive contents...
+    Adding tractweakui 0.1 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tractweakui-0.1-py2.7.egg
+    Processing dependencies for tractweakui==0.1
+    Finished processing dependencies for tractweakui==0.1
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/addstaticresourcesplugin/0.11/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/addstaticresourcesplugin/0.11/
+    Downloading http://trac-hacks.org/svn/addstaticresourcesplugin/0.11/
+    Doing subversion checkout from http://trac-hacks.org/svn/addstaticresourcesplugin/0.11/ to d:\temp\easy_install-2cblwb\0.11
+    Processing 0.11
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-2cblwb\0.11\egg-dist-tmp-abzfzr
+    zip_safe flag not set; analyzing archive contents...
+    Adding add-static-resources-plugin 0.0.3 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\add_static_resources_plugin-0.0.3-py2.7.egg
+    Processing dependencies for add-static-resources-plugin==0.0.3
+    Finished processing dependencies for add-static-resources-plugin==0.0.3
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/tracautocompleteplugin/0.11/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/tracautocompleteplugin/0.11/
+    Downloading http://trac-hacks.org/svn/tracautocompleteplugin/0.11/
+    Doing subversion checkout from http://trac-hacks.org/svn/tracautocompleteplugin/0.11/ to d:\temp\easy_install-onvidt\0.11
+    Processing 0.11
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-onvidt\0.11\egg-dist-tmp-4zap92
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracautocomplete 0.1 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracautocomplete-0.1-py2.7.egg
+    Processing dependencies for tracautocomplete==0.1
+    Finished processing dependencies for tracautocomplete==0.1
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/autocompleteusersplugin/trunk
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/autocompleteusersplugin/trunk
+    Downloading http://trac-hacks.org/svn/autocompleteusersplugin/trunk
+    Doing subversion checkout from http://trac-hacks.org/svn/autocompleteusersplugin/trunk to d:\temp\easy_install-ysbyoq\trunk
+    Processing trunk
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-ysbyoq\trunk\egg-dist-tmp-wksmo1
+    Adding autocompleteusers 0.4.2dev-r11757 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\autocompleteusers-0.4.2dev_r11757-py2.7.egg
+    Processing dependencies for autocompleteusers==0.4.2dev-r11757
+    Finished processing dependencies for autocompleteusers==0.4.2dev-r11757
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/keywordsuggestplugin/trunk/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/keywordsuggestplugin/trunk/
+    Downloading http://trac-hacks.org/svn/keywordsuggestplugin/trunk/
+    Doing subversion checkout from http://trac-hacks.org/svn/keywordsuggestplugin/trunk/ to d:\temp\easy_install-ktlooa\trunk
+    Processing trunk
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-ktlooa\trunk\egg-dist-tmp-fjrdyi
+    zip_safe flag not set; analyzing archive contents...
+    Adding trackeywordsuggest 0.5.0dev-r12103 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\trackeywordsuggest-0.5.0dev_r12103-py2.7.egg
+    Processing dependencies for trackeywordsuggest==0.5.0dev-r12103
+    Finished processing dependencies for trackeywordsuggest==0.5.0dev-r12103
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/fullblogplugin/0.11/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/fullblogplugin/0.11/
+    Downloading http://trac-hacks.org/svn/fullblogplugin/0.11/
+    Doing subversion checkout from http://trac-hacks.org/svn/fullblogplugin/0.11/ to d:\temp\easy_install-hwto_c\0.11
+    Processing 0.11
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-hwto_c\0.11\egg-dist-tmp-7bjlam
+    Adding tracfullblogplugin 0.1.1-r12111 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracfullblogplugin-0.1.1_r12111-py2.7.egg
+    Processing dependencies for tracfullblogplugin==0.1.1-r12111
+    Finished processing dependencies for tracfullblogplugin==0.1.1-r12111
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/workfloweditorplugin/trunk/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/workfloweditorplugin/trunk/
+    Downloading http://trac-hacks.org/svn/workfloweditorplugin/trunk/
+    Doing subversion checkout from http://trac-hacks.org/svn/workfloweditorplugin/trunk/ to d:\temp\easy_install-yvdz1s\trunk
+    Processing trunk
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-yvdz1s\trunk\egg-dist-tmp-4sr9bb
+    Adding workfloweditorplugin 1.1.6-r12220 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\workfloweditorplugin-1.1.6_r12220-py2.7.egg
+    Processing dependencies for workfloweditorplugin==1.1.6-r12220
+    Finished processing dependencies for workfloweditorplugin==1.1.6-r12220
+
+
+E:\PortableTrac>easy_install tracsql
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" tracsql
+    Searching for tracsql
+    Reading http://pypi.python.org/simple/tracsql/
+    Reading http://github.com/mrjbq7/tracsql
+    Best match: TracSQL 0.3
+    Downloading http://github.com/mrjbq7/tracsql/zipball/master#egg=TracSQL-0.3
+    Processing master
+    Running mrjbq7-tracsql-2b965df\setup.py -q bdist_egg --dist-dir d:\temp\easy_install-y5pjyj\mrjbq7-tracsql-2b965df\egg-d
+    ist-tmp-n3aniv
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracsql 0.3 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracsql-0.3-py2.7.egg
+    Processing dependencies for tracsql
+    Finished processing dependencies for tracsql
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/wikitablemacro/0.11/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/wikitablemacro/0.11/
+    Downloading http://trac-hacks.org/svn/wikitablemacro/0.11/
+    Doing subversion checkout from http://trac-hacks.org/svn/wikitablemacro/0.11/ to d:\temp\easy_install-4_mcvd\0.11
+    Processing 0.11
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-4_mcvd\0.11\egg-dist-tmp-7chxq9
+    zip_safe flag not set; analyzing archive contents...
+    Adding wikitablemacro 0.1-r10997 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\wikitablemacro-0.1_r10997-py2.7.egg
+    Processing dependencies for wikitablemacro==0.1-r10997
+    Finished processing dependencies for wikitablemacro==0.1-r10997
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/graphvizplugin/branches/1.0/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/graphvizplugin/branches/1.0/
+    Downloading http://trac-hacks.org/svn/graphvizplugin/branches/1.0/
+    Doing subversion checkout from http://trac-hacks.org/svn/graphvizplugin/branches/1.0/ to d:\temp\easy_install-iiyz9y\1.0
+    Processing 1.0
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-iiyz9y\1.0\egg-dist-tmp-qkwv_2
+    zip_safe flag not set; analyzing archive contents...
+    Adding graphviz 1.0.0.7dev-r12290 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\graphviz-1.0.0.7dev_r12290-py2.7.egg
+    Processing dependencies for graphviz==1.0.0.7dev-r12290
+    Finished processing dependencies for graphviz==1.0.0.7dev-r12290
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/voteplugin/trunk/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/voteplugin/trunk/
+    Downloading http://trac-hacks.org/svn/voteplugin/trunk/
+    Doing subversion checkout from http://trac-hacks.org/svn/voteplugin/trunk/ to d:\temp\easy_install-n07cs6\trunk
+    Processing trunk
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-n07cs6\trunk\egg-dist-tmp-9cnovk
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracvote 0.1.3dev-r11793 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracvote-0.1.3dev_r11793-py2.7.egg
+    Processing dependencies for tracvote==0.1.3dev-r11793
+    Finished processing dependencies for tracvote==0.1.3dev-r11793
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/codeexamplemacro/trunk/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/codeexamplemacro/trunk/
+    Downloading http://trac-hacks.org/svn/codeexamplemacro/trunk/
+    Doing subversion checkout from http://trac-hacks.org/svn/codeexamplemacro/trunk/ to d:\temp\easy_install-sb3r3h\trunk
+    Processing trunk
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-sb3r3h\trunk\egg-dist-tmp-0v9sz8
+    zip_safe flag not set; analyzing archive contents...
+    Adding codeexamplemacro 1.0-r11766 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\codeexamplemacro-1.0_r11766-py2.7.egg
+    Processing dependencies for codeexamplemacro==1.0-r11766
+    Finished processing dependencies for codeexamplemacro==1.0-r11766
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/visitcountermacro/0.11/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/visitcountermacro/0.11/
+    Downloading http://trac-hacks.org/svn/visitcountermacro/0.11/
+    Doing subversion checkout from http://trac-hacks.org/svn/visitcountermacro/0.11/ to d:\temp\easy_install-cdqykc\0.11
+    Processing 0.11
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-cdqykc\0.11\egg-dist-tmp-3muzn2
+    zip_safe flag not set; analyzing archive contents...
+    Adding visitcounter 0.2 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\visitcounter-0.2-py2.7.egg
+    Processing dependencies for visitcounter==0.2
+    Finished processing dependencies for visitcounter==0.2
+
+
+E:\PortableTrac>easy_install tracstats
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" tracstats
+    Searching for tracstats
+    Reading http://pypi.python.org/simple/tracstats/
+    Reading http://github.com/mrjbq7/tracstats
+    Best match: TracStats 0.5
+    Downloading http://github.com/mrjbq7/tracstats/zipball/master#egg=TracStats-0.5
+    Processing master
+    Running mrjbq7-tracstats-49d5e8e\setup.py -q bdist_egg --dist-dir d:\temp\easy_install-le22ur\mrjbq7-tracstats-49d5e8e\e
+    gg-dist-tmp-imhust
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracstats 0.5 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracstats-0.5-py2.7.egg
+    Processing dependencies for tracstats
+    Finished processing dependencies for tracstats
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/wikistatsplugin/0.11/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/wikistatsplugin/0.11/
+    Downloading http://trac-hacks.org/svn/wikistatsplugin/0.11/
+    Doing subversion checkout from http://trac-hacks.org/svn/wikistatsplugin/0.11/ to d:\temp\easy_install-jfvw4v\0.11
+    Processing 0.11
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-jfvw4v\0.11\egg-dist-tmp-s8uah2
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracwikistats 0.1-r11352 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracwikistats-0.1_r11352-py2.7.egg
+    Processing dependencies for tracwikistats==0.1-r11352
+    Finished processing dependencies for tracwikistats==0.1-r11352
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/advparseargsplugin/0.11/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/advparseargsplugin/0.11/
+    Downloading http://trac-hacks.org/svn/advparseargsplugin/0.11/
+    Doing subversion checkout from http://trac-hacks.org/svn/advparseargsplugin/0.11/ to d:\temp\easy_install-jb5wjf\0.11
+    Processing 0.11
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-jb5wjf\0.11\egg-dist-tmp-i3nouh
+    Adding tracadvparseargsplugin 0.4 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracadvparseargsplugin-0.4-py2.7.egg
+    Processing dependencies for tracadvparseargsplugin==0.4
+    Finished processing dependencies for tracadvparseargsplugin==0.4
+
+
+http://trac-hacks.org/svn/listofwikipagesmacro/0.12/
+========
+    E:\PortableTrac>svn co http://trac-hacks.org/svn/listofwikipagesmacro/0.12/ %temp%\listofwikipagesmacro
+    A    D:\temp\listofwikipagesmacro\setup.py
+    A    D:\temp\listofwikipagesmacro\traclistofwikipages
+    A    D:\temp\listofwikipagesmacro\traclistofwikipages\htdocs
+    A    D:\temp\listofwikipagesmacro\traclistofwikipages\htdocs\style.css
+    A    D:\temp\listofwikipagesmacro\traclistofwikipages\__init__.py
+    A    D:\temp\listofwikipagesmacro\traclistofwikipages\macro.py
+     U   D:\temp\listofwikipagesmacro
+    Checked out revision 12308.
+
+    :: 修改 setup.py , 将第8行日期的汉字改为英文. (周一, 23 八月 2010) -> (Mon, 23 Aug 2010)
+
+    E:\PortableTrac>easy_install %temp%\listofwikipagesmacro
+
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" D:\temp\listofwikipagesmacro
+    Processing listofwikipagesmacro
+    Running setup.py -q bdist_egg --dist-dir D:\temp\listofwikipagesmacro\egg-dist-tmp-6a0uri
+    Adding traclistofwikipagesmacro 0.4 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\traclistofwikipagesmacro-0.4-py2.7.egg
+    Processing dependencies for traclistofwikipagesmacro==0.4
+    Finished processing dependencies for traclistofwikipagesmacro==0.4
+
+
+E:\PortableTrac>easy_install simplejson
+:: TracReportInplaceEditPlugin 依赖于 SimpleJson.
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" simplejson
+    Searching for simplejson
+    Reading http://pypi.python.org/simple/simplejson/
+    Reading http://github.com/simplejson/simplejson
+    Reading http://undefined.org/python/#simplejson
+    Best match: simplejson 2.6.2
+    Downloading http://pypi.python.org/packages/source/s/simplejson/simplejson-2.6.2.tar.gz#md5=9b41cd412dfac7c002aeca61ab0fdfe2
+    Processing simplejson-2.6.2.tar.gz
+    Running simplejson-2.6.2\setup.py -q bdist_egg --dist-dir d:\temp\easy_install-awm1xt\simplejson-2.6.2\egg-dist-tmp-akkbsz
+    ***************************************************************************
+    WARNING: The C extension could not be compiled, speedups are not enabled.
+    Failure information, if any, is above.
+    I'm retrying the build without the C extension now.
+    ***************************************************************************
+    zip_safe flag not set; analyzing archive contents...
+    simplejson.tests.__init__: module references __file__
+    ***************************************************************************
+    WARNING: The C extension could not be compiled, speedups are not enabled.
+    Plain-Python installation succeeded.
+    ***************************************************************************
+    Adding simplejson 2.6.2 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\simplejson-2.6.2-py2.7.egg
+    Processing dependencies for simplejson
+    Finished processing dependencies for simplejson
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/tracreportinplaceeditplugin/0.11/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/tracreportinplaceeditplugin/0.11/
+    Downloading http://trac-hacks.org/svn/tracreportinplaceeditplugin/0.11/
+    Doing subversion checkout from http://trac-hacks.org/svn/tracreportinplaceeditplugin/0.11/ to d:\temp\easy_install-qo1zpj\0.11
+    Processing 0.11
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-qo1zpj\0.11\egg-dist-tmp-e9xgnm
+    Adding tracreportinplaceeditplugin 0.1 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracreportinplaceeditplugin-0.1-py2.7.egg
+    Processing dependencies for tracreportinplaceeditplugin==0.1
+    Finished processing dependencies for tracreportinplaceeditplugin==0.1
+
+
+E:\PortableTrac>easy_install https://github.com/itota/trac-subtickets-plugin/archive/master.zip
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" https://github.com/itota/trac-subtickets-plugin/archive/master.zip
+    Downloading https://github.com/itota/trac-subtickets-plugin/archive/master.zip
+    Processing master.zip
+    Running trac-subtickets-plugin-master\setup.py -q bdist_egg --dist-dir d:\temp\easy_install-7slms3\trac-subtickets-plugin-master\egg-dist-tmp-k1mfjn
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracsubticketsplugin 0.2.0.dev-20121107 to easy-install.pth file
+    Installing check-trac-subtickets-script.py script to E:\PortableTrac\trac/Scripts
+    Installing check-trac-subtickets.exe script to E:\PortableTrac\trac/Scripts
+    Installing check-trac-subtickets.exe.manifest script to E:\PortableTrac\trac/Scripts
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracsubticketsplugin-0.2.0.dev_20121107-py2.7.egg
+    Processing dependencies for tracsubticketsplugin==0.2.0.dev-20121107
+    Finished processing dependencies for tracsubticketsplugin==0.2.0.dev-20121107
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/customfieldadminplugin/0.11/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/customfieldadminplugin/0.11/
+    Downloading http://trac-hacks.org/svn/customfieldadminplugin/0.11/
+    Doing subversion checkout from http://trac-hacks.org/svn/customfieldadminplugin/0.11/ to d:\temp\easy_install-me7ocd\0.11
+    Processing 0.11
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-me7ocd\0.11\egg-dist-tmp-xogs_h
+    zip_safe flag not set; analyzing archive contents...
+    Adding traccustomfieldadmin 0.2.8-r12166 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\traccustomfieldadmin-0.2.8_r12166-py2.7.egg
+    Processing dependencies for traccustomfieldadmin==0.2.8-r12166
+    Finished processing dependencies for traccustomfieldadmin==0.2.8-r12166
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/datefieldplugin/1.0/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/datefieldplugin/1.0/
+    Downloading http://trac-hacks.org/svn/datefieldplugin/1.0/
+    Doing subversion checkout from http://trac-hacks.org/svn/datefieldplugin/1.0/ to d:\temp\easy_install-afqpwz\1.0
+    Processing 1.0
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-afqpwz\1.0\egg-dist-tmp-nvktwg
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracdatefield 3.0.0dev-r12118 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracdatefield-3.0.0dev_r12118-py2.7.egg
+    Processing dependencies for tracdatefield==3.0.0dev-r12118
+    Finished processing dependencies for tracdatefield==3.0.0dev-r12118
+
+
+E:\PortableTrac>easy_install https://github.com/coderanger/trac-mastertickets/archive/master.tar.gz
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" https://github.com/coderanger/trac-mastertickets/archive/master.tar.gz
+    Downloading https://github.com/coderanger/trac-mastertickets/archive/master.tar.gz
+    Processing master.tar.gz
+    Running trac-mastertickets-master\setup.py -q bdist_egg --dist-dir d:\temp\easy_install-jzzgzb\trac-mastertickets-master\egg-dist-tmp-35ggjy
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracmastertickets 3.0.3 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracmastertickets-3.0.3-py2.7.egg
+    Processing dependencies for tracmastertickets==3.0.3
+    Finished processing dependencies for tracmastertickets==3.0.3
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/gridmodifyplugin/trunk/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/gridmodifyplugin/trunk/
+    Downloading http://trac-hacks.org/svn/gridmodifyplugin/trunk/
+    Doing subversion checkout from http://trac-hacks.org/svn/gridmodifyplugin/trunk/ to d:\temp\easy_install-2yx_pd\trunk
+    Processing trunk
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-2yx_pd\trunk\egg-dist-tmp-jdv4n7
+    zip_safe flag not set; analyzing archive contents...
+    Adding gridmodify 0.1.6dev-r12235 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\gridmodify-0.1.6dev_r12235-py2.7.egg
+    Processing dependencies for gridmodify==0.1.6dev-r12235
+    Finished processing dependencies for gridmodify==0.1.6dev-r12235
+
+
+E:\PortableTrac>easy_install https://trac-hacks.org/svn/tracjsganttplugin/0.11/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" https://trac-hacks.org/svn/tracjsganttplugin/0.11/
+    Downloading https://trac-hacks.org/svn/tracjsganttplugin/0.11/
+    Doing subversion checkout from https://trac-hacks.org/svn/tracjsganttplugin/0.11/ to d:\temp\easy_install-8_jauh\0.11
+    Processing 0.11
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-8_jauh\0.11\egg-dist-tmp-b5dxsa
+    zip_safe flag not set; analyzing archive contents...
+    Adding trac-jsgantt 0.10-r12213 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\trac_jsgantt-0.10_r12213-py2.7.egg
+    Processing dependencies for trac-jsgantt==0.10-r12213
+    Finished processing dependencies for trac-jsgantt==0.10-r12213
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/flashembedmacro/0.11/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/flashembedmacro/0.11/
+    Downloading http://trac-hacks.org/svn/flashembedmacro/0.11/
+    Doing subversion checkout from http://trac-hacks.org/svn/flashembedmacro/0.11/ to d:\temp\easy_install-lblcbu\0.11
+    Processing 0.11
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-lblcbu\0.11\egg-dist-tmp-3dszko
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracflashembedmacro 0.95rc1-r10984 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracflashembedmacro-0.95rc1_r10984-py2.7.egg
+    Processing dependencies for tracflashembedmacro==0.95rc1-r10984
+    Finished processing dependencies for tracflashembedmacro==0.95rc1-r10984
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/macrochainmacro/0.11/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/macrochainmacro/0.11/
+    Downloading http://trac-hacks.org/svn/macrochainmacro/0.11/
+    Doing subversion checkout from http://trac-hacks.org/svn/macrochainmacro/0.11/ to d:\temp\easy_install-uuonrc\0.11
+    Processing 0.11
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-uuonrc\0.11\egg-dist-tmp-btx7ew
+    zip_safe flag not set; analyzing archive contents...
+    Adding macrochain 0.2 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\macrochain-0.2-py2.7.egg
+    Processing dependencies for macrochain==0.2
+    Finished processing dependencies for macrochain==0.2
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/attachment/ticket/2801/CSV-0.11.zip?format=raw
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/attachment/ticket/2801/CSV-0.11.zip?format=raw
+    Downloading http://trac-hacks.org/attachment/ticket/2801/CSV-0.11.zip?format=raw
+    Processing CSV-0.11.zip
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-5nby6l\egg-dist-tmp-a9k6to
+    zip_safe flag not set; analyzing archive contents...
+    Adding traccsvmacro 1.0 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\traccsvmacro-1.0-py2.7.egg
+    Processing dependencies for traccsvmacro==1.0
+    Finished processing dependencies for traccsvmacro==1.0
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/navcontrolplugin/0.11/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/navcontrolplugin/0.11/
+    Downloading http://trac-hacks.org/svn/navcontrolplugin/0.11/
+    Doing subversion checkout from http://trac-hacks.org/svn/navcontrolplugin/0.11/ to d:\temp\easy_install-qcxqoq\0.11
+    Processing 0.11
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-qcxqoq\0.11\egg-dist-tmp-hujzpl
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracnavcontrol 1.0 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracnavcontrol-1.0-py2.7.egg
+    Processing dependencies for tracnavcontrol==1.0
+    Finished processing dependencies for tracnavcontrol==1.0
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/noteboxmacro/trunk/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/noteboxmacro/trunk/
+    Downloading http://trac-hacks.org/svn/noteboxmacro/trunk/
+    Doing subversion checkout from http://trac-hacks.org/svn/noteboxmacro/trunk/ to d:\temp\easy_install-smb_ch\trunk
+    Processing trunk
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-smb_ch\trunk\egg-dist-tmp-edudpt
+    zip_safe flag not set; analyzing archive contents...
+    Adding notebox 1.0dev-r11779 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\notebox-1.0dev_r11779-py2.7.egg
+    Processing dependencies for notebox==1.0dev-r11779
+    Finished processing dependencies for notebox==1.0dev-r11779
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/includemacro/trunk/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/includemacro/trunk/
+    Downloading http://trac-hacks.org/svn/includemacro/trunk/
+    Doing subversion checkout from http://trac-hacks.org/svn/includemacro/trunk/ to d:\temp\easy_install-s40hmy\trunk
+    Processing trunk
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-s40hmy\trunk\egg-dist-tmp-41zaow
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracincludemacro 3.0.0dev-r12030 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracincludemacro-3.0.0dev_r12030-py2.7.egg
+    Processing dependencies for tracincludemacro==3.0.0dev-r12030
+    Finished processing dependencies for tracincludemacro==3.0.0dev-r12030
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/themeengineplugin/trunk/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/themeengineplugin/trunk/
+    Downloading http://trac-hacks.org/svn/themeengineplugin/trunk/
+    Doing subversion checkout from http://trac-hacks.org/svn/themeengineplugin/trunk/ to d:\temp\easy_install-fgdwp0\trunk
+    Processing trunk
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-fgdwp0\trunk\egg-dist-tmp-ct_be9
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracthemeengine 2.1.0 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracthemeengine-2.1.0-py2.7.egg
+    Processing dependencies for tracthemeengine==2.1.0
+    Finished processing dependencies for tracthemeengine==2.1.0
+
+
+E:\PortableTrac>easy_install https://github.com/ejucovy/trac-LighterTheme/archive/master.tar.gz
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" https://github.com/ejucovy/trac-LighterTheme/archive/master.tar.gz
+    Downloading https://github.com/ejucovy/trac-LighterTheme/archive/master.tar.gz
+    Processing master.tar.gz
+    Running trac-LighterTheme-master\setup.py -q bdist_egg --dist-dir d:\temp\easy_install-2etaxt\trac-LighterTheme-master\e
+    gg-dist-tmp-am7xyp
+    warning: manifest_maker: MANIFEST.in, line 1: path 'lightertheme/htdocs/' cannot end with '/'
+
+    Adding trac-lightertheme 0.3 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\trac_lightertheme-0.3-py2.7.egg
+    Processing dependencies for trac-lightertheme==0.3
+    Finished processing dependencies for trac-lightertheme==0.3
+
+
+E:\PortableTrac>easy_install https://github.com/ejucovy/trac-NewPageMacro/archive/master.tar.gz
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" https://github.com/ejucovy/trac-NewPageMacro/archive/master.tar.gz
+    Downloading https://github.com/ejucovy/trac-NewPageMacro/archive/master.tar.gz
+    Processing master.tar.gz
+    Running trac-NewPageMacro-master\setup.py -q bdist_egg --dist-dir d:\temp\easy_install-iivuwr\trac-NewPageMacro-master\e
+    gg-dist-tmp-4stuo8
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracnewpagemacro 0.1 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracnewpagemacro-0.1-py2.7.egg
+    Processing dependencies for tracnewpagemacro==0.1
+    Finished processing dependencies for tracnewpagemacro==0.1
+
+
+E:\PortableTrac>easy_install http://recursive-design.com/projects/gantt-calendar/gantt-calendar.0.11.zip
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://recursive-design.com/projects/gantt-calendar/gantt-calendar.0.11.zip
+    Downloading http://recursive-design.com/projects/gantt-calendar/gantt-calendar.0.11.zip
+    Processing gantt-calendar.0.11.zip
+    Running gantt-calendar\setup.py -q bdist_egg --dist-dir d:\temp\easy_install-d86hk3\gantt-calendar\egg-dist-tmp-lm7qe4
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracganttcalendarplugin 0.11 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracganttcalendarplugin-0.11-py2.7.egg
+    Processing dependencies for tracganttcalendarplugin==0.11
+    Finished processing dependencies for tracganttcalendarplugin==0.11
+
+
+E:\PortableTrac>easy_install.cmd PyYAML
+:: GanttChartPlugin 依赖于 PyYAML
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" PyYAML
+    Searching for PyYAML
+    Reading http://pypi.python.org/simple/PyYAML/
+    Reading http://pyyaml.org/wiki/PyYAML
+    Best match: PyYAML 3.10
+    Downloading http://pyyaml.org/download/pyyaml/PyYAML-3.10.win32-py2.7.exe
+    Processing PyYAML-3.10.win32-py2.7.exe
+    creating 'd:\temp\easy_install-uzcfog\PyYAML-3.10-py2.7-win32.egg' and adding 'd:\temp\easy_install-uzcfog\PyYAML-3.10-p
+    y2.7-win32.egg.tmp' to it
+    Moving PyYAML-3.10-py2.7-win32.egg to e:\portabletrac\trac\lib\site-packages
+    Adding PyYAML 3.10 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\pyyaml-3.10-py2.7-win32.egg
+    Processing dependencies for PyYAML
+    Finished processing dependencies for PyYAML
+
+
+E:\PortableTrac>easy_install python-dateutil
+:: GanttChartPlugin 依赖于 python-dateutil
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" python-dateutil
+    Searching for python-dateutil
+    Reading http://pypi.python.org/simple/python-dateutil/
+    Reading http://labix.org/python-dateutil
+    Best match: python-dateutil 2.1
+    Downloading http://pypi.python.org/packages/source/p/python-dateutil/python-dateutil-2.1.tar.gz#md5=1534bb15cf311f07afaa3aacba1c028b
+    Processing python-dateutil-2.1.tar.gz
+    Running python-dateutil-2.1\setup.py -q bdist_egg --dist-dir d:\temp\easy_install-jjq7jp\python-dateutil-2.1\egg-dist-tmp-felraf
+    Adding python-dateutil 2.1 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\python_dateutil-2.1-py2.7.egg
+    Processing dependencies for python-dateutil
+    Searching for six
+    Reading http://pypi.python.org/simple/six/
+    Best match: six 1.2.0
+    Downloading http://pypi.python.org/packages/source/s/six/six-1.2.0.tar.gz#md5=2a5d1afc79912832ac78fd38e3d75d7e
+    Processing six-1.2.0.tar.gz
+    Running six-1.2.0\setup.py -q bdist_egg --dist-dir d:\temp\easy_install-uv9lv3\six-1.2.0\egg-dist-tmp-hp6nfh
+    zip_safe flag not set; analyzing archive contents...
+    Adding six 1.2.0 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\six-1.2.0-py2.7.egg
+    Finished processing dependencies for python-dateutil
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/ganttchartplugin/0.11/
+:: setup.py 中错误的写上了 'Python >= 2.4', 导致安装时试图去找 Python 包, 虽然安装失败, 但是功能可以正常使用
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/ganttchartplugin/0.11/
+    Downloading http://trac-hacks.org/svn/ganttchartplugin/0.11/
+    Doing subversion checkout from http://trac-hacks.org/svn/ganttchartplugin/0.11/ to d:\temp\easy_install-duc6cg\0.11
+    Processing 0.11
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-duc6cg\0.11\egg-dist-tmp-1euip6
+    zip_safe flag not set; analyzing archive contents...
+    Adding gantt 0.2 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\gantt-0.2-py2.7.egg
+    Processing dependencies for gantt==0.2
+    Searching for Python>=2.4
+    Reading http://pypi.python.org/simple/Python/
+    Reading http://www.python.org/2.5
+    Download error: BadStatusLine: '' -- Some packages may not be found!
+    Reading http://www.python.org/2.4
+    Download error: BadStatusLine: '' -- Some packages may not be found!
+    Reading http://www.python.org/2.3
+    Download error: BadStatusLine: '' -- Some packages may not be found!
+    Reading http://www.python.org/2.4.1
+    Download error: BadStatusLine: '' -- Some packages may not be found!
+    Reading http://www.python.org
+    Download error: BadStatusLine: '' -- Some packages may not be found!
+    Reading http://www.python.org/download/
+    Download error: BadStatusLine: '' -- Some packages may not be found!
+    No local packages or download links found for Python>=2.4
+    Best match: None
+    Traceback (most recent call last):
+      File "E:\PortableTrac\Portable Python 2.7.3.1\App\Scripts\easy_install-script.py", line 8, in <module>
+        load_entry_point('setuptools==0.6c11', 'console_scripts', 'easy_install')()
+      File "E:\PortableTrac\Portable Python 2.7.3.1\App\lib\site-packages\setuptools\command\easy_install.py", line 1712, in main
+        with_ei_usage(lambda:
+      File "E:\PortableTrac\Portable Python 2.7.3.1\App\lib\site-packages\setuptools\command\easy_install.py", line 1700, in with_ei_usage
+        return f()
+      File "E:\PortableTrac\Portable Python 2.7.3.1\App\lib\site-packages\setuptools\command\easy_install.py", line 1716, in <lambda>
+        distclass=DistributionWithoutHelpCommands, **kw
+      File "E:\PortableTrac\Portable Python 2.7.3.1\App\lib\distutils\core.py", line 152, in setup
+        dist.run_commands()
+      File "E:\PortableTrac\Portable Python 2.7.3.1\App\lib\distutils\dist.py", line 953, in run_commands
+        self.run_command(cmd)
+      File "E:\PortableTrac\Portable Python 2.7.3.1\App\lib\distutils\dist.py", line 972, in run_command
+        cmd_obj.run()
+      File "E:\PortableTrac\Portable Python 2.7.3.1\App\lib\site-packages\setuptools\command\easy_install.py", line 211, in run
+        self.easy_install(spec, not self.no_deps)
+      File "E:\PortableTrac\Portable Python 2.7.3.1\App\lib\site-packages\setuptools\command\easy_install.py", line 422, in easy_install
+        return self.install_item(None, download, tmpdir, deps, True)
+      File "E:\PortableTrac\Portable Python 2.7.3.1\App\lib\site-packages\setuptools\command\easy_install.py", line 478, in install_item
+        self.process_distribution(spec, dist, deps)
+      File "E:\PortableTrac\Portable Python 2.7.3.1\App\lib\site-packages\setuptools\command\easy_install.py", line 519, in process_distribution
+        [requirement], self.local_index, self.easy_install
+      File "E:\PortableTrac\Portable Python 2.7.3.1\App\lib\site-packages\pkg_resources.py", line 563, in resolve
+        dist = best[req.key] = env.best_match(req, self, installer)
+      File "E:\PortableTrac\Portable Python 2.7.3.1\App\lib\site-packages\pkg_resources.py", line 799, in best_match
+        return self.obtain(req, installer) # try and download/install
+      File "E:\PortableTrac\Portable Python 2.7.3.1\App\lib\site-packages\pkg_resources.py", line 811, in obtain
+        return installer(requirement)
+      File "E:\PortableTrac\Portable Python 2.7.3.1\App\lib\site-packages\setuptools\command\easy_install.py", line 434, in easy_install
+        self.local_index
+      File "E:\PortableTrac\Portable Python 2.7.3.1\App\lib\site-packages\setuptools\package_index.py", line 475, in fetch_distribution
+        return dist.clone(location=self.download(dist.location, tmpdir))
+    AttributeError: 'NoneType' object has no attribute 'clone'
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/plantumlmacro/trunk/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/plantumlmacro/trunk/
+    Downloading http://trac-hacks.org/svn/plantumlmacro/trunk/
+    Doing subversion checkout from http://trac-hacks.org/svn/plantumlmacro/trunk/ to d:\temp\easy_install-cqiiu6\trunk
+    Processing trunk
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-cqiiu6\trunk\egg-dist-tmp-flrlnu
+    zip_safe flag not set; analyzing archive contents...
+    Adding plantuml 2.0dev-r11721 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\plantuml-2.0dev_r11721-py2.7.egg
+    Processing dependencies for plantuml==2.0dev-r11721
+    Finished processing dependencies for plantuml==2.0dev-r11721
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/numberedheadlinesplugin/0.11/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/numberedheadlinesplugin/0.11/
+    Downloading http://trac-hacks.org/svn/numberedheadlinesplugin/0.11/
+    Doing subversion checkout from http://trac-hacks.org/svn/numberedheadlinesplugin/0.11/ to d:\temp\easy_install-si67l5\0.11
+    Processing 0.11
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-si67l5\0.11\egg-dist-tmp-6rdanj
+    Adding tracnumberedheadlinesplugin 0.4-r10976 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracnumberedheadlinesplugin-0.4_r10976-py2.7.egg
+    Processing dependencies for tracnumberedheadlinesplugin==0.4-r10976
+    Finished processing dependencies for tracnumberedheadlinesplugin==0.4-r10976
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/projectplanplugin/0.11/trunk/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/projectplanplugin/0.11/trunk/
+    Downloading http://trac-hacks.org/svn/projectplanplugin/0.11/trunk/
+    Doing subversion checkout from http://trac-hacks.org/svn/projectplanplugin/0.11/trunk/ to d:\temp\easy_install-9h5cse\trunk
+    Processing trunk
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-9h5cse\trunk\egg-dist-tmp-ck87yc
+    zip_safe flag not set; analyzing archive contents...
+    Adding projectplan 0.93.0 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\projectplan-0.93.0-py2.7.egg
+    Processing dependencies for projectplan==0.93.0
+    Searching for Trac>=0.11,<0.13
+    Reading http://pypi.python.org/simple/Trac/
+    Reading http://trac.edgewall.org/
+    Reading http://trac.edgewall.org/wiki/TracDownload
+    Reading http://trac.edgewall.com/
+    Reading http://projects.edgewall.com/trac
+    Reading http://projects.edgewall.com/trac/wiki/TracDownload
+    Best match: Trac 0.12.4
+    Downloading http://download.edgewall.org/trac/Trac-0.12.4.win32.exe
+    Processing Trac-0.12.4.win32.exe
+    Deleting d:\temp\easy_install-6kz9yv\Trac-0.12.4-py2.7-win32.egg.tmp\EGG-INFO\scripts\trac-admin-script.py
+    Deleting d:\temp\easy_install-6kz9yv\Trac-0.12.4-py2.7-win32.egg.tmp\EGG-INFO\scripts\trac-admin.exe
+    Deleting d:\temp\easy_install-6kz9yv\Trac-0.12.4-py2.7-win32.egg.tmp\EGG-INFO\scripts\tracd-script.py
+    Deleting d:\temp\easy_install-6kz9yv\Trac-0.12.4-py2.7-win32.egg.tmp\EGG-INFO\scripts\tracd.exe
+    creating 'd:\temp\easy_install-6kz9yv\Trac-0.12.4-py2.7-win32.egg' and adding 'd:\temp\easy_install-6kz9yv\Trac-0.12.4-py2.7-win32.egg.tmp' to it
+    Moving Trac-0.12.4-py2.7-win32.egg to e:\portabletrac\trac\lib\site-packages
+    Removing trac 1.0 from easy-install.pth file
+    Adding Trac 0.12.4 to easy-install.pth file
+    Installing trac-admin-script.pyc script to E:\PortableTrac\trac/Scripts
+    Installing tracd-script.pyc script to E:\PortableTrac\trac/Scripts
+    Installing trac-admin-script.py script to E:\PortableTrac\trac/Scripts
+    Installing trac-admin.exe script to E:\PortableTrac\trac/Scripts
+    Installing trac-admin.exe.manifest script to E:\PortableTrac\trac/Scripts
+    Installing tracd-script.py script to E:\PortableTrac\trac/Scripts
+    Installing tracd.exe script to E:\PortableTrac\trac/Scripts
+    Installing tracd.exe.manifest script to E:\PortableTrac\trac/Scripts
+
+    Installed e:\portabletrac\trac\lib\site-packages\trac-0.12.4-py2.7-win32.egg
+    Finished processing dependencies for projectplan==0.93.0
+
+
+E:\PortableTrac>easy_install Trac==1.0
+:: ProjectPlanPlugin 导致 Trac 被降级到 1.2, 所以重新安装 Trac 1.0
+:: 然后手工修改:
+::   1)解压 projectplan-0.93.0-py2.7.egg 文件到目录 projectplan-0.93.0-py2.7-patched.egg;
+::   2)修改 easy-install.pth, 将 projectplan-0.93.0-py2.7.egg 替换为 projectplan-0.93.0-py2.7-patched.egg;
+::   3)修改 projectplan-0.93.0-py2.7-patched.egg\EGG-INFO\requires.txt
+::       -- 将 "Trac >=0.11, <0.13" 改为 "Trac >=0.11"
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" Trac==1.0
+    Searching for Trac==1.0
+    Best match: Trac 1.0
+    Processing trac-1.0-py2.7-win32.egg
+    Removing trac 0.12.4 from easy-install.pth file
+    Adding trac 1.0 to easy-install.pth file
+    Installing trac-admin-script.pyc script to E:\PortableTrac\trac/Scripts
+    Installing tracd-script.pyc script to E:\PortableTrac\trac/Scripts
+    Installing trac-admin-script.py script to E:\PortableTrac\trac/Scripts
+    Installing trac-admin.exe script to E:\PortableTrac\trac/Scripts
+    Installing trac-admin.exe.manifest script to E:\PortableTrac\trac/Scripts
+    Installing tracd-script.py script to E:\PortableTrac\trac/Scripts
+    Installing tracd.exe script to E:\PortableTrac\trac/Scripts
+    Installing tracd.exe.manifest script to E:\PortableTrac\trac/Scripts
+
+    Using e:\portabletrac\trac\lib\site-packages\trac-1.0-py2.7-win32.egg
+    Processing dependencies for Trac==1.0
+    Finished processing dependencies for Trac==1.0
+
+
+E:\PortableTrac>easy_install https://github.com/jetheis/TracSubPages/archive/master.tar.gz
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" https://github.com/jetheis/TracSubPages/archive/master.tar.gz
+
+    Downloading https://github.com/jetheis/TracSubPages/archive/master.tar.gz
+    Processing master.tar.gz
+    Running TracSubPages-master\setup.py -q bdist_egg --dist-dir d:\temp\easy_install-s9ajeb\TracSubPages-master\egg-dist-tm
+    p-ealal2
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracsubpages 0.5 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracsubpages-0.5-py2.7.egg
+    Processing dependencies for tracsubpages==0.5
+    Finished processing dependencies for tracsubpages==0.5
+
+
+E:\PortableTrac>easy_install http://trac-hacks.org/svn/addheadersplugin/0.12/
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://trac-hacks.org/svn/addheadersplugin/0.12/
+    Downloading http://trac-hacks.org/svn/addheadersplugin/0.12/
+    Doing subversion checkout from http://trac-hacks.org/svn/addheadersplugin/0.12/ to d:\temp\easy_install-esf6gv\0.12
+    Processing 0.12
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-esf6gv\0.12\egg-dist-tmp-omjopn
+    Adding tracaddheadersplugin 0.3 to easy-install.pth file
+
+    Installed e:\portabletrac\trac\lib\site-packages\tracaddheadersplugin-0.3-py2.7.egg
+    Processing dependencies for tracaddheadersplugin==0.3
+    Finished processing dependencies for tracaddheadersplugin==0.3
+
+
+E:\PortableTrac>easy_install http://winpdb.googlecode.com/files/winpdb-1.4.8.zip
+:: winpdb 主要用于系统的调试(其实不用安装, 所以后面又清除掉了)
+========
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" http://winpdb.googlecode.com/files/winpdb-1.4.8.zip
+    Downloading http://winpdb.googlecode.com/files/winpdb-1.4.8.zip
+    Processing winpdb-1.4.8.zip
+    Running winpdb-1.4.8\setup.py -q bdist_egg --dist-dir d:\temp\easy_install-vghksl\winpdb-1.4.8\egg-dist-tmp-0_lgwt
+    copying winpdb -> winpdb_.pyw
+    zip_safe flag not set; analyzing archive contents...
+    rpdb2: module references __file__
+    winpdb: module references __file__
+    Adding winpdb 1.4.8 to easy-install.pth file
+    Installing rpdb2.bat script to E:\PortableTrac\trac/Scripts
+    Installing winpdb.bat script to E:\PortableTrac\trac/Scripts
+    Installing winpdb_.pyw script to E:\PortableTrac\trac/Scripts
+    Installing winpdb_inst.py script to E:\PortableTrac\trac/Scripts
+
+    Installed e:\portabletrac\trac\lib\site-packages\winpdb-1.4.8-py2.7.egg
+    Processing dependencies for winpdb==1.4.8
+    Finished processing dependencies for winpdb==1.4.8
+
+    E:\PortableTrac>easy_install -m winpdb
+    >>> call easy_install.exe --prefix="E:\PortableTrac\trac" -m winpdb
+    Searching for winpdb
+    Best match: winpdb 1.4.8
+    Processing winpdb-1.4.8-py2.7.egg
+    Removing winpdb 1.4.8 from easy-install.pth file
+    Installing rpdb2.bat script to E:\PortableTrac\trac/Scripts
+    Installing winpdb.bat script to E:\PortableTrac\trac/Scripts
+    Installing winpdb_.pyw script to E:\PortableTrac\trac/Scripts
+    Installing winpdb_inst.py script to E:\PortableTrac\trac/Scripts
+
+    Using e:\portabletrac\trac\lib\site-packages\winpdb-1.4.8-py2.7.egg
+
+    Because this distribution was installed --multi-version, before you can
+    import modules from this package in an application, you will need to
+    'import pkg_resources' and then use a 'require()' call similar to one of
+    these examples, in order to select the desired version:
+
+        pkg_resources.require("winpdb")  # latest installed version
+        pkg_resources.require("winpdb==1.4.8")  # this exact version
+        pkg_resources.require("winpdb>=1.4.8")  # this version or higher
+
+    Processing dependencies for winpdb
+    Finished processing dependencies for winpdb
+
+    E:\PortableTrac>delete E:\PortableTrac\trac\Scripts\rpdb2.bat
+    'delete' 不是内部或外部命令，也不是可运行的程序
+    或批处理文件。
+
+    E:\PortableTrac>del E:\PortableTrac\trac\Scripts\rpdb2.bat
+
+    E:\PortableTrac>del E:\PortableTrac\trac\Scripts\winpdb.bat
+
+    E:\PortableTrac>del E:\PortableTrac\trac\Scripts\winpdb_.pyw
+
+    E:\PortableTrac>del E:\PortableTrac\trac\Scripts\winpdb_inst.py
+
+    E:\PortableTrac>rmdir /s e:\portabletrac\trac\lib\site-packages\winpdb-1.4.8-py2.7.egg
+    e:\portabletrac\trac\lib\site-packages\winpdb-1.4.8-py2.7.egg, 是否确认(Y/N)? y
+
+升级原有项目(0.12版本)
+:: TracTag 会造成升级过程的错误, 经过修改的补丁为: tractags-0.6-py2.7-patched.egg
+
+E:\PortableTrac>trac-admin default upgrade
+========
+    >>> call python.exe  "E:\PortableTrac\trac\Scripts\trac-admin-script.py" "E:\PortableTrac\tracenv\default" upgrade
+
+    03:46:55 Trac[env] WARNING: Component <trac.env.EnvironmentSetup object at 0x02E86F90> requires environment upgrade
+    03:46:55 Trac[env] WARNING: Component <trac.env.EnvironmentSetup object at 0x02E86F90> requires environment upgrade
+    03:46:55 Trac[model] ERROR: DatabaseError: no such table: wiki_namespace
+    Upgrade done.
+
+    You may want to upgrade the Trac documentation now by running:
+
+      trac-admin E:\PortableTrac\tracenv\default wiki upgrade
+
+E:\PortableTrac>trac-admin default wiki upgrade
+========
+    >>> call python.exe  "E:\PortableTrac\trac\Scripts\trac-admin-script.py" "E:\PortableTrac\tracenv\default" wiki upgrade
+
+    03:47:39 Trac[model] ERROR: DatabaseError: no such table: wiki_namespace
+      CamelCase imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\CamelCase
+      InterMapTxt already exists
+      InterTrac imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\InterTrac
+      InterWiki imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\InterWiki
+      PageTemplates imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\PageTemplates
+      RecentChanges is already up to date
+      SandBox imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\SandBox
+      TitleIndex is already up to date
+      TracAccessibility imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracAccessibility
+      TracAdmin is already up to date
+      TracBackup imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracBackup
+      TracBatchModify imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracBatchModify
+      TracBrowser imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracBrowser
+      TracCgi imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracCgi
+      TracChangeset imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracChangeset
+      TracEnvironment imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracEnvironment
+      TracFastCgi imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracFastCgi
+      TracFineGrainedPermissions imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracFineGrainedPermissions
+      TracGuide imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracGuide
+      TracImport imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracImport
+      TracIni imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracIni
+      TracInstall imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracInstall
+      TracInterfaceCustomization imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracInterfaceCustomization
+      TracLinks imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracLinks
+      TracLogging imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracLogging
+      TracModPython imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracModPython
+      TracModWSGI imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracModWSGI
+      TracNavigation imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracNavigation
+      TracNotification imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracNotification
+      TracPermissions imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracPermissions
+      TracPlugins imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracPlugins
+      TracQuery imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracQuery
+      TracReports imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracReports
+      TracRepositoryAdmin imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracRepositoryAdmin
+      TracRevisionLog is already up to date
+      TracRoadmap imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracRoadmap
+      TracRss imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracRss
+      TracSearch imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracSearch
+      TracStandalone imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracStandalone
+      TracSupport imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracSupport
+      TracSyntaxColoring imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracSyntaxColoring
+      TracTickets imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracTickets
+      TracTicketsCustomFields imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracTicketsCustomFields
+      TracTimeline is already up to date
+      TracUnicode imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracUnicode
+      TracUpgrade imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracUpgrade
+      TracWiki imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracWiki
+      TracWorkflow imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\TracWorkflow
+      WikiDeletePage is already up to date
+      WikiFormatting imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\WikiFormatting
+      WikiHtml imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\WikiHtml
+      WikiMacros imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\WikiMacros
+      WikiNewPage imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\WikiNewPage
+      WikiPageNames is already up to date
+      WikiProcessors imported from C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\wiki\default-pages\WikiProcessors
+      WikiRestructuredText is already up to date
+      WikiRestructuredTextLinks is already up to date
+
+E:\PortableTrac>passwd admin 111111
+========
+    >>> call python.exe bin\trac-digest.py -u admin -p 111111  1>>E:\PortableTrac\tracenv\passwd
+
+
+E:\PortableTrac>trac-admin default permission add admin TRAC_ADMIN
+========
+    >>> call python.exe  "E:\PortableTrac\trac\Scripts\trac-admin-script.py" "E:\PortableTrac\tracenv\default" permission add admin TRAC_ADMIN
+    03:51:32 Trac[model] ERROR: DatabaseError: no such table: wiki_namespace
+    The user admin already has permission TRAC_ADMIN.
+

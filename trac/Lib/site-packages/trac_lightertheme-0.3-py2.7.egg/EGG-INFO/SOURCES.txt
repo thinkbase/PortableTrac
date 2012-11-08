@@ -1,0 +1,12 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+lightertheme/__init__.py
+trac_LighterTheme.egg-info/PKG-INFO
+trac_LighterTheme.egg-info/SOURCES.txt
+trac_LighterTheme.egg-info/dependency_links.txt
+trac_LighterTheme.egg-info/entry_points.txt
+trac_LighterTheme.egg-info/not-zip-safe
+trac_LighterTheme.egg-info/top_level.txt

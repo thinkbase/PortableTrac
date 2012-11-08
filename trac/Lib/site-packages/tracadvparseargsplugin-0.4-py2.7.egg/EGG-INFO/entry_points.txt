@@ -1,0 +1,4 @@
+[trac.plugins]
+tracadvparseargs.macro = tracadvparseargs.macro
+tracadvparseargs.parseargs = tracadvparseargs.parseargs
+

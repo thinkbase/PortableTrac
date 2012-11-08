@@ -1,0 +1,11 @@
+setup.py
+TracListOfWikiPagesMacro.egg-info/PKG-INFO
+TracListOfWikiPagesMacro.egg-info/SOURCES.txt
+TracListOfWikiPagesMacro.egg-info/dependency_links.txt
+TracListOfWikiPagesMacro.egg-info/entry_points.txt
+TracListOfWikiPagesMacro.egg-info/not-zip-safe
+TracListOfWikiPagesMacro.egg-info/requires.txt
+TracListOfWikiPagesMacro.egg-info/top_level.txt
+traclistofwikipages/__init__.py
+traclistofwikipages/macro.py
+traclistofwikipages/htdocs/style.css

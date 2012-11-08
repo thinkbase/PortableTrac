@@ -1,0 +1,1 @@
+http://svn.edgewall.org/repos/genshi/trunk#egg=Genshi-dev

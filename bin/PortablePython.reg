@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+[HKEY_CURRENT_USER\Software\Python]
+[HKEY_CURRENT_USER\Software\Python\PythonCore]
+[HKEY_CURRENT_USER\Software\Python\PythonCore\2.5]
+[HKEY_CURRENT_USER\Software\Python\PythonCore\2.5\InstallPath]
+@="E:\\PortableTrac\\PortablePython_1.1_py2.5.4\\App"
+[HKEY_CURRENT_USER\Software\Python\PythonCore\2.5\InstallPath\InstallGroup]
+@="Python 2.5"
+[HKEY_CURRENT_USER\Software\Python\PythonCore\2.5\Modules]
+[HKEY_CURRENT_USER\Software\Python\PythonCore\2.5\PythonPath]
+@="E:\\PortableTrac\\PortablePython_1.1_py2.5.4\\App\\Lib;E:\\PortableTrac\\PortablePython_1.1_py2.5.4\\App\\DLLs;E:\\PortableTrac\\PortablePython_1.1_py2.5.4\\App\\Lib\\lib-tk"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Environment]
+"PYTHONHOME"="E:\\PortableTrac\\PortablePython_1.1_py2.5.4\\App"

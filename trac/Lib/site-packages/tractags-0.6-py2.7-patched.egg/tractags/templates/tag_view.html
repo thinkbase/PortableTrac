@@ -1,0 +1,51 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="layout.html" />
+  <xi:include href="macros.html" />
+
+  <head>
+    <title py:if="title">$title</title>
+  </head>
+
+  <body>
+    <div id="content" class="tags">
+      <form id="query" action="${href.tags()}" method="get">
+        <div>
+          <input type="text" id="tag-query" name="q" size="40" accesskey="t"
+            value="${tag_query}"/>
+          <input type="submit" value="Filter Tags"/>
+        </div>
+        <div>
+          <py:for each="realm in tag_realms">
+            <input type="checkbox" id="${realm.name}" name="${realm.name}"
+              checked="${realm.checked or None}"/>
+            <label for="${realm.name}">${realm.name}</label>
+          </py:for>
+        </div>
+        <div py:if="tag_query_error" id="query-error">
+          <strong>Error:</strong> ${tag_query_error}
+        </div>
+        <div>
+          <p><strong>Query syntax:</strong></p>
+          <ul>
+            <li>Use <strong>tag1 tag2</strong> to match <em>all</em> tags.</li>
+            <li><strong>tag1 or tag2</strong> will match <em>any</em> tag.</li>
+            <li>Negate a tag with <strong>-tag1</strong>.</li>
+            <li>Group sub-queries with <strong>(tag1 or tag2)</strong>.</li>
+            <li>Quote strings to include special characters.</li>
+            <li>Restrict search to a specific realm with <strong>realm:wiki</strong>.</li>
+          </ul>
+        </div>
+      </form>
+
+      <div id="tag_body">
+        <h1 py:if="tag_title">${tag_title}</h1>
+        ${tag_body}
+      </div>
+    </div>
+  </body>
+</html>

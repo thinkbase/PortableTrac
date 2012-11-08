@@ -1,0 +1,10 @@
+setup.py
+TracAdvParseArgsPlugin.egg-info/PKG-INFO
+TracAdvParseArgsPlugin.egg-info/SOURCES.txt
+TracAdvParseArgsPlugin.egg-info/dependency_links.txt
+TracAdvParseArgsPlugin.egg-info/entry_points.txt
+TracAdvParseArgsPlugin.egg-info/not-zip-safe
+TracAdvParseArgsPlugin.egg-info/top_level.txt
+tracadvparseargs/__init__.py
+tracadvparseargs/macro.py
+tracadvparseargs/parseargs.py

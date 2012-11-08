@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+TracNumberedHeadlinesPlugin.egg-info/PKG-INFO
+TracNumberedHeadlinesPlugin.egg-info/SOURCES.txt
+TracNumberedHeadlinesPlugin.egg-info/dependency_links.txt
+TracNumberedHeadlinesPlugin.egg-info/entry_points.txt
+TracNumberedHeadlinesPlugin.egg-info/not-zip-safe
+TracNumberedHeadlinesPlugin.egg-info/top_level.txt
+tracnumberedheadlines/__init__.py
+tracnumberedheadlines/plugin.py
