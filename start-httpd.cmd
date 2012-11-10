@@ -20,6 +20,7 @@ set TRAC_ENV_PARENT_DIR=%TRACENV%
 
 @echo on
 @title Apache httpd/Trac
+echo AuthUserFile %TRACENV%\..\protected\passwd > "%PORTABLE_HOME%\httpd\Apache2.2\logs\trac.temp.conf"
 call httpd\httpd.bat
 @echo off
 

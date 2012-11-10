@@ -1,4 +1,4 @@
-#!E:\thinkbase.net\PortableTrac-git\Portable Python 2.7.3.1\App\python.exe
+#!python.exe
 # -*- coding: utf-8 -*-
 #
 # Copyright (C)2008-2009 Edgewall Software
@@ -17,7 +17,7 @@
 import os
 
 def application(environ, start_request):
-    print os.environ['TRAC_ENV_PARENT_DIR']
+    environ['trac.env_parent_dir'] = os.environ['TRAC_ENV_PARENT_DIR']   # From PortableTrac batch files
     if not 'trac.env_parent_dir' in environ:
         environ.setdefault('trac.env_path', 'E:\\thinkbase.net\\PortableTrac-git\\tracenv\\default')
     if 'PYTHON_EGG_CACHE' in environ:                                           
@@ -28,6 +28,5 @@ def application(environ, start_request):
     elif 'trac.env_parent_dir' in environ:
         os.environ['PYTHON_EGG_CACHE'] = \
             os.path.join(environ['trac.env_parent_dir'], '.egg-cache')
-    print "111111"
     from trac.web.main import dispatch_request
     return dispatch_request(environ, start_request)
