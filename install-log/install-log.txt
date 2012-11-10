@@ -1192,6 +1192,7 @@ E:\PortableTrac>trac-admin default wiki upgrade
       WikiRestructuredText is already up to date
       WikiRestructuredTextLinks is already up to date
 
+
 E:\PortableTrac>passwd admin 111111
 ========
     >>> call python.exe bin\trac-digest.py -u admin -p 111111  1>>E:\PortableTrac\tracenv\passwd
@@ -1202,4 +1203,59 @@ E:\PortableTrac>trac-admin default permission add admin TRAC_ADMIN
     >>> call python.exe  "E:\PortableTrac\trac\Scripts\trac-admin-script.py" "E:\PortableTrac\tracenv\default" permission add admin TRAC_ADMIN
     03:51:32 Trac[model] ERROR: DatabaseError: no such table: wiki_namespace
     The user admin already has permission TRAC_ADMIN.
+
+
+E:\thinkbase.net\PortableTrac-git>trac-admin default deploy ./deploy
+为集成到 Apache 作准备 - 参考 http://trac.edgewall.org/wiki/TracInstall#cgi-bin
+========
+    [Current timestamp: 2012-11-10 周六 11-26-49.33]
+
+    >>> call python.exe  "E:\thinkbase.net\PortableTrac-git\trac\Scripts\trac-admin-script.py" "E:\thinkbase.net\PortableTrac-git\tracenv\default" deploy ./deploy
+    Copying resources from:
+      trac.web.chrome.Chrome
+        C:\Users\root\AppData\Roaming\Python-Eggs\trac-1.0-py2.7-win32.egg-tmp\trac\htdocs
+        E:\thinkbase.net\PortableTrac-git\tracenv\default\htdocs
+      visitcounter.core.VisitCounterMacro
+        C:\Users\root\AppData\Roaming\Python-Eggs\visitcounter-0.2-py2.7.egg-tmp\visitcounter\htdocs
+      acct_mgr.web_ui.AccountModule
+        C:\Users\root\AppData\Roaming\Python-Eggs\tracaccountmanager-0.4dev_r12139-py2.7.egg-tmp\acct_mgr\htdocs
+      acct_mgr.admin.AccountManagerAdminPanel
+        C:\Users\root\AppData\Roaming\Python-Eggs\tracaccountmanager-0.4dev_r12139-py2.7.egg-tmp\acct_mgr\htdocs
+      autocompleteusers.autocompleteusers.AutocompleteUsers
+        E:\thinkbase.net\PortableTrac-git\trac\Lib\site-packages\autocompleteusers-0.4.2dev_r11757-py2.7.egg\autocompleteusers\htdocs
+      codeexample.code_example_processor.CodeExample
+        C:\Users\root\AppData\Roaming\Python-Eggs\codeexamplemacro-1.0_r11766-py2.7.egg-tmp\codeexample\htdocs
+      datefield.filter.DateFieldModule
+        C:\Users\root\AppData\Roaming\Python-Eggs\tracdatefield-3.0.0dev_r12118-py2.7.egg-tmp\datefield\htdocs
+      gridmod.web_ui.GridModifyModule
+        C:\Users\root\AppData\Roaming\Python-Eggs\gridmodify-0.1.6dev_r12235-py2.7.egg-tmp\gridmod\htdocs
+      tractags.web_ui.TagTemplateProvider
+        E:\thinkbase.net\PortableTrac-git\trac\Lib\site-packages\tractags-0.6-py2.7-patched.egg\tractags\htdocs
+      mastertickets.web_ui.MasterTicketsModule
+        C:\Users\root\AppData\Roaming\Python-Eggs\tracmastertickets-3.0.3-py2.7.egg-tmp\mastertickets\htdocs
+      themeengine.admin.SimpleThemeAdminModule
+        C:\Users\root\AppData\Roaming\Python-Eggs\tracthemeengine-2.1.0-py2.7.egg-tmp\themeengine\htdocs
+      tracfullblog.web_ui.FullBlogModule
+        E:\thinkbase.net\PortableTrac-git\trac\Lib\site-packages\tracfullblogplugin-0.1.1_r12111-py2.7.egg\tracfullblog\htdocs
+      tracjsgantt.tracjsgantt.TracJSGanttSupport
+        C:\Users\root\AppData\Roaming\Python-Eggs\trac_jsgantt-0.10_r12213-py2.7.egg-tmp\tracjsgantt\htdocs
+      traclistofwikipages.macro.ListOfWikiPagesComponent
+        E:\thinkbase.net\PortableTrac-git\trac\Lib\site-packages\traclistofwikipagesmacro-0.4-py2.7.egg\traclistofwikipages\htdocs
+      tracsectionedit.web_ui.WikiSectionEditModule
+        C:\Users\root\AppData\Roaming\Python-Eggs\tracsectioneditplugin-0.2.6_r11208-py2.7.egg-tmp\tracsectionedit\htdocs
+      tracsql.web_ui.TracSqlPlugin
+        C:\Users\root\AppData\Roaming\Python-Eggs\tracsql-0.3-py2.7.egg-tmp\tracsql\htdocs
+      tracsubtickets.web_ui.SubTicketsModule
+        C:\Users\root\AppData\Roaming\Python-Eggs\tracsubticketsplugin-0.2.0.dev_20121107-py2.7.egg-tmp\tracsubtickets\htdocs
+      tractweakui.web_ui.TracTweakUIModule
+        C:\Users\root\AppData\Roaming\Python-Eggs\tractweakui-0.1-py2.7.egg-tmp\tractweakui\htdocs
+      tracvote.VoteSystem
+        C:\Users\root\AppData\Roaming\Python-Eggs\tracvote-0.1.3dev_r11793-py2.7.egg-tmp\tracvote\htdocs
+      tracwysiwyg.WysiwygModule
+        C:\Users\root\AppData\Roaming\Python-Eggs\tracwysiwyg-0.12.0.4_r11158-py2.7.egg-tmp\tracwysiwyg\htdocs
+      wikitable.table.SQLTable
+        C:\Users\root\AppData\Roaming\Python-Eggs\wikitablemacro-0.1_r10997-py2.7.egg-tmp\wikitable\htdocs
+      workfloweditor.workfloweditor_admin.WorkflowEditorAdmin
+        C:\Users\root\AppData\Roaming\Python-Eggs\workfloweditorplugin-1.1.6_r12220-py2.7.egg-tmp\workfloweditor\htdocs
+    Creating scripts.
 

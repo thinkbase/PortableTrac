@@ -1,0 +1,13 @@
+/* located in demo.css and creates a little calendar icon
+ * instead of a text link for "Choose date"
+ */
+a.del-cc {
+	width:16px; 
+	height:16px; 
+	padding:0; 
+	margin:5px 3px 0; 
+	overflow:hidden; 
+	background:url(del.png) no-repeat; 
+	border-bottom:none; 
+	text-decoration:none;
+}

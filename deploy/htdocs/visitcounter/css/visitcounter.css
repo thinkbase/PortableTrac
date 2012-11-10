@@ -1,0 +1,72 @@
+/* Visit counter macro styles. */
+.visitcounter
+{
+  display: inline-table;
+  margin: 0em;
+  padding: 0em;
+  height: 20px;
+  border-collapse: collapse;
+}
+
+.visitcounter tr
+{
+  height: 20px;
+}
+
+.visitcounter td.digit
+{
+  width: 12px;
+  height: 20px;
+  margin: 0em;
+  padding: 0em;
+}
+
+.visitcounter td.digit0
+{
+  background: url(../0.png) center center no-repeat;
+}
+
+.visitcounter td.digit1
+{
+  background: url(../1.png) center center no-repeat;
+}
+
+.visitcounter td.digit2
+{
+  background: url(../2.png) center center no-repeat;
+}
+
+.visitcounter td.digit3
+{
+  background: url(../3.png) center center no-repeat;
+}
+
+.visitcounter td.digit4
+{
+  background: url(../4.png) center center no-repeat;
+}
+
+.visitcounter td.digit5
+{
+  background: url(../5.png) center center no-repeat;
+}
+
+.visitcounter td.digit6
+{
+  background: url(../6.png) center center no-repeat;
+}
+
+.visitcounter td.digit7
+{
+  background: url(../7.png) center center no-repeat;
+}
+
+.visitcounter td.digit8
+{
+  background: url(../8.png) center center no-repeat;
+}
+
+.visitcounter td.digit9
+{
+  background: url(../9.png) center center no-repeat;
+}

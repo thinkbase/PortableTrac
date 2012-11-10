@@ -24,7 +24,8 @@ IF NOT DEFINED ENV (
 )
 
 set PRJ=%TRACENV%\%ENV%
-set AUTH=*,%TRACENV%\..\protected\passwd,trac
+set DIGEST_FILE=%TRACENV%\..\protected\passwd
+set AUTH=*,%DIGEST_FILE%,trac
 
 IF NOT EXIST "%PRJ%\" (
     echo.
@@ -36,6 +37,12 @@ IF NOT EXIST "%PRJ%\" (
     echo.
     echo Error: trac environment [%PRJ%] not found.
     exit /b -20
+)
+
+IF NOT EXIST "%DIGEST_FILE%" (
+    echo.
+    echo Error: passwd file missing, please run "passwd admin 111111" to create it.
+    exit /b -30
 )
 
 @echo on

@@ -1,0 +1,80 @@
+/*
+ * These styles are adapted from the standard report.css in Trac.
+ * The border-color is a medium-dark gray so that tasks are more visible.
+ */
+
+.ticket-closed {
+  text-decoration: line-through;
+}
+
+.ticket-class1 {
+  background-color: #fdc; 
+}
+
+div.ticket-class1 { 
+  border: 1px;
+  border-color: #949494;
+  border-style: solid;
+  color: #a22;
+}
+
+
+.ticket-class2 { 
+  background-color: #ffb; 
+}
+
+div.ticket-class2 { 
+  border: 1px;
+  border-color: #949494;
+  border-style: solid;
+  color: #880;
+}
+
+
+.ticket-class3 { 
+  background-color: #fbfbfb; 
+}
+
+div.ticket-class3 {
+  border: 1px;
+  border-color: #949494;
+  border-style: solid;
+  color: #444;
+}
+
+
+.ticket-class4 { 
+  background-color: #e7ffff; 
+}
+
+div.ticket-class4 {
+  border: 1px;
+  border-color: #949494;
+  border-style: solid;
+  color: #099;
+}
+
+
+.ticket-class5 { 
+  background-color: #e7eeff; 
+}
+
+div.ticket-class5 {
+  border: 1px;
+  border-color: #949494;
+  border-style: solid;
+  color: #469;
+}
+
+
+.ticket-class6 { 
+  background-color: #f0f0f0;
+}
+
+div.ticket-class6 {
+  border: 1px;
+  border-color: #949494;
+  border-style: solid;
+  color: #888;
+}
+

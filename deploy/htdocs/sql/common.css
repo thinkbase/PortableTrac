@@ -1,0 +1,40 @@
+
+div.query table {
+    background: #ececec;
+    border: 1px #ccc solid;
+}
+
+div.query input {
+    border: 1px #ccc solid;
+    padding: 3px;
+    font-size: 1.0em;
+    background: #fff;
+}
+
+div.query textarea {
+    border: 1px #ccc solid;
+    font-family: monospace;·
+    font-size: 1.0em;
+    padding: 3px;
+}
+
+
+table.results thead th {
+    font-weight: bold;
+    border-bottom: 1px #ccc solid;
+    padding: 3px ;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+table.results tbody td {
+    padding: 3px ;
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align: top;
+}
+
+table.results tbody tr:hover {
+    font-weight: italic;
+    background: #ececec;
+}

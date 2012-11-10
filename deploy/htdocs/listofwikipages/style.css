@@ -1,0 +1,37 @@
+
+table.listofwikipages, table.lastchangesby {
+    border: thin solid;
+    margin: 0.25ex;
+    padding: 0.25ex;
+}
+
+table.listofwikipages th, table.listofwikipages td,
+table.lastchangesby th, table.lastchangesby td {
+    padding: 0.5ex 1ex;
+}
+
+table.listofwikipages tr.even,
+table.lastchangesby   tr.even {
+  /*  background-color: #f0f0f0; */
+}
+
+table.listofwikipages tr.odd,
+table.lastchangesby tr.odd {
+}
+
+table.listofwikipages thead tr th,
+table.lastchangesby thead tr th {
+    font-weight: bold;
+    border-bottom: thin solid;
+    text-align: center;
+}
+table.listofwikipages thead tr th.comment,
+table.lastchangesby   thead tr th.comment {
+    text-align: left;
+}
+
+table.listofwikipages tbody tr td.version,
+table.lastchangesby   tbody tr td.version {
+    text-align: center;
+}
+

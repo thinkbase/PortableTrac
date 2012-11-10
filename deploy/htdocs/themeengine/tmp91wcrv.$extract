@@ -1,0 +1,77 @@
+#themelist {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#themelist .themename {
+  font-weight: bold;
+}
+
+#themelist p {
+  margin: 0;
+}
+
+#themelist li {
+  margin-bottom: 20px;
+}
+
+#themename {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4em;
+  display: none;
+}
+
+#themedesc {
+  text-align: center;
+  display: none;
+}
+
+#nextbutton, #prevbutton {
+  z-index: 3;
+  display: none;
+}
+
+#nextbutton {
+  float: right;
+}
+
+#prevbutton {
+  float: left;
+}
+
+#themebuttons {
+  text-align: center;
+  width: 420px;
+}
+
+#simple fieldset {
+  min-width: 220px;
+  max-width: 350px;
+  width: 250px;
+}
+
+#simple label { 
+  display: block;  /* block float the labels to left column, set a width */
+  float: left; 
+  width: 125px; 
+  padding: 0; 
+  margin: 5px 0 0; /* set top margin same as form input - textarea etc. elements */
+  text-align: right; 
+}
+
+#simple  input {
+  width: auto;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
+  margin: 5px 0 0 10px; /* set margin on left of form elements rather than right of
+                              label aligns textarea better in IE */
+}
+
+#simple #schemes {
+  display: none;
+}
+
+#simple .js#colors {
+  min-height: 195px;
+  height: 195px !important;
+  height: 195px;
+}

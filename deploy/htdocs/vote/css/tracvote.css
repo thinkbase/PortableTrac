@@ -1,0 +1,12 @@
+#vote :link, #vote :visited {
+  border: none;
+}
+
+#vote img {
+  vertical-align: middle;
+}
+
+#votes {
+  font-weight: bold;
+}
+
