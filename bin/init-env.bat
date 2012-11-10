@@ -15,6 +15,10 @@ set TRAC_INSTALL_PATH=%_PWD%\trac
 set PYTHONPATH=%TRAC_INSTALL_PATH%\Lib\site-packages
 
 set TRACENV=%_PWD%\tracenv
+IF DEFINED SITE_BASE (
+    set TRACENV=%SITE_BASE%\tracenv
+)
+
 
 :: PlantUML 需要 GRAPHVIZ_DOT 环境变量
 set GRAPHVIZ_DOT=%GRAPHVIZ_HOME%\dot.exe
