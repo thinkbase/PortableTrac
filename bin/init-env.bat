@@ -1,5 +1,5 @@
 set _PWD=%~dp0%
-:: -6 = 路径结尾的 \bin\ 字符串的长度
+:: -5 = 路径结尾的 \bin\ 字符串的长度
 set _PWD=%_PWD:~0,-5%
 
 set PORTABLE_HOME=%_PWD%
@@ -14,11 +14,10 @@ set PATH=%PATH%;%PYTHONHOME%;%SVN_HOME%
 set TRAC_INSTALL_PATH=%_PWD%\trac
 set PYTHONPATH=%TRAC_INSTALL_PATH%\Lib\site-packages
 
-set TRACENV=%_PWD%\tracenv
-IF DEFINED SITE_BASE (
-    set TRACENV=%SITE_BASE%\tracenv
+IF NOT DEFINED SITE_BASE (
+    set SITE_BASE=%_PWD%
 )
-
+set TRACENV=%SITE_BASE%\tracenv
 
 :: PlantUML 需要 GRAPHVIZ_DOT 环境变量
 set GRAPHVIZ_DOT=%GRAPHVIZ_HOME%\dot.exe

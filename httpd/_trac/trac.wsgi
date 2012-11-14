@@ -17,7 +17,11 @@
 import os
 
 def application(environ, start_request):
-    environ['trac.env_parent_dir'] = os.environ['TRAC_ENV_PARENT_DIR']   # From PortableTrac batch files
+    # PortableTrac runtime environment setup
+    environ['trac.env_parent_dir'] = os.environ['TRAC_ENV_PARENT_DIR']
+    if 'TRAC_ENV_INDEX_TMPL' in os.environ:
+        environ['trac.env_index_template'] = os.environ['TRAC_ENV_INDEX_TMPL']
+
     if not 'trac.env_parent_dir' in environ:
         environ.setdefault('trac.env_path', 'E:\\thinkbase.net\\PortableTrac-git\\tracenv\\default')
     if 'PYTHON_EGG_CACHE' in environ:                                           
