@@ -11,6 +11,11 @@ IF [%1]==[DEBUG] (
 )
 
 set ENV=%1
+IF NOT DEFINED ENV (
+    echo.
+    echo Error: 1st argument[trac environment] missing.
+    exit /b -10
+)
 
 set COPY_TARGET=%TRACENV%\..\backup\%ENV%
 set COPY_TARGET_OLD=%TRACENV%\..\backup\.old\%ENV%.%TIMESTAMP%
