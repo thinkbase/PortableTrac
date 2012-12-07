@@ -1,0 +1,94 @@
+div.example, div.good_example {
+    border: 1px solid gray;
+    margin:1em 1.75em;
+	overflow: auto;
+}
+
+div.example div.system-message,
+div.bad_example div.system-message,
+div.good_example div.system-message {
+    margin:4px;
+}
+
+div.example span.select_code,
+div.bad_example span.select_code,
+div.good_example span.select_code {
+    text-decoration: underline;
+	float: right;
+    cursor: pointer;
+    color: blue;
+}
+
+div.example a,
+div.bad_example a,
+div.good_example a {
+    color: blue;
+}
+
+div.example div.title,
+div.bad_example div.title,
+div.good_example div.title {
+    background-image:url('../img/button-expand.gif');
+    background-repeat:no-repeat;
+    background-position:6px 6px;
+    padding: 4px 4px 4px 25px;
+    overflow: auto;
+}
+
+div.example div.collapsed,
+div.bad_example div.collapsed,
+div.good_example div.collapsed {
+    background-image:url('../img/button-collapse.gif');
+}
+
+div.example div.title {
+    background-color: silver;
+    border-bottom: 1px solid gray;
+}
+
+div.example div.code {
+    margin:0;
+    border:0;
+    background:#EEEEEE none repeat scroll 0 0;
+}
+
+div.example div.code pre {
+    background:#EEEEEE none repeat scroll 0 0;
+}
+
+div.bad_example {
+    border: 1px solid red;
+    margin:1em 1.75em;
+	overflow: auto;
+}
+
+div.bad_example div.title {
+    background-color: #FF6600;
+    border-bottom: 1px solid red;
+}
+
+div.bad_example div.code {
+    margin:0;
+    border:0;
+    background:#FFBD91 none repeat scroll 0 0;
+}
+
+div.bad_example div.code pre {
+    background:#FFBD91 none repeat scroll 0 0;
+}
+
+div.good_example div.title { 
+	background-color: #66FF00; 
+	border-bottom: 1px solid green; 
+} 
+ 
+div.good_example div.code { 
+	margin:0; 
+	border:0; 
+	background:#BDFF91 none repeat scroll 0 0; 
+} 
+
+div.good_example div.code pre { 
+	background:#BDFF91 none repeat scroll 0 0; 
+}
+

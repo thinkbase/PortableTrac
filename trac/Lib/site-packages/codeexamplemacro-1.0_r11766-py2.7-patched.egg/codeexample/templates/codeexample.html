@@ -1,0 +1,20 @@
+<div class="$css_class"
+     xmlns:py="http://genshi.edgewall.org/"
+     xmlns:xi="http://www.w3.org/2001/XInclude">
+  <div class="title">
+	<span class="select_code" id="link$index">SELECT ALL</span>
+	<a href="$link" py:if="link">$title:</a>
+	<span py:if="not link">$title:</span>
+</div>
+    <py:if test="exceptions">
+    <div class="system-message">
+    <strong>During the example analyzing the following problems appear:</strong>
+    <ul>
+        <li py:for="ex in exceptions">$ex</li>
+    </ul>
+    </div>
+    </py:if>
+    <div class="code">
+        <pre id="codelink$index">$args</pre>
+    </div>
+</div>
