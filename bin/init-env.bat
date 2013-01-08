@@ -5,7 +5,7 @@ set _PWD=%_PWD:~0,-5%
 set PORTABLE_HOME=%_PWD%
 set PYTHONHOME=%_PWD%\Portable Python 2.7.3.1\App
 set SVN_HOME=%_PWD%\bin\svn-win32-1.6.15\bin
-set GRAPHVIZ_HOME=%_PWD%\bin\Graphviz2.26.3\bin
+set GRAPHVIZ_HOME=%_PWD%\bin\graphviz\bin
 set SQLITE_HOME=%_PWD%\bin\sqlite-shell-win32-x86-3071401
 
 set PATH=%PATH%;%PYTHONHOME%;%SVN_HOME%
