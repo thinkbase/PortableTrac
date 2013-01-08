@@ -1,0 +1,117 @@
+ 驱动器 E 中的卷是 Sandbox
+ 卷的序列号是 D4FB-8353
+
+ E:\thinkbase.net\PortableTrac-git\bin\graphviz\lib\release 的目录
+
+2013/01/08  13:10    <DIR>          .
+2013/01/08  13:10    <DIR>          ..
+2013/01/07  20:42    <DIR>          dll
+2013/01/07  20:42    <DIR>          lib
+2013/01/08  13:10                 0 release.list.txt
+               1 个文件              0 字节
+
+ E:\thinkbase.net\PortableTrac-git\bin\graphviz\lib\release\dll 的目录
+
+2013/01/07  20:42    <DIR>          .
+2013/01/07  20:42    <DIR>          ..
+2011/05/16  04:15            26,112 cdt.dll
+2011/05/16  04:15            68,096 cgraph.dll
+2011/05/16  04:15           194,048 fontconfig.dll
+2011/05/16  04:15         1,052,672 glib-2.dll
+2011/05/16  04:15           237,568 glut32.dll
+2011/05/16  04:15            45,568 graph.dll
+2011/05/16  04:15           441,856 gvc.dll
+2011/05/16  04:15            67,584 gvplugin_core.dll
+2011/05/16  04:15           168,448 gvplugin_dot_layout.dll
+2011/05/16  04:15           261,632 gvplugin_gd.dll
+2011/05/16  04:15            45,056 gvplugin_gdiplus.dll
+2011/05/16  04:15           726,528 gvplugin_neato_layout.dll
+2011/05/16  04:15            29,696 gvplugin_pango.dll
+2011/05/16  04:15           892,928 iconv.dll
+2011/05/16  04:15            45,056 intl.dll
+2011/05/16  04:15           128,512 jpeg62.dll
+2011/05/16  04:15           158,347 libatk-1.0-0.dll
+2011/05/16  04:15           412,672 libcairo-2.dll
+2011/05/16  04:15           143,096 libexpat-1.dll
+2011/05/16  04:15           143,360 libexpat.dll
+2011/05/16  04:15           194,048 libfontconfig-1.dll
+2011/05/16  04:15           443,904 libfreetype-6.dll
+2011/05/16  04:15           569,344 libgdk-win32-2.0-0.dll
+2011/05/16  04:15           274,432 libgdkglext-win32-1.0-0.dll
+2011/05/16  04:15            86,528 libgdk_pixbuf-2.0-0.dll
+2011/05/16  04:15           704,583 libgio-2.0-0.dll
+2011/05/16  04:15            87,040 libglade-2.0-0.dll
+2011/05/16  04:15           540,160 libgladeui-1-7.dll
+2011/05/16  04:15         1,214,112 libglib-2.0-0.dll
+2011/05/16  04:15            14,848 libgmodule-2.0-0.dll
+2011/05/16  04:15           221,184 libgobject-2.0-0.dll
+2011/05/16  04:15            40,198 libgthread-2.0-0.dll
+2011/05/16  04:15         3,810,304 libgtk-win32-2.0-0.dll
+2011/05/16  04:15            10,752 libgtkglext-win32-1.0-0.dll
+2011/05/16  04:15           243,712 libpango-1.0-0.dll
+2011/05/16  04:15            39,936 libpangocairo-1.0-0.dll
+2011/05/16  04:15           184,320 libpangoft2-1.0-0.dll
+2011/05/16  04:15            43,008 libpangowin32-1.0-0.dll
+2011/05/16  04:15           145,920 libpng12.dll
+2011/05/16  04:15         1,291,264 libxml2.dll
+2011/05/16  04:15           470,203 ltdl.dll
+2011/05/16  04:15            34,304 Pathplan.dll
+2011/05/16  04:15         2,278,912 QtCore4.dll
+2011/05/16  04:15         8,151,040 QtGui4.dll
+2011/05/16  04:15            29,696 regex_win32.dll
+2011/05/16  04:15            42,496 vmalloc.dll
+2011/05/16  04:15            59,904 zlib1.dll
+2011/05/16  04:15           656,896 __libglib-2.0-0.dll
+              48 个文件     27,171,883 字节
+
+ E:\thinkbase.net\PortableTrac-git\bin\graphviz\lib\release\lib 的目录
+
+2013/01/07  20:42    <DIR>          .
+2013/01/07  20:42    <DIR>          ..
+2011/05/16  04:15            12,630 agutil.lib
+2011/05/16  04:15           243,876 ast.lib
+2011/05/16  04:15             6,264 cdt.lib
+2011/05/16  04:15            30,814 cgraph.lib
+2011/05/16  04:15           180,876 circogen.lib
+2011/05/16  04:15             1,660 dot.lib
+2011/05/16  04:15           469,598 dotgen.lib
+2011/05/16  04:15           261,926 dotgen2.lib
+2011/05/16  04:15           418,124 expr.lib
+2011/05/16  04:15           175,572 fdpgen.lib
+2011/05/16  04:15           981,568 gd.lib
+2011/05/16  04:15           133,666 gladeui-1.lib
+2011/05/16  04:15           388,366 glcomp.lib
+2011/05/16  04:15            21,650 graph.lib
+2011/05/16  04:15         1,356,434 gts.lib
+2011/05/16  04:15            64,776 gvc.lib
+2011/05/16  04:15           194,198 gvortho.lib
+2011/05/16  04:15             1,698 gvpack.lib
+2011/05/16  04:15             1,938 gvplugin_core.lib
+2011/05/16  04:15             2,274 gvplugin_dot_layout.lib
+2011/05/16  04:15             1,826 gvplugin_gd.lib
+2011/05/16  04:15             2,118 gvplugin_gdiplus.lib
+2011/05/16  04:15            13,168 gvplugin_neato_layout.lib
+2011/05/16  04:15             1,892 gvplugin_pango.lib
+2011/05/16  04:15           444,334 gvprlib.lib
+2011/05/16  04:15            14,682 ingraphs.lib
+2011/05/16  04:15             8,216 ltdl.lib
+2011/05/16  04:15           830,334 mspng.lib
+2011/05/16  04:15           925,332 neatogen.lib
+2011/05/16  04:15            28,660 osage.lib
+2011/05/16  04:15            51,500 patchwork.lib
+2011/05/16  04:15             5,914 Pathplan.lib
+2011/05/16  04:15            40,252 rbtree.lib
+2011/05/16  04:15           300,788 sfdp.lib
+2011/05/16  04:15           712,302 sfio.lib
+2011/05/16  04:15            18,624 smyrna.lib
+2011/05/16  04:15           158,708 sparse.lib
+2011/05/16  04:15            65,094 topfish.lib
+2011/05/16  04:15            43,318 twopigen.lib
+2011/05/16  04:15             5,310 vmalloc.lib
+2011/05/16  04:15         2,103,082 vpsc.lib
+2011/05/16  04:15            43,718 xdot.lib
+              42 个文件     10,767,080 字节
+
+     所列文件总数:
+              91 个文件     37,938,963 字节
+               8 个目录    666,796,032 可用字节

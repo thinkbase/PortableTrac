@@ -1,0 +1,58 @@
+ 驱动器 E 中的卷是 Sandbox
+ 卷的序列号是 D4FB-8353
+
+ E:\thinkbase.net\PortableTrac-git\bin\graphviz\share\graphviz\smyrna 的目录
+
+2013/01/08  11:37    <DIR>          .
+2013/01/08  11:37    <DIR>          ..
+2011/05/16  04:16             3,244 2D.png
+2011/05/16  04:16             3,552 3D.png
+2011/05/16  04:16             3,327 attrs.txt
+2011/05/16  04:16             2,999 attr_widgets.dot
+2011/05/16  04:16             3,737 center.png
+2011/05/16  04:16             3,441 details.png
+2011/05/16  04:16             3,352 edge.png
+2013/01/07  20:42    <DIR>          examples
+2011/05/16  04:16            10,690 fish.PNG
+2011/05/16  04:16             3,711 fisheye.png
+2011/05/16  04:16             3,394 fit.png
+2011/05/16  04:16             4,176 magnifier.png
+2011/05/16  04:16             4,528 mod_3D.png
+2011/05/16  04:16             4,409 mod_fisheye.png
+2011/05/16  04:16               963 mouse_actions.txt
+2011/05/16  04:16             3,415 move.png
+2011/05/16  04:16           205,584 new_smyrna.glade
+2011/05/16  04:16           206,724 new_smyrna.glade.bak
+2011/05/16  04:16               269 new_smyrna.gladep
+2011/05/16  04:16               269 new_smyrna.gladep.bak
+2011/05/16  04:16             3,601 node.png
+2011/05/16  04:16             3,694 no_fisheye.png
+2011/05/16  04:16           213,930 original_smyrna.glade
+2011/05/16  04:16             3,759 pan.png
+2011/05/16  04:16             4,106 preview.png
+2011/05/16  04:16             3,502 rect_select.png
+2011/05/16  04:16             3,474 rect_select2.png
+2011/05/16  04:16             3,735 rotate.png
+2010/10/07  15:49           177,157 smyrna.glade
+2011/05/16  04:16           207,150 smyrna.glade.bak
+2011/05/16  04:16               269 smyrna.gladep
+2011/05/16  04:16               269 smyrna.gladep.bak
+2013/01/08  11:37                 0 smyrna.list.txt
+2011/05/16  04:16             1,882 template.dot
+2011/05/16  12:41            38,912 Thumbs.db
+2011/05/16  04:16             3,592 zoom.png
+2011/05/16  04:16             3,765 zoomin.png
+2011/05/16  04:16             3,658 zoomout.png
+              37 个文件      1,148,239 字节
+
+ E:\thinkbase.net\PortableTrac-git\bin\graphviz\share\graphviz\smyrna\examples 的目录
+
+2013/01/07  20:42    <DIR>          .
+2013/01/07  20:42    <DIR>          ..
+2011/05/16  04:16         1,375,260 4elt.dot
+2011/05/16  04:16        16,622,644 world.dot
+               2 个文件     17,997,904 字节
+
+     所列文件总数:
+              39 个文件     19,146,143 字节
+               5 个目录    666,804,224 可用字节
