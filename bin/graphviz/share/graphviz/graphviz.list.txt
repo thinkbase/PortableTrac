@@ -1,0 +1,407 @@
+ 驱动器 E 中的卷是 Sandbox
+ 卷的序列号是 D4FB-8353
+
+ E:\thinkbase.net\PortableTrac-git\bin\graphviz\share\graphviz 的目录
+
+2013/01/08  18:11    <DIR>          .
+2013/01/08  18:11    <DIR>          ..
+2013/01/08  17:59    <DIR>          doc
+2013/01/08  17:59    <DIR>          graphs
+2013/01/08  18:11                 0 graphviz.list.txt
+2013/01/08  17:59    <DIR>          gvedit
+2013/01/08  17:59    <DIR>          lefty
+2013/01/08  17:59    <DIR>          smyrna
+               1 个文件              0 字节
+
+ E:\thinkbase.net\PortableTrac-git\bin\graphviz\share\graphviz\doc 的目录
+
+2013/01/08  17:59    <DIR>          .
+2013/01/08  17:59    <DIR>          ..
+2012/09/13  09:22             9,527 addingLayout.txt
+2012/09/13  09:22               704 AUTHORS
+2012/09/13  09:22            39,493 ChangeLog
+2012/09/13  09:22            11,613 COPYING
+2012/09/13  09:22            11,613 cpl1.0.txt
+2012/09/13  09:22            38,008 Dot.ref
+2012/09/13  09:22            14,600 fontfaq.txt
+2013/01/08  17:59    <DIR>          html
+2012/09/13  09:22             3,229 latex_suggestions.txt
+2012/09/13  09:22                54 NEWS
+2013/01/08  17:59    <DIR>          pdf
+               9 个文件        128,841 字节
+
+ E:\thinkbase.net\PortableTrac-git\bin\graphviz\share\graphviz\doc\html 的目录
+
+2013/01/08  17:59    <DIR>          .
+2013/01/08  17:59    <DIR>          ..
+2012/09/13  09:22            13,199 build.html
+2012/09/13  09:22               191 char.html
+2012/09/13  09:22            41,914 FAQ.html
+2012/09/13  09:22           250,352 gd.html
+2012/09/13  09:22            56,444 Gdtclft2.2.5.example.png
+2012/09/13  09:22            13,656 GVedit.html
+2012/09/13  09:22             2,387 index.html
+2013/01/08  17:59    <DIR>          info
+2012/09/13  09:22             4,592 pspdf.png
+2013/01/08  17:59    <DIR>          schema
+2012/09/13  09:22             4,032 todo.html
+2012/09/13  09:22            11,619 winbuild.html
+              10 个文件        398,386 字节
+
+ E:\thinkbase.net\PortableTrac-git\bin\graphviz\share\graphviz\doc\html\info 的目录
+
+2013/01/08  17:59    <DIR>          .
+2013/01/08  17:59    <DIR>          ..
+2012/09/13  09:22               987 a_box.gif
+2012/09/13  09:22             1,031 a_crow.gif
+2012/09/13  09:22             1,012 a_diamond.gif
+2012/09/13  09:22             1,008 a_dot.gif
+2012/09/13  09:22             1,021 a_ediamond.gif
+2012/09/13  09:22             1,044 a_empty.gif
+2012/09/13  09:22               936 a_forward.gif
+2012/09/13  09:22             1,002 a_halfopen.gif
+2012/09/13  09:22               998 a_inv.gif
+2012/09/13  09:22             1,072 a_invdot.gif
+2012/09/13  09:22             1,026 a_invempty.gif
+2012/09/13  09:22             1,091 a_invodot.gif
+2012/09/13  09:22             1,011 a_lteeoldiamond.gif
+2012/09/13  09:22               936 a_nohead.gif
+2012/09/13  09:22               953 a_none.gif
+2012/09/13  09:22             1,022 a_normal.gif
+2012/09/13  09:22               998 a_obox.gif
+2012/09/13  09:22             1,021 a_odiamond.gif
+2012/09/13  09:22             1,037 a_odot.gif
+2012/09/13  09:22             1,052 a_open.gif
+2012/09/13  09:22               982 a_tee.gif
+2012/09/13  09:22               181 aa_box.gif
+2012/09/13  09:22               270 aa_crow.gif
+2012/09/13  09:22               197 aa_diamond.gif
+2012/09/13  09:22               247 aa_dot.gif
+2012/09/13  09:22               254 aa_inv.gif
+2012/09/13  09:22               168 aa_lbox.gif
+2012/09/13  09:22               249 aa_lcrow.gif
+2012/09/13  09:22               239 aa_ldiamond.gif
+2012/09/13  09:22               239 aa_linv.gif
+2012/09/13  09:22               238 aa_lnormal.gif
+2012/09/13  09:22               164 aa_ltee.gif
+2012/09/13  09:22               248 aa_lvee.gif
+2012/09/13  09:22               147 aa_none.gif
+2012/09/13  09:22               251 aa_normal.gif
+2012/09/13  09:22               188 aa_obox.gif
+2012/09/13  09:22               199 aa_odiamond.gif
+2012/09/13  09:22               262 aa_odot.gif
+2012/09/13  09:22               371 aa_oinv.gif
+2012/09/13  09:22               174 aa_olbox.gif
+2012/09/13  09:22               242 aa_oldiamond.gif
+2012/09/13  09:22               351 aa_olinv.gif
+2012/09/13  09:22               351 aa_olnormal.gif
+2012/09/13  09:22               367 aa_onormal.gif
+2012/09/13  09:22               174 aa_orbox.gif
+2012/09/13  09:22               238 aa_ordiamond.gif
+2012/09/13  09:22               350 aa_orinv.gif
+2012/09/13  09:22               352 aa_ornormal.gif
+2012/09/13  09:22               170 aa_rbox.gif
+2012/09/13  09:22               245 aa_rcrow.gif
+2012/09/13  09:22               236 aa_rdiamond.gif
+2012/09/13  09:22               238 aa_rinv.gif
+2012/09/13  09:22               238 aa_rnormal.gif
+2012/09/13  09:22               162 aa_rtee.gif
+2012/09/13  09:22               245 aa_rvee.gif
+2012/09/13  09:22               171 aa_tee.gif
+2012/09/13  09:22               267 aa_vee.gif
+2012/09/13  09:22             6,505 arrows.html
+2012/09/13  09:22           109,493 attrs.html
+2012/09/13  09:22             1,544 back.gif
+2012/09/13  09:22             1,611 both.gif
+2012/09/13  09:22               338 box.gif
+2012/09/13  09:22               619 box3d.gif
+2012/09/13  09:22               775 circle.gif
+2012/09/13  09:22               698 colorlist.gif
+2012/09/13  09:22           212,572 colors.html
+2012/09/13  09:22             8,356 command.html
+2012/09/13  09:22               616 component.gif
+2012/09/13  09:22             1,004 constraint.gif
+2012/09/13  09:22               912 diamond.gif
+2012/09/13  09:22             1,364 doublecircle.gif
+2012/09/13  09:22             1,189 doubleoctagon.gif
+2012/09/13  09:22               908 egg.gif
+2012/09/13  09:22               898 ellipse.gif
+2012/09/13  09:22             1,615 fill.gif
+2012/09/13  09:22               574 folder.gif
+2012/09/13  09:22             1,540 forward.gif
+2012/09/13  09:22             1,571 grammar.html
+2012/09/13  09:22               817 hexagon.gif
+2012/09/13  09:22               725 house.gif
+2012/09/13  09:22             2,983 html1.gif
+2012/09/13  09:22             1,163 html2.dot
+2012/09/13  09:22             8,968 html2.gif
+2012/09/13  09:22               574 html3.dot
+2012/09/13  09:22             3,109 html3.gif
+2012/09/13  09:22               166 html4.dot
+2012/09/13  09:22             1,840 html4.gif
+2012/09/13  09:22               472 index.html
+2012/09/13  09:22               719 invhouse.gif
+2012/09/13  09:22               852 invtrapezium.gif
+2012/09/13  09:22               506 invtriangle.gif
+2012/09/13  09:22             8,695 lang.html
+2012/09/13  09:22               795 Mcircle.gif
+2012/09/13  09:22             1,009 Mdiamond.gif
+2012/09/13  09:22               962 mrecord.gif
+2012/09/13  09:22               502 Msquare.gif
+2012/09/13  09:22             1,474 nohead.gif
+2012/09/13  09:22               550 none.gif
+2012/09/13  09:22               557 note.gif
+2012/09/13  09:22               712 octagon.gif
+2012/09/13  09:22            26,734 output.html
+2012/09/13  09:22               795 parallelogram.gif
+2012/09/13  09:22               847 pentagon.gif
+2012/09/13  09:22               807 plaintext.gif
+2012/09/13  09:22           980,001 plugins.png
+2012/09/13  09:22               197 point.gif
+2012/09/13  09:22               865 polygon.gif
+2012/09/13  09:22             3,197 record.gif
+2012/09/13  09:22             5,181 record2.gif
+2012/09/13  09:22               338 rect.gif
+2012/09/13  09:22               338 rectangle.gif
+2012/09/13  09:22             1,751 round.gif
+2012/09/13  09:22            34,180 sdlshapes.png
+2012/09/13  09:22               865 septagon.gif
+2012/09/13  09:22            29,187 shapes.html
+2012/09/13  09:22               565 tab.gif
+2012/09/13  09:22           215,040 Thumbs.db
+2012/09/13  09:22               860 trapezium.gif
+2012/09/13  09:22               508 triangle.gif
+2012/09/13  09:22             1,635 tripleoctagon.gif
+             120 个文件      1,726,666 字节
+
+ E:\thinkbase.net\PortableTrac-git\bin\graphviz\share\graphviz\doc\html\schema 的目录
+
+2013/01/08  17:59    <DIR>          .
+2013/01/08  17:59    <DIR>          ..
+2012/09/13  09:22             1,367 arguments.xml
+2012/09/13  09:22            98,434 attributes.xml
+2012/09/13  09:22            13,228 attributes.xslt
+               3 个文件        113,029 字节
+
+ E:\thinkbase.net\PortableTrac-git\bin\graphviz\share\graphviz\doc\pdf 的目录
+
+2013/01/08  17:59    <DIR>          .
+2013/01/08  17:59    <DIR>          ..
+2012/09/13  09:22             4,567 acyclic.1.pdf
+2012/09/13  09:22             5,059 bcomps.1.pdf
+2012/09/13  09:22             6,631 ccomps.1.pdf
+2012/09/13  09:22            20,248 cdt.3.pdf
+2012/09/13  09:22            24,296 cgraph.3.pdf
+2012/09/13  09:22            30,483 circo.1.pdf
+2012/09/13  09:22             4,599 dijkstra.1.pdf
+2012/09/13  09:22            30,483 dot.1.pdf
+2012/09/13  09:22           323,844 dotguide.pdf
+2012/09/13  09:22             4,111 dotty.1.pdf
+2012/09/13  09:22           323,578 dottyguide.pdf
+2012/09/13  09:22            30,483 fdp.1.pdf
+2012/09/13  09:22             4,339 gc.1.pdf
+2012/09/13  09:22            12,388 graph.3.pdf
+2012/09/13  09:22             5,210 gv2gxl.1.pdf
+2012/09/13  09:22             4,751 gvc.3.pdf
+2012/09/13  09:22             5,236 gvcolor.1.pdf
+2012/09/13  09:22             5,215 gvgen.1.pdf
+2012/09/13  09:22             6,146 gvpack.1.pdf
+2012/09/13  09:22            39,899 gvpr.1.pdf
+2012/09/13  09:22             5,210 gxl2gv.1.pdf
+2012/09/13  09:22             6,298 lefty.1.pdf
+2012/09/13  09:22           316,781 leftyguide.pdf
+2012/09/13  09:22           247,767 libguide.pdf
+2012/09/13  09:22             4,123 lneato.1.pdf
+2012/09/13  09:22             4,278 mm2gv.1.pdf
+2012/09/13  09:22            30,483 neato.1.pdf
+2012/09/13  09:22           113,744 neatoguide.pdf
+2012/09/13  09:22             3,891 nop.1.pdf
+2012/09/13  09:22            21,683 osage.1.pdf
+2012/09/13  09:22             5,395 pathplan.3.pdf
+2012/09/13  09:22             5,737 prune.pdf
+2012/09/13  09:22             4,349 sccmap.1.pdf
+2012/09/13  09:22             4,195 tred.1.pdf
+2012/09/13  09:22            30,483 twopi.1.pdf
+2012/09/13  09:22             4,592 unflatten.1.pdf
+2012/09/13  09:22            10,326 xdot.3.pdf
+              37 个文件      1,710,901 字节
+
+ E:\thinkbase.net\PortableTrac-git\bin\graphviz\share\graphviz\graphs 的目录
+
+2013/01/08  17:59    <DIR>          .
+2013/01/08  17:59    <DIR>          ..
+2013/01/08  17:59    <DIR>          directed
+2013/01/08  17:59    <DIR>          smyrna
+2013/01/08  17:59    <DIR>          undirected
+               0 个文件              0 字节
+
+ E:\thinkbase.net\PortableTrac-git\bin\graphviz\share\graphviz\graphs\directed 的目录
+
+2013/01/08  17:59    <DIR>          .
+2013/01/08  17:59    <DIR>          ..
+2012/09/13  09:22               770 abstract.gv
+2012/09/13  09:22               958 alf.gv
+2012/09/13  09:22            32,235 arrows.gif
+2012/09/13  09:22             4,045 arrows.gv
+2012/09/13  09:22           241,750 awilliams.gif
+2012/09/13  09:22             7,305 awilliams.gv
+2012/09/13  09:22               255 clust.gv
+2012/09/13  09:22               146 clust1.gv
+2012/09/13  09:22               146 clust2.gv
+2012/09/13  09:22            12,157 clust3.gif
+2012/09/13  09:22               146 clust3.gv
+2012/09/13  09:22               401 clust4.gv
+2012/09/13  09:22               238 clust5.gv
+2012/09/13  09:22             5,572 crazy.gv
+2012/09/13  09:22               425 ctext.gv
+2012/09/13  09:22               959 dfa.gv
+2012/09/13  09:22               835 fig6.gv
+2012/09/13  09:22               605 fsm.gv
+2012/09/13  09:22             1,302 grammar.gv
+2012/09/13  09:22               629 hashtable.gv
+2012/09/13  09:22             3,090 honda-tokoro.gv
+2012/09/13  09:22             8,739 jcctree.gif
+2012/09/13  09:22               778 jcctree.gv
+2012/09/13  09:22            18,696 jsort.gif
+2012/09/13  09:22             6,189 jsort.gv
+2012/09/13  09:22               416 KW91.gv
+2012/09/13  09:22                99 Latin1.gv
+2012/09/13  09:22             5,155 ldbxtried.gv
+2012/09/13  09:22                86 longflat.gv
+2012/09/13  09:22               381 mike.gv
+2012/09/13  09:22             2,672 NaN.gv
+2012/09/13  09:22               339 nhg.gv
+2012/09/13  09:22            48,217 oldarrows.gif
+2012/09/13  09:22             2,117 oldarrows.gv
+2012/09/13  09:22             2,614 pgram.gv
+2012/09/13  09:22             2,020 pm2way.gv
+2012/09/13  09:22             3,499 pmpipe.gv
+2012/09/13  09:22            40,854 polypoly.gif
+2012/09/13  09:22             5,155 polypoly.gv
+2012/09/13  09:22             6,121 proc3d.gv
+2012/09/13  09:22             2,634 psfonttest.gv
+2012/09/13  09:22               155 record2.gv
+2012/09/13  09:22               417 records.gv
+2012/09/13  09:22            15,080 records.jpg
+2012/09/13  09:22            12,769 records.png
+2012/09/13  09:22               765 rowe.gv
+2012/09/13  09:22               520 russian.gv
+2012/09/13  09:22            43,980 russian.jpg
+2012/09/13  09:22             5,428 sdh.gv
+2012/09/13  09:22             1,102 shells.gv
+2012/09/13  09:22               493 states.gv
+2012/09/13  09:22               307 structs.gv
+2012/09/13  09:22             1,344 switch.gv
+2012/09/13  09:22             1,127 table.gv
+2012/09/13  09:22               777 train11.gv
+2012/09/13  09:22             1,484 trapeziumlr.gv
+2012/09/13  09:22               588 tree.gv
+2012/09/13  09:22             1,610 triedds.gv
+2012/09/13  09:22            65,861 triedds.jpg
+2012/09/13  09:22               163 try.gv
+2012/09/13  09:22             1,433 unix.gv
+2012/09/13  09:22             1,719 unix2.gv
+2012/09/13  09:22             1,767 viewfile.gv
+2012/09/13  09:22            70,559 viewfile.jpg
+2012/09/13  09:22                 0 world.gif
+2012/09/13  09:22               980 world.gv
+              66 个文件        701,178 字节
+
+ E:\thinkbase.net\PortableTrac-git\bin\graphviz\share\graphviz\graphs\smyrna 的目录
+
+2013/01/08  17:59    <DIR>          .
+2013/01/08  17:59    <DIR>          ..
+2012/09/13  09:22         1,375,260 4elt.dot
+2012/09/13  09:22        16,622,644 world.dot
+               2 个文件     17,997,904 字节
+
+ E:\thinkbase.net\PortableTrac-git\bin\graphviz\share\graphviz\graphs\undirected 的目录
+
+2013/01/08  17:59    <DIR>          .
+2013/01/08  17:59    <DIR>          ..
+2012/09/13  09:22               650 ER.gv
+2012/09/13  09:22               790 Heawood.gv
+2012/09/13  09:22             1,754 ngk10_4.gv
+2012/09/13  09:22               904 Petersen.gv
+2012/09/13  09:22               234 process.gv
+               5 个文件          4,332 字节
+
+ E:\thinkbase.net\PortableTrac-git\bin\graphviz\share\graphviz\gvedit 的目录
+
+2013/01/08  17:59    <DIR>          .
+2013/01/08  17:59    <DIR>          ..
+2012/09/13  09:22            61,594 attributes.txt
+               1 个文件         61,594 字节
+
+ E:\thinkbase.net\PortableTrac-git\bin\graphviz\share\graphviz\lefty 的目录
+
+2013/01/08  17:59    <DIR>          .
+2013/01/08  17:59    <DIR>          ..
+2012/09/13  09:22             3,613 box.lefty
+2012/09/13  09:22               459 def.lefty
+2012/09/13  09:22            23,036 dotty.lefty
+2012/09/13  09:22            19,946 dotty_draw.lefty
+2012/09/13  09:22            18,046 dotty_edit.lefty
+2012/09/13  09:22            14,424 dotty_layout.lefty
+2012/09/13  09:22            14,216 dotty_ui.lefty
+2012/09/13  09:22             2,716 fractal.lefty
+2012/09/13  09:22             5,751 fractal2.lefty
+2012/09/13  09:22             2,423 lefty.psp
+2012/09/13  09:22             3,198 slides.lefty
+2012/09/13  09:22             5,014 tree.lefty
+              12 个文件        112,842 字节
+
+ E:\thinkbase.net\PortableTrac-git\bin\graphviz\share\graphviz\smyrna 的目录
+
+2013/01/08  17:59    <DIR>          .
+2013/01/08  17:59    <DIR>          ..
+2012/09/13  09:22             3,244 2D.png
+2012/09/13  09:22             3,552 3D.png
+2012/09/13  09:22             2,999 attr_widgets.dot
+2012/09/13  09:22             3,327 attrs.txt
+2012/09/13  09:22             3,737 center.png
+2012/09/13  09:22             3,441 details.png
+2012/09/13  09:22             3,352 edge.png
+2013/01/08  17:59    <DIR>          examples
+2012/09/13  09:22            10,690 fish.PNG
+2012/09/13  09:22             3,711 fisheye.png
+2012/09/13  09:22             3,394 fit.png
+2012/09/13  09:22             4,176 magnifier.png
+2012/09/13  09:22             4,528 mod_3D.png
+2012/09/13  09:22             4,409 mod_fisheye.png
+2012/09/13  09:22               963 mouse_actions.txt
+2012/09/13  09:22             3,415 move.png
+2012/09/13  09:22           205,584 new_smyrna.glade
+2012/09/13  09:22           206,724 new_smyrna.glade.bak
+2012/09/13  09:22               269 new_smyrna.gladep
+2012/09/13  09:22               269 new_smyrna.gladep.bak
+2012/09/13  09:22             3,694 no_fisheye.png
+2012/09/13  09:22             3,601 node.png
+2012/09/13  09:22           213,930 original_smyrna.glade
+2012/09/13  09:22             3,759 pan.png
+2012/09/13  09:22             4,106 preview.png
+2012/09/13  09:22             3,502 rect_select.png
+2012/09/13  09:22             3,474 rect_select2.png
+2012/09/13  09:22             3,735 rotate.png
+2012/09/13  09:22           213,930 smyrna.glade
+2012/09/13  09:22           207,150 smyrna.glade.bak
+2012/09/13  09:22               269 smyrna.gladep
+2012/09/13  09:22               269 smyrna.gladep.bak
+2012/09/13  09:22             1,882 template.dot
+2012/09/13  09:22            38,912 Thumbs.db
+2012/09/13  09:22             3,592 zoom.png
+2012/09/13  09:22             3,765 zoomin.png
+2012/09/13  09:22             3,658 zoomout.png
+              36 个文件      1,185,012 字节
+
+ E:\thinkbase.net\PortableTrac-git\bin\graphviz\share\graphviz\smyrna\examples 的目录
+
+2013/01/08  17:59    <DIR>          .
+2013/01/08  17:59    <DIR>          ..
+2012/09/13  09:22         1,375,260 4elt.dot
+2012/09/13  09:22        16,622,644 world.dot
+               2 个文件     17,997,904 字节
+
+     所列文件总数:
+             304 个文件     42,138,589 字节
+              41 个目录    726,249,472 可用字节
