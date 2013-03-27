@@ -2,6 +2,9 @@ set _PWD=%~dp0%
 :: -5 = 路径结尾的 \bin\ 字符串的长度
 set _PWD=%_PWD:~0,-5%
 
+:: Avoid iconv "unreadable code" console output
+set LANG=en_US
+
 set PORTABLE_HOME=%_PWD%
 set PYTHONHOME=%_PWD%\Portable Python 2.7.3.1\App
 
