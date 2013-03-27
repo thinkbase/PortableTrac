@@ -54,14 +54,15 @@ CREATE TABLE auth_cookie (
     time integer,
     UNIQUE (cookie,ipnr,name)
 );
-INSERT INTO "auth_cookie" VALUES('e1d027ec79f0b4b4734960daf847eabf','admin','127.0.0.1',1357622489);
+INSERT INTO "auth_cookie" VALUES('d195e6c7cc951b12107c593c9f2c80d8','admin','127.0.0.1',1364390528);
+INSERT INTO "auth_cookie" VALUES('c05cd4bc768cffa7979e2906db39021b','admin','127.0.0.1',1364393180);
 CREATE TABLE session (
     sid text,
     authenticated integer,
     last_visit integer,
     UNIQUE (sid,authenticated)
 );
-INSERT INTO "session" VALUES('admin',1,1357622509);
+INSERT INTO "session" VALUES('admin',1,1364393515);
 CREATE TABLE session_attribute (
     sid text,
     authenticated integer,
@@ -30126,206 +30127,206 @@ See WikiMacros#DevelopingCustomMacros for more information.
 ----
 See also: WikiMacros, WikiHtml, WikiRestructuredText, TracSyntaxColoring, WikiFormatting, TracGuide
 ',NULL,NULL);
-INSERT INTO "wiki" VALUES('SandBox/Graphviz',4,1357622509605000,'admin','127.0.0.1','{{{
-#!graphviz
-
-    digraph G {
-
-	subgraph cluster_0 {
-		style=filled;
-		color=lightgrey;
-		node [style=filled,color=white];
-		a0 -> a1 -> a2 -> a3;
-		label = "process #1 进程1";
-	}
-
-	subgraph cluster_1 {
-		node [style=filled];
-		b0 -> b1 -> b2 -> b3;
-		label = "process #2";
-		color=blue
-	}
-	start -> a0;
-	start -> b0;
-	a1 -> b3;
-	b2 -> a3;
-	a3 -> a0;
-	a3 -> end;
-	b3 -> end;
-
-	start [shape=Mdiamond];
-	end [shape=Msquare];
-    }
-}}}
-
-{{{
-#!graphviz
-    digraph G {
-	graph [center rankdir=LR bgcolor="#808080"]
-	edge [dir=none]
-	node [width=0.3 height=0.3 label=""]
-	{ node [shape=circle style=invis]
-		1 2 3 4 5 6 7 8  10 20 30 40 50 60 70 80
-	}
-	{ node [shape=circle]
-		a b c d e f g h  i j k l m n o p  q r s t u v w x
-	}
-	{ node [shape=diamond]
-		A B C D E F G H  I J K L M N O P  Q R S T U V W X
-	}
-	1 -> a -> {A B} [color="#0000ff"]
-	2 -> b -> {B A} [color="#ff0000"]
-	3 -> c -> {C D} [color="#ffff00"]
-	4 -> d -> {D C} [color="#00ff00"]
-	5 -> e -> {E F} [color="#000000"]
-	6 -> f -> {F E} [color="#00ffff"]
-	7 -> g -> {G H} [color="#ffffff"]
-	8 -> h -> {H G} [color="#ff00ff"]
-	{ edge [color="#ff0000:#0000ff"]
-		A -> i -> {I K}
-		B -> j -> {J L}
-	}
-	{ edge [color="#00ff00:#ffff00"]
-		C -> k -> {K I}
-		D -> l -> {L J}
-	}
-	{ edge [color="#00ffff:#000000"]
-		E -> m -> {M O}
-		F -> n -> {N P}
-	}
-	{ edge [color="#ff00ff:#ffffff"]
-		G -> o -> {O M}
-		H -> p -> {P N}
-	}
-	{ edge [color="#00ff00:#ffff00:#ff0000:#0000ff"]
-		I -> q -> {Q U}
-		J -> r -> {R V}
-		K -> s -> {S W}
-		L -> t -> {T X}
-	}
-	{ edge [color="#ff00ff:#ffffff:#00ffff:#000000"]
-		M -> u -> {U Q}
-		N -> v -> {V R}
-		O -> w -> {W S}
-		P -> x -> {X T}
-	}
-	{ edge [color="#ff00ff:#ffffff:#00ffff:#000000:#00ff00:#ffff00:#ff0000:#0000ff"]
-		Q -> 10
-		R -> 20
-		S -> 30
-		T -> 40
-		U -> 50
-		V -> 60
-		W -> 70
-		X -> 80
-	}
-    }
+INSERT INTO "wiki" VALUES('SandBox/Graphviz',4,1357622509605000,'admin','127.0.0.1','{{{
+#!graphviz
+
+    digraph G {
+
+	subgraph cluster_0 {
+		style=filled;
+		color=lightgrey;
+		node [style=filled,color=white];
+		a0 -> a1 -> a2 -> a3;
+		label = "process #1 进程1";
+	}
+
+	subgraph cluster_1 {
+		node [style=filled];
+		b0 -> b1 -> b2 -> b3;
+		label = "process #2";
+		color=blue
+	}
+	start -> a0;
+	start -> b0;
+	a1 -> b3;
+	b2 -> a3;
+	a3 -> a0;
+	a3 -> end;
+	b3 -> end;
+
+	start [shape=Mdiamond];
+	end [shape=Msquare];
+    }
+}}}
+
+{{{
+#!graphviz
+    digraph G {
+	graph [center rankdir=LR bgcolor="#808080"]
+	edge [dir=none]
+	node [width=0.3 height=0.3 label=""]
+	{ node [shape=circle style=invis]
+		1 2 3 4 5 6 7 8  10 20 30 40 50 60 70 80
+	}
+	{ node [shape=circle]
+		a b c d e f g h  i j k l m n o p  q r s t u v w x
+	}
+	{ node [shape=diamond]
+		A B C D E F G H  I J K L M N O P  Q R S T U V W X
+	}
+	1 -> a -> {A B} [color="#0000ff"]
+	2 -> b -> {B A} [color="#ff0000"]
+	3 -> c -> {C D} [color="#ffff00"]
+	4 -> d -> {D C} [color="#00ff00"]
+	5 -> e -> {E F} [color="#000000"]
+	6 -> f -> {F E} [color="#00ffff"]
+	7 -> g -> {G H} [color="#ffffff"]
+	8 -> h -> {H G} [color="#ff00ff"]
+	{ edge [color="#ff0000:#0000ff"]
+		A -> i -> {I K}
+		B -> j -> {J L}
+	}
+	{ edge [color="#00ff00:#ffff00"]
+		C -> k -> {K I}
+		D -> l -> {L J}
+	}
+	{ edge [color="#00ffff:#000000"]
+		E -> m -> {M O}
+		F -> n -> {N P}
+	}
+	{ edge [color="#ff00ff:#ffffff"]
+		G -> o -> {O M}
+		H -> p -> {P N}
+	}
+	{ edge [color="#00ff00:#ffff00:#ff0000:#0000ff"]
+		I -> q -> {Q U}
+		J -> r -> {R V}
+		K -> s -> {S W}
+		L -> t -> {T X}
+	}
+	{ edge [color="#ff00ff:#ffffff:#00ffff:#000000"]
+		M -> u -> {U Q}
+		N -> v -> {V R}
+		O -> w -> {W S}
+		P -> x -> {X T}
+	}
+	{ edge [color="#ff00ff:#ffffff:#00ffff:#000000:#00ff00:#ffff00:#ff0000:#0000ff"]
+		Q -> 10
+		R -> 20
+		S -> 30
+		T -> 40
+		U -> 50
+		V -> 60
+		W -> 70
+		X -> 80
+	}
+    }
 }}}','',0);
-INSERT INTO "wiki" VALUES('SandBox/Graphviz',5,1357622597224000,'admin','127.0.0.1','{{{
-#!graphviz
-
-    digraph G {
-
-	subgraph cluster_0 {
-		style=filled;
-		color=lightgrey;
-		node [style=filled,color=white];
-		a0 -> a1 -> a2 -> a3;
-		label = "process #1 进程1";
-	}
-
-	subgraph cluster_1 {
-		node [style=filled];
-		b0 -> b1 -> b2 -> b3;
-		label = "process #2";
-		color=blue
-	}
-	start -> a0;
-	start -> b0;
-	a1 -> b3;
-	b2 -> a3;
-	a3 -> a0;
-	a3 -> end;
-	b3 -> end;
-
-	start [shape=Mdiamond];
-	end [shape=Msquare];
-    }
-}}}
-
-{{{
-#!graphviz
-    digraph G {
-	graph [center rankdir=LR bgcolor="#808080"]
-	edge [dir=none]
-	node [width=0.3 height=0.3 label=""]
-	{ node [shape=circle style=invis]
-		1 2 3 4 5 6 7 8  10 20 30 40 50 60 70 80
-	}
-	{ node [shape=circle]
-		a b c d e f g h  i j k l m n o p  q r s t u v w x
-	}
-	{ node [shape=diamond]
-		A B C D E F G H  I J K L M N O P  Q R S T U V W X
-	}
-	1 -> a -> {A B} [color="#0000ff"]
-	2 -> b -> {B A} [color="#ff0000"]
-	3 -> c -> {C D} [color="#ffff00"]
-	4 -> d -> {D C} [color="#00ff00"]
-	5 -> e -> {E F} [color="#000000"]
-	6 -> f -> {F E} [color="#00ffff"]
-	7 -> g -> {G H} [color="#ffffff"]
-	8 -> h -> {H G} [color="#ff00ff"]
-	{ edge [color="#ff0000:#0000ff"]
-		A -> i -> {I K}
-		B -> j -> {J L}
-	}
-	{ edge [color="#00ff00:#ffff00"]
-		C -> k -> {K I}
-		D -> l -> {L J}
-	}
-	{ edge [color="#00ffff:#000000"]
-		E -> m -> {M O}
-		F -> n -> {N P}
-	}
-	{ edge [color="#ff00ff:#ffffff"]
-		G -> o -> {O M}
-		H -> p -> {P N}
-	}
-	{ edge [color="#00ff00:#ffff00:#ff0000:#0000ff"]
-		I -> q -> {Q U}
-		J -> r -> {R V}
-		K -> s -> {S W}
-		L -> t -> {T X}
-	}
-	{ edge [color="#ff00ff:#ffffff:#00ffff:#000000"]
-		M -> u -> {U Q}
-		N -> v -> {V R}
-		O -> w -> {W S}
-		P -> x -> {X T}
-	}
-	{ edge [color="#ff00ff:#ffffff:#00ffff:#000000:#00ff00:#ffff00:#ff0000:#0000ff"]
-		Q -> 10
-		R -> 20
-		S -> 30
-		T -> 40
-		U -> 50
-		V -> 60
-		W -> 70
-		X -> 80
-	}
-    }
-}}}
-
-{{{
-#!graphviz
-digraph G { bgcolor="purple:pink" label="agraph" fontcolor="white"
-  subgraph cluster1 {fillcolor="blue:cyan" label="acluster" fontcolor="white" style="filled" gradientangle="270"
-		node [shape=box fillcolor="red:yellow" style="filled" gradientangle=90]
-		anode;
-	}
-
-} 
+INSERT INTO "wiki" VALUES('SandBox/Graphviz',5,1357622597224000,'admin','127.0.0.1','{{{
+#!graphviz
+
+    digraph G {
+
+	subgraph cluster_0 {
+		style=filled;
+		color=lightgrey;
+		node [style=filled,color=white];
+		a0 -> a1 -> a2 -> a3;
+		label = "process #1 进程1";
+	}
+
+	subgraph cluster_1 {
+		node [style=filled];
+		b0 -> b1 -> b2 -> b3;
+		label = "process #2";
+		color=blue
+	}
+	start -> a0;
+	start -> b0;
+	a1 -> b3;
+	b2 -> a3;
+	a3 -> a0;
+	a3 -> end;
+	b3 -> end;
+
+	start [shape=Mdiamond];
+	end [shape=Msquare];
+    }
+}}}
+
+{{{
+#!graphviz
+    digraph G {
+	graph [center rankdir=LR bgcolor="#808080"]
+	edge [dir=none]
+	node [width=0.3 height=0.3 label=""]
+	{ node [shape=circle style=invis]
+		1 2 3 4 5 6 7 8  10 20 30 40 50 60 70 80
+	}
+	{ node [shape=circle]
+		a b c d e f g h  i j k l m n o p  q r s t u v w x
+	}
+	{ node [shape=diamond]
+		A B C D E F G H  I J K L M N O P  Q R S T U V W X
+	}
+	1 -> a -> {A B} [color="#0000ff"]
+	2 -> b -> {B A} [color="#ff0000"]
+	3 -> c -> {C D} [color="#ffff00"]
+	4 -> d -> {D C} [color="#00ff00"]
+	5 -> e -> {E F} [color="#000000"]
+	6 -> f -> {F E} [color="#00ffff"]
+	7 -> g -> {G H} [color="#ffffff"]
+	8 -> h -> {H G} [color="#ff00ff"]
+	{ edge [color="#ff0000:#0000ff"]
+		A -> i -> {I K}
+		B -> j -> {J L}
+	}
+	{ edge [color="#00ff00:#ffff00"]
+		C -> k -> {K I}
+		D -> l -> {L J}
+	}
+	{ edge [color="#00ffff:#000000"]
+		E -> m -> {M O}
+		F -> n -> {N P}
+	}
+	{ edge [color="#ff00ff:#ffffff"]
+		G -> o -> {O M}
+		H -> p -> {P N}
+	}
+	{ edge [color="#00ff00:#ffff00:#ff0000:#0000ff"]
+		I -> q -> {Q U}
+		J -> r -> {R V}
+		K -> s -> {S W}
+		L -> t -> {T X}
+	}
+	{ edge [color="#ff00ff:#ffffff:#00ffff:#000000"]
+		M -> u -> {U Q}
+		N -> v -> {V R}
+		O -> w -> {W S}
+		P -> x -> {X T}
+	}
+	{ edge [color="#ff00ff:#ffffff:#00ffff:#000000:#00ff00:#ffff00:#ff0000:#0000ff"]
+		Q -> 10
+		R -> 20
+		S -> 30
+		T -> 40
+		U -> 50
+		V -> 60
+		W -> 70
+		X -> 80
+	}
+    }
+}}}
+
+{{{
+#!graphviz
+digraph G { bgcolor="purple:pink" label="agraph" fontcolor="white"
+  subgraph cluster1 {fillcolor="blue:cyan" label="acluster" fontcolor="white" style="filled" gradientangle="270"
+		node [shape=box fillcolor="red:yellow" style="filled" gradientangle=90]
+		anode;
+	}
+
+} 
 }}}','',0);
 CREATE TABLE repository (
     id integer,
@@ -30333,6 +30334,16 @@ CREATE TABLE repository (
     value text,
     UNIQUE (id,name)
 );
+INSERT INTO "repository" VALUES(1,'name','svn-testcase');
+INSERT INTO "repository" VALUES(1,'dir','I:\thinkbase.net\github\PortableTrac\data\svn-testcase');
+INSERT INTO "repository" VALUES(1,'type','');
+INSERT INTO "repository" VALUES(1,'url','');
+INSERT INTO "repository" VALUES(1,'description','');
+INSERT INTO "repository" VALUES(1,'repository_dir','svn:42be0d23-f3ec-7742-9214-b333e19b708d:I:/thinkbase.net/github/PortableTrac/data/svn-testcase');
+INSERT INTO "repository" VALUES(1,'youngest_rev','16');
+INSERT INTO "repository" VALUES(2,'name','');
+INSERT INTO "repository" VALUES(2,'dir',NULL);
+INSERT INTO "repository" VALUES(2,'alias','svn-testcase');
 CREATE TABLE revision (
     repos integer,
     rev text,
@@ -30341,6 +30352,22 @@ CREATE TABLE revision (
     message text,
     UNIQUE (repos,rev)
 );
+INSERT INTO "revision" VALUES(1,'0000000001',1364392270951895,'root','Plan to store the website change log of microsoft');
+INSERT INTO "revision" VALUES(1,'0000000002',1364392286233145,'root','Plan to store the website change log of google');
+INSERT INTO "revision" VALUES(1,'0000000003',1364392296717520,'root','Plan to store the website change log of sf.net');
+INSERT INTO "revision" VALUES(1,'0000000004',1364392391774161,'root','http://web.archive.org/web/19961025122722/http://www.microsoft.com/');
+INSERT INTO "revision" VALUES(1,'0000000005',1364392486383536,'root','convert to UTF-8 without BOM');
+INSERT INTO "revision" VALUES(1,'0000000006',1364392514039786,'root','http://web.archive.org/web/20000729080137/http://microsoft.com/');
+INSERT INTO "revision" VALUES(1,'0000000007',1364392583383536,'root','http://web.archive.org/web/20090703003406/http://www.microsoft.com/en/us/default.aspx');
+INSERT INTO "revision" VALUES(1,'0000000008',1364392631961661,'root','http://web.archive.org/web/20130318140700/http://www.microsoft.com/en-us/default.aspx');
+INSERT INTO "revision" VALUES(1,'0000000009',1364392710964590,'root','http://web.archive.org/web/19981111184551/http://google.com/');
+INSERT INTO "revision" VALUES(1,'0000000010',1364392777417715,'root','http://web.archive.org/web/20030328001650/http://www.google.com/');
+INSERT INTO "revision" VALUES(1,'0000000011',1364392817183340,'root','http://web.archive.org/web/20080708201848/http://www.google.com/');
+INSERT INTO "revision" VALUES(1,'0000000012',1364392870808340,'root','http://web.archive.org/web/20130318002023/http://www.google.com/');
+INSERT INTO "revision" VALUES(1,'0000000013',1364392978778067,'root','http://web.archive.org/web/20000126203923/http://sourceforge.net/');
+INSERT INTO "revision" VALUES(1,'0000000014',1364393014981192,'root','http://web.archive.org/web/20030324212248/http://sourceforge.net/');
+INSERT INTO "revision" VALUES(1,'0000000015',1364393064074942,'root','http://web.archive.org/web/20080514194226/http://sourceforge.net/index.php');
+INSERT INTO "revision" VALUES(1,'0000000016',1364393103043692,'root','http://web.archive.org/web/20111125175912/http://sourceforge.net/');
 CREATE TABLE node_change (
     repos integer,
     rev text,
@@ -30351,6 +30378,22 @@ CREATE TABLE node_change (
     base_rev text,
     UNIQUE (repos,rev,path,change_type)
 );
+INSERT INTO "node_change" VALUES(1,'0000000001','ms','D','A',NULL,'-1');
+INSERT INTO "node_change" VALUES(1,'0000000002','google','D','A',NULL,'-1');
+INSERT INTO "node_change" VALUES(1,'0000000003','sf.net','D','A',NULL,'-1');
+INSERT INTO "node_change" VALUES(1,'0000000004','ms/www.miscrosoft.com.txt','F','A',NULL,'-1');
+INSERT INTO "node_change" VALUES(1,'0000000005','ms/www.miscrosoft.com.txt','F','E','ms/www.miscrosoft.com.txt','4');
+INSERT INTO "node_change" VALUES(1,'0000000006','ms/www.miscrosoft.com.txt','F','E','ms/www.miscrosoft.com.txt','5');
+INSERT INTO "node_change" VALUES(1,'0000000007','ms/www.miscrosoft.com.txt','F','E','ms/www.miscrosoft.com.txt','6');
+INSERT INTO "node_change" VALUES(1,'0000000008','ms/www.miscrosoft.com.txt','F','E','ms/www.miscrosoft.com.txt','7');
+INSERT INTO "node_change" VALUES(1,'0000000009','google/www.google.com.txt','F','A',NULL,'-1');
+INSERT INTO "node_change" VALUES(1,'0000000010','google/www.google.com.txt','F','E','google/www.google.com.txt','9');
+INSERT INTO "node_change" VALUES(1,'0000000011','google/www.google.com.txt','F','E','google/www.google.com.txt','10');
+INSERT INTO "node_change" VALUES(1,'0000000012','google/www.google.com.txt','F','E','google/www.google.com.txt','11');
+INSERT INTO "node_change" VALUES(1,'0000000013','sf.net/sourceforge.net.txt','F','A',NULL,'-1');
+INSERT INTO "node_change" VALUES(1,'0000000014','sf.net/sourceforge.net.txt','F','E','sf.net/sourceforge.net.txt','13');
+INSERT INTO "node_change" VALUES(1,'0000000015','sf.net/sourceforge.net.txt','F','E','sf.net/sourceforge.net.txt','14');
+INSERT INTO "node_change" VALUES(1,'0000000016','sf.net/sourceforge.net.txt','F','E','sf.net/sourceforge.net.txt','15');
 CREATE TABLE ticket (
     id integer PRIMARY KEY,
     type text,
@@ -30685,6 +30728,7 @@ CREATE TABLE cache (
     generation integer,
     key text
 );
+INSERT INTO "cache" VALUES(648805364,16,'trac.versioncontrol.cache.CachedRepository.metadata:1');
 INSERT INTO "cache" VALUES(901198563,1,'trac.wiki.api.WikiSystem.pages');
 CREATE TABLE subtickets (
     parent integer,

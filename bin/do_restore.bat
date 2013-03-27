@@ -28,6 +28,16 @@ IF EXIST "%COPY_SOURCE%\" (
 xcopy /E "%COPY_SOURCE%" "%TRACENV%\%ENV%\"
 del "%TRACENV%\%ENV%\db\trac.db"
 "%SQLITE_HOME%\sqlite3.exe" "%TRACENV%\%ENV%\db\trac.db" < "%TRACENV%\%ENV%\trac-db.sql"
+
+:: Do hook - after-restore-sql
+set HOOK_PROG_AFTER_RESTORE_SQL=%COPY_SOURCE%\thinkbase.net\after-restore-sql.bat
+set FILE_AFTER_RESTORE_SQL=%TEMP%\%ENV%_%time::=-%_after-restore.sql
+del /F/Q "%FILE_AFTER_RESTORE_SQL%"
+IF EXIST "%HOOK_PROG_AFTER_RESTORE_SQL%" (
+    call "%HOOK_PROG_AFTER_RESTORE_SQL%" "%FILE_AFTER_RESTORE_SQL%"
+    "%SQLITE_HOME%\sqlite3.exe" "%TRACENV%\%ENV%\db\trac.db" < "%FILE_AFTER_RESTORE_SQL%"
+)
+
 @echo off
 
 ENDLOCAL

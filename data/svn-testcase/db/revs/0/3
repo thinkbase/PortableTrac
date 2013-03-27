@@ -1,0 +1,33 @@
+id: 0-3.0.r3/0
+type: dir
+count: 0
+cpath: /sf.net
+copyroot: 0 /
+
+PLAIN
+K 6
+google
+V 14
+dir 0-2.0.r2/0
+K 2
+ms
+V 14
+dir 0-1.0.r1/0
+K 6
+sf.net
+V 14
+dir 0-3.0.r3/0
+END
+ENDREP
+id: 0.0.r3/170
+type: dir
+pred: 0.0.r2/139
+count: 3
+text: 3 64 93 93 e25df199cacf437c86a6814ec5b48f31
+cpath: /
+copyroot: 0 /
+
+_0.0.t2-2 add-dir false false /sf.net
+
+
+170 295
