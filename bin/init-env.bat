@@ -7,6 +7,7 @@ set LANG=en_US
 
 set PORTABLE_HOME=%_PWD%
 set PYTHONHOME=%_PWD%\PortablePython\App
+set PY_SYSTEM32=%_PWD%\PortablePython\system32
 
 set SVN_HOME=%_PWD%\bin\svn-win32-1.6.15\bin
 set GIT_HOME=%_PWD%\bin\Git\bin
@@ -14,7 +15,7 @@ set GIT_HOME=%_PWD%\bin\Git\bin
 set GRAPHVIZ_HOME=%_PWD%\bin\graphviz\bin
 set SQLITE_HOME=%_PWD%\bin\sqlite-shell-win32-x86-3071401
 
-set PATH=%PATH%;%PYTHONHOME%;%SVN_HOME%;%GIT_HOME%
+set PATH=%PY_SYSTEM32%;%PATH%;%PYTHONHOME%;%SVN_HOME%;%GIT_HOME%
 
 :: Trac 相关的程序独立于 Python 安装
 set TRAC_INSTALL_PATH=%_PWD%\trac
