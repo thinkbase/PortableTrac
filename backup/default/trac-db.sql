@@ -54,15 +54,14 @@ CREATE TABLE auth_cookie (
     time integer,
     UNIQUE (cookie,ipnr,name)
 );
-INSERT INTO "auth_cookie" VALUES('d195e6c7cc951b12107c593c9f2c80d8','admin','127.0.0.1',1364390528);
-INSERT INTO "auth_cookie" VALUES('c05cd4bc768cffa7979e2906db39021b','admin','127.0.0.1',1364393180);
+INSERT INTO "auth_cookie" VALUES('9a78a8f384e2b4f716020c4098e5c696','admin','127.0.0.1',1365953197);
 CREATE TABLE session (
     sid text,
     authenticated integer,
     last_visit integer,
     UNIQUE (sid,authenticated)
 );
-INSERT INTO "session" VALUES('admin',1,1364393515);
+INSERT INTO "session" VALUES('admin',1,1365953242);
 CREATE TABLE session_attribute (
     sid text,
     authenticated integer,
@@ -30328,6 +30327,127 @@ digraph G { bgcolor="purple:pink" label="agraph" fontcolor="white"
 
 } 
 }}}','',0);
+INSERT INTO "wiki" VALUES('WikiStart',3,1365953709342000,'admin','127.0.0.1','= Welcome to Trac 1.0 =
+
+Trac is a ''''''minimalistic'''''' approach to ''''''web-based'''''' management of
+''''''software projects''''''. Its goal is to simplify effective tracking and handling of software issues, enhancements and overall progress.
+
+All aspects of Trac have been designed with the single goal to 
+''''''help developers write great software'''''' while ''''''staying out of the way''''''
+and imposing as little as possible on a team''s established process and
+culture.
+
+As all Wiki pages, this page is editable, this means that you can
+modify the contents of this page simply by using your
+web-browser. Simply click on the "Edit this page" link at the bottom
+of the page. WikiFormatting will give you a detailed description of
+available Wiki formatting commands.
+
+"[wiki:TracAdmin trac-admin] ''''yourenvdir'''' initenv" created
+a new Trac environment, containing a default set of wiki pages and some sample
+data. This newly created environment also contains 
+[wiki:TracGuide documentation] to help you get started with your project.
+
+You can use [wiki:TracAdmin trac-admin] to configure
+[http://trac.edgewall.org/ Trac] to better fit your project, especially in
+regard to ''''components'''', ''''versions'''' and ''''milestones''''. 
+
+
+TracGuide is a good place to start.
+
+Enjoy! [[BR]]
+''''The Trac Team''''
+
+== Starting Points ==
+
+ * TracGuide --  Built-in Documentation
+ * [http://trac.edgewall.org/ The Trac project] -- Trac Open Source Project
+ * [http://trac.edgewall.org/wiki/TracFaq Trac FAQ] -- Frequently Asked Questions
+ * TracSupport --  Trac Support
+
+For a complete list of local wiki pages, see TitleIndex.','',1);
+INSERT INTO "wiki" VALUES('WikiStart',4,1365953786030000,'admin','127.0.0.1','= Welcome to Trac 1.0 =
+
+''''(Chinese translation: [ZhWikiStart])''''
+
+Trac is a ''''''minimalistic'''''' approach to ''''''web-based'''''' management of
+''''''software projects''''''. Its goal is to simplify effective tracking and handling of software issues, enhancements and overall progress.
+
+All aspects of Trac have been designed with the single goal to 
+''''''help developers write great software'''''' while ''''''staying out of the way''''''
+and imposing as little as possible on a team''s established process and
+culture.
+
+As all Wiki pages, this page is editable, this means that you can
+modify the contents of this page simply by using your
+web-browser. Simply click on the "Edit this page" link at the bottom
+of the page. WikiFormatting will give you a detailed description of
+available Wiki formatting commands.
+
+"[wiki:TracAdmin trac-admin] ''''yourenvdir'''' initenv" created
+a new Trac environment, containing a default set of wiki pages and some sample
+data. This newly created environment also contains 
+[wiki:TracGuide documentation] to help you get started with your project.
+
+You can use [wiki:TracAdmin trac-admin] to configure
+[http://trac.edgewall.org/ Trac] to better fit your project, especially in
+regard to ''''components'''', ''''versions'''' and ''''milestones''''. 
+
+
+TracGuide is a good place to start.
+
+Enjoy! [[BR]]
+''''The Trac Team''''
+
+== Starting Points ==
+
+ * TracGuide --  Built-in Documentation
+ * [http://trac.edgewall.org/ The Trac project] -- Trac Open Source Project
+ * [http://trac.edgewall.org/wiki/TracFaq Trac FAQ] -- Frequently Asked Questions
+ * TracSupport --  Trac Support
+
+For a complete list of local wiki pages, see TitleIndex.','',1);
+INSERT INTO "wiki" VALUES('WikiStart',5,1365953833527000,'admin','127.0.0.1','= Welcome to Trac 1.0 =
+
+''''(Chinese translation: [wiki:ZhWikiStart 欢迎使用Trac(ZhWikiStart )])''''
+
+Trac is a ''''''minimalistic'''''' approach to ''''''web-based'''''' management of
+''''''software projects''''''. Its goal is to simplify effective tracking and handling of software issues, enhancements and overall progress.
+
+All aspects of Trac have been designed with the single goal to 
+''''''help developers write great software'''''' while ''''''staying out of the way''''''
+and imposing as little as possible on a team''s established process and
+culture.
+
+As all Wiki pages, this page is editable, this means that you can
+modify the contents of this page simply by using your
+web-browser. Simply click on the "Edit this page" link at the bottom
+of the page. WikiFormatting will give you a detailed description of
+available Wiki formatting commands.
+
+"[wiki:TracAdmin trac-admin] ''''yourenvdir'''' initenv" created
+a new Trac environment, containing a default set of wiki pages and some sample
+data. This newly created environment also contains 
+[wiki:TracGuide documentation] to help you get started with your project.
+
+You can use [wiki:TracAdmin trac-admin] to configure
+[http://trac.edgewall.org/ Trac] to better fit your project, especially in
+regard to ''''components'''', ''''versions'''' and ''''milestones''''. 
+
+
+TracGuide is a good place to start.
+
+Enjoy! [[BR]]
+''''The Trac Team''''
+
+== Starting Points ==
+
+ * TracGuide --  Built-in Documentation
+ * [http://trac.edgewall.org/ The Trac project] -- Trac Open Source Project
+ * [http://trac.edgewall.org/wiki/TracFaq Trac FAQ] -- Frequently Asked Questions
+ * TracSupport --  Trac Support
+
+For a complete list of local wiki pages, see TitleIndex.','',1);
 CREATE TABLE repository (
     id integer,
     name text,
@@ -30340,7 +30460,7 @@ INSERT INTO "repository" VALUES(1,'type','');
 INSERT INTO "repository" VALUES(1,'url','');
 INSERT INTO "repository" VALUES(1,'description','');
 INSERT INTO "repository" VALUES(1,'repository_dir','svn:42be0d23-f3ec-7742-9214-b333e19b708d:I:/thinkbase.net/github/PortableTrac/data/svn-testcase');
-INSERT INTO "repository" VALUES(1,'youngest_rev','16');
+INSERT INTO "repository" VALUES(1,'youngest_rev','17');
 INSERT INTO "repository" VALUES(2,'name','');
 INSERT INTO "repository" VALUES(2,'dir',NULL);
 INSERT INTO "repository" VALUES(2,'alias','svn-testcase');
@@ -30368,6 +30488,7 @@ INSERT INTO "revision" VALUES(1,'0000000013',1364392978778067,'root','http://web
 INSERT INTO "revision" VALUES(1,'0000000014',1364393014981192,'root','http://web.archive.org/web/20030324212248/http://sourceforge.net/');
 INSERT INTO "revision" VALUES(1,'0000000015',1364393064074942,'root','http://web.archive.org/web/20080514194226/http://sourceforge.net/index.php');
 INSERT INTO "revision" VALUES(1,'0000000016',1364393103043692,'root','http://web.archive.org/web/20111125175912/http://sourceforge.net/');
+INSERT INTO "revision" VALUES(1,'0000000017',1364398289046991,'root','add readme to explain the purpose of current svn repository');
 CREATE TABLE node_change (
     repos integer,
     rev text,
@@ -30394,6 +30515,7 @@ INSERT INTO "node_change" VALUES(1,'0000000013','sf.net/sourceforge.net.txt','F'
 INSERT INTO "node_change" VALUES(1,'0000000014','sf.net/sourceforge.net.txt','F','E','sf.net/sourceforge.net.txt','13');
 INSERT INTO "node_change" VALUES(1,'0000000015','sf.net/sourceforge.net.txt','F','E','sf.net/sourceforge.net.txt','14');
 INSERT INTO "node_change" VALUES(1,'0000000016','sf.net/sourceforge.net.txt','F','E','sf.net/sourceforge.net.txt','15');
+INSERT INTO "node_change" VALUES(1,'0000000017','readme.txt','F','A',NULL,'-1');
 CREATE TABLE ticket (
     id integer PRIMARY KEY,
     type text,
@@ -30728,7 +30850,7 @@ CREATE TABLE cache (
     generation integer,
     key text
 );
-INSERT INTO "cache" VALUES(648805364,16,'trac.versioncontrol.cache.CachedRepository.metadata:1');
+INSERT INTO "cache" VALUES(648805364,17,'trac.versioncontrol.cache.CachedRepository.metadata:1');
 INSERT INTO "cache" VALUES(901198563,1,'trac.wiki.api.WikiSystem.pages');
 CREATE TABLE subtickets (
     parent integer,
