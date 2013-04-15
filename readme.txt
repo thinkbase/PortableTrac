@@ -1,11 +1,7 @@
-Run:
-    passwd admin 111111
-to create the admin user's default password(stored in "protected" folder);
+PortableTrac is the redistribution of ​Trac Server, focused on the Plugins Ready and Out of the Box Deployment. 
 
-Run:
-    tracd 57777 default
-to start tracd for "default" environment, at port 57777;
-
-Run:
-    trac-backup default
-to backup(hotcopy and sqlite dump) "default" environment to folder "backup";
+See following for detail:
+ - Home page: http://www.thinkbase.net/main
+ - About: http://www.thinkbase.net/main/wiki/PortableTrac
+ - Installation: http://www.thinkbase.net/main/wiki/PortableTrac/install
+ - User manual: http://www.thinkbase.net/main/wiki/PortableTrac/manual
