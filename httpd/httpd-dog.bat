@@ -17,7 +17,7 @@ set __COND=where "name='httpd.exe' and commandLine LIKE '%%%%%__PATH_COND%%%%%' 
     call "%__ROOT%\AdminShells\.includes\timestamp.bat"
     set _LOG=%__HTTPD_PATH%\logs\dog-%TIMESTAMP_DATE%.log
     echo %DATE% %TIME% >> "%_LOG%"
-    call "%__ROOT%\AdminShells\wmic\wmic-ascii.bat" process %__COND_LIST% >> "%_LOG%"
+    call "%__ROOT%\AdminShells\wmic\wmic-ascii.bat" process %__COND_LIST% get CommandLine,CreationDate,KernelModeTime,PeakVirtualSize,PeakWorkingSetSize,ThreadCount,VirtualSize,WorkingSetSize >> "%_LOG%"
     call "%__ROOT%\AdminShells\wmic\wmic-ascii.bat" process %__COND% call terminate >> "%_LOG%"
     ping 127.0.0.1 -n 120 > nul
 GOTO REDO
