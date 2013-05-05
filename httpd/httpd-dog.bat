@@ -1,4 +1,4 @@
-:: Check and kill httpd.exe if it's memory large the 100M.
+:: Check and kill httpd.exe if it's memory large the 100M or virtual memory larget then 900M.
 
 @echo off
 SETLOCAL
@@ -11,7 +11,7 @@ set __PATH_COND=%__HTTPD_PATH:\=\\%
 :: The query is XXX LIKE '%XXX%', to use environment variable, we should use LIKE '%%%ENV_VAR%%%'
 :: And to use it as the argument of batch file, the final format should be '%%%%%ENV_VAR%%%%%'
 set __COND_LIST=where "name='httpd.exe' and commandLine LIKE '%%%%%__PATH_COND%%%%%'"
-set __COND=where "name='httpd.exe' and commandLine LIKE '%%%%%__PATH_COND%%%%%' and workingsetsize>100000000"
+set __COND=where "name='httpd.exe' and commandLine LIKE '%%%%%__PATH_COND%%%%%' and (WorkingSetSize>100000000 OR VirtualSize>900000000)"
 
 :REDO
     call "%__ROOT%\AdminShells\.includes\timestamp.bat"
