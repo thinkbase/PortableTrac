@@ -1,0 +1,3 @@
+[trac.plugins]
+workflow_notification = workflow_notification
+

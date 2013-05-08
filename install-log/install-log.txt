@@ -1259,3 +1259,20 @@ E:\thinkbase.net\PortableTrac-git>trac-admin default deploy ./deploy
         C:\Users\root\AppData\Roaming\Python-Eggs\workfloweditorplugin-1.1.6_r12220-py2.7.egg-tmp\workfloweditor\htdocs
     Creating scripts.
 
+
+I:\thinkbase.net\github\PortableTrac>easy_install trac-WorkflowNotificationPlugin
+    [Current timestamp: 2013-05-09 周四  2-27-53.57]
+
+    >>> call easy_install.exe --prefix="I:\thinkbase.net\github\PortableTrac\trac" trac-WorkflowNotificationPlugin
+    Searching for trac-WorkflowNotificationPlugin
+    Reading http://pypi.python.org/simple/trac-WorkflowNotificationPlugin/
+    Reading http://trac-hacks.org/wiki/WorkflowNotificationPlugin
+    Best match: trac-WorkflowNotificationPlugin 0.4
+    Downloading http://pypi.python.org/packages/source/t/trac-WorkflowNotificationPlugin/trac-WorkflowNotificationPlugin-0.4.tar.gz#md5=32709dec471f0fd01e5b3f1bf811da2a
+    Processing trac-WorkflowNotificationPlugin-0.4.tar.gz
+    Running trac-WorkflowNotificationPlugin-0.4\setup.py -q bdist_egg --dist-dir d:\temp\easy_install-g6e25x\trac-WorkflowNotificationPlugin-0.4\egg-dist-tmp-12kxyq
+    Adding trac-workflownotificationplugin 0.4 to easy-install.pth file
+
+    Installed i:\thinkbase.net\github\portabletrac\trac\lib\site-packages\trac_workflownotificationplugin-0.4-py2.7.egg
+    Processing dependencies for trac-WorkflowNotificationPlugin
+    Finished processing dependencies for trac-WorkflowNotificationPlugin
