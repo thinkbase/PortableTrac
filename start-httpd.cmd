@@ -30,7 +30,7 @@ IF DEFINED SITE_IDX_FILE (
 
 @echo on
 @title Apache httpd/Trac
-echo AuthUserFile %TRACENV%\..\protected\passwd > "%PORTABLE_HOME%\httpd\Apache2.2\logs\trac.temp.conf"
+:: echo AuthUserFile %TRACENV%\..\protected\passwd > "%PORTABLE_HOME%\httpd\Apache2.2\logs\trac.temp.conf"
 call httpd\httpd.bat
 @echo off
 
