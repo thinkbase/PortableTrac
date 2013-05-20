@@ -25,7 +25,7 @@ IF EXIST "%COPY_SOURCE%\" (
 )
 
 @echo on
-xcopy /E "%COPY_SOURCE%" "%TRACENV%\%ENV%\"
+xcopy /E /H "%COPY_SOURCE%" "%TRACENV%\%ENV%\"
 del "%TRACENV%\%ENV%\db\trac.db"
 "%SQLITE_HOME%\sqlite3.exe" "%TRACENV%\%ENV%\db\trac.db" < "%TRACENV%\%ENV%\trac-db.sql"
 
