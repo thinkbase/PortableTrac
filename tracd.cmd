@@ -10,6 +10,9 @@ IF [%1]==[DEBUG] (
 	shift
 )
 
+set DIGEST_FILE=%TRACENV%\..\protected\passwd
+set AUTH=*,%DIGEST_FILE%,trac
+
 set PORT=%1
 IF NOT DEFINED PORT (
     echo.
@@ -19,13 +22,17 @@ IF NOT DEFINED PORT (
 set ENV=%2
 IF NOT DEFINED ENV (
     echo.
-    echo Error: 2nd argument[trac environment] missing.
-    exit /b -10
+    echo 2nd argument[trac environment] missing, running with ALL environments.
+    
+    @echo on
+    @title Trac
+    call python.exe %WINPDB_RPDB2% "%TRAC_INSTALL_PATH%\Scripts\tracd-script.py" -p %1 --auth="%AUTH%" --env-parent-dir %TRACENV%
+    @echo off
+    
+    goto EXIT_POINT
 )
 
 set PRJ=%TRACENV%\%ENV%
-set DIGEST_FILE=%TRACENV%\..\protected\passwd
-set AUTH=*,%DIGEST_FILE%,trac
 
 IF NOT EXIST "%PRJ%\" (
     echo.
@@ -50,4 +57,5 @@ IF NOT EXIST "%DIGEST_FILE%" (
 call python.exe %WINPDB_RPDB2% "%TRAC_INSTALL_PATH%\Scripts\tracd-script.py" -p %1 --auth="%AUTH%" "%PRJ%"
 @echo off
 
+:EXIT_POINT
 ENDLOCAL
