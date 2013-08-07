@@ -28,6 +28,11 @@ IF DEFINED SITE_IDX_FILE (
     )
 )
 
+:: HTTP Port
+IF NOT DEFINED HTTPD_PORT (
+    set HTTPD_PORT=80
+)
+
 @echo on
 @title Apache httpd/Trac
 :: echo AuthUserFile %TRACENV%\..\protected\passwd > "%PORTABLE_HOME%\httpd\Apache2.2\logs\trac.temp.conf"

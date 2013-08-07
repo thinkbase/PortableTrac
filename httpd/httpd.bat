@@ -5,6 +5,7 @@ SETLOCAL
 echo.
 echo ---^> Start httpd:
 echo .     - started in "%CD%"
+echo .     - http port %HTTPD_PORT%
 echo.
 echo ---^> PATH: %PATH%
 @echo on
