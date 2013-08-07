@@ -32,6 +32,7 @@ del "%TRACENV%\%ENV%\db\trac.db"
 :: Do hook - after-restore-sql
 set HOOK_PROG_AFTER_RESTORE_SQL=%COPY_SOURCE%\thinkbase.net\after-restore-sql.bat
 set FILE_AFTER_RESTORE_SQL=%TEMP%\%ENV%_%time::=-%_after-restore.sql
+set FILE_AFTER_RESTORE_SQL=%FILE_AFTER_RESTORE_SQL: =_%
 del /F/Q "%FILE_AFTER_RESTORE_SQL%"
 IF EXIST "%HOOK_PROG_AFTER_RESTORE_SQL%" (
     call "%HOOK_PROG_AFTER_RESTORE_SQL%" "%FILE_AFTER_RESTORE_SQL%"
