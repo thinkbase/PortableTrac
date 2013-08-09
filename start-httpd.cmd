@@ -1,11 +1,11 @@
 @echo off
 
-:: Kill the running process "httpd.exe" before start it ...
-taskkill /f /im httpd.exe
-
 SETLOCAL
 cd /d %~dp0%
 call bin\init-env.bat
+
+:: Kill the running process "httpd.exe" before start it ...
+wmic process where "name='httpd.exe' and commandline like '%%%PORTABLE_HOME:\=\\%%%'" call terminate
 
 set DIGEST_FILE=%TRACENV%\..\protected\passwd
 set AUTH=*,%DIGEST_FILE%,trac
