@@ -15,7 +15,7 @@ set GIT_HOME=%_PWD%\bin\Git\bin
 set GRAPHVIZ_HOME=%_PWD%\bin\graphviz\bin
 set SQLITE_HOME=%_PWD%\bin\sqlite-shell-win32-x86-3071401
 
-set PATH=%PY_SYSTEM32%;%PATH%;%PYTHONHOME%;%SVN_HOME%;%GIT_HOME%
+set PATH=%PY_SYSTEM32%;%PYTHONHOME%;%SVN_HOME%;%GIT_HOME%;%PATH%
 
 :: Trac 相关的程序独立于 Python 安装
 set TRAC_INSTALL_PATH=%_PWD%\trac
