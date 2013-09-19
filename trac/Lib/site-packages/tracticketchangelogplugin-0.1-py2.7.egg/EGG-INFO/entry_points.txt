@@ -1,0 +1,4 @@
+
+    [trac.plugins]
+    ticketlog = ticketlog.web_ui
+    
