@@ -1,0 +1,700 @@
+#### The installation logs based on ubuntu 14.04 server ####
+ - Ubuntu 14.04 Server
+ - svn and git installed
+
+==== First we need to install Conda (http://conda.pydata.org/index.html) ====
+
+    vmware@ubuntu1404server:/media/data$ ./Miniconda-3.6.0-Linux-x86_64.sh 
+
+    Welcome to Miniconda 3.6.0 (by Continuum Analytics, Inc.)
+
+    In order to continue the installation process, please review the license
+    agreement.
+    Please, press ENTER to continue
+    >>> 
+    ===================================
+    Anaconda END USER LICENSE AGREEMENT
+    ===================================
+    Anaconda ("the Software Product") and accompanying documentation is
+    licensed and not sold. The Software Product is protected by copyright laws
+    and treaties, as well as laws and treaties related to other forms of
+    intellectual property. Continuum Analytics Inc or its subsidiaries,
+    affiliates, and suppliers (collectively "Continuum ") own intellectual
+    property rights in the Software Product. The Licensee's ("you" or "your")
+    license to download, use, copy, or change the Software Product is subject
+    to these rights and to all the terms and conditions of this End User
+    License Agreement ("Agreement").
+
+    In addition to Continuum-licensed software, the Software product contains a
+    collection of software packages from other sources ("Other Vendor Tools").
+    Continuum may also distribute updates to these packages on an "as is" basis
+    and subject to their individual license agreements.   These licenses are
+    available either in the package itself or via request to info@continuum.io.
+    Continuum reserves the right to change which Other Vendor Tools are
+    provided in Anaconda.
+
+    Attribution License
+    ===================
+    Redistribution and derivative use of Anaconda, with or without
+    modification, in source or binary form is explicitly permitted provided
+    that:
+
+    1. You include a copy of this EULA in all copies of the derived software.
+    2. In advertising and labeling material for products built with Anaconda
+    you mention that your product either includes or derives from Anaconda.
+    "Powered by Anaconda" is the suggested phrase.
+
+
+    Export Regulations
+    ==================
+    Any use or distribution of Anaconda is made under conditions that the user
+    and/or distributor is in full compliance with all export and other
+    governing laws of the United States of America, including full and ongoing
+    compliance with the Export Administration Regulations (EAR) of the United
+    States Department of Commerce. See www.commerce.gov/ and
+    http://www.bis.doc.gov/index.php/regulations/export-administration-
+    regulations-ear.  Use or distribution of Continuum software products to any
+    persons, entities or countries currently under US sanctions is strictly
+    prohibited.   Anaconda is classified with an ECCN of 5D992 with no license
+    required for export to non-embargoed countires.
+
+    The United States currently has embargoes against Cuba, Iran, North Korea,
+    Sudan and Syria. The exportation, re-exportation, sale or supply, directly
+    or indirectly, from the United States, or by a U.S. person wherever
+    located, of any Continuum software to any of these countries is strictly
+    prohibited without prior authorization by the United States Government  By
+    accepting this Agreement, you represent to Continuum that you will comply
+    with all applicable export regulations for Anaconda.
+
+    No Implied Warranty or Fitness for Any Use
+    ==========================================
+    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+    AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+    IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+    ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+    LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+    CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+    SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+    INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+    CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+    ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+    POSSIBILITY OF SUCH DAMAGE
+
+    Do you approve the license terms? [yes|no]
+    [no] >>> yes
+
+    Miniconda will now be installed into this location:
+    /home/vmware/miniconda
+
+      - Press ENTER to confirm the location
+      - Press CTRL-C to abort the installation
+      - Or specify an different location below
+
+    [/home/vmware/miniconda] >>> 
+    PREFIX=/home/vmware/miniconda
+    installing: python-2.7.8-0 ...
+    installing: openssl-1.0.1h-0 ...
+    installing: pycosat-0.6.1-py27_0 ...
+    installing: pyyaml-3.11-py27_0 ...
+    installing: readline-6.2-2 ...
+    installing: requests-2.3.0-py27_0 ...
+    installing: sqlite-3.8.4.1-0 ...
+    installing: system-5.8-1 ...
+    installing: tk-8.5.15-0 ...
+    installing: yaml-0.1.4-0 ...
+    installing: zlib-1.2.7-0 ...
+    installing: conda-3.6.0-py27_0 ...
+    Python 2.7.8 :: Continuum Analytics, Inc.
+    creating default environment...
+    installation finished.
+    Do you wish the installer to prepend the Miniconda install location
+    to PATH in your /home/vmware/.bashrc ? [yes|no]
+    [no] >>> yes
+
+    Prepending PATH=/home/vmware/miniconda/bin to PATH in /home/vmware/.bashrc
+    A backup will be made to: /home/vmware/.bashrc-miniconda.bak
+
+
+    For this change to become active, you have to open a new terminal.
+
+    Thank you for installing Miniconda!
+
+==== Then create a conda env for PortableTrac (Re-login before execute commands) ====
+
+    vmware@ubuntu1404server:~$ conda create -n PortableTrac python=2.7 PyYAML PIL setuptools
+    Fetching package metadata: ..
+    Solving package specifications: .
+    Package plan for installation in environment /home/vmware/miniconda/envs/PortableTrac:
+
+    The following packages will be downloaded:
+
+        package                    |            build
+        ---------------------------|-----------------
+        freetype-2.4.10            |                0         2.0 MB
+        jpeg-8d                    |                0         699 KB
+        lcms-1.19                  |                0         595 KB
+        openssl-1.0.1h             |                1         2.5 MB
+        pil-1.1.7                  |           py27_1         587 KB
+        python-2.7.8               |                1        11.9 MB
+        setuptools-5.7             |           py27_1         427 KB
+        ------------------------------------------------------------
+                                               Total:        18.6 MB
+
+    The following NEW packages will be INSTALLED:
+
+        freetype:   2.4.10-0    
+        jpeg:       8d-0        
+        lcms:       1.19-0      
+        openssl:    1.0.1h-1    
+        pil:        1.1.7-py27_1
+        python:     2.7.8-1     
+        pyyaml:     3.11-py27_0 
+        readline:   6.2-2       
+        setuptools: 5.7-py27_1  
+        sqlite:     3.8.4.1-0   
+        system:     5.8-1       
+        tk:         8.5.15-0    
+        yaml:       0.1.4-0     
+        zlib:       1.2.7-0     
+
+    Proceed ([y]/n)? y
+
+    Fetching packages ...
+    freetype-2.4.1 100% |##########################################################################################################################| Time: 0:00:06 320.68 kB/s
+    jpeg-8d-0.tar. 100% |##########################################################################################################################| Time: 0:00:01 414.77 kB/s
+    lcms-1.19-0.ta 100% |##########################################################################################################################| Time: 0:00:21  28.65 kB/s
+    openssl-1.0.1h 100% |##########################################################################################################################| Time: 0:00:07 363.56 kB/s
+    pil-1.1.7-py27 100% |##########################################################################################################################| Time: 0:00:11  52.01 kB/s
+    python-2.7.8-1 100% |##########################################################################################################################| Time: 0:02:45  75.34 kB/s
+    setuptools-5.7 100% |##########################################################################################################################| Time: 0:00:04 108.84 kB/s
+    Extracting packages ...
+    [      COMPLETE      ] |############################################################################################################################################| 100%
+    Linking packages ...
+    [      COMPLETE      ] |############################################################################################################################################| 100%
+    #
+    # To activate this environment, use:
+    # $ source activate PortableTrac
+    #
+    # To deactivate this environment, use:
+    # $ source deactivate
+    #
+
+==== Active PortableTrac env then install ... ====
+
+    vmware@ubuntu1404server:~$ source activate PortableTrac
+    discarding /home/vmware/miniconda/bin from PATH
+    prepending /home/vmware/miniconda/envs/PortableTrac/bin to PATH
+    (PortableTrac)vmware@ubuntu1404server:~$ /media/data/git/PortableTrac/linux/install/install-PortableTrac.sh 
+    Directory of /media/data/git/PortableTrac/linux/install/install-PortableTrac.sh : /media/data/git/PortableTrac/linux/install
+    Processing Trac-1.0.1.tar.gz
+    Writing /tmp/easy_install-AoF0Ir/Trac-1.0.1/setup.cfg
+    Running Trac-1.0.1/setup.py -q bdist_egg --dist-dir /tmp/easy_install-AoF0Ir/Trac-1.0.1/egg-dist-tmp-bM8NvW
+    Genshi is needed by Trac setup, pre-installing
+    Searching for Genshi>=0.6
+    Reading https://pypi.python.org/simple/Genshi/
+    Reading http://genshi.edgewall.org/
+    Reading http://genshi.edgewall.org/wiki/Download
+    Best match: Genshi 0.7
+    Downloading http://ftp.edgewall.com/pub/genshi/Genshi-0.7-py2.7-linux-x86_64.egg
+    Processing Genshi-0.7-py2.7-linux-x86_64.egg
+    creating /tmp/easy_install-AoF0Ir/Trac-1.0.1/Genshi-0.7-py2.7-linux-x86_64.egg
+    Extracting Genshi-0.7-py2.7-linux-x86_64.egg to /tmp/easy_install-AoF0Ir/Trac-1.0.1
+
+    Installed /tmp/easy_install-AoF0Ir/Trac-1.0.1/Genshi-0.7-py2.7-linux-x86_64.egg
+    Adding Trac 1.0.1 to easy-install.pth file
+    Installing trac-admin script to /home/vmware/miniconda/envs/PortableTrac/bin
+    Installing tracd script to /home/vmware/miniconda/envs/PortableTrac/bin
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/Trac-1.0.1-py2.7.egg
+    Processing dependencies for Trac==1.0.1
+    Searching for Genshi>=0.6
+    Reading https://pypi.python.org/simple/Genshi/
+    Reading http://genshi.edgewall.org/
+    Reading http://genshi.edgewall.org/wiki/Download
+    Best match: Genshi 0.7
+    Downloading http://ftp.edgewall.com/pub/genshi/Genshi-0.7-py2.7-linux-x86_64.egg
+    Processing Genshi-0.7-py2.7-linux-x86_64.egg
+    creating /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/Genshi-0.7-py2.7-linux-x86_64.egg
+    Extracting Genshi-0.7-py2.7-linux-x86_64.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding Genshi 0.7 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/Genshi-0.7-py2.7-linux-x86_64.egg
+    Finished processing dependencies for Trac==1.0.1
+    Processing add_static_resources_plugin-0.0.3-py2.7.egg
+    Copying add_static_resources_plugin-0.0.3-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding add-static-resources-plugin 0.0.3 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/add_static_resources_plugin-0.0.3-py2.7.egg
+    Processing dependencies for add-static-resources-plugin==0.0.3
+    Finished processing dependencies for add-static-resources-plugin==0.0.3
+    Processing autocompleteusers-0.4.2dev_r11757-py2.7.egg
+    Copying autocompleteusers-0.4.2dev_r11757-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding autocompleteusers 0.4.2dev-r11757 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/autocompleteusers-0.4.2dev_r11757-py2.7.egg
+    Processing dependencies for autocompleteusers==0.4.2dev-r11757
+    Finished processing dependencies for autocompleteusers==0.4.2dev-r11757
+    Processing Babel-0.9.6-py2.7.egg
+    Copying Babel-0.9.6-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding Babel 0.9.6 to easy-install.pth file
+    Installing pybabel script to /home/vmware/miniconda/envs/PortableTrac/bin
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/Babel-0.9.6-py2.7.egg
+    Processing dependencies for Babel==0.9.6
+    Finished processing dependencies for Babel==0.9.6
+    Processing codeexamplemacro-1.0_r11766-py2.7.egg
+    Copying codeexamplemacro-1.0_r11766-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding codeexamplemacro 1.0-r11766 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/codeexamplemacro-1.0_r11766-py2.7.egg
+    Processing dependencies for codeexamplemacro==1.0-r11766
+    Finished processing dependencies for codeexamplemacro==1.0-r11766
+    Processing codeexamplemacro-1.0_r11766-py2.7-patched.egg
+    Copying codeexamplemacro-1.0_r11766-py2.7-patched.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Removing codeexamplemacro 1.0-r11766 from easy-install.pth file
+    Adding codeexamplemacro 1.0-r11766 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/codeexamplemacro-1.0_r11766-py2.7-patched.egg
+    Processing dependencies for codeexamplemacro==1.0-r11766
+    Finished processing dependencies for codeexamplemacro==1.0-r11766
+    Processing docutils-0.9.1-py2.7.egg
+    Copying docutils-0.9.1-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding docutils 0.9.1 to easy-install.pth file
+    Installing rst2odt_prepstyles.py script to /home/vmware/miniconda/envs/PortableTrac/bin
+    Installing rst2xetex.py script to /home/vmware/miniconda/envs/PortableTrac/bin
+    Installing rstpep2html.py script to /home/vmware/miniconda/envs/PortableTrac/bin
+    Installing rst2pseudoxml.py script to /home/vmware/miniconda/envs/PortableTrac/bin
+    Installing rst2html.py script to /home/vmware/miniconda/envs/PortableTrac/bin
+    Installing rst2odt.py script to /home/vmware/miniconda/envs/PortableTrac/bin
+    Installing rst2man.py script to /home/vmware/miniconda/envs/PortableTrac/bin
+    Installing rst2latex.py script to /home/vmware/miniconda/envs/PortableTrac/bin
+    Installing rst2s5.py script to /home/vmware/miniconda/envs/PortableTrac/bin
+    Installing rst2xml.py script to /home/vmware/miniconda/envs/PortableTrac/bin
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/docutils-0.9.1-py2.7.egg
+    Processing dependencies for docutils==0.9.1
+    Finished processing dependencies for docutils==0.9.1
+    Processing gantt-0.2-py2.7.egg
+    Copying gantt-0.2-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding gantt 0.2 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/gantt-0.2-py2.7.egg
+    Processing dependencies for gantt==0.2
+    Searching for python-dateutil
+    Reading https://pypi.python.org/simple/python-dateutil/
+    Reading http://labix.org/python-dateutil
+    Best match: python-dateutil 2.2
+    Downloading https://pypi.python.org/packages/source/p/python-dateutil/python-dateutil-2.2.tar.gz#md5=c1f654d0ff7e33999380a8ba9783fd5c
+    Processing python-dateutil-2.2.tar.gz
+    Writing /tmp/easy_install-DHzP72/python-dateutil-2.2/setup.cfg
+    Running python-dateutil-2.2/setup.py -q bdist_egg --dist-dir /tmp/easy_install-DHzP72/python-dateutil-2.2/egg-dist-tmp-nIG8OF
+    Adding python-dateutil 2.2 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/python_dateutil-2.2-py2.7.egg
+    Searching for six
+    Reading https://pypi.python.org/simple/six/
+    Best match: six 1.8.0
+    Downloading https://pypi.python.org/packages/source/s/six/six-1.8.0.tar.gz#md5=1626eb24cc889110c38f7e786ec69885
+    Processing six-1.8.0.tar.gz
+    Writing /tmp/easy_install-mF5jxS/six-1.8.0/setup.cfg
+    Running six-1.8.0/setup.py -q bdist_egg --dist-dir /tmp/easy_install-mF5jxS/six-1.8.0/egg-dist-tmp-cotA_G
+    no previously-included directories found matching 'documentation/_build'
+    zip_safe flag not set; analyzing archive contents...
+    six: module references __path__
+    Adding six 1.8.0 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/six-1.8.0-py2.7.egg
+    Finished processing dependencies for gantt==0.2
+    Processing graphviz-1.0.0.7dev_r12290-py2.7.egg
+    Copying graphviz-1.0.0.7dev_r12290-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding graphviz 1.0.0.7dev-r12290 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/graphviz-1.0.0.7dev_r12290-py2.7.egg
+    Processing dependencies for graphviz==1.0.0.7dev-r12290
+    Finished processing dependencies for graphviz==1.0.0.7dev-r12290
+    Processing gridmodify-0.1.6dev_r12235-py2.7.egg
+    Copying gridmodify-0.1.6dev_r12235-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding gridmodify 0.1.6dev-r12235 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/gridmodify-0.1.6dev_r12235-py2.7.egg
+    Processing dependencies for gridmodify==0.1.6dev-r12235
+    Finished processing dependencies for gridmodify==0.1.6dev-r12235
+    Processing macrochain-0.2-py2.7.egg
+    Copying macrochain-0.2-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding macrochain 0.2 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/macrochain-0.2-py2.7.egg
+    Processing dependencies for macrochain==0.2
+    Finished processing dependencies for macrochain==0.2
+    Processing notebox-1.0dev_r11779-py2.7.egg
+    Copying notebox-1.0dev_r11779-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding notebox 1.0dev-r11779 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/notebox-1.0dev_r11779-py2.7.egg
+    Processing dependencies for notebox==1.0dev-r11779
+    Finished processing dependencies for notebox==1.0dev-r11779
+    Processing plantuml-2.0dev_r11721-py2.7.egg
+    Copying plantuml-2.0dev_r11721-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding plantuml 2.0dev-r11721 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/plantuml-2.0dev_r11721-py2.7.egg
+    Processing dependencies for plantuml==2.0dev-r11721
+    Finished processing dependencies for plantuml==2.0dev-r11721
+    Processing plantuml-2.0dev_r11721-py2.7-patched.egg
+    Copying plantuml-2.0dev_r11721-py2.7-patched.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Removing plantuml 2.0dev-r11721 from easy-install.pth file
+    Adding plantuml 2.0dev-r11721 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/plantuml-2.0dev_r11721-py2.7-patched.egg
+    Processing dependencies for plantuml==2.0dev-r11721
+    Finished processing dependencies for plantuml==2.0dev-r11721
+    Processing Pygments-1.5-py2.7.egg
+    Copying Pygments-1.5-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding Pygments 1.5 to easy-install.pth file
+    Installing pygmentize script to /home/vmware/miniconda/envs/PortableTrac/bin
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/Pygments-1.5-py2.7.egg
+    Processing dependencies for Pygments==1.5
+    Finished processing dependencies for Pygments==1.5
+    Processing python_dateutil-2.1-py2.7.egg
+    Copying python_dateutil-2.1-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Removing python-dateutil 2.2 from easy-install.pth file
+    Adding python-dateutil 2.1 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/python_dateutil-2.1-py2.7.egg
+    Processing dependencies for python-dateutil==2.1
+    Finished processing dependencies for python-dateutil==2.1
+    Processing pytz-2012h-py2.7.egg
+    Copying pytz-2012h-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding pytz 2012h to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/pytz-2012h-py2.7.egg
+    Processing dependencies for pytz==2012h
+    Finished processing dependencies for pytz==2012h
+    Processing simplejson-2.6.2-py2.7.egg
+    Copying simplejson-2.6.2-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding simplejson 2.6.2 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/simplejson-2.6.2-py2.7.egg
+    Processing dependencies for simplejson==2.6.2
+    Finished processing dependencies for simplejson==2.6.2
+    Processing six-1.2.0-py2.7.egg
+    Copying six-1.2.0-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Removing six 1.8.0 from easy-install.pth file
+    Adding six 1.2.0 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/six-1.2.0-py2.7.egg
+    Processing dependencies for six==1.2.0
+    Finished processing dependencies for six==1.2.0
+    Processing tracaccountmanager-0.4dev_r12139-py2.7.egg
+    Copying tracaccountmanager-0.4dev_r12139-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracaccountmanager 0.4dev-r12139 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracaccountmanager-0.4dev_r12139-py2.7.egg
+    Processing dependencies for tracaccountmanager==0.4dev-r12139
+    Finished processing dependencies for tracaccountmanager==0.4dev-r12139
+    Processing tracmacropost-0.2-py2.7.egg
+    Copying tracmacropost-0.2-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracmacropost 0.2 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracmacropost-0.2-py2.7.egg
+    Processing dependencies for tracmacropost==0.2
+    Finished processing dependencies for tracmacropost==0.2
+    Processing tracaddcommentmacro-0.3-py2.7.egg
+    Copying tracaddcommentmacro-0.3-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracaddcommentmacro 0.3 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracaddcommentmacro-0.3-py2.7.egg
+    Processing dependencies for tracaddcommentmacro==0.3
+    Finished processing dependencies for tracaddcommentmacro==0.3
+    Processing tracaddheadersplugin-0.3-py2.7.egg
+    Copying tracaddheadersplugin-0.3-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracaddheadersplugin 0.3 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracaddheadersplugin-0.3-py2.7.egg
+    Processing dependencies for tracaddheadersplugin==0.3
+    Finished processing dependencies for tracaddheadersplugin==0.3
+    Processing tracadvparseargsplugin-0.4-py2.7.egg
+    Copying tracadvparseargsplugin-0.4-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracadvparseargsplugin 0.4 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracadvparseargsplugin-0.4-py2.7.egg
+    Processing dependencies for tracadvparseargsplugin==0.4
+    Finished processing dependencies for tracadvparseargsplugin==0.4
+    Processing tracautocomplete-0.1-py2.7.egg
+    Copying tracautocomplete-0.1-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracautocomplete 0.1 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracautocomplete-0.1-py2.7.egg
+    Processing dependencies for tracautocomplete==0.1
+    Finished processing dependencies for tracautocomplete==0.1
+    Processing traccodecomments-1.1.1-py2.7.egg
+    Copying traccodecomments-1.1.1-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding traccodecomments 1.1.1 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/traccodecomments-1.1.1-py2.7.egg
+    Processing dependencies for traccodecomments==1.1.1
+    Finished processing dependencies for traccodecomments==1.1.1
+    Processing traccsvmacro-1.0-py2.7.egg
+    Copying traccsvmacro-1.0-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding traccsvmacro 1.0 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/traccsvmacro-1.0-py2.7.egg
+    Processing dependencies for traccsvmacro==1.0
+    Finished processing dependencies for traccsvmacro==1.0
+    Processing traccustomfieldadmin-0.2.8_r12166-py2.7.egg
+    Copying traccustomfieldadmin-0.2.8_r12166-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding traccustomfieldadmin 0.2.8-r12166 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/traccustomfieldadmin-0.2.8_r12166-py2.7.egg
+    Processing dependencies for traccustomfieldadmin==0.2.8-r12166
+    Finished processing dependencies for traccustomfieldadmin==0.2.8-r12166
+    Processing tracdatefield-3.0.0dev_r12118-py2.7.egg
+    Copying tracdatefield-3.0.0dev_r12118-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracdatefield 3.0.0dev-r12118 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracdatefield-3.0.0dev_r12118-py2.7.egg
+    Processing dependencies for tracdatefield==3.0.0dev-r12118
+    Finished processing dependencies for tracdatefield==3.0.0dev-r12118
+    Processing tracdragdrop-0.12.0.10_r12033-py2.7.egg
+    Copying tracdragdrop-0.12.0.10_r12033-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracdragdrop 0.12.0.10-r12033 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracdragdrop-0.12.0.10_r12033-py2.7.egg
+    Processing dependencies for tracdragdrop==0.12.0.10-r12033
+    Finished processing dependencies for tracdragdrop==0.12.0.10-r12033
+    Processing tracflashembedmacro-0.95rc1_r10984-py2.7.egg
+    Copying tracflashembedmacro-0.95rc1_r10984-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracflashembedmacro 0.95rc1-r10984 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracflashembedmacro-0.95rc1_r10984-py2.7.egg
+    Processing dependencies for tracflashembedmacro==0.95rc1-r10984
+    Finished processing dependencies for tracflashembedmacro==0.95rc1-r10984
+    Processing tracfullblogplugin-0.1.1_r12111-py2.7.egg
+    Copying tracfullblogplugin-0.1.1_r12111-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracfullblogplugin 0.1.1-r12111 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracfullblogplugin-0.1.1_r12111-py2.7.egg
+    Processing dependencies for tracfullblogplugin==0.1.1-r12111
+    Finished processing dependencies for tracfullblogplugin==0.1.1-r12111
+    Processing tracganttcalendarplugin-0.11-py2.7.egg
+    Copying tracganttcalendarplugin-0.11-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracganttcalendarplugin 0.11 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracganttcalendarplugin-0.11-py2.7.egg
+    Processing dependencies for tracganttcalendarplugin==0.11
+    Finished processing dependencies for tracganttcalendarplugin==0.11
+    Processing tracincludemacro-3.0.0dev_r12030-py2.7.egg
+    Copying tracincludemacro-3.0.0dev_r12030-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracincludemacro 3.0.0dev-r12030 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracincludemacro-3.0.0dev_r12030-py2.7.egg
+    Processing dependencies for tracincludemacro==3.0.0dev-r12030
+    Finished processing dependencies for tracincludemacro==3.0.0dev-r12030
+    Processing tracincludepagesmacro-0.1-py2.7.egg
+    Copying tracincludepagesmacro-0.1-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracincludepagesmacro 0.1 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracincludepagesmacro-0.1-py2.7.egg
+    Processing dependencies for tracincludepagesmacro==0.1
+    Finished processing dependencies for tracincludepagesmacro==0.1
+    Processing trac_jsgantt-0.10_r12213-py2.7.egg
+    Copying trac_jsgantt-0.10_r12213-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding trac-jsgantt 0.10-r12213 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/trac_jsgantt-0.10_r12213-py2.7.egg
+    Processing dependencies for trac-jsgantt==0.10-r12213
+    Finished processing dependencies for trac-jsgantt==0.10-r12213
+    Processing trackeywordsuggest-0.5.0dev_r12103-py2.7.egg
+    Copying trackeywordsuggest-0.5.0dev_r12103-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding trackeywordsuggest 0.5.0dev-r12103 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/trackeywordsuggest-0.5.0dev_r12103-py2.7.egg
+    Processing dependencies for trackeywordsuggest==0.5.0dev-r12103
+    Finished processing dependencies for trackeywordsuggest==0.5.0dev-r12103
+    Processing trac_lightertheme-0.3-py2.7.egg
+    Copying trac_lightertheme-0.3-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding trac-lightertheme 0.3 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/trac_lightertheme-0.3-py2.7.egg
+    Processing dependencies for trac-lightertheme==0.3
+    Finished processing dependencies for trac-lightertheme==0.3
+    Processing traclistofwikipagesmacro-0.4-py2.7.egg
+    Copying traclistofwikipagesmacro-0.4-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding traclistofwikipagesmacro 0.4 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/traclistofwikipagesmacro-0.4-py2.7.egg
+    Processing dependencies for traclistofwikipagesmacro==0.4
+    Finished processing dependencies for traclistofwikipagesmacro==0.4
+    Processing tracmastertickets-3.0.3-py2.7.egg
+    Copying tracmastertickets-3.0.3-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracmastertickets 3.0.3 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracmastertickets-3.0.3-py2.7.egg
+    Processing dependencies for tracmastertickets==3.0.3
+    Finished processing dependencies for tracmastertickets==3.0.3
+    Processing tracnavcontrol-1.0-py2.7.egg
+    Copying tracnavcontrol-1.0-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracnavcontrol 1.0 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracnavcontrol-1.0-py2.7.egg
+    Processing dependencies for tracnavcontrol==1.0
+    Finished processing dependencies for tracnavcontrol==1.0
+    Processing tracnewpagemacro-0.1-py2.7.egg
+    Copying tracnewpagemacro-0.1-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracnewpagemacro 0.1 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracnewpagemacro-0.1-py2.7.egg
+    Processing dependencies for tracnewpagemacro==0.1
+    Finished processing dependencies for tracnewpagemacro==0.1
+    Processing tracnumberedheadlinesplugin-0.4_r10976-py2.7.egg
+    Copying tracnumberedheadlinesplugin-0.4_r10976-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracnumberedheadlinesplugin 0.4-r10976 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracnumberedheadlinesplugin-0.4_r10976-py2.7.egg
+    Processing dependencies for tracnumberedheadlinesplugin==0.4-r10976
+    Finished processing dependencies for tracnumberedheadlinesplugin==0.4-r10976
+    Processing tracreportinplaceeditplugin-0.1-py2.7.egg
+    Copying tracreportinplaceeditplugin-0.1-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracreportinplaceeditplugin 0.1 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracreportinplaceeditplugin-0.1-py2.7.egg
+    Processing dependencies for tracreportinplaceeditplugin==0.1
+    Finished processing dependencies for tracreportinplaceeditplugin==0.1
+    Processing tracsectioneditplugin-0.2.6_r11208-py2.7.egg
+    Copying tracsectioneditplugin-0.2.6_r11208-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracsectioneditplugin 0.2.6-r11208 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracsectioneditplugin-0.2.6_r11208-py2.7.egg
+    Processing dependencies for tracsectioneditplugin==0.2.6-r11208
+    Finished processing dependencies for tracsectioneditplugin==0.2.6-r11208
+    Processing tracsql-0.3-py2.7.egg
+    Copying tracsql-0.3-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracsql 0.3 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracsql-0.3-py2.7.egg
+    Processing dependencies for tracsql==0.3
+    Finished processing dependencies for tracsql==0.3
+    Processing tracstats-0.5-py2.7.egg
+    Copying tracstats-0.5-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracstats 0.5 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracstats-0.5-py2.7.egg
+    Processing dependencies for tracstats==0.5
+    Finished processing dependencies for tracstats==0.5
+    Processing tracsubpages-0.5-py2.7.egg
+    Copying tracsubpages-0.5-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracsubpages 0.5 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracsubpages-0.5-py2.7.egg
+    Processing dependencies for tracsubpages==0.5
+    Finished processing dependencies for tracsubpages==0.5
+    Processing tracsubticketsplugin-0.2.0.dev_20121107-py2.7.egg
+    Copying tracsubticketsplugin-0.2.0.dev_20121107-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracsubticketsplugin 0.2.0.dev-20121107 to easy-install.pth file
+    Installing check-trac-subtickets script to /home/vmware/miniconda/envs/PortableTrac/bin
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracsubticketsplugin-0.2.0.dev_20121107-py2.7.egg
+    Processing dependencies for tracsubticketsplugin==0.2.0.dev-20121107
+    Finished processing dependencies for tracsubticketsplugin==0.2.0.dev-20121107
+    Processing tractags-0.6-py2.7.egg
+    Copying tractags-0.6-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tractags 0.6 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tractags-0.6-py2.7.egg
+    Processing dependencies for tractags==0.6
+    Finished processing dependencies for tractags==0.6
+    Processing tractags-0.6-py2.7-patched.egg
+    Copying tractags-0.6-py2.7-patched.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Removing tractags 0.6 from easy-install.pth file
+    Adding tractags 0.6 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tractags-0.6-py2.7-patched.egg
+    Processing dependencies for tractags==0.6
+    Finished processing dependencies for tractags==0.6
+    Processing tracthemeengine-2.1.0-py2.7.egg
+    Copying tracthemeengine-2.1.0-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracthemeengine 2.1.0 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracthemeengine-2.1.0-py2.7.egg
+    Processing dependencies for tracthemeengine==2.1.0
+    Finished processing dependencies for tracthemeengine==2.1.0
+    Processing tracticketchangelogplugin-0.1-py2.7.egg
+    Copying tracticketchangelogplugin-0.1-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracticketchangelogplugin 0.1 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracticketchangelogplugin-0.1-py2.7.egg
+    Processing dependencies for tracticketchangelogplugin==0.1
+    Finished processing dependencies for tracticketchangelogplugin==0.1
+    Processing tracticketdepgraph-0.11-py2.7.egg
+    Copying tracticketdepgraph-0.11-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracticketdepgraph 0.11 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracticketdepgraph-0.11-py2.7.egg
+    Processing dependencies for tracticketdepgraph==0.11
+    Finished processing dependencies for tracticketdepgraph==0.11
+    Processing tractweakui-0.1-py2.7.egg
+    Copying tractweakui-0.1-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tractweakui 0.1 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tractweakui-0.1-py2.7.egg
+    Processing dependencies for tractweakui==0.1
+    Finished processing dependencies for tractweakui==0.1
+    Processing tracvote-0.1.3dev_r11793-py2.7.egg
+    Copying tracvote-0.1.3dev_r11793-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracvote 0.1.3dev-r11793 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracvote-0.1.3dev_r11793-py2.7.egg
+    Processing dependencies for tracvote==0.1.3dev-r11793
+    Finished processing dependencies for tracvote==0.1.3dev-r11793
+    Processing tracwikistats-0.1_r11352-py2.7.egg
+    Copying tracwikistats-0.1_r11352-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracwikistats 0.1-r11352 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracwikistats-0.1_r11352-py2.7.egg
+    Processing dependencies for tracwikistats==0.1-r11352
+    Finished processing dependencies for tracwikistats==0.1-r11352
+    Processing trac_workflownotificationplugin-0.4-py2.7.egg
+    Copying trac_workflownotificationplugin-0.4-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding trac-workflownotificationplugin 0.4 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/trac_workflownotificationplugin-0.4-py2.7.egg
+    Processing dependencies for trac-workflownotificationplugin==0.4
+    Finished processing dependencies for trac-workflownotificationplugin==0.4
+    Processing tracwysiwyg-0.12.0.4_r11158-py2.7.egg
+    Copying tracwysiwyg-0.12.0.4_r11158-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracwysiwyg 0.12.0.4-r11158 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracwysiwyg-0.12.0.4_r11158-py2.7.egg
+    Processing dependencies for tracwysiwyg==0.12.0.4-r11158
+    Finished processing dependencies for tracwysiwyg==0.12.0.4-r11158
+    Processing tracxmlrpc-1.1.2_r13203-py2.7.egg
+    Copying tracxmlrpc-1.1.2_r13203-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding tracxmlrpc 1.1.2-r13203 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/tracxmlrpc-1.1.2_r13203-py2.7.egg
+    Processing dependencies for tracxmlrpc==1.1.2-r13203
+    Finished processing dependencies for tracxmlrpc==1.1.2-r13203
+    Processing visitcounter-0.2-py2.7.egg
+    Copying visitcounter-0.2-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding visitcounter 0.2 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/visitcounter-0.2-py2.7.egg
+    Processing dependencies for visitcounter==0.2
+    Finished processing dependencies for visitcounter==0.2
+    Processing wikitablemacro-0.1_r10997-py2.7.egg
+    Copying wikitablemacro-0.1_r10997-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding wikitablemacro 0.1-r10997 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/wikitablemacro-0.1_r10997-py2.7.egg
+    Processing dependencies for wikitablemacro==0.1-r10997
+    Finished processing dependencies for wikitablemacro==0.1-r10997
+    Processing workfloweditorplugin-1.1.6_r12220-py2.7.egg
+    Copying workfloweditorplugin-1.1.6_r12220-py2.7.egg to /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages
+    Adding workfloweditorplugin 1.1.6-r12220 to easy-install.pth file
+
+    Installed /home/vmware/miniconda/envs/PortableTrac/lib/python2.7/site-packages/workfloweditorplugin-1.1.6_r12220-py2.7.egg
+    Processing dependencies for workfloweditorplugin==1.1.6-r12220
+    Finished processing dependencies for workfloweditorplugin==1.1.6-r12220
+
+
