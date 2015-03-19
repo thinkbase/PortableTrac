@@ -4,6 +4,8 @@ set -o errexit
 
 # This script should create a sql script file for sqlite to execute after the restore process finished.
 
+source $(cd "$(dirname "$0")"; pwd)/../../../bin/init-env.sh
+
 # $1 is the sql file's path, send by caller
 set +o nounset
 if [ ! -z $1 ]
