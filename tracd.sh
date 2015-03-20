@@ -5,6 +5,12 @@ set -o errexit
 source $(cd "$(dirname "$0")"; pwd)/bin/init-env.sh
 
 DIGEST_FILE="$TRACENV/../protected/passwd"
+if [ ! -f "$DIGEST_FILE" ]
+then
+    echo -e "\nError: passwd file missing, please run './passwd.sh admin 111111' to create it.\n"
+    exit -30
+fi
+
 AUTH="*,$DIGEST_FILE,trac"
 
 set +o nounset
@@ -14,6 +20,7 @@ then
     echo -e "\nError: 1st argument(web server port number) missing.\n"
     exit -10
 fi
+
 ENV="$2"
 if [ -z $ENV ]
 then
@@ -35,11 +42,7 @@ else
         echo -e "\nError: trac environment ($PRJ) not found.\n"
         exit -20
     fi
-    if [ ! -f "$DIGEST_FILE" ]
-    then
-        echo -e "\nError: passwd file missing, please run './passwd.sh admin 111111' to create it.\n"
-        exit -30
-    fi
+
     set -x
     tracd -p $PORT --auth="$AUTH" "$PRJ"
     set +x
