@@ -4,12 +4,14 @@ set -o errexit
 
 source $(cd "$(dirname "$0")"; pwd)/init-env.sh
 
+set +o nounset
 ENV="$1"
 if [ -z $ENV ]
 then
     echo -e "\nError: 1st argument[trac environment] missing.\n"
     exit -10
 fi
+set -o nounset
 
 COPY_SOURCE=$TRACENV/../backup/$ENV
 if [ ! -d "$COPY_SOURCE" ]
