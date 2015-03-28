@@ -14,7 +14,7 @@ echo "Directory of $_script : $_script_dir"
 SITE_PKGS_DIR=$_script_dir/../../trac/Lib/site-packages
 
 # Install trac and plugins ...
-easy_install ${SITE_PKGS_DIR}/Trac-1.0.1.tar.gz
+easy_install ${SITE_PKGS_DIR}/Trac-1.0.5.tar.gz
 
 easy_install ${SITE_PKGS_DIR}/add_static_resources_plugin-0.0.3-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/autocompleteusers-0.4.2dev_r11757-py2.7.egg
