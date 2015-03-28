@@ -1,9 +1,9 @@
-#!"I:\thinkbase.net\github\PortableTrac-git\Portable Python 2.7.3.1\App\python.exe"
-# EASY-INSTALL-ENTRY-SCRIPT: 'Trac==1.0.1','console_scripts','tracd'
-__requires__ = 'Trac==1.0.1'
+#!I:\thinkbase.net\github\PortableTrac\PortablePython\App\python.exe
+# EASY-INSTALL-ENTRY-SCRIPT: 'trac==1.0.5','console_scripts','tracd'
+__requires__ = 'trac==1.0.5'
 import sys
 from pkg_resources import load_entry_point
 
 sys.exit(
-   load_entry_point('Trac==1.0.1', 'console_scripts', 'tracd')()
+   load_entry_point('trac==1.0.5', 'console_scripts', 'tracd')()
 )

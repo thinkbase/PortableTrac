@@ -1276,3 +1276,42 @@ I:\thinkbase.net\github\PortableTrac>easy_install trac-WorkflowNotificationPlugi
     Installed i:\thinkbase.net\github\portabletrac\trac\lib\site-packages\trac_workflownotificationplugin-0.4-py2.7.egg
     Processing dependencies for trac-WorkflowNotificationPlugin
     Finished processing dependencies for trac-WorkflowNotificationPlugin
+
+
+升级到 Trac 1.0.5
+====
+    I:\thinkbase.net\github\PortableTrac>easy_install.cmd I:\thinkbase.net\github\PortableTrac\trac\Lib\site-packages\Trac-1.0.5.tar.gz
+    [Current timestamp: 2015-03-28 周六 18-09-03.18]
+
+    >>> call easy_install.exe --prefix="I:\thinkbase.net\github\PortableTrac\trac" I:\thinkbase.net\github\PortableTrac\trac\Lib\site-packages\Trac-1.0.5.tar.gz
+    Processing Trac-1.0.5.tar.gz
+    Running Trac-1.0.5\setup.py -q bdist_egg --dist-dir d:\temp\easy_install-cg3sh6\Trac-1.0.5\egg-dist-tmp-l8km16
+    error: trac/locale\ca\LC_MESSAGES\messages.po:668: unknown named placeholder u'resource'
+    error: trac/locale\ca\LC_MESSAGES\messages.po:704: unknown named placeholder u'subject'
+    error: trac/locale\ca\LC_MESSAGES\messages.po:709: unknown named placeholder u'subject'
+    error: trac/locale\ca\LC_MESSAGES\messages.po:736: unknown named placeholder u'page'
+    error: trac/locale\ca\LC_MESSAGES\messages.po:2722: unknown named placeholder u'revs'
+    error: trac/locale\ca\LC_MESSAGES\messages.po:2994: unknown named placeholder u'shortname'
+    error: trac/locale\ca\LC_MESSAGES\messages.po:4692: unknown named placeholder u'created'
+    error: trac/locale\ca\LC_MESSAGES\messages.po:4697: unknown named placeholder u'created'
+    error: trac/locale\ca\LC_MESSAGES\messages.po:5274: unknown named placeholder u'file'
+    error: trac/locale\ca\LC_MESSAGES\messages.po:5286: unknown named placeholder u'file'
+    error: trac/locale\ca\LC_MESSAGES\messages.po:5806: unknown named placeholder u'in_repo'
+    error: trac/locale\ca\LC_MESSAGES\messages.po:5811: unknown named placeholder u'in_repo'
+    error: trac/locale\ca\LC_MESSAGES\messages.po:6670: unknown named placeholder u'name'
+    error: trac/locale\ca\LC_MESSAGES\messages.po:6675: unknown named placeholder u'name'
+    error: trac/locale\ca\LC_MESSAGES\messages.po:6703: incompatible format for placeholder u'version': 'd' and 's' are notcompatible
+    catalog 'trac/locale\\fa\\LC_MESSAGES\\messages.po' is marked as fuzzy, skipping
+    catalog 'trac/locale\\vi\\LC_MESSAGES\\messages.po' is marked as fuzzy, skipping
+    Removing trac 1.0.1 from easy-install.pth file
+    Adding trac 1.0.5 to easy-install.pth file
+    Installing trac-admin-script.py script to I:\thinkbase.net\github\PortableTrac\trac/Scripts
+    Installing trac-admin.exe script to I:\thinkbase.net\github\PortableTrac\trac/Scripts
+    Installing trac-admin.exe.manifest script to I:\thinkbase.net\github\PortableTrac\trac/Scripts
+    Installing tracd-script.py script to I:\thinkbase.net\github\PortableTrac\trac/Scripts
+    Installing tracd.exe script to I:\thinkbase.net\github\PortableTrac\trac/Scripts
+    Installing tracd.exe.manifest script to I:\thinkbase.net\github\PortableTrac\trac/Scripts
+
+    Installed i:\thinkbase.net\github\portabletrac\trac\lib\site-packages\trac-1.0.5-py2.7.egg
+    Processing dependencies for trac==1.0.5
+    Finished processing dependencies for trac==1.0.5
