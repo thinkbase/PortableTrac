@@ -14,11 +14,17 @@ echo "Directory of $_script : $_script_dir"
 SITE_PKGS_DIR=$_script_dir/../../trac/Lib/site-packages
 
 # Install trac and plugins ...
+easy_install ${SITE_PKGS_DIR}/Pygments-1.5-py2.7.egg
+easy_install ${SITE_PKGS_DIR}/python_dateutil-2.1-py2.7.egg
+easy_install ${SITE_PKGS_DIR}/pytz-2012h-py2.7.egg
+easy_install ${SITE_PKGS_DIR}/simplejson-2.6.2-py2.7.egg
+easy_install ${SITE_PKGS_DIR}/six-1.2.0-py2.7.egg
+
+easy_install ${SITE_PKGS_DIR}/Babel-0.9.6-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/Trac-1.0.5.tar.gz
 
 easy_install ${SITE_PKGS_DIR}/add_static_resources_plugin-0.0.3-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/autocompleteusers-0.4.2dev_r11757-py2.7.egg
-easy_install ${SITE_PKGS_DIR}/Babel-0.9.6-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/codeexamplemacro-1.0_r11766-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/codeexamplemacro-1.0_r11766-py2.7-patched.egg
 easy_install ${SITE_PKGS_DIR}/docutils-0.9.1-py2.7.egg
@@ -34,11 +40,6 @@ easy_install ${SITE_PKGS_DIR}/plantuml-2.0dev_r11721-py2.7-patched.egg
 #easy_install ${SITE_PKGS_DIR}/projectplan-0.93.0-py2.7.egg
 #easy_install ${SITE_PKGS_DIR}/projectplan-0.93.0-py2.7-patched.egg
 
-easy_install ${SITE_PKGS_DIR}/Pygments-1.5-py2.7.egg
-easy_install ${SITE_PKGS_DIR}/python_dateutil-2.1-py2.7.egg
-easy_install ${SITE_PKGS_DIR}/pytz-2012h-py2.7.egg
-easy_install ${SITE_PKGS_DIR}/simplejson-2.6.2-py2.7.egg
-easy_install ${SITE_PKGS_DIR}/six-1.2.0-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/tracaccountmanager-0.4dev_r12139-py2.7.egg
 
 #tracaddcommentmacro depends on tracmacropost
