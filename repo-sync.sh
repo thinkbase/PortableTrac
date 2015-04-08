@@ -11,7 +11,7 @@ do
         echo "Skip dicectory: ${DIR}"
     else
         set -x
-        bash -c 'trac-admin "${SITE_BASE}/tracenv/${DIR}" repository sync *'
+        trac-admin "${SITE_BASE}/tracenv/${DIR}" repository sync *
         set +x
     fi
 done
