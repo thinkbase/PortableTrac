@@ -16,6 +16,7 @@ INSERT INTO "system" VALUES('T&E-statuses','assigned,accepted,closed,new,reopene
 INSERT INTO "system" VALUES('EstimatorPluginDbVersion','4');
 INSERT INTO "system" VALUES('subtickets','2');
 INSERT INTO "system" VALUES('mastertickets','2');
+INSERT INTO "system" VALUES('multireposearch.sqlindexer.db_version','1');
 CREATE TABLE permission (
     username text,
     action text,
@@ -54,15 +55,15 @@ CREATE TABLE auth_cookie (
     time integer,
     UNIQUE (cookie,ipnr,name)
 );
-INSERT INTO "auth_cookie" VALUES('d60805350ddac27ca0746810d916e8fc','admin','127.0.0.1',1369023660);
-INSERT INTO "auth_cookie" VALUES('2d9611ec049e01112767a94519bc9274','admin','127.0.0.1',1369082144);
+INSERT INTO "auth_cookie" VALUES('e1c232402eea442d6857ee7040388cc9','admin','127.0.0.1',1429545330);
+INSERT INTO "auth_cookie" VALUES('c8606d969ba6bf5943fa50792d5ca608','admin','127.0.0.1',1429545425);
 CREATE TABLE session (
     sid text,
     authenticated integer,
     last_visit integer,
     UNIQUE (sid,authenticated)
 );
-INSERT INTO "session" VALUES('admin',1,1369082275);
+INSERT INTO "session" VALUES('admin',1,1429545532);
 INSERT INTO "session" VALUES('test',1,0);
 CREATE TABLE session_attribute (
     sid text,
@@ -30451,48 +30452,48 @@ Enjoy! [[BR]]
  * TracSupport --  Trac Support
 
 For a complete list of local wiki pages, see TitleIndex.','',1);
-INSERT INTO "wiki" VALUES('WikiStart',6,1369082275179000,'admin','127.0.0.1','= Welcome to Trac 1.0 =
-
-''''(Chinese translation: [wiki:ZhWikiStart 欢迎使用Trac(ZhWikiStart )])''''
-
-The integrated SVN (testcase): [/../svn/svn-testcase http://<this site>/svn/svn-testcase]
-
-Trac is a ''''''minimalistic'''''' approach to ''''''web-based'''''' management of
-''''''software projects''''''. Its goal is to simplify effective tracking and handling of software issues, enhancements and overall progress.
-
-All aspects of Trac have been designed with the single goal to 
-''''''help developers write great software'''''' while ''''''staying out of the way''''''
-and imposing as little as possible on a team''s established process and
-culture.
-
-As all Wiki pages, this page is editable, this means that you can
-modify the contents of this page simply by using your
-web-browser. Simply click on the "Edit this page" link at the bottom
-of the page. WikiFormatting will give you a detailed description of
-available Wiki formatting commands.
-
-"[wiki:TracAdmin trac-admin] ''''yourenvdir'''' initenv" created
-a new Trac environment, containing a default set of wiki pages and some sample
-data. This newly created environment also contains 
-[wiki:TracGuide documentation] to help you get started with your project.
-
-You can use [wiki:TracAdmin trac-admin] to configure
-[http://trac.edgewall.org/ Trac] to better fit your project, especially in
-regard to ''''components'''', ''''versions'''' and ''''milestones''''. 
-
-
-TracGuide is a good place to start.
-
-Enjoy! [[BR]]
-''''The Trac Team''''
-
-== Starting Points ==
-
- * TracGuide --  Built-in Documentation
- * [http://trac.edgewall.org/ The Trac project] -- Trac Open Source Project
- * [http://trac.edgewall.org/wiki/TracFaq Trac FAQ] -- Frequently Asked Questions
- * TracSupport --  Trac Support
-
+INSERT INTO "wiki" VALUES('WikiStart',6,1369082275179000,'admin','127.0.0.1','= Welcome to Trac 1.0 =
+
+''''(Chinese translation: [wiki:ZhWikiStart 欢迎使用Trac(ZhWikiStart )])''''
+
+The integrated SVN (testcase): [/../svn/svn-testcase http://<this site>/svn/svn-testcase]
+
+Trac is a ''''''minimalistic'''''' approach to ''''''web-based'''''' management of
+''''''software projects''''''. Its goal is to simplify effective tracking and handling of software issues, enhancements and overall progress.
+
+All aspects of Trac have been designed with the single goal to 
+''''''help developers write great software'''''' while ''''''staying out of the way''''''
+and imposing as little as possible on a team''s established process and
+culture.
+
+As all Wiki pages, this page is editable, this means that you can
+modify the contents of this page simply by using your
+web-browser. Simply click on the "Edit this page" link at the bottom
+of the page. WikiFormatting will give you a detailed description of
+available Wiki formatting commands.
+
+"[wiki:TracAdmin trac-admin] ''''yourenvdir'''' initenv" created
+a new Trac environment, containing a default set of wiki pages and some sample
+data. This newly created environment also contains 
+[wiki:TracGuide documentation] to help you get started with your project.
+
+You can use [wiki:TracAdmin trac-admin] to configure
+[http://trac.edgewall.org/ Trac] to better fit your project, especially in
+regard to ''''components'''', ''''versions'''' and ''''milestones''''. 
+
+
+TracGuide is a good place to start.
+
+Enjoy! [[BR]]
+''''The Trac Team''''
+
+== Starting Points ==
+
+ * TracGuide --  Built-in Documentation
+ * [http://trac.edgewall.org/ The Trac project] -- Trac Open Source Project
+ * [http://trac.edgewall.org/wiki/TracFaq Trac FAQ] -- Frequently Asked Questions
+ * TracSupport --  Trac Support
+
 For a complete list of local wiki pages, see TitleIndex.','',1);
 CREATE TABLE repository (
     id integer,
@@ -30506,7 +30507,7 @@ INSERT INTO "repository" VALUES(1,'type','');
 INSERT INTO "repository" VALUES(1,'url','');
 INSERT INTO "repository" VALUES(1,'description','');
 INSERT INTO "repository" VALUES(1,'repository_dir','svn:42be0d23-f3ec-7742-9214-b333e19b708d:I:/thinkbase.net/github/PortableTrac/data/svn-testcase');
-INSERT INTO "repository" VALUES(1,'youngest_rev','17');
+INSERT INTO "repository" VALUES(1,'youngest_rev','29');
 INSERT INTO "repository" VALUES(2,'name','');
 INSERT INTO "repository" VALUES(2,'dir',NULL);
 INSERT INTO "repository" VALUES(2,'alias','svn-testcase');
@@ -30535,6 +30536,18 @@ INSERT INTO "revision" VALUES(1,'0000000014',1364393014981192,'root','http://web
 INSERT INTO "revision" VALUES(1,'0000000015',1364393064074942,'root','http://web.archive.org/web/20080514194226/http://sourceforge.net/index.php');
 INSERT INTO "revision" VALUES(1,'0000000016',1364393103043692,'root','http://web.archive.org/web/20111125175912/http://sourceforge.net/');
 INSERT INTO "revision" VALUES(1,'0000000017',1364398289046991,'root','add readme to explain the purpose of current svn repository');
+INSERT INTO "revision" VALUES(1,'0000000018',1429550146227889,'root','The testcase of markdown files');
+INSERT INTO "revision" VALUES(1,'0000000019',1429550155977889,'root','The testcase of markdown files');
+INSERT INTO "revision" VALUES(1,'0000000020',1429550167634139,'root','The testcase of markdown files');
+INSERT INTO "revision" VALUES(1,'0000000021',1429550203766952,'root','The testcase of markdown files');
+INSERT INTO "revision" VALUES(1,'0000000022',1429550204032577,'root','The testcase of markdown files');
+INSERT INTO "revision" VALUES(1,'0000000023',1429550221641952,'root','The testcase of markdown files');
+INSERT INTO "revision" VALUES(1,'0000000024',1429550999893390,'root','The testcase of markdown files');
+INSERT INTO "revision" VALUES(1,'0000000025',1429551007516334,'root','The testcase of markdown files');
+INSERT INTO "revision" VALUES(1,'0000000026',1429552418869851,'root','The testcase of markdown files');
+INSERT INTO "revision" VALUES(1,'0000000027',1429552423682351,'root','The testcase of markdown files');
+INSERT INTO "revision" VALUES(1,'0000000028',1429552620819070,'root','The testcase of markdown files');
+INSERT INTO "revision" VALUES(1,'0000000029',1429552625959695,'root','The testcase of markdown files');
 CREATE TABLE node_change (
     repos integer,
     rev text,
@@ -30562,6 +30575,18 @@ INSERT INTO "node_change" VALUES(1,'0000000014','sf.net/sourceforge.net.txt','F'
 INSERT INTO "node_change" VALUES(1,'0000000015','sf.net/sourceforge.net.txt','F','E','sf.net/sourceforge.net.txt','14');
 INSERT INTO "node_change" VALUES(1,'0000000016','sf.net/sourceforge.net.txt','F','E','sf.net/sourceforge.net.txt','15');
 INSERT INTO "node_change" VALUES(1,'0000000017','readme.txt','F','A',NULL,'-1');
+INSERT INTO "node_change" VALUES(1,'0000000018','markdown','D','A',NULL,'-1');
+INSERT INTO "node_change" VALUES(1,'0000000019','markdown/test','D','A',NULL,'-1');
+INSERT INTO "node_change" VALUES(1,'0000000020','markdown/sample','D','A',NULL,'-1');
+INSERT INTO "node_change" VALUES(1,'0000000021','markdown/sample/Docker管理.mkd','F','A',NULL,'-1');
+INSERT INTO "node_change" VALUES(1,'0000000022','markdown/sample/前端开发.mkd','F','A',NULL,'-1');
+INSERT INTO "node_change" VALUES(1,'0000000023','markdown/test/Markdown语法测试.md','F','A',NULL,'-1');
+INSERT INTO "node_change" VALUES(1,'0000000024','markdown/sample/Docker管理.md','F','M','markdown/sample/Docker管理.mkd','23');
+INSERT INTO "node_change" VALUES(1,'0000000025','markdown/sample/前端开发.md','F','M','markdown/sample/前端开发.mkd','24');
+INSERT INTO "node_change" VALUES(1,'0000000026','markdown/test/Markdown语法测试.md','F','D','markdown/test/Markdown语法测试.md','25');
+INSERT INTO "node_change" VALUES(1,'0000000027','markdown/test/Markdown语法测试.md','F','A',NULL,'-1');
+INSERT INTO "node_change" VALUES(1,'0000000028','markdown/test/Markdown语法测试.md','F','D','markdown/test/Markdown语法测试.md','27');
+INSERT INTO "node_change" VALUES(1,'0000000029','markdown/test/Markdown语法测试.md','F','A',NULL,'-1');
 CREATE TABLE ticket (
     id integer PRIMARY KEY,
     type text,
@@ -30896,13 +30921,4250 @@ CREATE TABLE cache (
     generation integer,
     key text
 );
-INSERT INTO "cache" VALUES(648805364,17,'trac.versioncontrol.cache.CachedRepository.metadata:1');
+INSERT INTO "cache" VALUES(648805364,29,'trac.versioncontrol.cache.CachedRepository.metadata:1');
 INSERT INTO "cache" VALUES(901198563,1,'trac.wiki.api.WikiSystem.pages');
 CREATE TABLE subtickets (
     parent integer,
     child integer,
     UNIQUE (parent,child)
 );
+CREATE TABLE repository_node (
+    id integer PRIMARY KEY,
+    repo text,
+    filename text,
+    contents text
+);
+INSERT INTO "repository_node" VALUES(9,'svn-testcase','/sf.net/sourceforge.net.txt','<!doctype html>
+<!-- Server: sfs-consume-5 -->
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6" > <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7" > <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8" > <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9" > <![endif]-->
+<!--[if (gt IE 9)|!(IE)]>--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="SourceForge.net. Fast, secure and free downloads from the largest Open Source applications and software directory">
+        <meta name="keywords" content="Open Source, Open Source Software, Development, Community, Source Code, Secure,  Downloads, Free Software">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SourceForge.net: Find, Create, and Publish Open Source software for free</title>
+        <link rel="shortcut icon" href="/web/20111125175912im_/http://a.fsdn.com/con/img/sftheme/favicon.ico">
+        <script type="text/javascript">
+            /*global unescape, window, console, jQuery, $, net, SF, COMSCORE, DD_belatedPNG */
+            // Setup our namespace
+            if (!window.SF) { window.SF = {}; }
+            if (!window.net) { window.net = {}; }
+            if (!window.net.sf) { window.net.sf = {}; }
+            if (!window.SF) { window.SF = {}; }
+            SF.cdn = ''http://a.fsdn.com/con'';
+            SF.deploy_time = ''1322076857'';
+        </script>
+
+<script src="/web/20111125175912js_/http://a.fsdn.com/con/js/sftheme/modernizr.custom.90514.js"></script>
+
+<script src="/web/20111125175912js_/http://a.fsdn.com/con/js/sftheme/jquery-1.5.1.js"></script>
+<!--[if lt IE 7 ]>
+  <script src="/web/20111125175912/http://a.fsdn.com/con/js/sftheme/dd_belatedpng.js"></script>
+  <script> DD_belatedPNG.fix(''img, .png_bg''); //fix any <img> or .png_bg background-images </script>
+<![endif]-->
+
+<link href=''/web/20111125175912cs_/http://sourceforge.net//fonts.googleapis.com/css?family=Ubuntu:regular'' rel=''stylesheet'' type=''text/css''>
+<style type="text/css">
+    @font-face {
+        font-family: "Pictos";
+        src: url(''/web/20111125175912/http://a.fsdn.com/con/css/fonts/sftheme/pictos-web.eot'');
+        src: local("☺"), url(''/web/20111125175912/http://a.fsdn.com/con/css/fonts/sftheme/pictos-web.woff'') format(''woff''), url(''/web/20111125175912/http://a.fsdn.com/con/css/fonts/sftheme/pictos-web.ttf'') format(''truetype''), url(''/web/20111125175912/http://a.fsdn.com/con/css/fonts/sftheme/pictos-web.svg'') format(''svg'');
+    }
+</style>
+ <link rel="stylesheet" href="/web/20111125175912cs_/http://a.fsdn.com/con/css/sf.css?1322076857" type="text/css">
+
+    <style type="text/css" >.sfdl { width:165px;height:39px;padding:0;position:relative;font:bold 12px/1.17 sans-serif !important; border:1px solid #aaa;display:inline;float:left;text-decoration:none;-moz-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-webkit-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-o-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-moz-border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;-ms-border-radius:4px;-khtml-border-radius:4px;border-radius:4px;background:no-repeat #e5e5e5 8px center url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC);background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #fff), color-stop(100%, #ccc));background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), -moz-linear-gradient(top, #fff 0%, #ccc 100%);background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), linear-gradient(top, #fff 0%, #ccc 100%);background-position:8px center, 0 0;margin:0 10px 7px 0;overflow:hidden;color:#555 !important;}.sfdl:hover { cursor:pointer;text-decoration:none;background:8px center no-repeat #eee url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC);}.sfdl span { border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;display:block;margin:3px;margin-left:35px;padding:4px;text-align:left;color:#FFF;background:#363;background-image:-moz-linear-gradient(center top, #393 0%, #373 100%);background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #393),color-stop(1, #373));background-image:linear-gradient(top, #393 0%, #373 100%);overflow:hidden;height:25px;}.sfdl b { display:block;line-height:12.5px;}.sfdl small { display:block;line-height:12.5px;color:#ADC2AD; font-weight:normal;white-space:nowrap;overflow:hidden;font-size:77%;}</style>
+
+<link rel="alternate" type="application/rss+xml" title="SourceForge.net Blog" href="/web/20111125175912/http://sourceforge.net/blog/feed/" />
+
+        
+<script type="text/javascript">
+    var uidsRE = new RegExp(";?ord=\\d+(.\\d+)?|;?ip=(?:\\d{1,3}\\.){3}\\d{1,3}", "g");
+    SF.adblock = true;
+    var immersion_adcode = "";
+</script>
+        <script type="text/javascript" src="/web/20111125175912js_/http://a.fsdn.com/con/js/log.js?1322076857"></script>
+        <script type="text/javascript" src="/web/20111125175912js_/http://a.fsdn.com/con/js/adframe.js?1322076857"></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push([''_setAccount'', ''UA-32013-6'']);
+            _gaq.push([''_setCustomVar'', 1, ''Page Type'', ''pg_index'', 3]);
+            
+            _gaq.push([''_trackPageview'']);
+            _gaq.push([''_trackPageLoadTime'']);
+            (function() {
+                var ga = document.createElement(''script''); ga.type = ''text/javascript''; ga.async = true;
+                ga.src = (''https:'' === document.location.protocol ? ''https://ssl'' : ''http://www'') + ''.google-analytics.com/ga.js'';
+                var s = document.getElementsByTagName(''script'')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </head>
+    <body id="pg_index" class="">
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/sourceforge.net\/";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "25";
+var displayMonth = "十一月";
+var displayYear = "2011";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + ''/'' +  wbCurrentUrl;
+	document.getElementById(''wm-graph-anchor'').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px; z-index:9000;">
+<div id="wm-ipp-inside" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:''Lucida Grande'',''Arial'',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://sourceforge.net/" style="width:400px;font-size:11px;font-family:''Lucida Grande'',''Arial'',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20111125175912" /><input type="submit" value="Go" style="font-size:11px;font-family:''Lucida Grande'',''Arial'',sans-serif;margin-left:5px;" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:''Helvetica'',''Lucida Grande'',''Arial'',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20111025005732/http://www.sourceforge.net/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="25 十月 2011"><strong>十月</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 17:59:12 十一月 25, 2011">十一月</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20111228175528/http://sourceforge.net/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="28 十二月 2011"><strong>十二月</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20111123213825/http://sourceforge.net/" title="21:38:25 十一月 23, 2011" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 17:59:12 十一月 25, 2011">25</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20111130235954/http://sourceforge.net/" title="23:59:54 十一月 30, 2011" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20101125083259/http://sourceforge.net/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="25 十一月 2010"><strong>2010</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 17:59:12 十一月 25, 2011">2011</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20121130135329/http://sourceforge.net/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="30 十一月 2012"><strong>2012</strong></a>
+		                
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20111125175912*/http://sourceforge.net/" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>3,367 captures</strong></a>
+           <div style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">26 一月 00 - 18 三月 13</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers(''inline'');" 
+				onmouseout="showTrackers(''none'');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:121144110400_2001:-1:0161c9811067_2002:-1:100000004351_2003:-1:032314112212_2004:-1:01101889a898_2005:-1:9999aaab99bb_2006:-1:a95a57887777_2007:-1:566667456712_2008:-1:466551314446_2009:-1:864446655634_2010:-1:722778897677_2011:10:577756676876_2012:-1:9a87d8bbbfc8_2013:-1:898000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById(''wm-ipp'').style.display=''none'';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:''Lucida Grande'',''Arial'',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:''Lucida Grande'',''Arial'',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+        
+        <div id="busy-spinner"></div>
+        
+<header id="site-header">
+    <div class="wrapper">
+        <a href="/web/20111125175912/http://sourceforge.net/" class="logo">
+            <span>SourceForge</span>
+        </a>
+        
+        <!--Switch to {language}-->
+        <nav id="nav-site">
+            <a href="/web/20111125175912/http://sourceforge.net/directory/" title="Browse our software.">Browse</a>
+            <a href="/web/20111125175912/http://sourceforge.net/blog/" title="Read the latest news from the SF HQ.">Blog</a>
+            <a href="/web/20111125175912/http://sourceforge.net/support" title="Contact us for help and feedback.">Support</a>
+            <a href="/web/20111125175912/http://jobs.sourceforge.net/">Jobs</a>
+            
+            <a href="/web/20111125175912/https://sourceforge.net/user/registration">Newsletters</a>
+            
+            <a href="/web/20111125175912/http://geek.net/events/">Resources</a>
+        </nav>
+        <nav id="nav-account">
+            
+            <a href="/web/20111125175912/https://sourceforge.net/user/registration">Register</a>
+            <a href="/web/20111125175912/https://sourceforge.net/account/login.php">Log In</a>
+            
+        </nav>
+        
+    </div>
+</header>
+        
+<header id="page-header">
+    <div id="page-header-content-holder">
+        <section id="page-header-content">
+            <h1><a href="/web/20111125175912/http://sourceforge.net/directory" title="Find Open Source software">Find</a>,
+            <a href="/web/20111125175912/http://sourceforge.net/create" title="Create Open Source software" >Create</a>, and
+            <a href="/web/20111125175912/http://sourceforge.net/publish" title="Publish Open Source software" >Publish</a> Open Source software for free</h1>
+            <form method="get" action="/web/20111125175912/http://sourceforge.net/search/">
+                <input type="text" id="words" name="q" placeholder="Search from 324,420 projects">
+                <input type="submit" class="btn" value="Search">
+            </form>
+            <div id="page-header-counts">
+                <div class="stat">Today:</div>
+                <div class="stat"><b class="ico ico-downarrow" title="Downloads" data-icon="}"></b> 5,926,908 Downloads</div>
+                <div class="stat"><b class="ico ico-checkcircle" title="Commits" data-icon="2"></b> 6,138 Code Commits</div>
+                <div class="stat"><b class="ico ico-comment" title="Posts" data-icon="w"></b> 4,141 Forum Posts</div>
+                <div class="stat"><b class="ico ico-config" title="Bugs" data-icon="x"></b> 523 Bugs Tracked</div>
+                <div class="stat"><b class="ico ico-focus" title="Activity" data-icon="E"></b> <a href="/web/20111125175912/http://sourceforge.net/top">More Details</a></div>
+            </div>
+        </section>
+    </div>
+</header>
+
+        <div id="messages">
+        </div>
+        <div id="page-body">
+<div class="main-container">
+    <section class="main-content">
+        <div class="main-content-left">
+            <div id="logo_sponsorship" class="ad hub">
+                
+<script type="text/javascript">
+    SF.loadAd(''logo_sponsorship'', ''http://ad.doubleclick.net/adj/ostg.sourceforge/cons_pg_index_logo_sponsorship;pg=index.php;psrch=0;logged_in=0;tile=1;sz=200x90;ord=9366901677903056?'');
+</script>
+            </div>
+            <ul id="metacats">
+                <li><a href="/web/20111125175912/http://sourceforge.net/directory/audio-video">Audio &amp; Video</a></li>
+                <li><a href="/web/20111125175912/http://sourceforge.net/directory/business-enterprise">Business &amp; Enterprise</a></li>
+                <li><a href="/web/20111125175912/http://sourceforge.net/directory/communications">Communications</a></li>
+                <li><a href="/web/20111125175912/http://sourceforge.net/directory/development">Development</a></li>
+                <li><a href="/web/20111125175912/http://sourceforge.net/directory/home-education">Home &amp; Education</a></li>
+                <li><a href="/web/20111125175912/http://sourceforge.net/directory/games">Games</a></li>
+                <li><a href="/web/20111125175912/http://sourceforge.net/directory/graphics">Graphics</a></li>
+                <li><a href="/web/20111125175912/http://sourceforge.net/directory/science-engineering">Science &amp; Engineering</a></li>
+                <li><a href="/web/20111125175912/http://sourceforge.net/directory/security-utilities">Security &amp; Utilities</a></li>
+                <li><a href="/web/20111125175912/http://sourceforge.net/directory/system-administration">System Administration</a></li>
+            </ul>
+            <section id="twitter" class="editorial-block">
+                <header>
+                    <h2><a href="/web/20111125175912/http://twitter.com/sourceforge" title="@sourceforge">@sourceforge</a></h2>
+                </header>
+                
+                <p class="tweet"><a href="/web/20111125175912/http://t.co/m8h6RDgi">http://t.co/m8h6RDgi</a> ClamWin - Free Windows antivirus software from #Sourceforge</p>
+                
+                <p class="tweet">iTunes Agent enables many non-iPod MP3 players to work with iTunes <a href="/web/20111125175912/http://t.co/PqFj4P2q">http://t.co/PqFj4P2q</a></p>
+                
+            </section>
+        </div>
+        <div class="main-content-right">
+            <div class="ads">
+                <div id="hpleader" class="ad leaderboard">
+                    
+<script type="text/javascript">
+    SF.loadAd(''hpleader'', ''http://ad.doubleclick.net/adj/ostg.sourceforge/cons_pg_index_hpleader;pg=index.php;psrch=0;logged_in=0;tile=2;sz=728x90;ord=9366901677903056?'');
+</script>
+                </div>
+            </div>
+            <div class="row">
+                
+  <section class="card special">
+    
+    <div class="potm">Project of the Month</div>
+    
+    <section class="project-icon">
+        <img alt="The Number Race Icon" src="/web/20111125175912im_/http://a.fsdn.com/con/icons/nu/numberrace@sf.net/numberraceIcon64x64.png" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/numberrace/" title="The Number Race">The Number Race</a></h3>
+        </header>
+        <p>
+            Software designed for remediation of dyscalculia (or mathematical learning disabilities) in children aged 4-8 and for teaching number sense in kindergarten children. For more information, visit the unicog lab website using the link below.
+
+NOTE: To use The Number Race, you need to download TWO ...
+            <a href="/web/20111125175912/http://sourceforge.net/blog/potm-201111/" title="Read more.">Read more.</a>
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/numberrace/files/latest/download" title="Download /numberrace/2.3.7/numberrace-installer-2.3.7-nolangs.jar from SourceForge  - 13.7 MB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/numberrace/2.3.7/numberrace-installer-2.3.7-nolangs.jar">numberrace-inst…jar</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+            <div class="row">
+                
+  <section class="card special">
+    
+    <section class="project-icon">
+        <img alt="TeXnicCenter Icon" src="/web/20111125175912im_/http://a.fsdn.com/con/icons/te/texniccenter@sf.net/txc-48.png" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/texniccenter/" title="TeXnicCenter">TeXnicCenter</a></h3>
+        </header>
+        <p>
+            TeXnicCenter is a LaTeX editor on Windows. Navigating LaTeX documents is simple due to the automatically created document outline. Errors of the ...
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/texniccenter/files/latest/download" title="Download /TeXnicCenter/1 Beta 7.01/TXCSource_1Beta7_01.zip from SourceForge  - 5.3 MB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/TeXnicCenter/1 Beta 7.01/TXCSource_1Beta7_01.zip">TXCSource_1Beta7_01.zip</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+            <div class="row">
+                
+  <section class="card">
+    
+    <section class="project-icon">
+        <img alt="OpenCA Icon" src="/web/20111125175912im_/http://a.fsdn.com/con/img/project_default.png" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/openca/" title="OpenCA">OpenCA</a></h3>
+        </header>
+        <p>
+            The OpenCA PKI Development Project is a collaborative effort to develop a robust, full-featured and Open Source out-of-the-box Certification ...
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/openca/files/latest/download" title="Download /libpki/releases/v0.6.5/sources/libpki-0.6.5.tar.gz from SourceForge  - 985.2 kB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/libpki/releases/v0.6.5/sources/libpki-0.6.5.tar.gz">libpki-0.6.5.tar.gz</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+            <div class="row">
+                
+  <section class="card">
+    
+    <section class="project-icon">
+        <img alt="MatCont Icon" src="/web/20111125175912im_/http://a.fsdn.com/con/img/project_default.png" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/matcont/" title="MatCont">MatCont</a></h3>
+        </header>
+        <p>
+            MatCont is a Matlab software project for the numerical continuation and bifurcation study of continuous and discrete parameterized dynamical systems. ...
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/matcont/files/latest/download" title="Download /cl_matcont/cl_matcont4p2/Cl_ matcont4p2.zip from SourceForge  - 1.9 MB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/cl_matcont/cl_matcont4p2/Cl_ matcont4p2.zip">Cl_ matcont4p2.zip</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+            <div class="row">
+                
+  <section class="card">
+    
+    <section class="project-icon">
+        <img alt="TWiki Collaboration Platform Icon" src="/web/20111125175912im_/http://a.fsdn.com/con/icons/tw/twiki@sf.net/twiki-logo.png" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/twiki/" title="TWiki Collaboration Platform">TWiki Collaboration Platform</a></h3>
+        </header>
+        <p>
+            Open Source Enterprise Wiki and Web 2.0 Application Platform
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/twiki/files/latest/download" title="Download /TWiki for all Platforms/TWiki-5.0.2/TWiki-5.0.2.zip from SourceForge  - 8.7 MB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/TWiki for all Platforms/TWiki-5.0.2/TWiki-5.0.2.zip">TWiki-5.0.2.zip</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+            <div class="row">
+                
+  <section class="card">
+    
+    <section class="project-icon">
+        <img alt="Moodle Icon" src="/web/20111125175912im_/http://a.fsdn.com/con/icons/mo/moodle@sf.net/M.png" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/moodle/" title="Moodle">Moodle</a></h3>
+        </header>
+        <p>
+            Moodle is a Course Management System (CMS), also known as a Learning Management System (LMS) or a Virtual Learning Environment (VLE). It is a Free ...
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/moodle/files/latest/download" title="Download /Moodle/windows/MoodleWindowsInstaller-latest-19.zip from SourceForge  - 68.9 MB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/Moodle/windows/MoodleWindowsInstaller-latest-19.zip">MoodleWindowsIn…zip</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+            <div class="row">
+                
+  <section class="card">
+    
+    <section class="project-icon">
+        <img alt="ClamWin Free Antivirus Icon" src="/web/20111125175912im_/http://a.fsdn.com/con/icons/cl/clamwin@sf.net/clamwin.png" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/clamwin/" title="ClamWin Free Antivirus">ClamWin Free Antivirus</a></h3>
+        </header>
+        <p>
+            Free Antivirus for Windows. Includes virus scanner, scheduler, virus database updates, context menu integration to MS Windows Explorer and Addin to ...
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/clamwin/files/latest/download" title="Download /clamwin/0.88.4/clamwin-0.88.4-src.zip from SourceForge  - 4.5 MB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/clamwin/0.88.4/clamwin-0.88.4-src.zip">clamwin-0.88.4-src.zip</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+            <div class="row">
+                
+  <section class="card">
+    
+    <section class="project-icon">
+        <img alt="The Chakra Project Icon" src="/web/20111125175912im_/http://a.fsdn.com/con/icons/ch/chakra@sf.net/smEAHKio.png" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/chakra/" title="The Chakra Project">The Chakra Project</a></h3>
+        </header>
+        <p>
+            Chakra GNU/LInux is a free, user-friendly and extremely powerful liveCD and distribution using the award winning KDE SC and Plasma Desktop with a ...
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/chakra/files/latest/download" title="Download /2011.11/Chakra-2011.11-Edn-i686.iso from SourceForge  - 1.4 GB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/2011.11/Chakra-2011.11-Edn-i686.iso">Chakra-2011.11-…iso</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+            <div class="row">
+                
+  <section class="card">
+    
+    <section class="project-icon">
+        <img alt="iSpy Camera Security Software Icon" src="/web/20111125175912im_/http://a.fsdn.com/con/icons/is/ispysoftware@sf.net/ispy.png" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/ispysoftware/" title="iSpy Camera Security Software">iSpy Camera Security Software</a></h3>
+        </header>
+        <p>
+            iSpy uses your webcams and microphones to detect and record movement or sound and provides security, surveillance, monitoring and alerting services. ...
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/ispysoftware/files/latest/download" title="Download /iSpy_3_4_3_0.zip from SourceForge  - 13.8 MB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/iSpy_3_4_3_0.zip">iSpy_3_4_3_0.zip</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+            <div class="row">
+                
+  <section class="card">
+    
+    <section class="project-icon">
+        <img alt="iTunes Agent Icon" src="/web/20111125175912im_/http://a.fsdn.com/con/icons/it/ita@sf.net/itaicon.png" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/ita/" title="iTunes Agent">iTunes Agent</a></h3>
+        </header>
+        <p>
+            iTunes Agent enables many non-iPod MP3 players to be used with iTunes. The project enables you to synchronize your MP3 player with an iTunes playlist ...
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/ita/files/latest/download" title="Download /iTunes Agent/1.3.4/ita-1.3.4-sources.zip from SourceForge  - 148.5 kB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/iTunes Agent/1.3.4/ita-1.3.4-sources.zip">ita-1.3.4-sources.zip</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+            <div class="row">
+                
+  <section class="card">
+    
+    <section class="project-icon">
+        <img alt="Orwell Dev-C++ Icon" src="/web/20111125175912im_/http://sourceforge.net/p/orwelldevcpp/icon" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/orwelldevcpp/" title="Orwell Dev-C++">Orwell Dev-C++</a></h3>
+        </header>
+        <p>
+            A C/C++/C++11 IDE
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/orwelldevcpp/files/latest/download" title="Download /Setup Releases/devcpp-5.0.0.8_setup.exe from SourceForge  - 22.1 MB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/Setup Releases/devcpp-5.0.0.8_setup.exe">devcpp-5.0.0.8_…exe</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+        </div>
+    </section>
+</div>
+<div id="secondary-container">
+    <div class="secondary-content">
+        <section id="blog">
+            <h2><a href="/web/20111125175912/http://sourceforge.net/blog/">From the Blog</a></h2>
+            <header>
+                <h3><a href="/web/20111125175912/http://sourceforge.net/blog/games-for-the-holidays/" title="Occupy Your Kids with Open Source Games during the Holidays">Occupy Your Kids with Open Source Games during the Holidays</a></h3>
+            </header>
+            <article>
+                <section>
+                    <p>The holidays can be incredibly stressful - cooking, shopping, decorating and, well, family.
+Add to it the pets underfoot and your children complaining that they want to play on the Wii when grandpa wants to watch the Law and Order marathon on USA, and you have potential for a grumpy household.
+So we decided to take a <a href="/web/20111125175912/http://sourceforge.net/blog/games-for-the-holidays/" class="read_more">Read more&#8230;</a></p>
+                </section>
+            </article>
+            <header>
+                <h3><a href="/web/20111125175912/http://sourceforge.net/blog/release-often-enough/" title="Release often … enough">Release often … enough</a></h3>
+            </header>
+            <article>
+                <section>
+                    <p>No doubt you&#8217;ve heard the maxim &#8220;release early, release often.&#8221; It&#8217;s one of the cornerstones of Free/Open Source software development. By making frequent releases, you give your users the opportunity to try out the new features and tell you what they think of them. By showing people what you&#8217;re working on, you have the opportunity <a href="/web/20111125175912/http://sourceforge.net/blog/release-often-enough/" class="read_more">Read more&#8230;</a></p>
+                </section>
+            </article>
+        </section>
+        <div class="ads">
+            <div id="hpmedrec" class="ad medrec">
+                
+<script type="text/javascript">
+    SF.loadAd(''hpmedrec'', ''http://ad.doubleclick.net/adj/ostg.sourceforge/cons_pg_index_hpmedrec;pg=index.php;psrch=0;logged_in=0;tile=3;sz=300x250;ord=9366901677903056?'');
+</script>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        
+        <hr id="footer_separator">
+          
+<footer id="site-footer">
+    <nav>
+        <a href="/web/20111125175912/http://twitter.com/sfnet_ops">Status</a>
+        <a href="/web/20111125175912/http://geek.net/terms-of-use">Terms</a>
+        <a href="/web/20111125175912/http://geek.net/privacy-statement">Privacy</a>
+        <a href="/web/20111125175912/http://geek.net/advertise/">Advertise</a>
+        <a href="/web/20111125175912/http://sourceforge.net/about">About</a>
+        <a href="/web/20111125175912/http://html5center.sourceforge.net/">HTML5 Center</a>
+    </nav>
+    <div id="copyright">
+        &copy; 2011 <a href="/web/20111125175912/http://geek.net/" title="Network which provides and promotes Open Source software downloads, development, discussion and news.">Geeknet, Inc.</a>
+    </div>
+</footer>
+            <script src="/web/20111125175912js_/http://a.fsdn.com/con/js/min/sf.js-de.js?1322076857" type="text/javascript"></script>
+        
+        <!-- Begin comScore Tag -->
+        <script type="text/javascript">
+            document.write(unescape("%3Cscript src=''" + (document.location.protocol === "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js'' %3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            if (window.COMSCORE) {
+                COMSCORE.beacon({
+                    c1: 2,
+                    c2: 6035546,
+                    c3: "",
+                    c4: "",
+                    c5: "",
+                    c6: "",
+                    c15: ""
+                });
+            }
+        </script>
+        <noscript>
+            <img src="/web/20111125175912im_/http://b.scorecardresearch.com/p?c1=2&c2=6035546&c3=&c4=&c5=&c6=&c15=&cj=1" alt="comScore2" />
+        </noscript>
+        <!-- End comScore Tag -->
+        
+<script>
+    $(''[autofocus]'').autofocus();
+</script>
+
+
+        <!-- KISSinsights page surveys -->
+        <script type="text/javascript">
+            var _kiq = _kiq || [];
+            _kiq.push([''options'', { anchor: ''left'' }]);
+        </script>
+        <script type="text/javascript" src="/web/20111125175912js_/http://s3.amazonaws.com/ki.js/16994/3eh.js" async></script>
+        <!-- End KISSinsights -->
+    </body>
+</html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 17:59:12 十一月 25, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:04:34 三月 27, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+');
+INSERT INTO "repository_node" VALUES(10,'svn-testcase','/markdown/test/Markdown语法测试.md','# 测试
+## 测试1
+1. 好好学习
+1. 测试
+1.  这个如何
+    1. Level2
+    1. Level2-2
+1. 还有吗
+    - Level2
+    - Level2-2
+1. 123
+
+### 还可以测试
+- Level1
+    * Level2
+    * Level2-2
+- Level1-2
+
+## 一段代码
+        Hello！World
+
+        <table>
+            <tr>
+                <td>Foo</td>
+            </tr>
+        </table>
+
+## 表格
+值|描述|备注|测试
+:----------:|:----------|--------|
+baseline    |默认元素放置在父元素的基线上                     |测试备注|继续
+sub            |垂直对齐文本的下标                                         |学习一下
+super        |垂直对齐文本的上标                                          |更多的东西其实可以
+top            |把元素的顶端与行中最高元素的顶端对齐
+text-top    |把元素的顶端与父元素字体的顶端对齐
+middle|把此元素放置在父元素的中部
+bottom|把元素的顶端与行中最低的元素的顶端对齐
+text-bottom|把元素的底端与父元素字体的底端对齐
+length|相对基准线的偏移
+%|使用 "line-height" 属性的百分比值来排列此元素允许使用负值
+inherit|规定应该从父元素继承 vertical-align 属性的值*（所有的IE都不支持？！）*
+
+');
+INSERT INTO "repository_node" VALUES(11,'svn-testcase','/markdown/sample/前端开发.mkd','### 颠覆式前端UI开发框架：React
+- <http://www.infoq.com/cn/articles/subversion-front-end-ui-development-framework-react>
+
+### React Grid
+- <http://zinoui.com/blog/react-grid-component>
+- <http://adazzle.github.io/react-grid/>
+
+###  Twitter Emoji for Everyone 
+- <https://github.com/twitter/twemoji>
+
+### Pure.CSS
+- <http://purecss.io/>');
+INSERT INTO "repository_node" VALUES(12,'svn-testcase','/markdown/sample/Docker管理.mkd','### Zdocker
+- <http://git.oschina.net/love320/Zdocker>
+
+### Panamax
+- <http://panamax.io/get-panamax/>
+
+### DockerUI
+- <https://github.com/crosbymichael/dockerui>
+
+### Boot2Docker
+- <https://github.com/boot2docker/boot2docker>
+- <https://github.com/boot2docker/windows-installer>
+');
+INSERT INTO "repository_node" VALUES(13,'svn-testcase','/google/www.google.com.txt','<!doctype html><html itemscope="itemscope" itemtype="http://schema.org/WebPage"><head><meta content="Search the world''s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you''re looking for." name="description"><meta content="noodp" name="robots"><meta itemprop="image" content="/images/google_favicon_128.png"><title>Google</title><script>(function(){
+window.google={kEI:"x11GUZq5AoqIygHqx4GABA",getEI:function(a){for(var b;a&&(!a.getAttribute||!(b=a.getAttribute("eid")));)a=a.parentNode;return b||google.kEI},https:function(){return"https:"==window.location.protocol},kEXPI:"25657,39523,4000116,4001569,4001947,4001959,4001975,4002206,4002562,4002734,4002855,4003178,4003386,4003496,4003881,4003917,4004066,4004103,4004105,4004181,4004213,4004257,4004334,4004340,4004375,4004388,4004478,4004488,4004652,4004653,4004697,4004729,4004755,4004758,4004869,4004873,4004905,4004948,4005042",kCSI:{e:"25657,39523,4000116,4001569,4001947,4001959,4001975,4002206,4002562,4002734,4002855,4003178,4003386,4003496,4003881,4003917,4004066,4004103,4004105,4004181,4004213,4004257,4004334,4004340,4004375,4004388,4004478,4004488,4004652,4004653,4004697,4004729,4004755,4004758,4004869,4004873,4004905,4004948,4005042",ei:"x11GUZq5AoqIygHqx4GABA"},authuser:0,ml:function(){},kHL:"en",time:function(){return(new Date).getTime()},log:function(a,
+b,c,h){var d=new Image,f=google.lc,e=google.li,g="";d.onerror=d.onload=d.onabort=function(){delete f[e]};f[e]=d;!c&&-1==b.search("&ei=")&&(g="&ei="+google.getEI(h));c=c||"/gen_204?atyp=i&ct="+a+"&cad="+b+g+"&zx="+google.time();a=/^http:/i;a.test(c)&&google.https()?(google.ml(Error("GLMM"),!1,{src:c}),delete f[e]):(d.src=c,google.li=e+1)},lc:[],li:0,Toolbelt:{},y:{},x:function(a,b){google.y[a.id]=[a,b];return!1},load:function(a,b){google.x({id:"l"+a},function(){google.load(a,b)})}};
+
+})();
+(function(){var d=!1;google.sn="webhp";google.timers={};google.startTick=function(a,b){google.timers[a]={t:{start:google.time()},bfr:!!b}};google.tick=function(a,b,h){google.timers[a]||google.startTick(a);google.timers[a].t[b]=h||google.time()};google.startTick("load",!0);
+try{}catch(e){}})();
+var _gjwl=location;function _gjuc(){var a=_gjwl.href.indexOf("#");if(0<=a&&(a=_gjwl.href.substring(a),0<a.indexOf("&q=")||0<=a.indexOf("#q=")))if(a=a.substring(1),-1==a.indexOf("#")){for(var d=0;d<a.length;){var b=d;"&"==a.charAt(b)&&++b;var c=a.indexOf("&",b);-1==c&&(c=a.length);b=a.substring(b,c);if(0==b.indexOf("fp="))a=a.substring(0,d)+a.substring(c,a.length),c=d;else if("cad=h"==b)return 0;d=c}_gjwl.href="/search?"+a+"&cad=h";return 1}return 0}
+function _gjp(){(!window._gjwl.hash||!window._gjuc())&&setTimeout(_gjp,500)};
+window._gjp&&_gjp();</script><style>#gb{font:13px/27px Arial,sans-serif;height:30px}#gbz,#gbg{position:absolute;white-space:nowrap;top:0;height:30px;z-index:1000}#gbz{left:0;padding-left:4px}#gbg{right:0;padding-right:5px}#gbs{background:transparent;position:absolute;top:-999px;visibility:hidden;z-index:998}.gbto #gbs{background:#fff}#gbx3,#gbx4{background-color:#2d2d2d;background-image:none;_background-image:none;background-position:0 -138px;background-repeat:repeat-x;border-bottom:1px solid #000;font-size:24px;height:29px;_height:30px;opacity:1;filter:alpha(opacity=100);position:absolute;top:0;width:100%;z-index:990}#gbx3{left:0}#gbx4{right:0}#gbb{position:relative}#gbbw{left:0;position:absolute;top:30px;width:100%}.gbtcb{position:absolute;visibility:hidden}#gbz .gbtcb{right:0}#gbg .gbtcb{left:0}.gbxx{display:none !important}.gbxo{opacity:0 !important;filter:alpha(opacity=0) !important}.gbm{position:absolute;z-index:999;top:-999px;visibility:hidden;text-align:left;border:1px solid #bebebe;background:#fff;-moz-box-shadow:-1px 1px 1px rgba(0,0,0,.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,.2);box-shadow:0 2px 4px rgba(0,0,0,.2)}.gbrtl .gbm{-moz-box-shadow:1px 1px 1px rgba(0,0,0,.2)}.gbto .gbm,.gbto #gbs{top:29px;visibility:visible}#gbz .gbm,#gbz #gbs{left:0}#gbg .gbm,#gbg #gbs{right:0}.gbxms{background-color:#ccc;display:block;position:absolute;z-index:1;top:-1px;left:-2px;right:-2px;bottom:-2px;opacity:.4;-moz-border-radius:3px;filter:progid:DXImageTransform.Microsoft.Blur(pixelradius=5);*opacity:1;*top:-2px;*left:-5px;*right:5px;*bottom:4px;-ms-filter:"progid:DXImageTransform.Microsoft.Blur(pixelradius=5)";opacity:1\0/;top:-4px\0/;left:-6px\0/;right:5px\0/;bottom:4px\0/}.gbma{position:relative;top:-1px;border-style:solid dashed dashed;border-color:transparent;border-top-color:#c0c0c0;display:-moz-inline-box;display:inline-block;font-size:0;height:0;line-height:0;width:0;border-width:3px 3px 0;padding-top:1px;left:4px}#gbztms1,#gbi4m1,#gbi4s,#gbi4t{zoom:1}.gbtc,.gbmc,.gbmcc{display:block;list-style:none;margin:0;padding:0}.gbmc{background:#fff;padding:10px 0;position:relative;z-index:2;zoom:1}.gbt{position:relative;display:-moz-inline-box;display:inline-block;line-height:27px;padding:0;vertical-align:top}.gbt{*display:inline}.gbto{box-shadow:0 2px 4px rgba(0,0,0,.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,.2)}.gbzt,.gbgt{cursor:pointer;display:block;text-decoration:none !important}span#gbg6,span#gbg4{cursor:default}.gbts{border-left:1px solid transparent;border-right:1px solid transparent;display:block;*display:inline-block;padding:0 5px;position:relative;z-index:1000}.gbts{*display:inline}.gbzt .gbts{display:inline;zoom:1}.gbto .gbts{background:#fff;border-color:#bebebe;color:#36c;padding-bottom:1px;padding-top:2px}.gbz0l .gbts{color:#fff;font-weight:bold}.gbtsa{padding-right:9px}#gbz .gbzt,#gbz .gbgt,#gbg .gbgt{color:#ccc!important}.gbtb2{display:block;border-top:2px solid transparent}.gbto .gbzt .gbtb2,.gbto .gbgt .gbtb2{border-top-width:0}.gbtb .gbts{background:url(/web/20130318002023/http://ssl.gstatic.com/gb/images/b_8d5afc09.png);_background:url(/web/20130318002023/http://ssl.gstatic.com/gb/images/b8_3615d64d.png);background-position:-27px -22px;border:0;font-size:0;padding:29px 0 0;*padding:27px 0 0;width:1px}.gbzt-hvr,.gbzt:focus,.gbgt-hvr,.gbgt:focus{background-color:#4c4c4c;background-image:none;_background-image:none;background-position:0 -102px;background-repeat:repeat-x;outline:none;text-decoration:none !important}.gbpdjs .gbto .gbm{min-width:99%}.gbz0l .gbtb2{border-top-color:#dd4b39!important}#gbi4s,#gbi4s1{font-weight:bold}#gbg6.gbgt-hvr,#gbg6.gbgt:focus{background-color:transparent;background-image:none}.gbg4a{font-size:0;line-height:0}.gbg4a .gbts{padding:27px 5px 0;*padding:25px 5px 0}.gbto .gbg4a .gbts{padding:29px 5px 1px;*padding:27px 5px 1px}#gbi4i,#gbi4id{left:5px;border:0;height:24px;position:absolute;top:1px;width:24px}.gbto #gbi4i,.gbto #gbi4id{top:3px}.gbi4p{display:block;width:24px}#gbi4id{background-position:-44px -101px}#gbmpid{background-position:0 0}#gbmpi,#gbmpid{border:none;display:inline-block;height:48px;width:48px}#gbmpiw{display:inline-block;line-height:9px;padding-left:20px;margin-top:10px;position:relative}#gbmpi,#gbmpid,#gbmpiw{*display:inline}#gbg5{font-size:0}#gbgs5{padding:5px !important}.gbto #gbgs5{padding:7px 5px 6px !important}#gbi5{background:url(/web/20130318002023/http://ssl.gstatic.com/gb/images/b_8d5afc09.png);_background:url(/web/20130318002023/http://ssl.gstatic.com/gb/images/b8_3615d64d.png);background-position:0 0;display:block;font-size:0;height:17px;width:16px}.gbto #gbi5{background-position:-6px -22px}.gbn .gbmt,.gbn .gbmt:visited,.gbnd .gbmt,.gbnd .gbmt:visited{color:#dd8e27 !important}.gbf .gbmt,.gbf .gbmt:visited{color:#900 !important}.gbmt,.gbml1,.gbmlb,.gbmt:visited,.gbml1:visited,.gbmlb:visited{color:#36c !important;text-decoration:none !important}.gbmt,.gbmt:visited{display:block}.gbml1,.gbmlb,.gbml1:visited,.gbmlb:visited{display:inline-block;margin:0 10px}.gbml1,.gbmlb,.gbml1:visited,.gbmlb:visited{*display:inline}.gbml1,.gbml1:visited{padding:0 10px}.gbml1-hvr,.gbml1:focus{outline:none;text-decoration:underline !important}#gbpm .gbml1{display:inline;margin:0;padding:0;white-space:nowrap}.gbmlb,.gbmlb:visited{line-height:27px}.gbmlb-hvr,.gbmlb:focus{outline:none;text-decoration:underline !important}.gbmlbw{color:#ccc;margin:0 10px}.gbmt{padding:0 20px}.gbmt-hvr,.gbmt:focus{background:#eee;cursor:pointer;outline:0 solid black;text-decoration:none !important}.gbm0l,.gbm0l:visited{color:#000 !important;font-weight:bold}.gbmh{border-top:1px solid #bebebe;font-size:0;margin:10px 0}#gbd4 .gbmc{background:#f5f5f5;padding-top:0}#gbd4 .gbsbic::-webkit-scrollbar-track:vertical{background-color:#f5f5f5;margin-top:2px}#gbmpdv{background:#fff;border-bottom:1px solid #bebebe;-moz-box-shadow:0 2px 4px rgba(0,0,0,.12);-o-box-shadow:0 2px 4px rgba(0,0,0,.12);-webkit-box-shadow:0 2px 4px rgba(0,0,0,.12);box-shadow:0 2px 4px rgba(0,0,0,.12);position:relative;z-index:1}#gbd4 .gbmh{margin:0}.gbmtc{padding:0;margin:0;line-height:27px}.GBMCC:last-child:after,#GBMPAL:last-child:after{content:''\0A\0A'';white-space:pre;position:absolute}#gbmps{*zoom:1}#gbd4 .gbpc,#gbmpas .gbmt{line-height:17px}#gbd4 .gbpgs .gbmtc{line-height:27px}#gbd4 .gbmtc{border-bottom:1px solid #bebebe}#gbd4 .gbpc{display:inline-block;margin:16px 0 10px;padding-right:50px;vertical-align:top}#gbd4 .gbpc{*display:inline}.gbpc .gbps,.gbpc .gbps2{display:block;margin:0 20px}#gbmplp.gbps{margin:0 10px}.gbpc .gbps{color:#000;font-weight:bold}.gbpc .gbpd{margin-bottom:5px}.gbpd .gbmt,.gbpd .gbps{color:#666 !important}.gbpd .gbmt{opacity:.4;filter:alpha(opacity=40)}.gbps2{color:#666;display:block}.gbp0{display:none}.gbp0 .gbps2{font-weight:bold}#gbd4 .gbmcc{margin-top:5px}.gbpmc{background:#fef9db}.gbpmc .gbmt{padding:10px 20px}#gbpm{border:0;*border-collapse:collapse;border-spacing:0;margin:0;white-space:normal}#gbpm .gbmt{border-top:none;color:#000 !important;font:11px Arial,sans-serif}#gbpms{*white-space:nowrap}.gbpms2{font-weight:bold;white-space:nowrap}#gbmpal{*border-collapse:collapse;border-spacing:0;border:0;margin:0;white-space:nowrap;width:100%}.gbmpala,.gbmpalb{font:13px Arial,sans-serif;line-height:27px;padding:10px 20px 0;white-space:nowrap}.gbmpala{padding-left:0;text-align:left}.gbmpalb{padding-right:0;text-align:right}#gbmpasb .gbps{color:#000}#gbmpal .gbqfbb{margin:0 20px}.gbp0 .gbps{*display:inline}a.gbiba{margin:8px 20px 10px}.gbmpiaw{display:inline-block;padding-right:10px;margin-bottom:6px;margin-top:10px}.gbxv{visibility:hidden}.gbmpiaa{display:block;margin-top:10px}.gbmpia{border:none;display:block;height:48px;width:48px}.gbmpnw{display:inline-block;height:auto;margin:10px 0;vertical-align:top}.gbqfb,.gbqfba,.gbqfbb{-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;cursor:default !important;display:inline-block;font-weight:bold;height:29px;line-height:29px;min-width:54px;*min-width:70px;padding:0 8px;text-align:center;text-decoration:none !important;-moz-user-select:none;-webkit-user-select:none}.gbqfb:focus,.gbqfba:focus,.gbqfbb:focus{border:1px solid #4d90fe;-moz-box-shadow:inset 0 0 0 1px rgba(255, 255, 255, 0.5);-webkit-box-shadow:inset 0 0 0 1px rgba(255, 255, 255, 0.5);box-shadow:inset 0 0 0 1px rgba(255, 255, 255, 0.5);outline:none}.gbqfb-hvr:focus,.gbqfba-hvr:focus,.gbqfbb-hvr:focus{-webkit-box-shadow:inset 0 0 0 1px #fff,0 1px 1px rgba(0,0,0,.1);-moz-box-shadow:inset 0 0 0 1px #fff,0 1px 1px rgba(0,0,0,.1);box-shadow:inset 0 0 0 1px #fff,0 1px 1px rgba(0,0,0,.1)}.gbqfb-no-focus:focus{border:1px solid #3079ed;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none}.gbqfb-hvr,.gbqfba-hvr,.gbqfbb-hvr{-webkit-box-shadow:0 1px 1px rgba(0,0,0,.1);-moz-box-shadow:0 1px 1px rgba(0,0,0,.1);box-shadow:0 1px 1px rgba(0,0,0,.1)}.gbqfb::-moz-focus-inner,.gbqfba::-moz-focus-inner,.gbqfbb::-moz-focus-inner{border:0}.gbqfba,.gbqfbb{border:1px solid #dcdcdc;border-color:rgba(0,0,0,.1);color:#444 !important;font-size:11px}.gbqfb{background-color:#4d90fe;background-image:-webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#4787ed));background-image:-webkit-linear-gradient(top,#4d90fe,#4787ed);background-image:-moz-linear-gradient(top,#4d90fe,#4787ed);background-image:-ms-linear-gradient(top,#4d90fe,#4787ed);background-image:-o-linear-gradient(top,#4d90fe,#4787ed);background-image:linear-gradient(top,#4d90fe,#4787ed);filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=''#4d90fe'',EndColorStr=''#4787ed'');border:1px solid #3079ed;color:#fff!important;margin:0 0}.gbqfb-hvr{border-color:#2f5bb7}.gbqfb-hvr:focus{border-color:#2f5bb7}.gbqfb-hvr,.gbqfb-hvr:focus{background-color:#357ae8;background-image:-webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#357ae8));background-image:-webkit-linear-gradient(top,#4d90fe,#357ae8);background-image:-moz-linear-gradient(top,#4d90fe,#357ae8);background-image:-ms-linear-gradient(top,#4d90fe,#357ae8);background-image:-o-linear-gradient(top,#4d90fe,#357ae8);background-image:linear-gradient(top,#4d90fe,#357ae8)}.gbqfb:active{background-color:inherit;-webkit-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.3);-moz-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.3);box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.3)}.gbqfba{background-color:#f5f5f5;background-image:-webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#f1f1f1));background-image:-webkit-linear-gradient(top,#f5f5f5,#f1f1f1);background-image:-moz-linear-gradient(top,#f5f5f5,#f1f1f1);background-image:-ms-linear-gradient(top,#f5f5f5,#f1f1f1);background-image:-o-linear-gradient(top,#f5f5f5,#f1f1f1);background-image:linear-gradient(top,#f5f5f5,#f1f1f1);filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=''#f5f5f5'',EndColorStr=''#f1f1f1'')}.gbqfba-hvr,.gbqfba-hvr:active{background-color:#f8f8f8;background-image:-webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#f1f1f1));background-image:-webkit-linear-gradient(top,#f8f8f8,#f1f1f1);background-image:-moz-linear-gradient(top,#f8f8f8,#f1f1f1);background-image:-ms-linear-gradient(top,#f8f8f8,#f1f1f1);background-image:-o-linear-gradient(top,#f8f8f8,#f1f1f1);background-image:linear-gradient(top,#f8f8f8,#f1f1f1);filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=''#f8f8f8'',EndColorStr=''#f1f1f1'')}.gbqfbb{background-color:#fff;background-image:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#fbfbfb));background-image:-webkit-linear-gradient(top,#fff,#fbfbfb);background-image:-moz-linear-gradient(top,#fff,#fbfbfb);background-image:-ms-linear-gradient(top,#fff,#fbfbfb);background-image:-o-linear-gradient(top,#fff,#fbfbfb);background-image:linear-gradient(top,#fff,#fbfbfb);filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=''#ffffff'',EndColorStr=''#fbfbfb'')}.gbqfbb-hvr,.gbqfbb-hvr:active{background-color:#fff;background-image:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#f8f8f8));background-image:-webkit-linear-gradient(top,#fff,#f8f8f8);background-image:-moz-linear-gradient(top,#fff,#f8f8f8);background-image:-ms-linear-gradient(top,#fff,#f8f8f8);background-image:-o-linear-gradient(top,#fff,#f8f8f8);background-image:linear-gradient(top,#fff,#f8f8f8);filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=''#ffffff'',EndColorStr=''#f8f8f8'')}.gbqfba-hvr,.gbqfba-hvr:active,.gbqfbb-hvr,.gbqfbb-hvr:active{border-color:#c6c6c6;-webkit-box-shadow:0 1px 1px rgba(0,0,0,.1);-moz-box-shadow:0 1px 1px rgba(0,0,0,.1);box-shadow:0 1px 1px rgba(0,0,0,.1);color:#222 !important}.gbqfba:active,.gbqfbb:active{-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);box-shadow:inset 0 1px 2px rgba(0,0,0,.1)}#gbmpas{max-height:220px}#gbmm{max-height:530px}.gbsb{-webkit-box-sizing:border-box;display:block;position:relative;*zoom:1}.gbsbic{overflow:auto}.gbsbis .gbsbt,.gbsbis .gbsbb{-webkit-mask-box-image:-webkit-gradient(linear,left top,right top,color-stop(0,rgba(0,0,0,.1)),color-stop(.5,rgba(0,0,0,.8)),color-stop(1,rgba(0,0,0,.1)));left:0;margin-right:0;opacity:0;position:absolute;width:100%}.gbsb .gbsbt:after,.gbsb .gbsbb:after{content:"";display:block;height:0;left:0;position:absolute;width:100%}.gbsbis .gbsbt{background:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.2)),to(rgba(0,0,0,0)));background-image:-webkit-linear-gradient(top,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:-moz-linear-gradient(top,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:-ms-linear-gradient(top,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:-o-linear-gradient(top,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:linear-gradient(top,rgba(0,0,0,.2),rgba(0,0,0,0));height:6px;top:0}.gbsb .gbsbt:after{border-top:1px solid #ebebeb;border-color:rgba(0,0,0,.3);top:0}.gbsb .gbsbb{-webkit-mask-box-image:-webkit-gradient(linear,left top,right top,color-stop(0,rgba(0,0,0,.1)),color-stop(.5,rgba(0,0,0,.8)),color-stop(1,rgba(0,0,0,.1)));background:-webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.2)),to(rgba(0,0,0,0)));background-image:-webkit-linear-gradient(bottom,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:-moz-linear-gradient(bottom,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:-ms-linear-gradient(bottom,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:-o-linear-gradient(bottom,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:linear-gradient(bottom,rgba(0,0,0,.2),rgba(0,0,0,0));bottom:0;height:4px}.gbsb .gbsbb:after{border-bottom:1px solid #ebebeb;border-color:rgba(0,0,0,.3);bottom:0}</style><style>.h{font-family:arial,sans-serif}body{font-family:arial,sans-serif}td{font-family:arial,sans-serif}a{font-family:arial,sans-serif}p{font-family:arial,sans-serif}body{margin:0;overflow-y:scroll}#gog{padding:3px 8px 0}.h{color:#36c}.q{color:#00c}.ts{border-collapse:collapse}td{line-height:.8em}.gac_m td{line-height:17px}form{margin-bottom:20px}.ts td{padding:0}em{font-weight:bold;font-style:normal}.lst{height:25px;width:496px;font:18px arial,sans-serif}.gsfi{font:18px arial,sans-serif}.gsfs{font:17px arial,sans-serif}.ds{display:inline-box;display: inline-block;margin:3px 0 4px;margin-left:4px}input{font-family:inherit}body{background:#fff;color:black}a.gb1{color:#11c !important}a.gb2{color:#11c !important}a.gb3{color:#11c !important}a.gb4{color:#11c !important}.sblc{padding-top:5px}.lsbb{background:#eee;border:solid 1px;border-color:#ccc #999 #999 #ccc;height:30px}a{color:#11c;text-decoration:none}a:hover{text-decoration:underline}a:active{text-decoration:underline}.fl a{color:#36c}a:visited{color:#551a8b}a.gb1{text-decoration:underline}a.gb4{text-decoration:underline}a.gb3:hover{text-decoration:none}.sblc a{display:block;margin:2px 0;margin-left:13px;font-size:11px}#ghead a.gb2:hover{color:#fff !important}.lsbb{display:block}.ftl{display:inline-block;margin:0 12px}.lsb{background:url(/web/20130318002023/http://www.google.com/images/srpr/nav_logo80.png) 0 -258px repeat-x;border:none;color:#000;cursor:pointer;height:30px;margin:0;outline:0;font:15px arial,sans-serif;vertical-align:top}#fll a{display:inline-block;margin:0 12px}.lsb:active{background:#ccc}.lst:focus{outline:none}#addlang a{padding:0 3px}</style><script>(function(){try{var e=!0,h=null,k=!1;var ba=function(a,b,c,d){d=d||{};d._sn=["cfg",b,c].join(".");window.gbar.logger.ml(a,d)};var n=window.gbar=window.gbar||{},q=window.gbar.i=window.gbar.i||{},ca;function _tvn(a,b){var c=parseInt(a,10);return isNaN(c)?b:c}function _tvf(a,b){var c=parseFloat(a);return isNaN(c)?b:c}function _tvv(a){return!!a}function r(a,b,c){(c||n)[a]=b}n.bv={n:_tvn("2",0),r:"",f:".41.66.",e:"25657,3700092",m:_tvn("1",1)};
+function da(a,b,c){var d="on"+b;if(a.addEventListener)a.addEventListener(b,c,k);else if(a.attachEvent)a.attachEvent(d,c);else{var g=a[d];a[d]=function(){var a=g.apply(this,arguments),b=c.apply(this,arguments);return void 0==a?b:void 0==b?a:b&&a}}}var ea=function(a){return function(){return n.bv.m==a}},fa=ea(1),ga=ea(2);r("sb",fa);r("kn",ga);q.a=_tvv;q.b=_tvf;q.c=_tvn;q.i=ba;var t=window.gbar.i.i;var u=function(){},v=function(){},w=function(a){var b=new Image,c=ha;b.onerror=b.onload=b.onabort=function(){try{delete ia[c]}catch(a){}};ia[c]=b;b.src=a;ha=c+1},ia=[],ha=0;r("logger",{il:v,ml:u,log:w});var x=window.gbar.logger;var y={},ja={},z=[],ka=q.b("0.1",0.1),la=q.a("1",e),ma=function(a,b){z.push([a,b])},na=function(a,b){y[a]=b},oa=function(a){return a in y},B={},C=function(a,b){B[a]||(B[a]=[]);B[a].push(b)},D=function(a){C("m",a)},pa=function(a,b){var c=document.createElement("script");c.src=a;la&&(c.async=e);Math.random()<ka&&(c.onerror=function(){c.onerror=h;u(Error("Bundle load failed: name="+(b||"UNK")+" url="+a))});(document.getElementById("xjsc")||document.body).appendChild(c)},
+G=function(a){for(var b=0,c;(c=z[b])&&c[0]!=a;++b);c&&(!c[1].l&&!c[1].s)&&(c[1].s=e,E(2,a),c[1].url&&pa(c[1].url,a),c[1].libs&&F&&F(c[1].libs))},qa=function(a){C("gc",a)},H=h,ra=function(a){H=a},E=function(a,b,c){if(H){a={t:a,b:b};if(c)for(var d in c)a[d]=c[d];try{H(a)}catch(g){}}};r("mdc",y);r("mdi",ja);r("bnc",z);r("qGC",qa);r("qm",D);r("qd",B);r("lb",G);r("mcf",na);r("bcf",ma);r("aq",C);r("mdd","");r("has",oa);r("trh",ra);r("tev",E);if(q.a("1")){var I=q.a("1"),sa=q.a(""),ta=q.a(""),ua=window.gapi={},va=function(a,b){var c=function(){n.dgl(a,b)};I?D(c):(C("gl",c),G("gl"))},wa={},xa=function(a){a=a.split(":");for(var b;(b=a.pop())&&wa[b];);return!b},F=function(a){function b(){for(var b=a.split(":"),d=0,g;g=b[d];++d)wa[g]=1;for(b=0;d=z[b];++b)d=d[1],(g=d.libs)&&(!d.l&&d.i&&xa(g))&&d.i()}n.dgl(a,b)},J=window.___jsl={};J.h="m;/_/abc-static/_/js/gapi/__features__/rt=j/ver=24Irvz2rJ1Q.en./sv=1/am=!VvZ7oDep-coJNQTnkA/d=1";J.ms="https://apis.google.com";
+J.m="";J.l=[];I||z.push(["gl",{url:"//ssl.gstatic.com/gb/js/abc/glm_e7bb39a7e1a24581ff4f8d199678b1b9.js"}]);var ya={pu:sa,sh:"",si:ta};y.gl=ya;r("load",va,ua);r("dgl",va);r("agl",xa);q.o=I};var za=q.b("0.1",0.001),Aa=0;
+function _mlToken(a,b){try{if(1>Aa){Aa++;var c,d=a,g=b||{},f=encodeURIComponent,m="es_plusone_gc_20130213.0_p0",l=["//www.google.com/gen_204?atyp=i&zx=",(new Date).getTime(),"&jexpid=",f("30316"),"&srcpg=",f("prop=1"),"&jsr=",Math.round(1/za),"&ogev=",f("x11GUZLWAsffwQHemYHADA"),"&ogf=",n.bv.f,"&ogrp=",f(""),"&ogv=",f("1363125672.1362597341"),m?"&oggv="+f(m):"","&ogd=",f("com"),"&ogl=",f("en")];g._sn&&(g._sn="og."+g._sn);for(var p in g)l.push("&"),
+l.push(f(p)),l.push("="),l.push(f(g[p]));l.push("&emsg=");l.push(f(d.name+":"+d.message));var s=l.join("");Ba(s)&&(s=s.substr(0,2E3));c=s;var A=window.gbar.logger._aem(a,c);w(A)}}catch(Y){}}var Ba=function(a){return 2E3<=a.length},Da=function(a,b){return b};function Ga(a){u=a;r("_itl",Ba,x);r("_aem",Da,x);r("ml",u,x);a={};y.er=a}q.a("")?Ga(function(a){throw a;}):q.a("1")&&Math.random()<za&&Ga(_mlToken);var _E="left",L=function(a,b){var c=a.className;K(a,b)||(a.className+=(""!=c?" ":"")+b)},M=function(a,b){var c=a.className,d=RegExp("\\s?\\b"+b+"\\b");c&&c.match(d)&&(a.className=c.replace(d,""))},K=function(a,b){var c=RegExp("\\b"+b+"\\b"),d=a.className;return!(!d||!d.match(c))},Ha=function(a,b){K(a,b)?M(a,b):L(a,b)};r("ca",L);r("cr",M);r("cc",K);q.k=L;q.l=M;q.m=K;q.n=Ha;var Ia=["gb_71","gb_155"],N;function Ja(a){N=a}function Ka(a){var b=N&&!a.href.match(/.*\/accounts\/ClearSID[?]/)&&encodeURIComponent(N());b&&(a.href=a.href.replace(/([?&]continue=)[^&]*/,"$1"+b))}function La(a){window.gApplication&&(a.href=window.gApplication.getTabUrl(a.href))}function Ma(a){try{var b=(document.forms[0].q||"").value;b&&(a.href=a.href.replace(/([?&])q=[^&]*|$/,function(a,c){return(c||"&")+"q="+encodeURIComponent(b)}))}catch(c){t(c,"sb","pq")}}
+var Na=function(){for(var a=[],b=0,c;c=Ia[b];++b)(c=document.getElementById(c))&&a.push(c);return a},Oa=function(){var a=Na();return 0<a.length?a[0]:h},Pa=function(){return document.getElementById("gb_70")},O={},P={},Qa={},Q={},R=void 0,Va=function(a,b){try{var c=document.getElementById("gb");L(c,"gbpdjs");S();Ra(document.getElementById("gb"))&&L(c,"gbrtl");if(b&&b.getAttribute){var d=b.getAttribute("aria-owns");if(d.length){var g=document.getElementById(d);if(g){var f=b.parentNode;if(R==d)R=void 0,
+M(f,"gbto");else{if(R){var m=document.getElementById(R);if(m&&m.getAttribute){var l=m.getAttribute("aria-owner");if(l.length){var p=document.getElementById(l);p&&p.parentNode&&M(p.parentNode,"gbto")}}}Sa(g)&&Ta(g);R=d;L(f,"gbto")}}}}D(function(){n.tg(a,b,e)});Ua(a)}catch(s){t(s,"sb","tg")}},Wa=function(a){D(function(){n.close(a)})},Xa=function(a){D(function(){n.rdd(a)})},Ra=function(a){var b,c="direction",d=document.defaultView;d&&d.getComputedStyle?(a=d.getComputedStyle(a,""))&&(b=a[c]):b=a.currentStyle?
+a.currentStyle[c]:a.style[c];return"rtl"==b},Za=function(a,b,c){if(a)try{var d=document.getElementById("gbd5");if(d){var g=d.firstChild,f=g.firstChild,m=document.createElement("li");m.className=b+" gbmtc";m.id=c;a.className="gbmt";m.appendChild(a);if(f.hasChildNodes()){c=[["gbkc"],["gbf","gbe","gbn"],["gbkp"],["gbnd"]];for(var d=0,l=f.childNodes.length,g=k,p=-1,s=0,A;A=c[s];s++){for(var Y=0,$;$=A[Y];Y++){for(;d<l&&K(f.childNodes[d],$);)d++;if($==b){f.insertBefore(m,f.childNodes[d]||h);g=e;break}}if(g){if(d+
+1<f.childNodes.length){var Ca=f.childNodes[d+1];!K(Ca.firstChild,"gbmh")&&!Ya(Ca,A)&&(p=d+1)}else if(0<=d-1){var Ea=f.childNodes[d-1];!K(Ea.firstChild,"gbmh")&&!Ya(Ea,A)&&(p=d)}break}0<d&&d+1<l&&d++}if(0<=p){var aa=document.createElement("li"),Fa=document.createElement("div");aa.className="gbmtc";Fa.className="gbmt gbmh";aa.appendChild(Fa);f.insertBefore(aa,f.childNodes[p])}n.addHover&&n.addHover(a)}else f.appendChild(m)}}catch(wb){t(wb,"sb","al")}},Ya=function(a,b){for(var c=b.length,d=0;d<c;d++)if(K(a,
+b[d]))return e;return k},$a=function(a,b,c){Za(a,b,c)},ab=function(a,b){Za(a,"gbe",b)},bb=function(){D(function(){n.pcm&&n.pcm()})},cb=function(){D(function(){n.pca&&n.pca()})},db=function(a,b,c,d,g,f,m,l,p,s){D(function(){n.paa&&n.paa(a,b,c,d,g,f,m,l,p,s)})},eb=function(a,b){O[a]||(O[a]=[]);O[a].push(b)},fb=function(a,b){P[a]||(P[a]=[]);P[a].push(b)},gb=function(a,b){Qa[a]=b},hb=function(a,b){Q[a]||(Q[a]=[]);Q[a].push(b)},Ua=function(a){a.preventDefault&&a.preventDefault();a.returnValue=k;a.cancelBubble=
+e},ib=h,Ta=function(a,b){S();if(a){jb(a,"Opening&hellip;");T(a,e);var c="undefined"!=typeof b?b:1E4,d=function(){kb(a)};ib=window.setTimeout(d,c)}},lb=function(a){S();a&&(T(a,k),jb(a,""))},kb=function(a){try{S();var b=a||document.getElementById(R);b&&(jb(b,"This service is currently unavailable.%1$sPlease try again later.","%1$s"),T(b,e))}catch(c){t(c,"sb","sdhe")}},jb=function(a,b,c){if(a&&b){var d=Sa(a);if(d){if(c){d.innerHTML="";b=b.split(c);c=0;for(var g;g=b[c];c++){var f=document.createElement("div");f.innerHTML=g;
+d.appendChild(f)}}else d.innerHTML=b;T(a,e)}}},T=function(a,b){var c=void 0!==b?b:e;c?L(a,"gbmsgo"):M(a,"gbmsgo")},Sa=function(a){for(var b=0,c;c=a.childNodes[b];b++)if(K(c,"gbmsg"))return c},S=function(){ib&&window.clearTimeout(ib)},mb=function(a){var b="inner"+a;a="offset"+a;return window[b]?window[b]:document.documentElement&&document.documentElement[a]?document.documentElement[a]:0},nb=function(){return k};r("so",Oa);r("sos",Na);r("si",Pa);r("tg",Va);r("close",Wa);r("rdd",Xa);r("addLink",$a);
+r("addExtraLink",ab);r("pcm",bb);r("pca",cb);r("paa",db);r("ddld",Ta);r("ddrd",lb);r("dderr",kb);r("rtl",Ra);r("bh",O);r("abh",eb);r("dh",P);r("adh",fb);r("ch",Q);r("ach",hb);r("eh",Qa);r("aeh",gb);ca=q.a("")?La:Ma;r("qs",ca);r("setContinueCb",Ja);r("pc",Ka);r("bsy",nb);q.d=Ua;q.j=mb;var ob={};y.base=ob;z.push(["m",{url:"//ssl.gstatic.com/gb/js/sem_33f46747f3f9067241e0d10ffc5ee821.js"}]);n.sg={c:"1"};r("wg",{rg:{}});var pb={tiw:q.c("15000",0),tie:q.c("30000",0)};y.wg=pb;var qb={thi:q.c("10000",0),thp:q.c("180000",0),tho:q.c("5000",0),tet:q.b("0.5",0)};y.wm=qb;if(q.a("1")){var rb=q.a("");z.push(["gc",{auto:rb,url:"//ssl.gstatic.com/gb/js/abc/gci_91f30755d6a6b787dcc2a4062e6e9824.js",libs:"googleapis.client:plusone"}]);var sb={version:"gci_91f30755d6a6b787dcc2a4062e6e9824.js",index:"",lang:"en"};y.gc=sb;var tb=function(a){window.googleapis&&window.iframes?a&&a():(a&&qa(a),G("gc"))};r("lGC",tb);q.a("1")&&r("lPWF",tb)};window.__PVT="";if(q.a("1")&&q.a("1")){var ub=function(a){tb(function(){C("pw",a);G("pw")})};r("lPW",ub);z.push(["pw",{url:"//ssl.gstatic.com/gb/js/abc/pwm_45f73e4df07a0e388b0fa1f3d30e7280.js"}]);var vb=[],xb=function(a){vb[0]=a},yb=function(a,b){var c=b||{};c._sn="pw";u(a,c)},zb={signed:vb,elog:yb,base:"https://plusone.google.com/u/0",loadTime:(new Date).getTime()};y.pw=zb;var Ab=function(a,b){for(var c=b.split("."),d=function(){var b=arguments;a(function(){for(var a=n,d=0,f=c.length-1;d<f;++d)a=a[c[d]];a[c[d]].apply(a,b)})},g=n,f=0,m=c.length-1;f<
+m;++f)g=g[c[f]]=g[c[f]]||{};return g[c[f]]=d};Ab(ub,"pw.clk");Ab(ub,"pw.hvr");r("su",xb,n.pw)};var Bb=[1,2,3,4,5,6,9,10,11,13,14,28,29,30,34,35,37,38,39,40,41,42,43,500];var Cb=q.b("0.01",1E-4),Db=q.b("0.1",1),Eb=k,Fb=k;if(q.a("1")){var Gb=Math.random();Gb<=Cb&&(Eb=e);Gb<=Db&&(Fb=e)}var U=h;function Hb(){var a=0,b=function(b,d){q.a(d)&&(a|=b)};b(1,"");b(2,"");b(4,"");b(8,"");return a}
+function Ib(a,b){var c=Cb,d=Eb,g;g=a;if(!U){U={};for(var f=0;f<Bb.length;f++){var m=Bb[f];U[m]=e}}if(g=!!U[g])c=Db,d=Fb;if(d){d=encodeURIComponent;g="es_plusone_gc_20130213.0_p0";n.rp?(f=n.rp(),f="-1"!=f?f:""):f="";c=["//www.google.com/gen_204?atyp=i&zx=",(new Date).getTime(),"&oge=",a,"&ogex=",d("30316"),"&ogev=",d("x11GUZLWAsffwQHemYHADA"),"&ogf=",n.bv.f,"&ogp=",d("1"),"&ogrp=",d(f),"&ogsr=",Math.round(1/c),"&ogv=",d("1363125672.1362597341"),
+g?"&oggv="+d(g):"","&ogd=",d("com"),"&ogl=",d("en"),"&ogus=",Hb()];if(b){"ogw"in b&&(c.push("&ogw="+b.ogw),delete b.ogw);var l;g=b;f=[];for(l in g)0!=f.length&&f.push(","),f.push(Jb(l)),f.push("."),f.push(Jb(g[l]));l=f.join("");""!=l&&(c.push("&ogad="),c.push(d(l)))}w(c.join(""))}}function Jb(a){"number"==typeof a&&(a+="");return"string"==typeof a?a.replace(".","%2E").replace(",","%2C"):a}v=Ib;r("il",v,x);var Kb={};y.il=Kb;var Lb=function(a,b,c,d,g,f,m,l,p,s){D(function(){n.paa(a,b,c,d,g,f,m,l,p,s)})},Mb=function(){D(function(){n.prm()})},Nb=function(a){D(function(){n.spn(a)})},Ob=function(a){D(function(){n.sps(a)})},Pb=function(a){D(function(){n.spp(a)})},Qb={"27":"//ssl.gstatic.com/gb/images/silhouette_24.png","27":"//ssl.gstatic.com/gb/images/silhouette_24.png","27":"//ssl.gstatic.com/gb/images/silhouette_24.png"},Rb=function(a){return(a=Qb[a])||"//ssl.gstatic.com/gb/images/silhouette_24.png"},
+Sb=function(){D(function(){n.spd()})};r("spn",Nb);r("spp",Pb);r("sps",Ob);r("spd",Sb);r("paa",Lb);r("prm",Mb);eb("gbd4",Mb);
+if(q.a("")){var Tb={d:q.a(""),e:"",sanw:q.a(""),p:"//ssl.gstatic.com/gb/images/silhouette_96.png",cp:"1",xp:q.a("1"),mg:"%1$s (delegated)",md:"%1$s (default)",mh:"220",s:"1",pp:Rb,ppl:q.a(""),ppa:q.a(""),ppm:"Google+ page"};
+y.prf=Tb};var V,Ub,W,Vb,X=0,Wb=function(a,b,c){if(a.indexOf)return a.indexOf(b,c);if(Array.indexOf)return Array.indexOf(a,b,c);for(c=c==h?0:0>c?Math.max(0,a.length+c):c;c<a.length;c++)if(c in a&&a[c]===b)return c;return-1},Z=function(a,b){return-1==Wb(a,X)?(t(Error(X+"_"+b),"up","caa"),k):e},Yb=function(a,b){Z([1,2],"r")&&(V[a]=V[a]||[],V[a].push(b),2==X&&window.setTimeout(function(){b(Xb(a))},0))},Zb=function(a,b,c){if(Z([1],"nap")&&c){for(var d=0;d<c.length;d++)Ub[c[d]]=e;n.up.spl(a,b,"nap",c)}},$b=function(a,
+b,c){if(Z([1],"aop")&&c){if(W)for(var d in W)W[d]=W[d]&&-1!=Wb(c,d);else{W={};for(d=0;d<c.length;d++)W[c[d]]=e}n.up.spl(a,b,"aop",c)}},ac=function(){try{if(X=2,!Vb){Vb=e;for(var a in V)for(var b=V[a],c=0;c<b.length;c++)try{b[c](Xb(a))}catch(d){t(d,"up","tp")}}}catch(g){t(g,"up","mtp")}},Xb=function(a){if(Z([2],"ssp")){var b=!Ub[a];W&&(b=b&&!!W[a]);return b}};Vb=k;V={};Ub={};W=h;
+var X=1,bc=function(){try{return!!window.localStorage&&"object"==typeof window.localStorage}catch(a){return k}},cc=function(a){return a&&a.style&&a.style.g&&"undefined"!=typeof a.load},dc=function(a,b,c,d){try{d||(b="og-up-"+b),bc()?window.localStorage.setItem(b,c):cc(a)&&(a.setAttribute(b,c),a.save(a.id))}catch(g){g.code!=DOMException.QUOTA_EXCEEDED_ERR&&t(g,"up","spd")}},ec=function(a,b,c){try{c||(b="og-up-"+b);if(bc())return window.localStorage.getItem(b);if(cc(a))return a.load(a.id),a.getAttribute(b)}catch(d){d.code!=
+DOMException.QUOTA_EXCEEDED_ERR&&t(d,"up","gpd")}return""},fc=function(a,b,c){a.addEventListener?a.addEventListener(b,c,k):a.attachEvent&&a.attachEvent("on"+b,c)},gc=function(a){for(var b=0,c;c=a[b];b++){var d=n.up;c=c in d&&d[c];if(!c)return k}return e};r("up",{r:Yb,nap:Zb,aop:$b,tp:ac,ssp:Xb,spd:dc,gpd:ec,aeh:fc,aal:gc});var hc=function(a,b){a[b]=function(c){var d=arguments;n.qm(function(){a[b].apply(this,d)})}};hc(n.up,"sl");hc(n.up,"si");hc(n.up,"spl");
+n.mcf("up",{sp:q.b("0.01",1)});function ic(){function a(){for(var b;(b=f[m++])&&!("m"==b[0]||b[1].auto););b&&(E(2,b[0]),b[1].url&&pa(b[1].url,b[0]),b[1].libs&&F&&F(b[1].libs));m<f.length&&setTimeout(a,0)}function b(){0<g--?setTimeout(b,0):a()}var c=q.a("1"),d=q.a(""),g=3,f=z,m=0,l=window.gbarOnReady;if(l)try{l()}catch(p){t(p,"ml","or")}d?r("ldb",a):c?da(window,"load",b):b()}r("rdl",ic);}catch(e){window.gbar&&gbar.logger&&gbar.logger.ml(e,{"_sn":"cfg.init"});}})();
+(function(){try{var a=window.gbar;a.mcf("pm",{p:""});}catch(e){window.gbar&&gbar.logger&&gbar.logger.ml(e,{"_sn":"cfg.init"});}})();
+(function(){try{var a=window.gbar;a.mcf("mm",{s:"1"});}catch(e){window.gbar&&gbar.logger&&gbar.logger.ml(e,{"_sn":"cfg.init"});}})();
+(function(){try{var d=window.gbar.i.i;var e=window.gbar;var f=e.i;var g=f.c("1",0),h=/\bgbmt\b/,k=function(a){try{var b=document.getElementById("gb_"+g),c=document.getElementById("gb_"+a);b&&f.l(b,h.test(b.className)?"gbm0l":"gbz0l");c&&f.k(c,h.test(c.className)?"gbm0l":"gbz0l")}catch(l){d(l,"sj","ssp")}g=a},m=e.qs,n=function(a){var b;b=a.href;var c=window.location.href.match(/.*?:\/\/[^\/]*/)[0],c=RegExp("^"+c+"/search\\?");if((b=c.test(b))&&!/(^|\\?|&)ei=/.test(a.href))if((b=window.google)&&b.kEXPI)a.href+="&ei="+b.kEI},p=function(a){m(a);
+n(a)},q=function(){if(window.google&&window.google.sn){var a=/.*hp$/;return a.test(window.google.sn)?"":"1"}return"-1"};e.rp=q;e.slp=k;e.qs=p;e.qsi=n;}catch(e){window.gbar&&gbar.logger&&gbar.logger.ml(e,{"_sn":"cfg.init"});}})();
+(function(){try{window.gbar.rdl();}catch(e){window.gbar&&gbar.logger&&gbar.logger.ml(e,{"_sn":"cfg.init"});}})();
+</script> </head><body dir="ltr" bgcolor="#fff">
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/www.google.com\/";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "18";
+var displayMonth = "三月";
+var displayYear = "2013";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + ''/'' +  wbCurrentUrl;
+	document.getElementById(''wm-graph-anchor'').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px; z-index:9000;">
+<div id="wm-ipp-inside" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:''Lucida Grande'',''Arial'',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.google.com/" style="width:400px;font-size:11px;font-family:''Lucida Grande'',''Arial'',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20130318002023" /><input type="submit" value="Go" style="font-size:11px;font-family:''Lucida Grande'',''Arial'',sans-serif;margin-left:5px;" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:''Helvetica'',''Lucida Grande'',''Arial'',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20130218001756/http://www.google.com/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="18 二月 2013"><strong>二月</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 0:20:23 三月 18, 2013">三月</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       四月
+                       
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20130317235836/http://www.google.com/" title="23:58:36 三月 17, 2013" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 0:20:23 三月 18, 2013">18</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20130318002439/http://www.google.com/" title="0:24:39 三月 18, 2013" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20120318001958/http://www.google.com/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="18 三月 2012"><strong>2012</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 0:20:23 三月 18, 2013">2013</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2014
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20130318002023*/http://www.google.com/" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>109,875 captures</strong></a>
+           <div style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">11 十一月 98 - 18 三月 13</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers(''inline'');" 
+				onmouseout="showTrackers(''none'');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000011_1999:-1:210210000110_2000:-1:014254210611_2001:-1:413289657986_2002:-1:111111366552_2003:-1:033222121433_2004:-1:332224455454_2005:-1:55555555a877_2006:-1:766746775566_2007:-1:666666676776_2008:-1:555655555567_2009:-1:878787776767_2010:-1:788777797556_2011:-1:665668999cdd_2012:-1:eeedfeeeeeed_2013:2:eee000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById(''wm-ipp'').style.display=''none'';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:''Lucida Grande'',''Arial'',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:''Lucida Grande'',''Arial'',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<script>(function(){var src=''/images/srpr/nav_logo80.png'';var iesg=false;document.body.onload = function(){window.n && window.n();if (document.images){new Image().src=src;}
+if (!iesg){document.f&&document.f.q.focus();document.gbqf&&document.gbqf.q.focus();}
+}
+})();</script><textarea id="csi" style="display:none"></textarea><div id="mngb"><div id=gb><script>window.gbar&&gbar.eli&&gbar.eli()</script><div id=gbw><div id=gbz><span class=gbtcb></span><ol id=gbzc class=gbtc><li class=gbt><a onclick=gbar.logger.il(1,{t:1}); class="gbzt gbz0l gbp1" id=gb_1 href="/web/20130318002023/http://www.google.com/webhp?hl=en&tab=ww"><span class=gbtb2></span><span class=gbts>Search</span></a></li><li class=gbt><a onclick=gbar.qs(this);gbar.logger.il(1,{t:2}); class=gbzt id=gb_2 href="/web/20130318002023/http://www.google.com/imghp?hl=en&tab=wi"><span class=gbtb2></span><span class=gbts>Images</span></a></li><li class=gbt><a onclick=gbar.qs(this);gbar.logger.il(1,{t:8}); class=gbzt id=gb_8 href="/web/20130318002023/http://maps.google.com/maps?hl=en&tab=wl"><span class=gbtb2></span><span class=gbts>Maps</span></a></li><li class=gbt><a onclick=gbar.logger.il(1,{t:78}); class=gbzt id=gb_78 href="/web/20130318002023/https://play.google.com/?hl=en&tab=w8"><span class=gbtb2></span><span class=gbts>Play</span></a></li><li class=gbt><a onclick=gbar.qs(this);gbar.logger.il(1,{t:36}); class=gbzt id=gb_36 href="/web/20130318002023/http://www.youtube.com/?tab=w1"><span class=gbtb2></span><span class=gbts>YouTube</span></a></li><li class=gbt><a onclick=gbar.logger.il(1,{t:5}); class=gbzt id=gb_5 href="/web/20130318002023/http://news.google.com/nwshp?hl=en&tab=wn"><span class=gbtb2></span><span class=gbts>News</span></a></li><li class=gbt><a onclick=gbar.logger.il(1,{t:23}); class=gbzt id=gb_23 href="/web/20130318002023/https://mail.google.com/mail/?tab=wm"><span class=gbtb2></span><span class=gbts>Gmail</span></a></li><li class=gbt><a onclick=gbar.logger.il(1,{t:25}); class=gbzt id=gb_25 href="/web/20130318002023/https://drive.google.com/?tab=wo"><span class=gbtb2></span><span class=gbts>Drive</span></a></li><li class=gbt><a class=gbgt id=gbztm href="/web/20130318002023/http://www.google.com/intl/en/options/" onclick="gbar.tg(event,this)" aria-haspopup=true aria-owns=gbd><span class=gbtb2></span><span id=gbztms class="gbts gbtsa"><span id=gbztms1>More</span><span class=gbma></span></span></a><div class=gbm id=gbd aria-owner=gbztm><div id=gbmmb class="gbmc gbsb gbsbis"><ol id=gbmm class="gbmcc gbsbic"><li class=gbmtc><a onclick=gbar.logger.il(1,{t:24}); class=gbmt id=gb_24 href="/web/20130318002023/https://www.google.com/calendar?tab=wc">Calendar</a></li><li class=gbmtc><a onclick=gbar.qs(this);gbar.logger.il(1,{t:51}); class=gbmt id=gb_51 href="/web/20130318002023/http://translate.google.com/?hl=en&tab=wT">Translate</a></li><li class=gbmtc><a onclick=gbar.logger.il(1,{t:17}); class=gbmt id=gb_17 href="/web/20130318002023/http://www.google.com/mobile/?hl=en&tab=wD">Mobile</a></li><li class=gbmtc><a onclick=gbar.qs(this);gbar.logger.il(1,{t:10}); class=gbmt id=gb_10 href="/web/20130318002023/http://books.google.com/bkshp?hl=en&tab=wp">Books</a></li><li class=gbmtc><a onclick=gbar.logger.il(1,{t:172}); class=gbmt id=gb_172 href="/web/20130318002023/https://www.google.com/offers?utm_source=xsell&utm_medium=products&utm_campaign=sandbar&hl=en&tab=wG">Offers</a></li><li class=gbmtc><a onclick=gbar.logger.il(1,{t:212}); class=gbmt id=gb_212 href="/web/20130318002023/https://wallet.google.com/manage/?tab=wa">Wallet</a></li><li class=gbmtc><a onclick=gbar.qs(this);gbar.logger.il(1,{t:6}); class=gbmt id=gb_6 href="/web/20130318002023/http://www.google.com/shopping?hl=en&tab=wf">Shopping</a></li><li class=gbmtc><a onclick=gbar.logger.il(1,{t:30}); class=gbmt id=gb_30 href="/web/20130318002023/http://www.blogger.com/?tab=wj">Blogger</a></li><li class=gbmtc><a onclick=gbar.logger.il(1,{t:32}); class=gbmt id=gb_32 href="/web/20130318002023/http://www.google.com/reader/?hl=en&tab=wy">Reader</a></li><li class=gbmtc><a onclick=gbar.qs(this);gbar.logger.il(1,{t:27}); class=gbmt id=gb_27 href="/web/20130318002023/http://www.google.com/finance?tab=we">Finance</a></li><li class=gbmtc><a onclick=gbar.qs(this);gbar.logger.il(1,{t:31}); class=gbmt id=gb_31 href="/web/20130318002023/http://picasaweb.google.com/home?hl=en&tab=wq">Photos</a></li><li class=gbmtc><a onclick=gbar.qs(this);gbar.logger.il(1,{t:12}); class=gbmt id=gb_12 href="/web/20130318002023/http://video.google.com/?hl=en&tab=wv">Videos</a></li><li class=gbmtc><div class="gbmt gbmh"></div></li><li class=gbmtc><a onclick=gbar.logger.il(1,{t:66}); href="/web/20130318002023/http://www.google.com/intl/en/options/" class=gbmt>Even more &raquo;</a></li></ol><div class=gbsbt></div><div class=gbsbb></div></div></div></li></ol></div><div id=gbg><h2 class=gbxx>Account Options</h2><span class=gbtcb></span><ol class=gbtc><li class=gbt><a target=_top href="/web/20130318002023/https://accounts.google.com/ServiceLogin?hl=en&continue=http://www.google.com/" onclick="gbar.logger.il(9,{l:''i''})" id=gb_70 class=gbgt><span class=gbtb2></span><span id=gbgs4 class=gbts><span id=gbi4s1>Sign in</span></span></a></li><li class="gbt gbtb"><span class=gbts></span></li><li class=gbt><a class=gbgt id=gbg5 href="/web/20130318002023/http://www.google.com/preferences?hl=en" title="Options" onclick="gbar.tg(event,this)" aria-haspopup=true aria-owns=gbd5><span class=gbtb2></span><span id=gbgs5 class=gbts><span id=gbi5></span></span></a><div class=gbm id=gbd5 aria-owner=gbg5><div class=gbmc><ol id=gbom class=gbmcc><li class="gbkc gbmtc"><a  class=gbmt href="/web/20130318002023/http://www.google.com/preferences?hl=en">Search settings</a></li><li class=gbmtc><div class="gbmt gbmh"></div></li><li class="gbkp gbmtc"><a class=gbmt href="/web/20130318002023/http://www.google.com/history/optout?hl=en">Web History</a></li></ol></div></div></li></ol></div></div><div id=gbx3></div><div id=gbx4></div><script>window.gbar&&gbar.elp&&gbar.elp()</script></div></div><iframe name="wgjf" style="display:none"></iframe><center><br clear="all" id="lgpd"><div id="lga"><a href="/web/20130318002023/http://www.google.com/search?q=St.+Patrick''s+Day&oi=ddle&ct=st_patricks_day_2013-1108005-hp"><img alt="St. Patrick''s Day" border="0" height="152" src="/web/20130318002023im_/http://www.google.com/logos/2013/st_patricks_day_2013-1108005-hp.jpg" title="St. Patrick''s Day" width="478" id="hplogo" onload="window.lol&&lol()"></a><br><br></div><form action="/web/20130318002023/http://www.google.com/search" name="f"><table cellpadding="0" cellspacing="0"><tr valign="top"><td width="25%">&nbsp;</td><td align="center" nowrap="nowrap"><input value="en" name="hl" type="hidden"><input name="source" type="hidden" value="hp"><div class="ds" style="height:32px;margin:4px 0"><input autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top"></div><br style="line-height:0"><span class="ds"><span class="lsbb"><input class="lsb" value="Google Search" name="btnG" type="submit"></span></span><span class="ds"><span class="lsbb"><input class="lsb" value="I''m Feeling Lucky" name="btnI" type="submit" onclick="if(this.form.q.value)this.checked=1; else top.location=''/doodles/''"></span></span></td><td class="fl sblc" align="left" nowrap="nowrap" width="25%"><a href="/web/20130318002023/http://www.google.com/advanced_search?hl=en&authuser=0">Advanced search</a><a href="/web/20130318002023/http://www.google.com/language_tools?hl=en&authuser=0">Language tools</a></td></tr></table><input type="hidden" id="gbv" name="gbv" value="1"><script>(function(){var a,b="1";if(document&&document.getElementById)if("undefined"!=typeof XMLHttpRequest)b="2";else if("undefined"!=typeof ActiveXObject){var c,d,e=["MSXML2.XMLHTTP.6.0","MSXML2.XMLHTTP.3.0","MSXML2.XMLHTTP","Microsoft.XMLHTTP"];for(c=0;d=e[c++];)try{new ActiveXObject(d),b="2"}catch(f){}}a=b;"2"==a&&(document.getElementById("gbv").value=a);})();</script></form><div id="gac_scont"></div><div style="font-size:83%;min-height:3.5em"><br></div><span id="footer"><div style="font-size:10pt"><div id="fll" style="margin:19px auto;text-align:center"><a href="/web/20130318002023/http://www.google.com/intl/en/ads/">Advertising&nbsp;Programs</a><a href="/web/20130318002023/http://www.google.com/services/">Business Solutions</a><a href="/web/20130318002023/https://plus.google.com/116899029375914044550" rel="publisher">+Google</a><a href="/web/20130318002023/http://www.google.com/intl/en/about.html">About Google</a></div></div><p style="color:#767676;font-size:8pt">&copy; 2013 - <a href="/web/20130318002023/http://www.google.com/intl/en/policies/">Privacy & Terms</a></p></span></center><div id=xjsd></div><div id=xjsi><script>if(google.y)google.y.first=[];(function(){var b;function c(a){window.setTimeout(function(){var d=document.createElement("script");d.src=a;document.getElementById("xjsd").appendChild(d)},0)}google.dljp=function(a){b=a;google.xjsi||(google.xjsu=a,c(b))};google.dlj=c;})();
+if(!google.xjs){google.dstr=[];google.rein=[];window._=window._||{};window._._DumpException=function(e){throw e};if(google.timers&&google.timers.load.t){google.timers.load.t.xjsls=new Date().getTime();}google.dljp(''/xjs/_/js/hp/sb_he,pcc/rt\x3dj/ver\x3dkZzP7WLWDa8.en_US./d\x3d1/sv\x3d1/rs\x3dAItRSTMrrcrCAA791p2QB-ap_BkElvsTOw'');google.xjs=1;}google.pmc={sb:{"agen":false,"cgen":true,"client":"heirloom-hp","dh":true,"ds":"","eqch":true,"fl":true,"host":"google.com","jsonp":true,"msgs":{"lcky":"I\u0026#39;m Feeling Lucky","lml":"Learn more","oskt":"Input tools","psrc":"This search was removed from your \u003Ca href=\"/history\"\u003EWeb History\u003C/a\u003E","psrl":"Remove","sbit":"Search by image","srch":"Google Search"},"ovr":{"l":1,"ms":1},"pq":"","qcpw":false,"scd":10,"sce":5,"stok":"i8GYi1NIPEUM2cksksphGh05J4s"},hp:{},pcc:{}};google.y.first.push(function(){if(google.med){google.med(''init'');google.initHistory();google.med(''history'');}google.History&&google.History.initialize(''/'');google.hs&&google.hs.init&&google.hs.init()});if(google.j&&google.j.en&&google.j.xi){window.setTimeout(google.j.xi,0);}</script></div><script>(function(){var b,c,d,e;function g(a,f){a.removeEventListener?(a.removeEventListener("load",f,!1),a.removeEventListener("error",f,!1)):(a.detachEvent("onload",f),a.detachEvent("onerror",f))}function h(a){e=(new Date).getTime();++c;a=a||window.event;a=a.target||a.srcElement;g(a,h)}var k=document.getElementsByTagName("img");b=k.length;
+for(var l=c=0,m;l<b;++l)m=k[l],m.complete||"string"!=typeof m.src||!m.src?++c:m.addEventListener?(m.addEventListener("load",h,!1),m.addEventListener("error",h,!1)):(m.attachEvent("onload",h),m.attachEvent("onerror",h));d=b-c;
+function n(){if(google.timers.load.t){google.timers.load.t.ol=(new Date).getTime();google.timers.load.t.iml=e;google.kCSI.imc=c;google.kCSI.imn=b;google.kCSI.imp=d;void 0!==google.stt&&(google.kCSI.stt=google.stt);google.csiReport&&google.csiReport()}}window.addEventListener?window.addEventListener("load",n,!1):window.attachEvent&&window.attachEvent("onload",n);google.timers.load.t.prt=e=(new Date).getTime();})();
+</script></body></html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 0:20:23 三月 18, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:00:35 三月 27, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+');
+INSERT INTO "repository_node" VALUES(14,'svn-testcase','/readme.txt','This is a sample of Subversion Repository for test the SVN integration of Trac.
+  -- by thinkbase.net, 20130327');
+INSERT INTO "repository_node" VALUES(15,'svn-testcase','/ms/www.miscrosoft.com.txt','<!DOCTYPE html>
+<html class="en-us no-js" lang="en" dir="ltr" xmlns:bi="urn:schemas-microsoft-com:mscom:bi"> 
+<head><meta http-equiv="X-UA-Compatible" content="IE=10" /><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="shortcut icon" href="/web/20130318140700im_/http://www.microsoft.com/favicon.ico?v2" /><title>
+	Microsoft Home Page | Devices and Services
+</title><link rel="stylesheet" type="text/css" href="/web/20130318140700cs_/http://i.s-microsoft.com/en-us/home/style.cssx?k=~/shared/templates/Styles/Base/viewport-css.aspx;~/shared/templates/Styles/Reset/reset-css.aspx;~/shared/templates/Styles/Views/cols-css.aspx;~/shared/templates/Styles/Base/webfont-css.aspx;~/shared/templates/Styles/Base/type-css.aspx;~/shared/templates/Styles/Base/layout-css.aspx;~/shared/templates/Styles/Views/header-css.aspx;~/shared/templates/Styles/Views/search-css.aspx;~/shared/templates/Styles/Views/list-css.aspx;~/shared/templates/Styles/Views/menu-css.aspx;~/shared/templates/Styles/Views/hero-css.aspx;~/shared/templates/Styles/Views/pivot-css.aspx;~/shared/templates/Styles/Views/highlights-css.aspx;~/shared/templates/Styles/Views/footer-css.aspx;~/shared/templates/Styles/animations-css.aspx&sc=/en-us/home/site.config&pc=&v=1911637724"></link>
+    <!--Third party scripts and code linked to or referenced from this website are licensed to you by the parties that own such code, not by Microsoft. See ASP.NET Ajax CDN Terms of Use – /web/20130318140700/http://www.asp.net/ajaxlibrary/CDN.ashx.-->
+    <script type="text/javascript" src="/web/20130318140700js_/http://i.s-microsoft.com/en-us/home/shared/templates/Scripts/Lib/modernizr.js?v1"></script>
+<script type="text/javascript" src="/web/20130318140700js_/http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">var ua,fontfix;/(Windows Phone)|(XBLWP)|(ZuneWP)/.test(navigator.userAgent)&&$("html").removeClass("fontface"),$("html").hasClass("fontface")||$("html").addClass("nofontface"),ua=navigator.userAgent.toLowerCase(),ua.indexOf("android")>-1&&ua.indexOf("android 4")===-1&&$("html").removeClass("cssanimations"),ua=navigator.userAgent.toLowerCase(),(ua.indexOf("android")>-1||ua.indexOf("silk/")>-1)&&(fontfix=document.createElement("style"),fontfix.setAttribute("type","text/css"),fontfix.innerHTML="",document.head.appendChild(fontfix))</script><script type="text/javascript" src="/web/20130318140700js_/http://www.microsoft.com/en-us/home/shared/core/2/js/js.ashx?&"></script><link rel="stylesheet" type="text/css" href="/web/20130318140700cs_/http://www.microsoft.com/en-us/home/shared/core/2/css/css.ashx?sc=/en-us/home/site.config&pt=hpHomepage" /><script type="text/javascript" src="/web/20130318140700js_/http://i3.microsoft.com/library/svy/broker.js"> </script><meta name="SearchTitle" content="Microsoft.com" scheme="" /><meta name="Description" content="At Microsoft our mission and values are to help people and businesses throughout the world realize their full potential." scheme="" /><meta name="Title" content="Microsoft Home Page | Devices and Services" scheme="" /><meta name="SearchDescription" content="Microsoft.com Homepage" scheme="" /><meta name="application-name" content="Microsoft.com" scheme="" /><meta name="msapplication-task" content="name=Search;action-uri=http://www.bing.com/;icon-uri=http://www.bing.com/fd/s/a/bing.ico" scheme="" /><meta name="msapplication-task" content="name=Shop;action-uri=http://store.microsoft.com/;icon-uri=http://img3.store.microsoft.com/prod/clusterb/v2/framework/pages/global/msstore_icon.ico" scheme="" /><meta name="msapplication-task" content="name=Download;action-uri=http://www.microsoft.com/downloads/;icon-uri=http://www.microsoft.com/favicon.ico" scheme="" /><meta name="msapplication-task" content="name=Support;action-uri=http://support.microsoft.com/;icon-uri=http://www.microsoft.com/favicon.ico" scheme="" /><meta name="msapplication-task" content="name=Secure;action-uri=http://www.microsoft.com/security/;icon-uri=http://www.microsoft.com/favicon.ico" scheme="" /><meta name="msapplication-TileColor" content="#00188f" scheme="" /><meta name="msapplication-TileImage" content="/global/ImageStore/PublishingImages/logos/144x144/microsoft_symbol_clr_144x144.png" scheme="" /></head>
+<body class="home">
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/www.microsoft.com\/en-us\/default.aspx";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "18";
+var displayMonth = "三月";
+var displayYear = "2013";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + ''/'' +  wbCurrentUrl;
+	document.getElementById(''wm-graph-anchor'').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px; z-index:9000;">
+<div id="wm-ipp-inside" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:''Lucida Grande'',''Arial'',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.microsoft.com/en-us/default.aspx" style="width:400px;font-size:11px;font-family:''Lucida Grande'',''Arial'',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20130318140700" /><input type="submit" value="Go" style="font-size:11px;font-family:''Lucida Grande'',''Arial'',sans-serif;margin-left:5px;" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:''Helvetica'',''Lucida Grande'',''Arial'',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20130218131743/http://www.microsoft.com/en-us/default.aspx" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="18 二月 2013"><strong>二月</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 14:07:00 三月 18, 2013">三月</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       四月
+                       
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20130317223931/http://www.microsoft.com/en-us/default.aspx" title="22:39:31 三月 17, 2013" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 14:07:00 三月 18, 2013">18</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20130318142557/http://www.microsoft.com/en-us/default.aspx" title="14:25:57 三月 18, 2013" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20120318132951/http://www.microsoft.com/en-us/default.aspx" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="18 三月 2012"><strong>2012</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 14:07:00 三月 18, 2013">2013</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2014
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20130318140700*/http://www.microsoft.com/en-us/default.aspx" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>2,411 captures</strong></a>
+           <div style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">28 二月 07 - 18 三月 13</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers(''inline'');" 
+				onmouseout="showTrackers(''none'');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:011000000000_2008:-1:001100000001_2009:-1:010000000000_2010:-1:000010101100_2011:-1:007999998bde_2012:-1:fddcceeeedde_2013:2:eec000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById(''wm-ipp'').style.display=''none'';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:''Lucida Grande'',''Arial'',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:''Lucida Grande'',''Arial'',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<script src="/web/20130318140700js_/http://www.microsoft.com/global/en-us/homepage/renderingAssets/wt_capi.js" type="text/javascript"></script>
+<script type="text/javascript">
+    if (typeof (WTOptimize) != ''undefined'') { try { document.body.style.visibility = ''hidden''; WTOptimize.addEventHandler(WTEvent.INVALID, function () { document.body.style.visibility = ''visible''; }); WTOptimize.addEventHandler(WTEvent.DONE, null, function () { document.body.style.visibility = ''visible''; }); WTOptimize.addEventHandler(WTEvent.PAGEVIEW, null, function () { document.body.style.visibility = ''visible''; }); var d = false; function rh(rp) { d = true; if (rp.Error != null || rp.Segments.length == 0) { WTOptimize.setup(); return; } WTOptimize.setup({ data: { segment: rp.Segments.sort().toString() } }); } var muid = ''''; var sc = document.cookie.split(''; ''); for (var i in sc) { var se = sc[i].split(''=''); if (se[0].indexOf(''MUID'') !== -1) { muid = se[1]; } } var s = document.createElement(''script''); var p = location.protocol === ''https:'' ? ''https:'' : ''http:''; s.src = p + ''//targetingservices.microsoft.com/ProfileStore/Segments?visitorId='' + muid + ''&callback=rh''; document.getElementsByTagName(''head'')[0].appendChild(s); setTimeout(function () { if (!d) { WTOptimize.setup(); } }, 2000); } catch (err) { WTOptimize.setup(); } }
+</script>
+    <script type="text/javascript" src="/web/20130318140700js_/http://i.s-microsoft.com/en-us/home/script.jsx?k=~/shared/templates/Scripts/Lib/picturefill.js&v=340844947"></script>
+    <form name="aspnetForm" method="post" action="/web/20130318140700/http://www.microsoft.com/en-us/default.aspx" id="aspnetForm" class="home-form">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUBMGRkrG4ZZMLmcMpgi9GdziiXK/43OIY=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAgKy+5CjCQK1qaLSCizpUEQtEC/vjxl9SJ+9Vp8uKxhh" />
+        <div class="top-bar account-center">
+    <div class="grid-container">
+
+<span class="top-bar-storelink " >
+    
+         <span class="store-editorial" 
+         
+           >  <a href="/web/20130318140700/http://content.microsoftstore.com/home.aspx?WT.mc_id=MSCOM_EN_US_HP_NAV_STORELOC_132M2ENUS35042">Find a Microsoft Store near you</a>
+         </span>
+         
+
+</span>
+
+
+    </div>
+</div>
+<header id="mscom-header" class="site-header" bi:type="header">
+    <div class="grid-container">
+        <h1>
+            <div data-picture data-alt="Microsoft" class="mscom-logo">
+                <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png"></div>
+                <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
+                <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-sm-1x.png" data-media="(max-width: 539px)"></div>
+                <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-sm-2x.png" data-media="(max-width: 539px) and (min-device-pixel-ratio: 2.0)"></div>
+                <noscript><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png" alt="Microsoft" /></noscript>
+            </div>
+            <script type="text/javascript">window.picturePolyfill.resolveLast();</script>
+        </h1>
+        <div class="site-header-togglers" bi:track="false">
+            <a href="/web/20130318140700/http://www.microsoft.com/en-us/default.aspx#mscom-navigation" id="toggle-menu" class="toggle toggle-menu" title="Toggle Navigation" bi:type="menu"><span class="icon-menu" aria-role="hidden"></span> <span class="screen-reader-text">Menu</span></a>
+            <a href="/web/20130318140700/http://www.microsoft.com/en-us/default.aspx#mscom-search" id="toggle-search" class="toggle toggle-search" title="Toggle Search" bi:type="search"><span class="icon-search" aria-role="hidden"></span> <span class="screen-reader-text">Search</span></a>
+        </div>
+        
+<div id="ctl00_ctl16_ctl00_ctl00_mscom-search" data-id="#mscom-search" class="mscom-search global-navigation" bi:type="Search">
+    <div role="search" class="search-form">
+        <input type="hidden" name="form" value="smc" />
+        <input type="hidden" name="setlang" value="en-us" />
+        <input type="hidden" class="search-source" name="source" value="0" />
+        <div class="input-wrapper">
+            <label for="ctl00_ctl16_ctl00_ctl00_q" class="screen-reader-text">Search Microsoft.com</label>
+            <input name="q" id="ctl00_ctl16_ctl00_ctl00_q" class="search-box" type="search" autocomplete="off" />
+        </div>
+        <button type="submit" name="ctl00$ctl16$ctl00$ctl00$searchButton" value="" id="ctl00_ctl16_ctl00_ctl00_searchButton" type="submit" class="search-submit" value="Search"><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/imagestore/PublishingImages/sprites/search-button-blue.png" alt="Submit" height="16" width="16" /></button>
+    </div>
+    <div class="search-results-box">
+        <div bi:track="false" class="search-results">
+            <ul>
+            </ul>
+        </div>
+        <div class="search-scope">
+            <ul>
+                <li><a class="checked">Search Microsoft.com</a></li>
+                <li><a>Search the Web</a></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            var search = new Ms.Search(
+                ''ctl00_ctl16_ctl00_ctl00_mscom-search'',
+                {"scope":[{"watermarkText":["Search Microsoft.com"],"searchUrlFormat":["http://search.microsoft.com/results.aspx?form=MSHOME&amp;mkt={1}&amp;setlang={1}&amp;q={0}"],"bi":[{"parameter":[{"name":["linkid"],"value":["searchmscomclick"]},{"name":["cpid"],"value":["MSCOMSearch"]},{"name":["searchtype"],"value":["MSCOM"]}]}],"autoSuggest":[{"serviceUrlFormat":["http://search.microsoft.com/shared/templates/master/smcPage/AutoSuggestHandler.ashx?q={0}&amp;site=smc&amp;locale={1}"],"jsonpCallbackName":["cb"],"resultType":["smcUnmarkedArray"],"minChars":["1"]}]},{"watermarkText":["Search the Web"],"searchUrlFormat":["http://www.bing.com/search?form=MSHPLS&amp;q={0}&amp;mkt={1}"],"bi":[{"parameter":[{"name":["cpid"],"value":["BingSearch"]},{"name":["searchtype"],"value":["Bing"]}]}],"autoSuggest":[{"serviceUrlFormat":["http://api.bing.com/qsonhs.aspx?FORM=MSHPLS&amp;mkt={1}&amp;type=cb&amp;q={0}&amp;o=s+p+a+l+h"],"jsonpCallbackName":["cb"],"resultType":["bingJSON"],"minChars":["1"]}]}]});
+        });
+    </script>
+</div>
+    </div>
+    
+<nav id="mscom-navigation" role="navigation" bi:type="menu" class="menu-component">
+    <div class="grid-container">
+        <span class="menulevel-storelink"></span>
+        <ul role="menubar" class="top-level-menubar">
+            <li role="menuitem" class="top-level-menuitem"><a class="top-level-link" bi:index="0" bi:track="false" bi:titleflag="t1" bi:title="t1" href="">Products</a>
+                <div class="dropdown-menu" bi:parenttitle="t1">
+                    <div class="grid-container">
+                        <div class="grid-row row-4"><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">Windows</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/windows/products">All Windows products</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows-8/meet">Windows 8</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/internet-explorer/download-ie">Internet Explorer</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoftstore.com/store/msstore/cat/categoryID.61721000?WT.mc_id=MSCOM_HP_nav_BuyWSoftware">Buy Windows 8</a></li>
+                                    </ul>
+                                <h5 class="heading" bi:titleflag="t2" bi:title="t2">Office</h5>
+                                <ul role="menu" bi:parenttitle="t2">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://office.microsoft.com/en-US">All Office products</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://office.microsoft.com/en-us/buy-microsoft-office-and-microsoft-office-365-online-FX102886268.aspx">Office for home</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://office.microsoft.com/en-us/business/">Office for business</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoftstore.com/store/msstore/cat/categoryID.61301000?WT.mc_id=MSCOM_HP_US_Nav_BuyOSoftware">Buy Office software</a></li>
+                                    </ul>
+                                <h5 class="heading" bi:titleflag="t3" bi:title="t3"></h5>
+                                <ul role="menu" bi:parenttitle="t3">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/en/us/sitemap.aspx">See all products</a></li>
+                                    </ul>
+                            </div><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">Devices</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/surface/en-US">Surface</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/hardware/en-US">Microsoft Hardware</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://www.xbox.com/en-us/">Xbox</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://www.windowsphone.com/en-US">Windows Phone</a></li>
+                                    </ul>
+                                <h5 class="heading" bi:titleflag="t2" bi:title="t2">Services</h5>
+                                <ul role="menu" bi:parenttitle="t2">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/windows/outlook">Outlook.com</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/skydrive/download">SkyDrive cloud storage</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://www.skype.com/go/skype/?cm_mmc=MSFT|TRAF_B1-_-mscom-hero-us">Skype</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://msn.com/">MSN</a></li>
+                                    <li role="menuitem"><a bi:index="4" bi:cpid="hpMenu" href="/web/20130318140700/http://www.bing.com/">Bing</a></li>
+                                    </ul>
+                            </div><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">Server and Tools</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/servers/en/us/default.aspx">All server &amp; tools products</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/en-us/server-cloud/ws2012/default.aspx">Windows Server</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/en-us/sqlserver/default.aspx">SQL Server</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://office.microsoft.com/en-us/exchange/">Exchange Server</a></li>
+                                    <li role="menuitem"><a bi:index="4" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/visualstudio/">Visual Studio</a></li>
+                                    <li role="menuitem"><a bi:index="5" bi:cpid="hpMenu" href="/web/20130318140700/http://www.windowsazure.com/">Windows Azure</a></li>
+                                    <li role="menuitem"><a bi:index="6" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/windows/windowsintune/">Windows Intune</a></li>
+                                    </ul>
+                                <h5 class="heading" bi:titleflag="t2" bi:title="t2">Developers &amp; IT Pros</h5>
+                                <ul role="menu" bi:parenttitle="t2">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/learning/en/us/default.aspx">Training &amp; certification</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://msdn.microsoft.com/en-us/default.aspx">MSDN (Microsoft Developer Network)</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://technet.microsoft.com/en-us/">TechNet for IT professionals</a></li>
+                                    </ul>
+                            </div><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">Business and enterprise</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/en-us/dynamics/default.aspx">Microsoft Dynamics</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoftbusinesshub.com/">Small and midsize business</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/enterprise">Enterprise and industry solutions</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://pinpoint.microsoft.com/en-US/home?WT.mc_id=MSCOM_HP_US_NAV_PC_Solutions">Find an IT Expert (Pinpoint)</a></li>
+                                    <li role="menuitem"><a bi:index="4" bi:cpid="hpMenu" href="/web/20130318140700/https://partner.microsoft.com/US/30000104">Resources for Microsoft Partners</a></li>
+                                    </ul>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </li>
+            <li role="menuitem" class="top-level-menuitem"><a class="top-level-link" bi:index="1" bi:track="false" bi:titleflag="t1" bi:title="t1" href="">Downloads</a>
+                <div class="dropdown-menu" bi:parenttitle="t1">
+                    <div class="grid-container">
+                        <div class="grid-row row-2"><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">Windows</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows/downloads">All Windows downloads</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoftstore.com/store/msstore/cat/categoryID.61721000?WT.mc_id=MSCOM_HP_nav_BuyWSoftware">Download Windows 8</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/windows/downloads">Free downloads</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/internet-explorer/download-ie">Internet Explorer</a></li>
+                                    </ul>
+                                <h5 class="heading" bi:titleflag="t2" bi:title="t2">Office</h5>
+                                <ul role="menu" bi:parenttitle="t2">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://office.microsoft.com/downloads">All Office downloads</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoftstore.com/store/msstore/cat/categoryID.61301000?WT.mc_id=MSCOM_HP_US_Nav_BuyOSoftware">Download Office</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://office.microsoft.com/try">Free trials</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://office.microsoft.com/templates/">Templates</a></li>
+                                    </ul>
+                            </div><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">More Downloads</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/en-us/download/default.aspx?WT.mc_id=MSCOM_HP_us_Nav_Downloads">Download Center</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/windows/products/security-essentials">Microsoft Security Essentials</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://www.update.microsoft.com/">Microsoft Update: Service packs &amp; fixes</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/windows/hardware-drivers-help">Drivers (sound, printer, USB, others)</a></li>
+                                    <li role="menuitem"><a bi:index="4" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/hardware/en-us/downloads">Microsoft Hardware drivers</a></li>
+                                    </ul>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </li>
+            <li role="menuitem" class="top-level-menuitem"><a class="top-level-link" bi:index="2" bi:track="false" bi:titleflag="t1" bi:title="t1" href="">Support</a>
+                <div class="dropdown-menu" bi:parenttitle="t1">
+                    <div class="grid-container">
+                        <div class="grid-row row-3"><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">By Resource</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://support.microsoft.com/">Microsoft Support home</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://answers.microsoft.com/en-US">Ask the experts</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://support.microsoft.com/contactus/">Chat or call</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://search.microsoft.com/en-us/SupportResults.aspx?q=windows%208">Search knowledge base</a></li>
+                                    </ul>
+                                <h5 class="heading" bi:titleflag="t2" bi:title="t2">By Product</h5>
+                                <ul role="menu" bi:parenttitle="t2">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/windows/support">Windows 8</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://support.microsoft.com/find-solutions/more?Family=Windows">Other Windows products</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://office.microsoft.com/en-us/support/">Office (Outlook, Excel, and others)</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/Surface/en-us/support/home">Surface</a></li>
+                                    </ul>
+                            </div><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">By Topic</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://support.microsoft.com/search/">Error messages</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://www.update.microsoft.com/">Microsoft Update: Service packs &amp; fixes</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/windows/install-upgrade-activate-help">Install, upgrade, &amp; activate (Windows)</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://support.microsoft.com/kb/811224">Product keys (locate or replace)</a></li>
+                                    <li role="menuitem"><a bi:index="4" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/windows/hardware-drivers-help">Drivers (sound, printer, USB, others)</a></li>
+                                    <li role="menuitem"><a bi:index="5" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/hardware/en-us/downloads">Microsoft Hardware drivers</a></li>
+                                    </ul>
+                            </div><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">By Audience</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://support.microsoft.com/">For home users</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://smallbusiness.support.microsoft.com/">For small business</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://technet.microsoft.com/en-us/ms772425">For IT professionals</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://msdn.microsoft.com/en-us/hh361695">For developers</a></li>
+                                    </ul>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </li>
+            <li role="menuitem" class="top-level-menuitem"><a class="top-level-link" bi:index="3" bi:track="false" bi:titleflag="t1" bi:title="t1" href="">Security</a>
+                <div class="dropdown-menu" bi:parenttitle="t1">
+                    <div class="grid-container">
+                        <div class="grid-row row-1"><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1"></h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/security/default.aspx">Security Home</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows/products/security-essentials">Microsoft Security Essentials</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://www.update.microsoft.com/">Microsoft Update: Service packs &amp; fixes</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/security/family-safety/default.aspx">Family safety resources</a></li>
+                                    </ul>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </li>
+            <li role="menuitem" class="top-level-menuitem"><a class="top-level-link" bi:index="4" bi:track="false" bi:titleflag="t1" bi:title="t1" href="">Shop</a>
+                <div class="dropdown-menu" bi:parenttitle="t1">
+                    <div class="grid-container">
+                        <div class="grid-row row-2"><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">For home</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoftstore.com/store/msstore/home?WT.mc_id=MSCOM_HP_nav?WT.mc_id=MSCOM_US_HP_Nav_Buy_Store">Microsoft Store</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://surface.microsoftstore.com/store/msstore/Content/pbpage.Surface_Category?WT.mc_id=MSCOM_US_HP_Nav_Buy_Surface">Surface</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoftstore.com/store/msstore/cat/categoryID.61301000?WT.mc_id=MSCOM_HP_US_Nav_BuyOSoftware">Office</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoftstore.com/store/msstore/cat/categoryID.61721000?WT.mc_id=MSCOM_HP_nav_BuyWSoftware">Windows</a></li>
+                                    <li role="menuitem"><a bi:index="4" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoftstore.com/store/msstore/cat/categoryID.50606600?WT.mc_id=MSCOM_HP_US_Nav_BuyXbox">Xbox</a></li>
+                                    </ul>
+                            </div><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">For business</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/licensing/default.aspx">Volume Licensing</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://pinpoint.microsoft.com/en-US/home?WT.mc_id=MSCOM_HP_US_NAV_PC_Solutions">Find an IT Expert (Pinpoint)</a></li>
+                                    </ul>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+</header><div bi:type="slideshow" class="slideshow slideshow-hero hero">
+    <ul class="slides">
+        <li id="slide-1" bi:index="0" selectBi="">
+<div class="heroitem  light-foreground" bi:type="heroitem">
+    <div class="media" bi:parenttitle="t1"> 
+        <a href="/web/20130318140700/http://clk.atdmt.com/MRT/go/439174651/direct/01/"  bi:track="false" bi:index="0" bi:titleflag="t1"  bi:linkid="F1A-GEN-133O1ENUS35961" bi:cpid="hpFeature">
+<div data-picture data-alt="Try Office 365 today." data-disable-swap-below >
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/Office365_HPKappaBG_0128_1600x540_EN_US.jpg"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/Office365_HPKappaBG_0128_1024x346_EN_US.jpg" data-media="(max-device-pixel-width:1024px)"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/Office365_HPKappaBG_0128_600x203_EN_US.jpg" data-media="(max-device-pixel-width:600px)"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/Office365_HPKappaBG_0128_480x162_EN_US.jpg" data-media="(max-device-pixel-width:480px)"></div>
+    
+    <noscript><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/Office365_HPKappaBG_0128_1600x540_EN_US.jpg" alt="Try Office 365 today." /></noscript>
+</div>
+<script type="text/javascript">window.picturePolyfill.resolveLast();</script>
+        </a>
+    </div>
+    <div class="text" bi:type="cta">
+<div class="text-container">
+    <div class="box" style="background: #E23300; color: #FFFFFF;">
+        <img class="box-img" src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hpfeature/hirez/Ofc365_RetLogo_500x60.png" alt="Try Office 365 today." bi:type="img" bi:parenttitle="t1" />
+        <h3 class="box-title" bi:type="title" bi:title="t1" style="color: #FFFFFF;">Your complete office in the cloud</h3>
+        <ul class="box-actions box-description">
+            <li><a bi:index="1" style="color:#FFFFFF;" bi:linkid="F1A-GEN-133O1ENUS35961" bi:cpid="hpFeature" href="/web/20130318140700/http://clk.atdmt.com/MRT/go/439174651/direct/01/">Try Office 365 for home</a></li>
+            <li><a bi:index="2" style="color:#FFFFFF;" bi:linkid="F1B-GEN-133L1ENUS40819" bi:cpid="hpFeature" href="/web/20130318140700/http://clk.atdmt.com/MRT/go/437672201/direct/01/">Try Office 365 for business</a></li>
+        </ul>
+    </div>
+</div></div>
+</div></li><li id="slide-2" bi:index="1" selectBi="" style="display:none;">
+<div class="heroitem  light-foreground" bi:type="heroitem">
+    <div class="media" bi:parenttitle="t1"> 
+        <a href="/web/20130318140700/http://clk.atdmt.com/MRT/go/431101865/direct/01/"  bi:track="false" bi:index="0" bi:titleflag="t1"  bi:linkid="F2A-GEN-133F2ENUS37332" bi:cpid="hpFeature">
+<div data-picture data-alt="Learn more about Surface Pro." data-disable-swap-below  data-defer>
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/SurfacePro_DeltaBG_0211_1600x540_EN_US.jpg"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/SurfacePro_DeltaBG_0211_1024x540_EN_US.jpg" data-media="(max-device-pixel-width:1024px)"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/SurfacePro_DeltaBG_0211_600x203_EN_US.jpg" data-media="(max-device-pixel-width:600px)"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/SurfacePro_DeltaBG_0211_480x162_EN_US.jpg" data-media="(max-device-pixel-width:480px)"></div>
+    
+    <noscript><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/SurfacePro_DeltaBG_0211_1600x540_EN_US.jpg" alt="Learn more about Surface Pro." /></noscript>
+</div>
+        </a>
+    </div>
+    <div class="text" bi:type="cta">
+<div class="text-container">
+    <div class="box" style="background: #E23300; color: #FFFFFF;">
+        <img class="box-img" src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hpfeature/hirez/SurfacePro_2x_500x60.png" alt="Learn more about Surface Pro." bi:type="img" bi:parenttitle="t1" />
+        <h3 class="box-title" bi:type="title" bi:title="t1" style="color: #FFFFFF;">A powerful PC in tablet form</h3>
+        <ul class="box-actions box-description">
+            <li><a bi:index="1" style="color:#FFFFFF;" bi:linkid="F2A-GEN-133F2ENUS37332" bi:cpid="hpFeature" href="/web/20130318140700/http://clk.atdmt.com/MRT/go/431101865/direct/01/">Learn more</a></li>
+        </ul>
+    </div>
+</div></div>
+</div></li><li id="slide-3" bi:index="2" selectBi="" style="display:none;">
+<div class="heroitem " bi:type="heroitem">
+    <div class="media" bi:parenttitle="t1"> 
+        <a href="/web/20130318140700/http://www.skype.com/en/offers/skype-with-love/?cm_mmc=MSFT%257CTRAF_B1-_-mscom-hp-fswl"  bi:track="false" bi:index="0" bi:titleflag="t1"  bi:linkid="F3A-GEN-133S2ENUS39622" bi:cpid="hpFeature">
+<div data-picture data-alt="Start using the very best of Skype today." data-disable-swap-below >
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/Skype_wLoveBG_0304_1600x540_EN_US.jpg"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/Skype_wLoveBG_0304_1024x346_EN_US.jpg" data-media="(max-device-pixel-width:1024px)"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/Skype_wLoveBG_0304_600x203_EN_US.jpg" data-media="(max-device-pixel-width:600px)"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/Skype_wLoveBG_0304_480x162_EN_US.jpg" data-media="(max-device-pixel-width:480px)"></div>
+    
+    <noscript><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/Skype_wLoveBG_0304_1600x540_EN_US.jpg" alt="Start using the very best of Skype today." /></noscript>
+</div>
+<script type="text/javascript">window.picturePolyfill.resolveLast();</script>
+        </a>
+    </div>
+    <div class="text" bi:type="cta">
+<div class="text-container">
+    <div class="box" style="background: #EEEEEE; color: #000000;">
+        <img class="box-img" src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hpfeature/hirez/Skype_2xCyanLogo_500x60.png" alt="Start using the very best of Skype today." bi:type="img" bi:parenttitle="t1" />
+        <h3 class="box-title" bi:type="title" bi:title="t1" style="color: #000000;">Try the best of Skype with a free month on us</h3>
+        <ul class="box-actions box-description">
+            <li><a bi:index="1" style="color:#000000;" bi:linkid="F3A-GEN-133S2ENUS39622" bi:cpid="hpFeature" href="/web/20130318140700/http://www.skype.com/en/offers/skype-with-love/?cm_mmc=MSFT%257CTRAF_B1-_-mscom-hp-fswl">Get started</a></li>
+        </ul>
+    </div>
+</div></div>
+</div></li><li id="slide-4" bi:index="3" selectBi="" style="display:none;">
+<div class="heroitem  light-foreground" bi:type="heroitem">
+    <div class="media" bi:parenttitle="t1"> 
+        <a href="/web/20130318140700/http://clk.atdmt.com/MRT/go/421374117/direct/01/"  bi:track="false" bi:index="0" bi:titleflag="t1"  bi:linkid="F4A-GEN-132P2ENUS28423" bi:cpid="hpFeature">
+<div data-picture data-alt="Download Windows Phone SDK to develop apps for Windows Phone 8." data-disable-swap-below  data-defer>
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/WPsdk_BG_0225_1600x540_EN_US.jpg"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/WPsdk_BG_0225_1024x346_EN_US.jpg" data-media="(max-device-pixel-width:1024px)"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/WPsdk_BG_0225_600x203_EN_US.jpg" data-media="(max-device-pixel-width:600px)"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/WPsdk_BG_0225_480x162_EN_US.jpg" data-media="(max-device-pixel-width:480px)"></div>
+    
+    <noscript><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/WPsdk_BG_0225_1600x540_EN_US.jpg" alt="Download Windows Phone SDK to develop apps for Windows Phone 8." /></noscript>
+</div>
+        </a>
+    </div>
+    <div class="text" bi:type="cta">
+<div class="text-container">
+    <div class="box" style="background: #7E499B; color: #FFFFFF;">
+        <img class="box-img" src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hpfeature/hirez/WP_RetLogo_1112_500x60_EN_US.png" alt="Download Windows Phone SDK to develop apps for Windows Phone 8." bi:type="img" bi:parenttitle="t1" />
+        <h3 class="box-title" bi:type="title" bi:title="t1" style="color: #FFFFFF;">Design the next great app for Windows Phone</h3>
+        <ul class="box-actions box-description">
+            <li><a bi:index="1" style="color:#FFFFFF;" bi:linkid="F4A-GEN-132P2ENUS28423" bi:cpid="hpFeature" href="/web/20130318140700/http://clk.atdmt.com/MRT/go/421374117/direct/01/">Get the SDK</a></li>
+        </ul>
+    </div>
+</div></div>
+</div></li>
+    </ul>
+    <div class="navigation international" bi:track="false">
+        <div class="grid-container" data-title-text="Go To Slide {{idx}}"></div>
+    </div>
+    <div class="prev-next" bi:track="false">
+        <button class="prev"><span class="icon-left" aria-hidden="true"></span><span class="screen-reader-text">Previous</span></button>
+        <button class="next"><span class="icon-right" aria-hidden="true"></span><span class="screen-reader-text">Next</span></button>
+    </div>
+</div>
+<section class="row-padded"><div class="grid-container"><div class="grid-row row-4 "><div class="grid-unit col-1">
+
+<div bi:type="list" class="list-of-links list-of-links-xlg list-array">
+    <h2 bi:titleflag="t1" bi:title="t1" class="heading">Discover</h2>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="BNV-00-000000" bi:cpid="hpDiscover" href="/web/20130318140700/http://windows.microsoft.com/">Windows</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="BNV-00-000000" bi:cpid="hpDiscover" href="/web/20130318140700/http://office.microsoft.com/">Office</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="BNV-00-000000" bi:cpid="hpDiscover" href="/web/20130318140700/http://www.microsoft.com/surface/en-US">Surface</a>
+        </li>
+        <li><a bi:index="3" bi:linkid="BNV-00-000000" bi:cpid="hpDiscover" href="/web/20130318140700/http://www.windowsphone.com/">Windows Phone</a>
+        </li>
+        <li><a bi:index="4" bi:linkid="BNV-00-000000" bi:cpid="hpDiscover" href="/web/20130318140700/http://www.xbox.com/">Xbox</a>
+        </li>
+        <li><a bi:index="5" bi:linkid="BNV-00-000000" bi:cpid="hpDiscover" href="/web/20130318140700/http://www.skype.com/go/skype/?cm_mmc=MSFT|TRAF_B1-_-mscom-hero-us">Skype</a>
+        </li>
+        <li><a bi:index="6" bi:linkid="BNV-00-000000" bi:cpid="hpDiscover" href="/web/20130318140700/http://www.bing.com/">Bing</a>
+        </li>
+    </ul>
+</div></div><div class="grid-unit col-3"><div id="pivot-1" class="pivot " bi:type="pivot"><h2 class="heading" bi:titleflag="t1" bi:title="t1">For home</h2><a href="/web/20130318140700/http://www.microsoft.com/en-us/default.aspx#pivot-2" class="pivot-switch" bi:track="false">For work</a><div class="grid-row row-3 features"><div class="grid-unit">
+<div bi:type="highlight" class="">
+    <a href="/web/20130318140700/http://clk.atdmt.com/MRT/go/419363752/direct/01/" bi:linkid="HH1-GEN-132F1ENUS31176" bi:cpid="workHighlight">
+        <img  bi:parenttitle="t1" src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/highlights/Surface_covers_0128_420x210_EN_US.jpg" alt="Check out the revolutionary covers designed for Surface." bi:mimiclink="true" bi:type="img" />
+        <p  bi:parenttitle="t1" bi:mimiclink="true" bi:type="desc">Check out the revolutionary covers designed for Surface. Shop now.</p>
+        </a>
+</div></div><div class="grid-unit">
+<div bi:type="highlight" class="">
+    <a href="/web/20130318140700/http://clk.atdmt.com/MRT/go/416132243/direct/01/" bi:linkid="HH2-GEN-132W1ENUS27761" bi:cpid="homeHighlight">
+        <img  bi:parenttitle="t1" src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/highlights/Win8start_1127_420x210_EN_US.jpg" alt="Get Windows 8 upgrade today." bi:mimiclink="true" bi:type="img" />
+        <p  bi:parenttitle="t1" bi:mimiclink="true" bi:type="desc">Work and play harder with Windows 8. Get the upgrade today.</p>
+        </a>
+</div></div><div class="grid-unit">
+<div bi:type="highlight" class="">
+    <a href="/web/20130318140700/http://clk.atdmt.com/MRT/go/415959651/direct/01/" bi:linkid="HH3-GEN-131B2ENUS27668" bi:cpid="homeHighlight">
+        <img  bi:parenttitle="t1" src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/highlights/BingItOn_0211_420x210_EN_US.jpg" alt="Bing v. Google: Take the Bing It On search engine challenge." bi:mimiclink="true" bi:type="img" />
+        <p  bi:parenttitle="t1" bi:mimiclink="true" bi:type="desc">See which web search results you really prefer. Take the Bing It On challenge.</p>
+        </a>
+</div></div></div><div class="grid-row row-3 "><div class="grid-unit">
+
+<div bi:type="list" class="list-of-links list-of-links-med">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">Downloads</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="MA1-GEN-131W4ENUS22343" bi:cpid="homeModA" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows/downloads?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131W4ENUS22343">Windows</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="MA2-GEN-131O4ENUS22344" bi:cpid="homeModA" href="/web/20130318140700/http://office.microsoft.com/en-us/downloads?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131O4ENUS22344">Office</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="MA3-GEN-132I1ENUS33272" bi:cpid="homeModA" href="/web/20130318140700/http://clk.atdmt.com/MRT/go/422085667/direct/01/">Internet Explorer</a>
+        </li>
+    </ul>
+</div></div><div class="grid-unit">
+
+<div bi:type="list" class="list-of-links list-of-links-med">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">Security &amp; updates</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="MB1-GEN-131Z4ENUS21978" bi:cpid="homeModB" href="/web/20130318140700/http://update.microsoft.com/microsoftupdate?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131Z4ENUS21978">Microsoft Update</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="MB2-GEN-131Z4ENUS21979" bi:cpid="homeModB" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows/products/security-essentials?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131Z4ENUS21979">Microsoft Security Essentials</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="MB3-GEN-131W4ENUS21980" bi:cpid="homeModB" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows/downloads/service-packs?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131W4ENUS21980">Windows Service Pack Center</a>
+        </li>
+    </ul>
+</div></div><div class="grid-unit">
+
+<div bi:type="list" class="list-of-links list-of-links-med">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">Support</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="MC1-GEN-131W4ENUS21970" bi:cpid="homeModC" href="/web/20130318140700/http://windows.microsoft.com/en-us/windows/help?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131W4ENUS21970">Windows help and how-to</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="MC2-GEN-131O4ENUS21971" bi:cpid="homeModC" href="/web/20130318140700/http://office.microsoft.com/en-us/support/?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131O4ENUS21971">Office</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="MC3-GEN-131Z4ENUS21977" bi:cpid="homeModC" href="/web/20130318140700/http://support.microsoft.com/?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131Z4ENUS21977">Find more support</a>
+        </li>
+    </ul>
+</div></div></div></div><div id="pivot-2" class="pivot " bi:type="pivot"><h2 class="heading" bi:titleflag="t1" bi:title="t1">For work</h2><a href="/web/20130318140700/http://www.microsoft.com/en-us/default.aspx#pivot-1" class="pivot-switch" bi:track="false">For home</a><div class="grid-row row-3 features"><div class="grid-unit">
+<div bi:type="highlight" class="">
+    <a href="/web/20130318140700/http://clk.atdmt.com/MRT/go/429310930/direct/01/" bi:linkid="HW1-GEN-133C1ENUS35299" bi:cpid="workHighlight">
+        <img  bi:parenttitle="t1" src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/highlights/WinSrv_1015_420x210_EN_US.jpg" alt="Try System Center 2012 SP1 for free." bi:mimiclink="true" bi:type="img" />
+        <p  bi:parenttitle="t1" bi:mimiclink="true" bi:type="desc">Download a trial of System Center 2012 SP1 and unlock the potential of your datacenter.</p>
+        </a>
+</div></div><div class="grid-unit">
+<div bi:type="highlight" class="">
+    <a href="/web/20130318140700/http://clk.atdmt.com/MRT/go/410971011/direct/01/" bi:linkid="HW2-GEN-131V1ENUS26853" bi:cpid="workHighlight">
+        <img  bi:parenttitle="t1" src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/highlights/VS_1127_420x210_EN_US.jpg" alt="Get the free trial of Visual Studio 2012." bi:mimiclink="true" bi:type="img" />
+        <p  bi:parenttitle="t1" bi:mimiclink="true" bi:type="desc">Visual Studio dev tools can help take your apps to the next level. Try it free.</p>
+        </a>
+</div></div><div class="grid-unit">
+<div bi:type="highlight" class="">
+    <a href="/web/20130318140700/http://clk.atdmt.com/MRT/go/417499289/direct/01/" bi:linkid="HW3-GEN-131A2ENUS30769" bi:cpid="workHighlight">
+        <img  bi:parenttitle="t1" src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/highlights/Azure_0304_420x210_EN_US.png" alt="Get the free trial of Windows Azure." bi:mimiclink="true" bi:type="img" />
+        <p  bi:parenttitle="t1" bi:mimiclink="true" bi:type="desc">Build cloud-powered .NET apps on Windows Azure. Get the free trial.</p>
+        </a>
+</div></div></div><div class="grid-row row-3 "><div class="grid-unit">
+
+<div bi:type="list" class="list-of-links list-of-links-med">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">Downloads</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="ME1-GEN-131Z4ENUS22347" bi:cpid="workModE" href="/web/20130318140700/http://msdn.microsoft.com/en-us/evalcenter/default.aspx?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22347">Downloads for developers</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="ME2-GEN-131Z4ENUS22346" bi:cpid="workModE" href="/web/20130318140700/http://technet.microsoft.com/en-us/evalcenter?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22346">Downloads for IT Pros</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="ME3-GEN-131Z4ENUS22345" bi:cpid="workModE" href="/web/20130318140700/http://www.microsoftbusinesshub.com/Solutions?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22345">Tools and solutions for businesses</a>
+        </li>
+        <li><a bi:index="3" bi:linkid="ME4-GEN-131Z4ENUS21986" bi:cpid="workModE" href="/web/20130318140700/http://www.microsoft.com/en-us/download/?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS21986">Find more downloads</a>
+        </li>
+    </ul>
+</div></div><div class="grid-unit">
+
+<div bi:type="list" class="list-of-links list-of-links-med">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">Resources</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="MF1-GEN-131Z4ENUS22348" bi:cpid="workModF" href="/web/20130318140700/http://technet.microsoft.com/en-us/bb421517?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22348">TechCenters</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="MF2-GEN-131Z4ENUS22349" bi:cpid="workModF" href="/web/20130318140700/http://www.microsoft.com/en-us/download/details.aspx?id=25175&WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22349">Microsoft Deployment Toolkit</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="MF3-GEN-131Z4ENUS21978" bi:cpid="workModF" href="/web/20130318140700/http://update.microsoft.com/microsoftupdate?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS21978">Microsoft Update</a>
+        </li>
+        <li><a bi:index="3" bi:linkid="MF4-GEN-131Z4ENUS23586" bi:cpid="workModF" href="/web/20130318140700/http://pinpoint.microsoft.com/en-us/home?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS23586">Find IT experts and solutions</a>
+        </li>
+    </ul>
+</div></div><div class="grid-unit">
+
+<div bi:type="list" class="list-of-links list-of-links-med">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">Support</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="MG1-GEN-131Z4ENUS22351" bi:cpid="workModG" href="/web/20130318140700/http://technet.microsoft.com/en-us/ms772425?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22351">For IT Pros</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="MG2-GEN-131Z4ENUS22352" bi:cpid="workModG" href="/web/20130318140700/http://msdn.microsoft.com/en-us/hh361695?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22352">For developers</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="MG3-GEN-131Z4ENUS28306" bi:cpid="workModG" href="/web/20130318140700/http://smallbusiness.support.microsoft.com/?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS28306">For small businesses</a>
+        </li>
+        <li><a bi:index="3" bi:linkid="MG4-GEN-131Z4ENUS21977" bi:cpid="workModG" href="/web/20130318140700/http://support.microsoft.com/?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS21977">Find more support</a>
+        </li>
+    </ul>
+</div></div></div></div></div></div></div></section><section class="row-blue row-padded"><div class="grid-container"><div class="grid-row row-4 "><div class="grid-unit col-3 col-flow-opposite"><div bi:type="slideshow" class="slideshow slideshow-news">
+    <ul class="slides">
+        <li id="slide-1" bi:index="0" selectBi="">
+<div bi:type="highlight" class="">
+    <a href="/web/20130318140700/http://www.microsoft.com/en-us/news/features/2013/mar13/03-04Healthcare.aspx" bi:linkid="MNC-GEN-000001" bi:cpid="hpNews">
+        <img  bi:parenttitle="t1" src="/web/20130318140700im_/http://i.s-microsoft.com/global/en-us/news/publishingimages/homepage/highlights/theme_HealthMS_hl.jpg" alt="Rx for an ailing healthcare system" bi:mimiclink="true" bi:type="img" />
+        <h3 class="title" bi:mimiclink="true" bi:title="t1" bi:titleflag="t1" bi:type="title">Rx for an ailing healthcare system</h3>
+        <p  bi:parenttitle="t1" bi:mimiclink="true" bi:type="desc"><time pubdate class="pubdate">March 4, 2013 -</time> Microsoft showcases comprehensive IT solutions at this week’s HIMSS conference in New Orleans.</p>
+        </a>
+</div></li><li id="slide-2" bi:index="1" selectBi="" style="display:none;">
+<div bi:type="highlight" class="">
+    <a href="/web/20130318140700/http://aka.ms/envision" bi:linkid="MNC-GEN-000002" bi:cpid="hpNews">
+        <img  bi:parenttitle="t1" src="/web/20130318140700im_/http://i.s-microsoft.com/global/en-us/news/publishingimages/homepage/highlights/theme_Envisioning_hl.jpg" alt="Future of work and play now on display" bi:mimiclink="true" bi:type="img" />
+        <h3 class="title" bi:mimiclink="true" bi:title="t1" bi:titleflag="t1" bi:type="title">Future of work and play now on display</h3>
+        <p  bi:parenttitle="t1" bi:mimiclink="true" bi:type="desc"><time pubdate class="pubdate">March 1, 2013 -</time> Microsoft unveils new Envisioning Center, a hands-on experience with the future that also serves as a laboratory for engineering teams.</p>
+        </a>
+</div></li><li id="slide-3" bi:index="2" selectBi="" style="display:none;">
+<div bi:type="highlight" class="">
+    <a href="/web/20130318140700/http://www.microsoft.com/en-us/news/Press/2013/Feb13/02-27OfficeCommercialGAPR.aspx" bi:linkid="MNC-GEN-000003" bi:cpid="hpNews">
+        <img  bi:parenttitle="t1" src="/web/20130318140700im_/http://i.s-microsoft.com/global/en-us/news/publishingimages/homepage/highlights/Event_Office365Biz_hl.jpg" alt="Office 365 for business releases worldwide" bi:mimiclink="true" bi:type="img" />
+        <h3 class="title" bi:mimiclink="true" bi:title="t1" bi:titleflag="t1" bi:type="title">Office 365 for business releases worldwide</h3>
+        <p  bi:parenttitle="t1" bi:mimiclink="true" bi:type="desc"><time pubdate class="pubdate">Feb. 27, 2013 -</time> New cloud services tailored to the needs and budgets of small, medium and large organizations.</p>
+        </a>
+</div></li>
+    </ul>
+    <div class="navigation international" bi:track="false">
+        <div class="grid-container" data-title-text="Go To Slide {{idx}}"></div>
+    </div>
+    <div class="prev-next" bi:track="false">
+        <button class="prev"><span class="icon-left" aria-hidden="true"></span><span class="screen-reader-text">Previous</span></button>
+        <button class="next"><span class="icon-right" aria-hidden="true"></span><span class="screen-reader-text">Next</span></button>
+    </div>
+</div>
+</div><div class="grid-unit col-1">
+
+<div bi:type="list" class="list-of-links list-of-links-lg list-array">
+    <h2 bi:titleflag="t1" bi:title="t1" class="heading">Follow us</h2>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="SOC-00-000000" bi:cpid="hpSocial" href="/web/20130318140700/http://www.facebook.com/microsoft">Facebook</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="SOC-00-000000" bi:cpid="hpSocial" href="/web/20130318140700/http://www.twitter.com/microsoft">Twitter</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="SOC-00-000000" bi:cpid="hpSocial" href="/web/20130318140700/http://www.microsoft.com/news">News Center</a>
+        </li>
+    </ul>
+</div></div></div></div></section><section class="row-grey row-padded-top"><div class="grid-container"><div class="grid-row row-4 "><div class="grid-unit">
+
+<div bi:type="list" class="list-of-links list-of-links-sm footer-products-list">
+    <h2 bi:titleflag="t1" bi:title="t1" class="heading">Other Microsoft sites</h2>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="PTN-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://windows.microsoft.com/"><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/52x52/windows_symbol_clr_52x52.png" alt=""/>Windows</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="PTN-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://office.microsoft.com/"><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/52x52/office_symbol_clr_52x52.png" alt=""/>Office</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="PTN-00-132F1ENUS32267" bi:cpid="hpFatFooter" href="/web/20130318140700/http://clk.atdmt.com/MRT/go/420109147/direct/01/"><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/52x52/fallpromo_bug_black.png" alt=""/>Surface</a>
+        </li>
+        <li><a bi:index="3" bi:linkid="PTN-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.windowsphone.com/"><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/52x52/windowsphone_symbol_clr_52x52.png" alt=""/>Windows Phone</a>
+        </li>
+        <li><a bi:index="4" bi:linkid="PTN-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.xbox.com/"><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/52x52/xbox_symbol_clr_52x52.png" alt=""/>Xbox</a>
+        </li>
+        <li><a bi:index="5" bi:linkid="PTN-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.skype.com/go/skype/?cm_mmc=MSFT|TRAF_B1-_-mscom-hero-us"><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/52x52/skype_symbol_clr_52x52.png" alt=""/>Skype</a>
+        </li>
+        <li><a bi:index="6" bi:linkid="PTN-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.bing.com/"><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/52x52/bing_symbol_clr_52x52.png" alt=""/>Bing</a>
+        </li>
+        <li><a bi:index="7" bi:linkid="PTN-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.microsoftstore.com/store/msstore/home?WT.mc_id=MSCOM_HP_footer"><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/52x52/store_symbol_clr_52x52.png" alt=""/>Microsoft Store</a>
+        </li>
+    </ul>
+</div></div><div class="grid-unit">
+
+<div bi:type="list" class="list-of-links list-of-links-sm">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">Downloads</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.microsoft.com/en-us/download/default.aspx">Download Center</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows/downloads">Windows downloads</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://office.microsoft.com/downloads">Office downloads</a>
+        </li>
+    </ul>
+</div>
+
+<div bi:type="list" class="list-of-links list-of-links-sm">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">Support</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://support.microsoft.com/">Support home</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://support.microsoft.com/search">Knowledge base</a>
+        </li>
+    </ul>
+</div></div><div class="grid-unit">
+
+<div bi:type="list" class="list-of-links list-of-links-sm">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">Security</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.microsoft.com/security/default.aspx">Security home</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows/products/security-essentials">Microsoft Security Essentials</a>
+        </li>
+    </ul>
+</div>
+
+<div bi:type="list" class="list-of-links list-of-links-sm">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">About</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.microsoft.com/about/en/us/default.aspx">Microsoft</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.microsoft.com/careers">Careers</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.microsoft.com/en-us/news/">Company News</a>
+        </li>
+        <li><a bi:index="3" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.microsoft.com/investor">Investor relations</a>
+        </li>
+        <li><a bi:index="4" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.microsoft.com/en/us/sitemap.aspx">Site map</a>
+        </li>
+    </ul>
+</div></div><div class="grid-unit">
+
+<div bi:type="list" class="list-of-links list-of-links-sm">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">Popular resources</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows/rt-welcome">Windows RT</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows/all-pcs">PC and Laptops</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows/tablets-computers">Tablet and Computers</a>
+        </li>
+        <li><a bi:index="3" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.windowsphone.com/en-us">Windows Phone smartphones</a>
+        </li>
+        <li><a bi:index="4" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.windowsphone.com/en-us/store">Windows Phone apps and games</a>
+        </li>
+        <li><a bi:index="5" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.microsoft.com/security/default.aspx">Microsoft computer security</a>
+        </li>
+        <li><a bi:index="6" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.microsoft.com/security/pc-security/malware-removal.aspx">Malware removal tool</a>
+        </li>
+        <li><a bi:index="7" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://crm.dynamics.com/en-us/home">Microsoft Dynamics CRM Online</a>
+        </li>
+    </ul>
+</div></div></div></div></section><footer class="site-footer" role="contentinfo" bi:type="footer">
+    <div class="legal grid-container">
+        <div class="grid-row row-4">
+            <div class="grid-unit col-1" bi:type="locale">
+                <span class="icon-globe"></span><a href="/web/20130318140700/http://www.microsoft.com/en-us/home/locale.aspx">United States - English</a>
+            </div>
+            <div class="grid-unit col-3 inline-list" bi:type="legal">
+                <div data-picture data-alt="Microsoft" class="footer-logo">
+                    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-1x.png"></div>
+                    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
+                    <noscript><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-1x.png" alt="Microsoft" /></noscript>
+                </div>
+                <script type="text/javascript">window.picturePolyfill.resolveLast();</script>
+                <ul>
+                    <li><a bi:index="0" bi:linkid="FTR-00-000000" bi:cpid="hpFooter" href="/web/20130318140700/http://go.microsoft.com/?linkid=2028325">Contact us</a>
+                    </li>
+                    <li><a bi:index="1" bi:linkid="FTR-00-000000" bi:cpid="hpFooter" href="/web/20130318140700/http://go.microsoft.com/fwlink/?LinkId=248681">Privacy &amp; Cookies</a>
+                    </li>
+                    <li><a bi:index="2" bi:linkid="FTR-00-000000" bi:cpid="hpFooter" href="/web/20130318140700/http://go.microsoft.com/?linkid=4412892">Terms of use</a>
+                    </li>
+                    <li><a bi:index="3" bi:linkid="FTR-00-000000" bi:cpid="hpFooter" href="/web/20130318140700/http://www.microsoft.com/library/toolbar/3.0/trademarks/en-us.mspx">Trademarks</a>
+                    </li>
+                    <li id="mscom-legal-copyright">
+                        © 2013 Microsoft
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    </form>
+    <script type="text/javascript" src="/web/20130318140700js_/http://i.s-microsoft.com/en-us/home/script.jsx?k=~/shared/templates/Scripts/Views/jquery.responsiveslideshow.js;~/shared/templates/Scripts/Lib/mscomhelper.js;~/shared/templates/Scripts/Views/search.js;~/shared/templates/Scripts/mscom-homepage.js;~/shared/templates/Scripts/Views/store-loc.js;~/shared/templates/Scripts/Views/menu.js;~/shared/templates/Scripts/Views/hero.js;~/shared/templates/Scripts/Views/pivot.js&v=754469145"></script>
+    <script type="text/javascript">var varSegmentation=1;var varClickTracking=0;var varCustomerTracking=1;var varAutoFirePV=0;</script>
+    <noscript><img alt="" width="1" height="1" src="/web/20130318140700im_/http://c.microsoft.com/trans_pixel.aspx"/></noscript><script type="text/javascript" src="/web/20130318140700js_/http://i.s-microsoft.com/en-us/home/script.jsx?k=~/shared/templates/Scripts/BI/jquery.bi.js;~/shared/templates/Scripts/BI/jquery.bi.dataretrievers.attr.js;~/shared/templates/Scripts/BI/jquery.bi.dataretrievers.structure.js;~/shared/templates/Scripts/BI/jquery.bi.dataretrievers.resp.js;~/shared/templates/Scripts/BI/wedcs.js;~/shared/templates/Scripts/BI/jquery.bi.dataconsumers.wedcs.js;~/shared/templates/Scripts/BI/webtrends.js;~/shared/templates/Scripts/BI/jquery.bi.dataconsumers.webtrends.js;~/shared/templates/scripts/BI/jquery.bi.dataconsumers.saas.js&v=-1365794803"></script>
+    
+
+
+<script src="/web/20130318140700js_/http://i.s-microsoft.com/en-us/home/bimapping.js?gv=BiMapping&k=/en-us/home/Components/Config/BiMapping.xml&v=1111998060" type="text/javascript"></script>
+<script type="text/javascript">
+    if (typeof $ != "undefined" && typeof $.bi != "undefined") {
+        $.bi.baseData({ lang: ''en'' });
+        $.bi.baseData({ loc: ''us'' });
+        $.bi.baseData({ ctrl: ''44A6'' });
+        $.bi.ignoreTextClass(''bi-hidetext'');
+        $.bi.init(window.BiMapping);
+        if (typeof window.requestId != "undefined") {
+            $.bi.baseData({ requestId: window.requestId });
+        }
+        
+        if (typeof $.bi.dataConsumers != "undefined" && typeof $.bi.dataConsumers.webtrends != "undefined" && typeof $.bi.dataConsumers.webtrends.WebTrends != "undefined") {
+            $.bi.dataConsumers.webtrends.WebTrends.dcsid = "dcso6p7z7100004j151amwxpo_5q2j";
+            $.bi.dataConsumers.webtrends.WebTrends.dcsGetId();
+        }
+        
+    }
+    if (typeof QosRecord != "undefined") {
+        $(function () { QosRecord(''domready''); });
+    }
+</script>
+<script type="text/javascript">window.requestId=''c730e79e-03e4-4b08-bc3f-8fdeed2799a5'';</script>
+</body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 14:07:00 三月 18, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:56:36 三月 27, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+');
+INSERT INTO "repository_node" VALUES(16,'','/sf.net/sourceforge.net.txt','<!doctype html>
+<!-- Server: sfs-consume-5 -->
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6" > <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7" > <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8" > <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9" > <![endif]-->
+<!--[if (gt IE 9)|!(IE)]>--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="SourceForge.net. Fast, secure and free downloads from the largest Open Source applications and software directory">
+        <meta name="keywords" content="Open Source, Open Source Software, Development, Community, Source Code, Secure,  Downloads, Free Software">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SourceForge.net: Find, Create, and Publish Open Source software for free</title>
+        <link rel="shortcut icon" href="/web/20111125175912im_/http://a.fsdn.com/con/img/sftheme/favicon.ico">
+        <script type="text/javascript">
+            /*global unescape, window, console, jQuery, $, net, SF, COMSCORE, DD_belatedPNG */
+            // Setup our namespace
+            if (!window.SF) { window.SF = {}; }
+            if (!window.net) { window.net = {}; }
+            if (!window.net.sf) { window.net.sf = {}; }
+            if (!window.SF) { window.SF = {}; }
+            SF.cdn = ''http://a.fsdn.com/con'';
+            SF.deploy_time = ''1322076857'';
+        </script>
+
+<script src="/web/20111125175912js_/http://a.fsdn.com/con/js/sftheme/modernizr.custom.90514.js"></script>
+
+<script src="/web/20111125175912js_/http://a.fsdn.com/con/js/sftheme/jquery-1.5.1.js"></script>
+<!--[if lt IE 7 ]>
+  <script src="/web/20111125175912/http://a.fsdn.com/con/js/sftheme/dd_belatedpng.js"></script>
+  <script> DD_belatedPNG.fix(''img, .png_bg''); //fix any <img> or .png_bg background-images </script>
+<![endif]-->
+
+<link href=''/web/20111125175912cs_/http://sourceforge.net//fonts.googleapis.com/css?family=Ubuntu:regular'' rel=''stylesheet'' type=''text/css''>
+<style type="text/css">
+    @font-face {
+        font-family: "Pictos";
+        src: url(''/web/20111125175912/http://a.fsdn.com/con/css/fonts/sftheme/pictos-web.eot'');
+        src: local("☺"), url(''/web/20111125175912/http://a.fsdn.com/con/css/fonts/sftheme/pictos-web.woff'') format(''woff''), url(''/web/20111125175912/http://a.fsdn.com/con/css/fonts/sftheme/pictos-web.ttf'') format(''truetype''), url(''/web/20111125175912/http://a.fsdn.com/con/css/fonts/sftheme/pictos-web.svg'') format(''svg'');
+    }
+</style>
+ <link rel="stylesheet" href="/web/20111125175912cs_/http://a.fsdn.com/con/css/sf.css?1322076857" type="text/css">
+
+    <style type="text/css" >.sfdl { width:165px;height:39px;padding:0;position:relative;font:bold 12px/1.17 sans-serif !important; border:1px solid #aaa;display:inline;float:left;text-decoration:none;-moz-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-webkit-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-o-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-moz-border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;-ms-border-radius:4px;-khtml-border-radius:4px;border-radius:4px;background:no-repeat #e5e5e5 8px center url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC);background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #fff), color-stop(100%, #ccc));background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), -moz-linear-gradient(top, #fff 0%, #ccc 100%);background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), linear-gradient(top, #fff 0%, #ccc 100%);background-position:8px center, 0 0;margin:0 10px 7px 0;overflow:hidden;color:#555 !important;}.sfdl:hover { cursor:pointer;text-decoration:none;background:8px center no-repeat #eee url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC);}.sfdl span { border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;display:block;margin:3px;margin-left:35px;padding:4px;text-align:left;color:#FFF;background:#363;background-image:-moz-linear-gradient(center top, #393 0%, #373 100%);background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #393),color-stop(1, #373));background-image:linear-gradient(top, #393 0%, #373 100%);overflow:hidden;height:25px;}.sfdl b { display:block;line-height:12.5px;}.sfdl small { display:block;line-height:12.5px;color:#ADC2AD; font-weight:normal;white-space:nowrap;overflow:hidden;font-size:77%;}</style>
+
+<link rel="alternate" type="application/rss+xml" title="SourceForge.net Blog" href="/web/20111125175912/http://sourceforge.net/blog/feed/" />
+
+        
+<script type="text/javascript">
+    var uidsRE = new RegExp(";?ord=\\d+(.\\d+)?|;?ip=(?:\\d{1,3}\\.){3}\\d{1,3}", "g");
+    SF.adblock = true;
+    var immersion_adcode = "";
+</script>
+        <script type="text/javascript" src="/web/20111125175912js_/http://a.fsdn.com/con/js/log.js?1322076857"></script>
+        <script type="text/javascript" src="/web/20111125175912js_/http://a.fsdn.com/con/js/adframe.js?1322076857"></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push([''_setAccount'', ''UA-32013-6'']);
+            _gaq.push([''_setCustomVar'', 1, ''Page Type'', ''pg_index'', 3]);
+            
+            _gaq.push([''_trackPageview'']);
+            _gaq.push([''_trackPageLoadTime'']);
+            (function() {
+                var ga = document.createElement(''script''); ga.type = ''text/javascript''; ga.async = true;
+                ga.src = (''https:'' === document.location.protocol ? ''https://ssl'' : ''http://www'') + ''.google-analytics.com/ga.js'';
+                var s = document.getElementsByTagName(''script'')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </head>
+    <body id="pg_index" class="">
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/sourceforge.net\/";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "25";
+var displayMonth = "十一月";
+var displayYear = "2011";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + ''/'' +  wbCurrentUrl;
+	document.getElementById(''wm-graph-anchor'').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px; z-index:9000;">
+<div id="wm-ipp-inside" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:''Lucida Grande'',''Arial'',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://sourceforge.net/" style="width:400px;font-size:11px;font-family:''Lucida Grande'',''Arial'',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20111125175912" /><input type="submit" value="Go" style="font-size:11px;font-family:''Lucida Grande'',''Arial'',sans-serif;margin-left:5px;" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:''Helvetica'',''Lucida Grande'',''Arial'',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20111025005732/http://www.sourceforge.net/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="25 十月 2011"><strong>十月</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 17:59:12 十一月 25, 2011">十一月</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20111228175528/http://sourceforge.net/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="28 十二月 2011"><strong>十二月</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20111123213825/http://sourceforge.net/" title="21:38:25 十一月 23, 2011" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 17:59:12 十一月 25, 2011">25</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20111130235954/http://sourceforge.net/" title="23:59:54 十一月 30, 2011" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20101125083259/http://sourceforge.net/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="25 十一月 2010"><strong>2010</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 17:59:12 十一月 25, 2011">2011</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20121130135329/http://sourceforge.net/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="30 十一月 2012"><strong>2012</strong></a>
+		                
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20111125175912*/http://sourceforge.net/" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>3,367 captures</strong></a>
+           <div style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">26 一月 00 - 18 三月 13</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers(''inline'');" 
+				onmouseout="showTrackers(''none'');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:121144110400_2001:-1:0161c9811067_2002:-1:100000004351_2003:-1:032314112212_2004:-1:01101889a898_2005:-1:9999aaab99bb_2006:-1:a95a57887777_2007:-1:566667456712_2008:-1:466551314446_2009:-1:864446655634_2010:-1:722778897677_2011:10:577756676876_2012:-1:9a87d8bbbfc8_2013:-1:898000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById(''wm-ipp'').style.display=''none'';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:''Lucida Grande'',''Arial'',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:''Lucida Grande'',''Arial'',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+        
+        <div id="busy-spinner"></div>
+        
+<header id="site-header">
+    <div class="wrapper">
+        <a href="/web/20111125175912/http://sourceforge.net/" class="logo">
+            <span>SourceForge</span>
+        </a>
+        
+        <!--Switch to {language}-->
+        <nav id="nav-site">
+            <a href="/web/20111125175912/http://sourceforge.net/directory/" title="Browse our software.">Browse</a>
+            <a href="/web/20111125175912/http://sourceforge.net/blog/" title="Read the latest news from the SF HQ.">Blog</a>
+            <a href="/web/20111125175912/http://sourceforge.net/support" title="Contact us for help and feedback.">Support</a>
+            <a href="/web/20111125175912/http://jobs.sourceforge.net/">Jobs</a>
+            
+            <a href="/web/20111125175912/https://sourceforge.net/user/registration">Newsletters</a>
+            
+            <a href="/web/20111125175912/http://geek.net/events/">Resources</a>
+        </nav>
+        <nav id="nav-account">
+            
+            <a href="/web/20111125175912/https://sourceforge.net/user/registration">Register</a>
+            <a href="/web/20111125175912/https://sourceforge.net/account/login.php">Log In</a>
+            
+        </nav>
+        
+    </div>
+</header>
+        
+<header id="page-header">
+    <div id="page-header-content-holder">
+        <section id="page-header-content">
+            <h1><a href="/web/20111125175912/http://sourceforge.net/directory" title="Find Open Source software">Find</a>,
+            <a href="/web/20111125175912/http://sourceforge.net/create" title="Create Open Source software" >Create</a>, and
+            <a href="/web/20111125175912/http://sourceforge.net/publish" title="Publish Open Source software" >Publish</a> Open Source software for free</h1>
+            <form method="get" action="/web/20111125175912/http://sourceforge.net/search/">
+                <input type="text" id="words" name="q" placeholder="Search from 324,420 projects">
+                <input type="submit" class="btn" value="Search">
+            </form>
+            <div id="page-header-counts">
+                <div class="stat">Today:</div>
+                <div class="stat"><b class="ico ico-downarrow" title="Downloads" data-icon="}"></b> 5,926,908 Downloads</div>
+                <div class="stat"><b class="ico ico-checkcircle" title="Commits" data-icon="2"></b> 6,138 Code Commits</div>
+                <div class="stat"><b class="ico ico-comment" title="Posts" data-icon="w"></b> 4,141 Forum Posts</div>
+                <div class="stat"><b class="ico ico-config" title="Bugs" data-icon="x"></b> 523 Bugs Tracked</div>
+                <div class="stat"><b class="ico ico-focus" title="Activity" data-icon="E"></b> <a href="/web/20111125175912/http://sourceforge.net/top">More Details</a></div>
+            </div>
+        </section>
+    </div>
+</header>
+
+        <div id="messages">
+        </div>
+        <div id="page-body">
+<div class="main-container">
+    <section class="main-content">
+        <div class="main-content-left">
+            <div id="logo_sponsorship" class="ad hub">
+                
+<script type="text/javascript">
+    SF.loadAd(''logo_sponsorship'', ''http://ad.doubleclick.net/adj/ostg.sourceforge/cons_pg_index_logo_sponsorship;pg=index.php;psrch=0;logged_in=0;tile=1;sz=200x90;ord=9366901677903056?'');
+</script>
+            </div>
+            <ul id="metacats">
+                <li><a href="/web/20111125175912/http://sourceforge.net/directory/audio-video">Audio &amp; Video</a></li>
+                <li><a href="/web/20111125175912/http://sourceforge.net/directory/business-enterprise">Business &amp; Enterprise</a></li>
+                <li><a href="/web/20111125175912/http://sourceforge.net/directory/communications">Communications</a></li>
+                <li><a href="/web/20111125175912/http://sourceforge.net/directory/development">Development</a></li>
+                <li><a href="/web/20111125175912/http://sourceforge.net/directory/home-education">Home &amp; Education</a></li>
+                <li><a href="/web/20111125175912/http://sourceforge.net/directory/games">Games</a></li>
+                <li><a href="/web/20111125175912/http://sourceforge.net/directory/graphics">Graphics</a></li>
+                <li><a href="/web/20111125175912/http://sourceforge.net/directory/science-engineering">Science &amp; Engineering</a></li>
+                <li><a href="/web/20111125175912/http://sourceforge.net/directory/security-utilities">Security &amp; Utilities</a></li>
+                <li><a href="/web/20111125175912/http://sourceforge.net/directory/system-administration">System Administration</a></li>
+            </ul>
+            <section id="twitter" class="editorial-block">
+                <header>
+                    <h2><a href="/web/20111125175912/http://twitter.com/sourceforge" title="@sourceforge">@sourceforge</a></h2>
+                </header>
+                
+                <p class="tweet"><a href="/web/20111125175912/http://t.co/m8h6RDgi">http://t.co/m8h6RDgi</a> ClamWin - Free Windows antivirus software from #Sourceforge</p>
+                
+                <p class="tweet">iTunes Agent enables many non-iPod MP3 players to work with iTunes <a href="/web/20111125175912/http://t.co/PqFj4P2q">http://t.co/PqFj4P2q</a></p>
+                
+            </section>
+        </div>
+        <div class="main-content-right">
+            <div class="ads">
+                <div id="hpleader" class="ad leaderboard">
+                    
+<script type="text/javascript">
+    SF.loadAd(''hpleader'', ''http://ad.doubleclick.net/adj/ostg.sourceforge/cons_pg_index_hpleader;pg=index.php;psrch=0;logged_in=0;tile=2;sz=728x90;ord=9366901677903056?'');
+</script>
+                </div>
+            </div>
+            <div class="row">
+                
+  <section class="card special">
+    
+    <div class="potm">Project of the Month</div>
+    
+    <section class="project-icon">
+        <img alt="The Number Race Icon" src="/web/20111125175912im_/http://a.fsdn.com/con/icons/nu/numberrace@sf.net/numberraceIcon64x64.png" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/numberrace/" title="The Number Race">The Number Race</a></h3>
+        </header>
+        <p>
+            Software designed for remediation of dyscalculia (or mathematical learning disabilities) in children aged 4-8 and for teaching number sense in kindergarten children. For more information, visit the unicog lab website using the link below.
+
+NOTE: To use The Number Race, you need to download TWO ...
+            <a href="/web/20111125175912/http://sourceforge.net/blog/potm-201111/" title="Read more.">Read more.</a>
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/numberrace/files/latest/download" title="Download /numberrace/2.3.7/numberrace-installer-2.3.7-nolangs.jar from SourceForge  - 13.7 MB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/numberrace/2.3.7/numberrace-installer-2.3.7-nolangs.jar">numberrace-inst…jar</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+            <div class="row">
+                
+  <section class="card special">
+    
+    <section class="project-icon">
+        <img alt="TeXnicCenter Icon" src="/web/20111125175912im_/http://a.fsdn.com/con/icons/te/texniccenter@sf.net/txc-48.png" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/texniccenter/" title="TeXnicCenter">TeXnicCenter</a></h3>
+        </header>
+        <p>
+            TeXnicCenter is a LaTeX editor on Windows. Navigating LaTeX documents is simple due to the automatically created document outline. Errors of the ...
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/texniccenter/files/latest/download" title="Download /TeXnicCenter/1 Beta 7.01/TXCSource_1Beta7_01.zip from SourceForge  - 5.3 MB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/TeXnicCenter/1 Beta 7.01/TXCSource_1Beta7_01.zip">TXCSource_1Beta7_01.zip</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+            <div class="row">
+                
+  <section class="card">
+    
+    <section class="project-icon">
+        <img alt="OpenCA Icon" src="/web/20111125175912im_/http://a.fsdn.com/con/img/project_default.png" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/openca/" title="OpenCA">OpenCA</a></h3>
+        </header>
+        <p>
+            The OpenCA PKI Development Project is a collaborative effort to develop a robust, full-featured and Open Source out-of-the-box Certification ...
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/openca/files/latest/download" title="Download /libpki/releases/v0.6.5/sources/libpki-0.6.5.tar.gz from SourceForge  - 985.2 kB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/libpki/releases/v0.6.5/sources/libpki-0.6.5.tar.gz">libpki-0.6.5.tar.gz</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+            <div class="row">
+                
+  <section class="card">
+    
+    <section class="project-icon">
+        <img alt="MatCont Icon" src="/web/20111125175912im_/http://a.fsdn.com/con/img/project_default.png" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/matcont/" title="MatCont">MatCont</a></h3>
+        </header>
+        <p>
+            MatCont is a Matlab software project for the numerical continuation and bifurcation study of continuous and discrete parameterized dynamical systems. ...
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/matcont/files/latest/download" title="Download /cl_matcont/cl_matcont4p2/Cl_ matcont4p2.zip from SourceForge  - 1.9 MB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/cl_matcont/cl_matcont4p2/Cl_ matcont4p2.zip">Cl_ matcont4p2.zip</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+            <div class="row">
+                
+  <section class="card">
+    
+    <section class="project-icon">
+        <img alt="TWiki Collaboration Platform Icon" src="/web/20111125175912im_/http://a.fsdn.com/con/icons/tw/twiki@sf.net/twiki-logo.png" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/twiki/" title="TWiki Collaboration Platform">TWiki Collaboration Platform</a></h3>
+        </header>
+        <p>
+            Open Source Enterprise Wiki and Web 2.0 Application Platform
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/twiki/files/latest/download" title="Download /TWiki for all Platforms/TWiki-5.0.2/TWiki-5.0.2.zip from SourceForge  - 8.7 MB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/TWiki for all Platforms/TWiki-5.0.2/TWiki-5.0.2.zip">TWiki-5.0.2.zip</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+            <div class="row">
+                
+  <section class="card">
+    
+    <section class="project-icon">
+        <img alt="Moodle Icon" src="/web/20111125175912im_/http://a.fsdn.com/con/icons/mo/moodle@sf.net/M.png" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/moodle/" title="Moodle">Moodle</a></h3>
+        </header>
+        <p>
+            Moodle is a Course Management System (CMS), also known as a Learning Management System (LMS) or a Virtual Learning Environment (VLE). It is a Free ...
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/moodle/files/latest/download" title="Download /Moodle/windows/MoodleWindowsInstaller-latest-19.zip from SourceForge  - 68.9 MB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/Moodle/windows/MoodleWindowsInstaller-latest-19.zip">MoodleWindowsIn…zip</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+            <div class="row">
+                
+  <section class="card">
+    
+    <section class="project-icon">
+        <img alt="ClamWin Free Antivirus Icon" src="/web/20111125175912im_/http://a.fsdn.com/con/icons/cl/clamwin@sf.net/clamwin.png" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/clamwin/" title="ClamWin Free Antivirus">ClamWin Free Antivirus</a></h3>
+        </header>
+        <p>
+            Free Antivirus for Windows. Includes virus scanner, scheduler, virus database updates, context menu integration to MS Windows Explorer and Addin to ...
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/clamwin/files/latest/download" title="Download /clamwin/0.88.4/clamwin-0.88.4-src.zip from SourceForge  - 4.5 MB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/clamwin/0.88.4/clamwin-0.88.4-src.zip">clamwin-0.88.4-src.zip</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+            <div class="row">
+                
+  <section class="card">
+    
+    <section class="project-icon">
+        <img alt="The Chakra Project Icon" src="/web/20111125175912im_/http://a.fsdn.com/con/icons/ch/chakra@sf.net/smEAHKio.png" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/chakra/" title="The Chakra Project">The Chakra Project</a></h3>
+        </header>
+        <p>
+            Chakra GNU/LInux is a free, user-friendly and extremely powerful liveCD and distribution using the award winning KDE SC and Plasma Desktop with a ...
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/chakra/files/latest/download" title="Download /2011.11/Chakra-2011.11-Edn-i686.iso from SourceForge  - 1.4 GB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/2011.11/Chakra-2011.11-Edn-i686.iso">Chakra-2011.11-…iso</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+            <div class="row">
+                
+  <section class="card">
+    
+    <section class="project-icon">
+        <img alt="iSpy Camera Security Software Icon" src="/web/20111125175912im_/http://a.fsdn.com/con/icons/is/ispysoftware@sf.net/ispy.png" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/ispysoftware/" title="iSpy Camera Security Software">iSpy Camera Security Software</a></h3>
+        </header>
+        <p>
+            iSpy uses your webcams and microphones to detect and record movement or sound and provides security, surveillance, monitoring and alerting services. ...
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/ispysoftware/files/latest/download" title="Download /iSpy_3_4_3_0.zip from SourceForge  - 13.8 MB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/iSpy_3_4_3_0.zip">iSpy_3_4_3_0.zip</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+            <div class="row">
+                
+  <section class="card">
+    
+    <section class="project-icon">
+        <img alt="iTunes Agent Icon" src="/web/20111125175912im_/http://a.fsdn.com/con/icons/it/ita@sf.net/itaicon.png" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/ita/" title="iTunes Agent">iTunes Agent</a></h3>
+        </header>
+        <p>
+            iTunes Agent enables many non-iPod MP3 players to be used with iTunes. The project enables you to synchronize your MP3 player with an iTunes playlist ...
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/ita/files/latest/download" title="Download /iTunes Agent/1.3.4/ita-1.3.4-sources.zip from SourceForge  - 148.5 kB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/iTunes Agent/1.3.4/ita-1.3.4-sources.zip">ita-1.3.4-sources.zip</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+            <div class="row">
+                
+  <section class="card">
+    
+    <section class="project-icon">
+        <img alt="Orwell Dev-C++ Icon" src="/web/20111125175912im_/http://sourceforge.net/p/orwelldevcpp/icon" height="48" width="48"/>
+    </section>
+    <section class="project-info">
+        <header>
+            <h3><a href="/web/20111125175912/http://sourceforge.net/projects/orwelldevcpp/" title="Orwell Dev-C++">Orwell Dev-C++</a></h3>
+        </header>
+        <p>
+            A C/C++/C++11 IDE
+        </p>
+    </section>
+    <section class="best-release">
+        
+<a href="/web/20111125175912/http://sourceforge.net/projects/orwelldevcpp/files/latest/download" title="Download /Setup Releases/devcpp-5.0.0.8_setup.exe from SourceForge  - 22.1 MB" class="sfdl">
+    <span>
+        <b>Download</b>
+        <small title="/Setup Releases/devcpp-5.0.0.8_setup.exe">devcpp-5.0.0.8_…exe</small>
+    </span>
+</a>
+    </section>
+  </section>
+
+            </div>
+        </div>
+    </section>
+</div>
+<div id="secondary-container">
+    <div class="secondary-content">
+        <section id="blog">
+            <h2><a href="/web/20111125175912/http://sourceforge.net/blog/">From the Blog</a></h2>
+            <header>
+                <h3><a href="/web/20111125175912/http://sourceforge.net/blog/games-for-the-holidays/" title="Occupy Your Kids with Open Source Games during the Holidays">Occupy Your Kids with Open Source Games during the Holidays</a></h3>
+            </header>
+            <article>
+                <section>
+                    <p>The holidays can be incredibly stressful - cooking, shopping, decorating and, well, family.
+Add to it the pets underfoot and your children complaining that they want to play on the Wii when grandpa wants to watch the Law and Order marathon on USA, and you have potential for a grumpy household.
+So we decided to take a <a href="/web/20111125175912/http://sourceforge.net/blog/games-for-the-holidays/" class="read_more">Read more&#8230;</a></p>
+                </section>
+            </article>
+            <header>
+                <h3><a href="/web/20111125175912/http://sourceforge.net/blog/release-often-enough/" title="Release often … enough">Release often … enough</a></h3>
+            </header>
+            <article>
+                <section>
+                    <p>No doubt you&#8217;ve heard the maxim &#8220;release early, release often.&#8221; It&#8217;s one of the cornerstones of Free/Open Source software development. By making frequent releases, you give your users the opportunity to try out the new features and tell you what they think of them. By showing people what you&#8217;re working on, you have the opportunity <a href="/web/20111125175912/http://sourceforge.net/blog/release-often-enough/" class="read_more">Read more&#8230;</a></p>
+                </section>
+            </article>
+        </section>
+        <div class="ads">
+            <div id="hpmedrec" class="ad medrec">
+                
+<script type="text/javascript">
+    SF.loadAd(''hpmedrec'', ''http://ad.doubleclick.net/adj/ostg.sourceforge/cons_pg_index_hpmedrec;pg=index.php;psrch=0;logged_in=0;tile=3;sz=300x250;ord=9366901677903056?'');
+</script>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        
+        <hr id="footer_separator">
+          
+<footer id="site-footer">
+    <nav>
+        <a href="/web/20111125175912/http://twitter.com/sfnet_ops">Status</a>
+        <a href="/web/20111125175912/http://geek.net/terms-of-use">Terms</a>
+        <a href="/web/20111125175912/http://geek.net/privacy-statement">Privacy</a>
+        <a href="/web/20111125175912/http://geek.net/advertise/">Advertise</a>
+        <a href="/web/20111125175912/http://sourceforge.net/about">About</a>
+        <a href="/web/20111125175912/http://html5center.sourceforge.net/">HTML5 Center</a>
+    </nav>
+    <div id="copyright">
+        &copy; 2011 <a href="/web/20111125175912/http://geek.net/" title="Network which provides and promotes Open Source software downloads, development, discussion and news.">Geeknet, Inc.</a>
+    </div>
+</footer>
+            <script src="/web/20111125175912js_/http://a.fsdn.com/con/js/min/sf.js-de.js?1322076857" type="text/javascript"></script>
+        
+        <!-- Begin comScore Tag -->
+        <script type="text/javascript">
+            document.write(unescape("%3Cscript src=''" + (document.location.protocol === "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js'' %3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            if (window.COMSCORE) {
+                COMSCORE.beacon({
+                    c1: 2,
+                    c2: 6035546,
+                    c3: "",
+                    c4: "",
+                    c5: "",
+                    c6: "",
+                    c15: ""
+                });
+            }
+        </script>
+        <noscript>
+            <img src="/web/20111125175912im_/http://b.scorecardresearch.com/p?c1=2&c2=6035546&c3=&c4=&c5=&c6=&c15=&cj=1" alt="comScore2" />
+        </noscript>
+        <!-- End comScore Tag -->
+        
+<script>
+    $(''[autofocus]'').autofocus();
+</script>
+
+
+        <!-- KISSinsights page surveys -->
+        <script type="text/javascript">
+            var _kiq = _kiq || [];
+            _kiq.push([''options'', { anchor: ''left'' }]);
+        </script>
+        <script type="text/javascript" src="/web/20111125175912js_/http://s3.amazonaws.com/ki.js/16994/3eh.js" async></script>
+        <!-- End KISSinsights -->
+    </body>
+</html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 17:59:12 十一月 25, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:04:34 三月 27, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+');
+INSERT INTO "repository_node" VALUES(17,'','/markdown/test/Markdown语法测试.md','# 测试
+## 测试1
+1. 好好学习
+1. 测试
+1.  这个如何
+    1. Level2
+    1. Level2-2
+1. 还有吗
+    - Level2
+    - Level2-2
+1. 123
+
+### 还可以测试
+- Level1
+    * Level2
+    * Level2-2
+- Level1-2
+
+## 一段代码
+        Hello！World
+
+        <table>
+            <tr>
+                <td>Foo</td>
+            </tr>
+        </table>
+
+## 表格
+值|描述|备注|测试
+:----------:|:----------|--------|
+baseline    |默认元素放置在父元素的基线上                     |测试备注|继续
+sub            |垂直对齐文本的下标                                         |学习一下
+super        |垂直对齐文本的上标                                          |更多的东西其实可以
+top            |把元素的顶端与行中最高元素的顶端对齐
+text-top    |把元素的顶端与父元素字体的顶端对齐
+middle|把此元素放置在父元素的中部
+bottom|把元素的顶端与行中最低的元素的顶端对齐
+text-bottom|把元素的底端与父元素字体的底端对齐
+length|相对基准线的偏移
+%|使用 "line-height" 属性的百分比值来排列此元素允许使用负值
+inherit|规定应该从父元素继承 vertical-align 属性的值*（所有的IE都不支持？！）*
+
+');
+INSERT INTO "repository_node" VALUES(18,'','/markdown/sample/前端开发.mkd','### 颠覆式前端UI开发框架：React
+- <http://www.infoq.com/cn/articles/subversion-front-end-ui-development-framework-react>
+
+### React Grid
+- <http://zinoui.com/blog/react-grid-component>
+- <http://adazzle.github.io/react-grid/>
+
+###  Twitter Emoji for Everyone 
+- <https://github.com/twitter/twemoji>
+
+### Pure.CSS
+- <http://purecss.io/>');
+INSERT INTO "repository_node" VALUES(19,'','/markdown/sample/Docker管理.mkd','### Zdocker
+- <http://git.oschina.net/love320/Zdocker>
+
+### Panamax
+- <http://panamax.io/get-panamax/>
+
+### DockerUI
+- <https://github.com/crosbymichael/dockerui>
+
+### Boot2Docker
+- <https://github.com/boot2docker/boot2docker>
+- <https://github.com/boot2docker/windows-installer>
+');
+INSERT INTO "repository_node" VALUES(20,'','/google/www.google.com.txt','<!doctype html><html itemscope="itemscope" itemtype="http://schema.org/WebPage"><head><meta content="Search the world''s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you''re looking for." name="description"><meta content="noodp" name="robots"><meta itemprop="image" content="/images/google_favicon_128.png"><title>Google</title><script>(function(){
+window.google={kEI:"x11GUZq5AoqIygHqx4GABA",getEI:function(a){for(var b;a&&(!a.getAttribute||!(b=a.getAttribute("eid")));)a=a.parentNode;return b||google.kEI},https:function(){return"https:"==window.location.protocol},kEXPI:"25657,39523,4000116,4001569,4001947,4001959,4001975,4002206,4002562,4002734,4002855,4003178,4003386,4003496,4003881,4003917,4004066,4004103,4004105,4004181,4004213,4004257,4004334,4004340,4004375,4004388,4004478,4004488,4004652,4004653,4004697,4004729,4004755,4004758,4004869,4004873,4004905,4004948,4005042",kCSI:{e:"25657,39523,4000116,4001569,4001947,4001959,4001975,4002206,4002562,4002734,4002855,4003178,4003386,4003496,4003881,4003917,4004066,4004103,4004105,4004181,4004213,4004257,4004334,4004340,4004375,4004388,4004478,4004488,4004652,4004653,4004697,4004729,4004755,4004758,4004869,4004873,4004905,4004948,4005042",ei:"x11GUZq5AoqIygHqx4GABA"},authuser:0,ml:function(){},kHL:"en",time:function(){return(new Date).getTime()},log:function(a,
+b,c,h){var d=new Image,f=google.lc,e=google.li,g="";d.onerror=d.onload=d.onabort=function(){delete f[e]};f[e]=d;!c&&-1==b.search("&ei=")&&(g="&ei="+google.getEI(h));c=c||"/gen_204?atyp=i&ct="+a+"&cad="+b+g+"&zx="+google.time();a=/^http:/i;a.test(c)&&google.https()?(google.ml(Error("GLMM"),!1,{src:c}),delete f[e]):(d.src=c,google.li=e+1)},lc:[],li:0,Toolbelt:{},y:{},x:function(a,b){google.y[a.id]=[a,b];return!1},load:function(a,b){google.x({id:"l"+a},function(){google.load(a,b)})}};
+
+})();
+(function(){var d=!1;google.sn="webhp";google.timers={};google.startTick=function(a,b){google.timers[a]={t:{start:google.time()},bfr:!!b}};google.tick=function(a,b,h){google.timers[a]||google.startTick(a);google.timers[a].t[b]=h||google.time()};google.startTick("load",!0);
+try{}catch(e){}})();
+var _gjwl=location;function _gjuc(){var a=_gjwl.href.indexOf("#");if(0<=a&&(a=_gjwl.href.substring(a),0<a.indexOf("&q=")||0<=a.indexOf("#q=")))if(a=a.substring(1),-1==a.indexOf("#")){for(var d=0;d<a.length;){var b=d;"&"==a.charAt(b)&&++b;var c=a.indexOf("&",b);-1==c&&(c=a.length);b=a.substring(b,c);if(0==b.indexOf("fp="))a=a.substring(0,d)+a.substring(c,a.length),c=d;else if("cad=h"==b)return 0;d=c}_gjwl.href="/search?"+a+"&cad=h";return 1}return 0}
+function _gjp(){(!window._gjwl.hash||!window._gjuc())&&setTimeout(_gjp,500)};
+window._gjp&&_gjp();</script><style>#gb{font:13px/27px Arial,sans-serif;height:30px}#gbz,#gbg{position:absolute;white-space:nowrap;top:0;height:30px;z-index:1000}#gbz{left:0;padding-left:4px}#gbg{right:0;padding-right:5px}#gbs{background:transparent;position:absolute;top:-999px;visibility:hidden;z-index:998}.gbto #gbs{background:#fff}#gbx3,#gbx4{background-color:#2d2d2d;background-image:none;_background-image:none;background-position:0 -138px;background-repeat:repeat-x;border-bottom:1px solid #000;font-size:24px;height:29px;_height:30px;opacity:1;filter:alpha(opacity=100);position:absolute;top:0;width:100%;z-index:990}#gbx3{left:0}#gbx4{right:0}#gbb{position:relative}#gbbw{left:0;position:absolute;top:30px;width:100%}.gbtcb{position:absolute;visibility:hidden}#gbz .gbtcb{right:0}#gbg .gbtcb{left:0}.gbxx{display:none !important}.gbxo{opacity:0 !important;filter:alpha(opacity=0) !important}.gbm{position:absolute;z-index:999;top:-999px;visibility:hidden;text-align:left;border:1px solid #bebebe;background:#fff;-moz-box-shadow:-1px 1px 1px rgba(0,0,0,.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,.2);box-shadow:0 2px 4px rgba(0,0,0,.2)}.gbrtl .gbm{-moz-box-shadow:1px 1px 1px rgba(0,0,0,.2)}.gbto .gbm,.gbto #gbs{top:29px;visibility:visible}#gbz .gbm,#gbz #gbs{left:0}#gbg .gbm,#gbg #gbs{right:0}.gbxms{background-color:#ccc;display:block;position:absolute;z-index:1;top:-1px;left:-2px;right:-2px;bottom:-2px;opacity:.4;-moz-border-radius:3px;filter:progid:DXImageTransform.Microsoft.Blur(pixelradius=5);*opacity:1;*top:-2px;*left:-5px;*right:5px;*bottom:4px;-ms-filter:"progid:DXImageTransform.Microsoft.Blur(pixelradius=5)";opacity:1\0/;top:-4px\0/;left:-6px\0/;right:5px\0/;bottom:4px\0/}.gbma{position:relative;top:-1px;border-style:solid dashed dashed;border-color:transparent;border-top-color:#c0c0c0;display:-moz-inline-box;display:inline-block;font-size:0;height:0;line-height:0;width:0;border-width:3px 3px 0;padding-top:1px;left:4px}#gbztms1,#gbi4m1,#gbi4s,#gbi4t{zoom:1}.gbtc,.gbmc,.gbmcc{display:block;list-style:none;margin:0;padding:0}.gbmc{background:#fff;padding:10px 0;position:relative;z-index:2;zoom:1}.gbt{position:relative;display:-moz-inline-box;display:inline-block;line-height:27px;padding:0;vertical-align:top}.gbt{*display:inline}.gbto{box-shadow:0 2px 4px rgba(0,0,0,.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,.2)}.gbzt,.gbgt{cursor:pointer;display:block;text-decoration:none !important}span#gbg6,span#gbg4{cursor:default}.gbts{border-left:1px solid transparent;border-right:1px solid transparent;display:block;*display:inline-block;padding:0 5px;position:relative;z-index:1000}.gbts{*display:inline}.gbzt .gbts{display:inline;zoom:1}.gbto .gbts{background:#fff;border-color:#bebebe;color:#36c;padding-bottom:1px;padding-top:2px}.gbz0l .gbts{color:#fff;font-weight:bold}.gbtsa{padding-right:9px}#gbz .gbzt,#gbz .gbgt,#gbg .gbgt{color:#ccc!important}.gbtb2{display:block;border-top:2px solid transparent}.gbto .gbzt .gbtb2,.gbto .gbgt .gbtb2{border-top-width:0}.gbtb .gbts{background:url(/web/20130318002023/http://ssl.gstatic.com/gb/images/b_8d5afc09.png);_background:url(/web/20130318002023/http://ssl.gstatic.com/gb/images/b8_3615d64d.png);background-position:-27px -22px;border:0;font-size:0;padding:29px 0 0;*padding:27px 0 0;width:1px}.gbzt-hvr,.gbzt:focus,.gbgt-hvr,.gbgt:focus{background-color:#4c4c4c;background-image:none;_background-image:none;background-position:0 -102px;background-repeat:repeat-x;outline:none;text-decoration:none !important}.gbpdjs .gbto .gbm{min-width:99%}.gbz0l .gbtb2{border-top-color:#dd4b39!important}#gbi4s,#gbi4s1{font-weight:bold}#gbg6.gbgt-hvr,#gbg6.gbgt:focus{background-color:transparent;background-image:none}.gbg4a{font-size:0;line-height:0}.gbg4a .gbts{padding:27px 5px 0;*padding:25px 5px 0}.gbto .gbg4a .gbts{padding:29px 5px 1px;*padding:27px 5px 1px}#gbi4i,#gbi4id{left:5px;border:0;height:24px;position:absolute;top:1px;width:24px}.gbto #gbi4i,.gbto #gbi4id{top:3px}.gbi4p{display:block;width:24px}#gbi4id{background-position:-44px -101px}#gbmpid{background-position:0 0}#gbmpi,#gbmpid{border:none;display:inline-block;height:48px;width:48px}#gbmpiw{display:inline-block;line-height:9px;padding-left:20px;margin-top:10px;position:relative}#gbmpi,#gbmpid,#gbmpiw{*display:inline}#gbg5{font-size:0}#gbgs5{padding:5px !important}.gbto #gbgs5{padding:7px 5px 6px !important}#gbi5{background:url(/web/20130318002023/http://ssl.gstatic.com/gb/images/b_8d5afc09.png);_background:url(/web/20130318002023/http://ssl.gstatic.com/gb/images/b8_3615d64d.png);background-position:0 0;display:block;font-size:0;height:17px;width:16px}.gbto #gbi5{background-position:-6px -22px}.gbn .gbmt,.gbn .gbmt:visited,.gbnd .gbmt,.gbnd .gbmt:visited{color:#dd8e27 !important}.gbf .gbmt,.gbf .gbmt:visited{color:#900 !important}.gbmt,.gbml1,.gbmlb,.gbmt:visited,.gbml1:visited,.gbmlb:visited{color:#36c !important;text-decoration:none !important}.gbmt,.gbmt:visited{display:block}.gbml1,.gbmlb,.gbml1:visited,.gbmlb:visited{display:inline-block;margin:0 10px}.gbml1,.gbmlb,.gbml1:visited,.gbmlb:visited{*display:inline}.gbml1,.gbml1:visited{padding:0 10px}.gbml1-hvr,.gbml1:focus{outline:none;text-decoration:underline !important}#gbpm .gbml1{display:inline;margin:0;padding:0;white-space:nowrap}.gbmlb,.gbmlb:visited{line-height:27px}.gbmlb-hvr,.gbmlb:focus{outline:none;text-decoration:underline !important}.gbmlbw{color:#ccc;margin:0 10px}.gbmt{padding:0 20px}.gbmt-hvr,.gbmt:focus{background:#eee;cursor:pointer;outline:0 solid black;text-decoration:none !important}.gbm0l,.gbm0l:visited{color:#000 !important;font-weight:bold}.gbmh{border-top:1px solid #bebebe;font-size:0;margin:10px 0}#gbd4 .gbmc{background:#f5f5f5;padding-top:0}#gbd4 .gbsbic::-webkit-scrollbar-track:vertical{background-color:#f5f5f5;margin-top:2px}#gbmpdv{background:#fff;border-bottom:1px solid #bebebe;-moz-box-shadow:0 2px 4px rgba(0,0,0,.12);-o-box-shadow:0 2px 4px rgba(0,0,0,.12);-webkit-box-shadow:0 2px 4px rgba(0,0,0,.12);box-shadow:0 2px 4px rgba(0,0,0,.12);position:relative;z-index:1}#gbd4 .gbmh{margin:0}.gbmtc{padding:0;margin:0;line-height:27px}.GBMCC:last-child:after,#GBMPAL:last-child:after{content:''\0A\0A'';white-space:pre;position:absolute}#gbmps{*zoom:1}#gbd4 .gbpc,#gbmpas .gbmt{line-height:17px}#gbd4 .gbpgs .gbmtc{line-height:27px}#gbd4 .gbmtc{border-bottom:1px solid #bebebe}#gbd4 .gbpc{display:inline-block;margin:16px 0 10px;padding-right:50px;vertical-align:top}#gbd4 .gbpc{*display:inline}.gbpc .gbps,.gbpc .gbps2{display:block;margin:0 20px}#gbmplp.gbps{margin:0 10px}.gbpc .gbps{color:#000;font-weight:bold}.gbpc .gbpd{margin-bottom:5px}.gbpd .gbmt,.gbpd .gbps{color:#666 !important}.gbpd .gbmt{opacity:.4;filter:alpha(opacity=40)}.gbps2{color:#666;display:block}.gbp0{display:none}.gbp0 .gbps2{font-weight:bold}#gbd4 .gbmcc{margin-top:5px}.gbpmc{background:#fef9db}.gbpmc .gbmt{padding:10px 20px}#gbpm{border:0;*border-collapse:collapse;border-spacing:0;margin:0;white-space:normal}#gbpm .gbmt{border-top:none;color:#000 !important;font:11px Arial,sans-serif}#gbpms{*white-space:nowrap}.gbpms2{font-weight:bold;white-space:nowrap}#gbmpal{*border-collapse:collapse;border-spacing:0;border:0;margin:0;white-space:nowrap;width:100%}.gbmpala,.gbmpalb{font:13px Arial,sans-serif;line-height:27px;padding:10px 20px 0;white-space:nowrap}.gbmpala{padding-left:0;text-align:left}.gbmpalb{padding-right:0;text-align:right}#gbmpasb .gbps{color:#000}#gbmpal .gbqfbb{margin:0 20px}.gbp0 .gbps{*display:inline}a.gbiba{margin:8px 20px 10px}.gbmpiaw{display:inline-block;padding-right:10px;margin-bottom:6px;margin-top:10px}.gbxv{visibility:hidden}.gbmpiaa{display:block;margin-top:10px}.gbmpia{border:none;display:block;height:48px;width:48px}.gbmpnw{display:inline-block;height:auto;margin:10px 0;vertical-align:top}.gbqfb,.gbqfba,.gbqfbb{-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;cursor:default !important;display:inline-block;font-weight:bold;height:29px;line-height:29px;min-width:54px;*min-width:70px;padding:0 8px;text-align:center;text-decoration:none !important;-moz-user-select:none;-webkit-user-select:none}.gbqfb:focus,.gbqfba:focus,.gbqfbb:focus{border:1px solid #4d90fe;-moz-box-shadow:inset 0 0 0 1px rgba(255, 255, 255, 0.5);-webkit-box-shadow:inset 0 0 0 1px rgba(255, 255, 255, 0.5);box-shadow:inset 0 0 0 1px rgba(255, 255, 255, 0.5);outline:none}.gbqfb-hvr:focus,.gbqfba-hvr:focus,.gbqfbb-hvr:focus{-webkit-box-shadow:inset 0 0 0 1px #fff,0 1px 1px rgba(0,0,0,.1);-moz-box-shadow:inset 0 0 0 1px #fff,0 1px 1px rgba(0,0,0,.1);box-shadow:inset 0 0 0 1px #fff,0 1px 1px rgba(0,0,0,.1)}.gbqfb-no-focus:focus{border:1px solid #3079ed;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none}.gbqfb-hvr,.gbqfba-hvr,.gbqfbb-hvr{-webkit-box-shadow:0 1px 1px rgba(0,0,0,.1);-moz-box-shadow:0 1px 1px rgba(0,0,0,.1);box-shadow:0 1px 1px rgba(0,0,0,.1)}.gbqfb::-moz-focus-inner,.gbqfba::-moz-focus-inner,.gbqfbb::-moz-focus-inner{border:0}.gbqfba,.gbqfbb{border:1px solid #dcdcdc;border-color:rgba(0,0,0,.1);color:#444 !important;font-size:11px}.gbqfb{background-color:#4d90fe;background-image:-webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#4787ed));background-image:-webkit-linear-gradient(top,#4d90fe,#4787ed);background-image:-moz-linear-gradient(top,#4d90fe,#4787ed);background-image:-ms-linear-gradient(top,#4d90fe,#4787ed);background-image:-o-linear-gradient(top,#4d90fe,#4787ed);background-image:linear-gradient(top,#4d90fe,#4787ed);filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=''#4d90fe'',EndColorStr=''#4787ed'');border:1px solid #3079ed;color:#fff!important;margin:0 0}.gbqfb-hvr{border-color:#2f5bb7}.gbqfb-hvr:focus{border-color:#2f5bb7}.gbqfb-hvr,.gbqfb-hvr:focus{background-color:#357ae8;background-image:-webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#357ae8));background-image:-webkit-linear-gradient(top,#4d90fe,#357ae8);background-image:-moz-linear-gradient(top,#4d90fe,#357ae8);background-image:-ms-linear-gradient(top,#4d90fe,#357ae8);background-image:-o-linear-gradient(top,#4d90fe,#357ae8);background-image:linear-gradient(top,#4d90fe,#357ae8)}.gbqfb:active{background-color:inherit;-webkit-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.3);-moz-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.3);box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.3)}.gbqfba{background-color:#f5f5f5;background-image:-webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#f1f1f1));background-image:-webkit-linear-gradient(top,#f5f5f5,#f1f1f1);background-image:-moz-linear-gradient(top,#f5f5f5,#f1f1f1);background-image:-ms-linear-gradient(top,#f5f5f5,#f1f1f1);background-image:-o-linear-gradient(top,#f5f5f5,#f1f1f1);background-image:linear-gradient(top,#f5f5f5,#f1f1f1);filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=''#f5f5f5'',EndColorStr=''#f1f1f1'')}.gbqfba-hvr,.gbqfba-hvr:active{background-color:#f8f8f8;background-image:-webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#f1f1f1));background-image:-webkit-linear-gradient(top,#f8f8f8,#f1f1f1);background-image:-moz-linear-gradient(top,#f8f8f8,#f1f1f1);background-image:-ms-linear-gradient(top,#f8f8f8,#f1f1f1);background-image:-o-linear-gradient(top,#f8f8f8,#f1f1f1);background-image:linear-gradient(top,#f8f8f8,#f1f1f1);filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=''#f8f8f8'',EndColorStr=''#f1f1f1'')}.gbqfbb{background-color:#fff;background-image:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#fbfbfb));background-image:-webkit-linear-gradient(top,#fff,#fbfbfb);background-image:-moz-linear-gradient(top,#fff,#fbfbfb);background-image:-ms-linear-gradient(top,#fff,#fbfbfb);background-image:-o-linear-gradient(top,#fff,#fbfbfb);background-image:linear-gradient(top,#fff,#fbfbfb);filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=''#ffffff'',EndColorStr=''#fbfbfb'')}.gbqfbb-hvr,.gbqfbb-hvr:active{background-color:#fff;background-image:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#f8f8f8));background-image:-webkit-linear-gradient(top,#fff,#f8f8f8);background-image:-moz-linear-gradient(top,#fff,#f8f8f8);background-image:-ms-linear-gradient(top,#fff,#f8f8f8);background-image:-o-linear-gradient(top,#fff,#f8f8f8);background-image:linear-gradient(top,#fff,#f8f8f8);filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=''#ffffff'',EndColorStr=''#f8f8f8'')}.gbqfba-hvr,.gbqfba-hvr:active,.gbqfbb-hvr,.gbqfbb-hvr:active{border-color:#c6c6c6;-webkit-box-shadow:0 1px 1px rgba(0,0,0,.1);-moz-box-shadow:0 1px 1px rgba(0,0,0,.1);box-shadow:0 1px 1px rgba(0,0,0,.1);color:#222 !important}.gbqfba:active,.gbqfbb:active{-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);box-shadow:inset 0 1px 2px rgba(0,0,0,.1)}#gbmpas{max-height:220px}#gbmm{max-height:530px}.gbsb{-webkit-box-sizing:border-box;display:block;position:relative;*zoom:1}.gbsbic{overflow:auto}.gbsbis .gbsbt,.gbsbis .gbsbb{-webkit-mask-box-image:-webkit-gradient(linear,left top,right top,color-stop(0,rgba(0,0,0,.1)),color-stop(.5,rgba(0,0,0,.8)),color-stop(1,rgba(0,0,0,.1)));left:0;margin-right:0;opacity:0;position:absolute;width:100%}.gbsb .gbsbt:after,.gbsb .gbsbb:after{content:"";display:block;height:0;left:0;position:absolute;width:100%}.gbsbis .gbsbt{background:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.2)),to(rgba(0,0,0,0)));background-image:-webkit-linear-gradient(top,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:-moz-linear-gradient(top,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:-ms-linear-gradient(top,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:-o-linear-gradient(top,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:linear-gradient(top,rgba(0,0,0,.2),rgba(0,0,0,0));height:6px;top:0}.gbsb .gbsbt:after{border-top:1px solid #ebebeb;border-color:rgba(0,0,0,.3);top:0}.gbsb .gbsbb{-webkit-mask-box-image:-webkit-gradient(linear,left top,right top,color-stop(0,rgba(0,0,0,.1)),color-stop(.5,rgba(0,0,0,.8)),color-stop(1,rgba(0,0,0,.1)));background:-webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.2)),to(rgba(0,0,0,0)));background-image:-webkit-linear-gradient(bottom,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:-moz-linear-gradient(bottom,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:-ms-linear-gradient(bottom,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:-o-linear-gradient(bottom,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:linear-gradient(bottom,rgba(0,0,0,.2),rgba(0,0,0,0));bottom:0;height:4px}.gbsb .gbsbb:after{border-bottom:1px solid #ebebeb;border-color:rgba(0,0,0,.3);bottom:0}</style><style>.h{font-family:arial,sans-serif}body{font-family:arial,sans-serif}td{font-family:arial,sans-serif}a{font-family:arial,sans-serif}p{font-family:arial,sans-serif}body{margin:0;overflow-y:scroll}#gog{padding:3px 8px 0}.h{color:#36c}.q{color:#00c}.ts{border-collapse:collapse}td{line-height:.8em}.gac_m td{line-height:17px}form{margin-bottom:20px}.ts td{padding:0}em{font-weight:bold;font-style:normal}.lst{height:25px;width:496px;font:18px arial,sans-serif}.gsfi{font:18px arial,sans-serif}.gsfs{font:17px arial,sans-serif}.ds{display:inline-box;display: inline-block;margin:3px 0 4px;margin-left:4px}input{font-family:inherit}body{background:#fff;color:black}a.gb1{color:#11c !important}a.gb2{color:#11c !important}a.gb3{color:#11c !important}a.gb4{color:#11c !important}.sblc{padding-top:5px}.lsbb{background:#eee;border:solid 1px;border-color:#ccc #999 #999 #ccc;height:30px}a{color:#11c;text-decoration:none}a:hover{text-decoration:underline}a:active{text-decoration:underline}.fl a{color:#36c}a:visited{color:#551a8b}a.gb1{text-decoration:underline}a.gb4{text-decoration:underline}a.gb3:hover{text-decoration:none}.sblc a{display:block;margin:2px 0;margin-left:13px;font-size:11px}#ghead a.gb2:hover{color:#fff !important}.lsbb{display:block}.ftl{display:inline-block;margin:0 12px}.lsb{background:url(/web/20130318002023/http://www.google.com/images/srpr/nav_logo80.png) 0 -258px repeat-x;border:none;color:#000;cursor:pointer;height:30px;margin:0;outline:0;font:15px arial,sans-serif;vertical-align:top}#fll a{display:inline-block;margin:0 12px}.lsb:active{background:#ccc}.lst:focus{outline:none}#addlang a{padding:0 3px}</style><script>(function(){try{var e=!0,h=null,k=!1;var ba=function(a,b,c,d){d=d||{};d._sn=["cfg",b,c].join(".");window.gbar.logger.ml(a,d)};var n=window.gbar=window.gbar||{},q=window.gbar.i=window.gbar.i||{},ca;function _tvn(a,b){var c=parseInt(a,10);return isNaN(c)?b:c}function _tvf(a,b){var c=parseFloat(a);return isNaN(c)?b:c}function _tvv(a){return!!a}function r(a,b,c){(c||n)[a]=b}n.bv={n:_tvn("2",0),r:"",f:".41.66.",e:"25657,3700092",m:_tvn("1",1)};
+function da(a,b,c){var d="on"+b;if(a.addEventListener)a.addEventListener(b,c,k);else if(a.attachEvent)a.attachEvent(d,c);else{var g=a[d];a[d]=function(){var a=g.apply(this,arguments),b=c.apply(this,arguments);return void 0==a?b:void 0==b?a:b&&a}}}var ea=function(a){return function(){return n.bv.m==a}},fa=ea(1),ga=ea(2);r("sb",fa);r("kn",ga);q.a=_tvv;q.b=_tvf;q.c=_tvn;q.i=ba;var t=window.gbar.i.i;var u=function(){},v=function(){},w=function(a){var b=new Image,c=ha;b.onerror=b.onload=b.onabort=function(){try{delete ia[c]}catch(a){}};ia[c]=b;b.src=a;ha=c+1},ia=[],ha=0;r("logger",{il:v,ml:u,log:w});var x=window.gbar.logger;var y={},ja={},z=[],ka=q.b("0.1",0.1),la=q.a("1",e),ma=function(a,b){z.push([a,b])},na=function(a,b){y[a]=b},oa=function(a){return a in y},B={},C=function(a,b){B[a]||(B[a]=[]);B[a].push(b)},D=function(a){C("m",a)},pa=function(a,b){var c=document.createElement("script");c.src=a;la&&(c.async=e);Math.random()<ka&&(c.onerror=function(){c.onerror=h;u(Error("Bundle load failed: name="+(b||"UNK")+" url="+a))});(document.getElementById("xjsc")||document.body).appendChild(c)},
+G=function(a){for(var b=0,c;(c=z[b])&&c[0]!=a;++b);c&&(!c[1].l&&!c[1].s)&&(c[1].s=e,E(2,a),c[1].url&&pa(c[1].url,a),c[1].libs&&F&&F(c[1].libs))},qa=function(a){C("gc",a)},H=h,ra=function(a){H=a},E=function(a,b,c){if(H){a={t:a,b:b};if(c)for(var d in c)a[d]=c[d];try{H(a)}catch(g){}}};r("mdc",y);r("mdi",ja);r("bnc",z);r("qGC",qa);r("qm",D);r("qd",B);r("lb",G);r("mcf",na);r("bcf",ma);r("aq",C);r("mdd","");r("has",oa);r("trh",ra);r("tev",E);if(q.a("1")){var I=q.a("1"),sa=q.a(""),ta=q.a(""),ua=window.gapi={},va=function(a,b){var c=function(){n.dgl(a,b)};I?D(c):(C("gl",c),G("gl"))},wa={},xa=function(a){a=a.split(":");for(var b;(b=a.pop())&&wa[b];);return!b},F=function(a){function b(){for(var b=a.split(":"),d=0,g;g=b[d];++d)wa[g]=1;for(b=0;d=z[b];++b)d=d[1],(g=d.libs)&&(!d.l&&d.i&&xa(g))&&d.i()}n.dgl(a,b)},J=window.___jsl={};J.h="m;/_/abc-static/_/js/gapi/__features__/rt=j/ver=24Irvz2rJ1Q.en./sv=1/am=!VvZ7oDep-coJNQTnkA/d=1";J.ms="https://apis.google.com";
+J.m="";J.l=[];I||z.push(["gl",{url:"//ssl.gstatic.com/gb/js/abc/glm_e7bb39a7e1a24581ff4f8d199678b1b9.js"}]);var ya={pu:sa,sh:"",si:ta};y.gl=ya;r("load",va,ua);r("dgl",va);r("agl",xa);q.o=I};var za=q.b("0.1",0.001),Aa=0;
+function _mlToken(a,b){try{if(1>Aa){Aa++;var c,d=a,g=b||{},f=encodeURIComponent,m="es_plusone_gc_20130213.0_p0",l=["//www.google.com/gen_204?atyp=i&zx=",(new Date).getTime(),"&jexpid=",f("30316"),"&srcpg=",f("prop=1"),"&jsr=",Math.round(1/za),"&ogev=",f("x11GUZLWAsffwQHemYHADA"),"&ogf=",n.bv.f,"&ogrp=",f(""),"&ogv=",f("1363125672.1362597341"),m?"&oggv="+f(m):"","&ogd=",f("com"),"&ogl=",f("en")];g._sn&&(g._sn="og."+g._sn);for(var p in g)l.push("&"),
+l.push(f(p)),l.push("="),l.push(f(g[p]));l.push("&emsg=");l.push(f(d.name+":"+d.message));var s=l.join("");Ba(s)&&(s=s.substr(0,2E3));c=s;var A=window.gbar.logger._aem(a,c);w(A)}}catch(Y){}}var Ba=function(a){return 2E3<=a.length},Da=function(a,b){return b};function Ga(a){u=a;r("_itl",Ba,x);r("_aem",Da,x);r("ml",u,x);a={};y.er=a}q.a("")?Ga(function(a){throw a;}):q.a("1")&&Math.random()<za&&Ga(_mlToken);var _E="left",L=function(a,b){var c=a.className;K(a,b)||(a.className+=(""!=c?" ":"")+b)},M=function(a,b){var c=a.className,d=RegExp("\\s?\\b"+b+"\\b");c&&c.match(d)&&(a.className=c.replace(d,""))},K=function(a,b){var c=RegExp("\\b"+b+"\\b"),d=a.className;return!(!d||!d.match(c))},Ha=function(a,b){K(a,b)?M(a,b):L(a,b)};r("ca",L);r("cr",M);r("cc",K);q.k=L;q.l=M;q.m=K;q.n=Ha;var Ia=["gb_71","gb_155"],N;function Ja(a){N=a}function Ka(a){var b=N&&!a.href.match(/.*\/accounts\/ClearSID[?]/)&&encodeURIComponent(N());b&&(a.href=a.href.replace(/([?&]continue=)[^&]*/,"$1"+b))}function La(a){window.gApplication&&(a.href=window.gApplication.getTabUrl(a.href))}function Ma(a){try{var b=(document.forms[0].q||"").value;b&&(a.href=a.href.replace(/([?&])q=[^&]*|$/,function(a,c){return(c||"&")+"q="+encodeURIComponent(b)}))}catch(c){t(c,"sb","pq")}}
+var Na=function(){for(var a=[],b=0,c;c=Ia[b];++b)(c=document.getElementById(c))&&a.push(c);return a},Oa=function(){var a=Na();return 0<a.length?a[0]:h},Pa=function(){return document.getElementById("gb_70")},O={},P={},Qa={},Q={},R=void 0,Va=function(a,b){try{var c=document.getElementById("gb");L(c,"gbpdjs");S();Ra(document.getElementById("gb"))&&L(c,"gbrtl");if(b&&b.getAttribute){var d=b.getAttribute("aria-owns");if(d.length){var g=document.getElementById(d);if(g){var f=b.parentNode;if(R==d)R=void 0,
+M(f,"gbto");else{if(R){var m=document.getElementById(R);if(m&&m.getAttribute){var l=m.getAttribute("aria-owner");if(l.length){var p=document.getElementById(l);p&&p.parentNode&&M(p.parentNode,"gbto")}}}Sa(g)&&Ta(g);R=d;L(f,"gbto")}}}}D(function(){n.tg(a,b,e)});Ua(a)}catch(s){t(s,"sb","tg")}},Wa=function(a){D(function(){n.close(a)})},Xa=function(a){D(function(){n.rdd(a)})},Ra=function(a){var b,c="direction",d=document.defaultView;d&&d.getComputedStyle?(a=d.getComputedStyle(a,""))&&(b=a[c]):b=a.currentStyle?
+a.currentStyle[c]:a.style[c];return"rtl"==b},Za=function(a,b,c){if(a)try{var d=document.getElementById("gbd5");if(d){var g=d.firstChild,f=g.firstChild,m=document.createElement("li");m.className=b+" gbmtc";m.id=c;a.className="gbmt";m.appendChild(a);if(f.hasChildNodes()){c=[["gbkc"],["gbf","gbe","gbn"],["gbkp"],["gbnd"]];for(var d=0,l=f.childNodes.length,g=k,p=-1,s=0,A;A=c[s];s++){for(var Y=0,$;$=A[Y];Y++){for(;d<l&&K(f.childNodes[d],$);)d++;if($==b){f.insertBefore(m,f.childNodes[d]||h);g=e;break}}if(g){if(d+
+1<f.childNodes.length){var Ca=f.childNodes[d+1];!K(Ca.firstChild,"gbmh")&&!Ya(Ca,A)&&(p=d+1)}else if(0<=d-1){var Ea=f.childNodes[d-1];!K(Ea.firstChild,"gbmh")&&!Ya(Ea,A)&&(p=d)}break}0<d&&d+1<l&&d++}if(0<=p){var aa=document.createElement("li"),Fa=document.createElement("div");aa.className="gbmtc";Fa.className="gbmt gbmh";aa.appendChild(Fa);f.insertBefore(aa,f.childNodes[p])}n.addHover&&n.addHover(a)}else f.appendChild(m)}}catch(wb){t(wb,"sb","al")}},Ya=function(a,b){for(var c=b.length,d=0;d<c;d++)if(K(a,
+b[d]))return e;return k},$a=function(a,b,c){Za(a,b,c)},ab=function(a,b){Za(a,"gbe",b)},bb=function(){D(function(){n.pcm&&n.pcm()})},cb=function(){D(function(){n.pca&&n.pca()})},db=function(a,b,c,d,g,f,m,l,p,s){D(function(){n.paa&&n.paa(a,b,c,d,g,f,m,l,p,s)})},eb=function(a,b){O[a]||(O[a]=[]);O[a].push(b)},fb=function(a,b){P[a]||(P[a]=[]);P[a].push(b)},gb=function(a,b){Qa[a]=b},hb=function(a,b){Q[a]||(Q[a]=[]);Q[a].push(b)},Ua=function(a){a.preventDefault&&a.preventDefault();a.returnValue=k;a.cancelBubble=
+e},ib=h,Ta=function(a,b){S();if(a){jb(a,"Opening&hellip;");T(a,e);var c="undefined"!=typeof b?b:1E4,d=function(){kb(a)};ib=window.setTimeout(d,c)}},lb=function(a){S();a&&(T(a,k),jb(a,""))},kb=function(a){try{S();var b=a||document.getElementById(R);b&&(jb(b,"This service is currently unavailable.%1$sPlease try again later.","%1$s"),T(b,e))}catch(c){t(c,"sb","sdhe")}},jb=function(a,b,c){if(a&&b){var d=Sa(a);if(d){if(c){d.innerHTML="";b=b.split(c);c=0;for(var g;g=b[c];c++){var f=document.createElement("div");f.innerHTML=g;
+d.appendChild(f)}}else d.innerHTML=b;T(a,e)}}},T=function(a,b){var c=void 0!==b?b:e;c?L(a,"gbmsgo"):M(a,"gbmsgo")},Sa=function(a){for(var b=0,c;c=a.childNodes[b];b++)if(K(c,"gbmsg"))return c},S=function(){ib&&window.clearTimeout(ib)},mb=function(a){var b="inner"+a;a="offset"+a;return window[b]?window[b]:document.documentElement&&document.documentElement[a]?document.documentElement[a]:0},nb=function(){return k};r("so",Oa);r("sos",Na);r("si",Pa);r("tg",Va);r("close",Wa);r("rdd",Xa);r("addLink",$a);
+r("addExtraLink",ab);r("pcm",bb);r("pca",cb);r("paa",db);r("ddld",Ta);r("ddrd",lb);r("dderr",kb);r("rtl",Ra);r("bh",O);r("abh",eb);r("dh",P);r("adh",fb);r("ch",Q);r("ach",hb);r("eh",Qa);r("aeh",gb);ca=q.a("")?La:Ma;r("qs",ca);r("setContinueCb",Ja);r("pc",Ka);r("bsy",nb);q.d=Ua;q.j=mb;var ob={};y.base=ob;z.push(["m",{url:"//ssl.gstatic.com/gb/js/sem_33f46747f3f9067241e0d10ffc5ee821.js"}]);n.sg={c:"1"};r("wg",{rg:{}});var pb={tiw:q.c("15000",0),tie:q.c("30000",0)};y.wg=pb;var qb={thi:q.c("10000",0),thp:q.c("180000",0),tho:q.c("5000",0),tet:q.b("0.5",0)};y.wm=qb;if(q.a("1")){var rb=q.a("");z.push(["gc",{auto:rb,url:"//ssl.gstatic.com/gb/js/abc/gci_91f30755d6a6b787dcc2a4062e6e9824.js",libs:"googleapis.client:plusone"}]);var sb={version:"gci_91f30755d6a6b787dcc2a4062e6e9824.js",index:"",lang:"en"};y.gc=sb;var tb=function(a){window.googleapis&&window.iframes?a&&a():(a&&qa(a),G("gc"))};r("lGC",tb);q.a("1")&&r("lPWF",tb)};window.__PVT="";if(q.a("1")&&q.a("1")){var ub=function(a){tb(function(){C("pw",a);G("pw")})};r("lPW",ub);z.push(["pw",{url:"//ssl.gstatic.com/gb/js/abc/pwm_45f73e4df07a0e388b0fa1f3d30e7280.js"}]);var vb=[],xb=function(a){vb[0]=a},yb=function(a,b){var c=b||{};c._sn="pw";u(a,c)},zb={signed:vb,elog:yb,base:"https://plusone.google.com/u/0",loadTime:(new Date).getTime()};y.pw=zb;var Ab=function(a,b){for(var c=b.split("."),d=function(){var b=arguments;a(function(){for(var a=n,d=0,f=c.length-1;d<f;++d)a=a[c[d]];a[c[d]].apply(a,b)})},g=n,f=0,m=c.length-1;f<
+m;++f)g=g[c[f]]=g[c[f]]||{};return g[c[f]]=d};Ab(ub,"pw.clk");Ab(ub,"pw.hvr");r("su",xb,n.pw)};var Bb=[1,2,3,4,5,6,9,10,11,13,14,28,29,30,34,35,37,38,39,40,41,42,43,500];var Cb=q.b("0.01",1E-4),Db=q.b("0.1",1),Eb=k,Fb=k;if(q.a("1")){var Gb=Math.random();Gb<=Cb&&(Eb=e);Gb<=Db&&(Fb=e)}var U=h;function Hb(){var a=0,b=function(b,d){q.a(d)&&(a|=b)};b(1,"");b(2,"");b(4,"");b(8,"");return a}
+function Ib(a,b){var c=Cb,d=Eb,g;g=a;if(!U){U={};for(var f=0;f<Bb.length;f++){var m=Bb[f];U[m]=e}}if(g=!!U[g])c=Db,d=Fb;if(d){d=encodeURIComponent;g="es_plusone_gc_20130213.0_p0";n.rp?(f=n.rp(),f="-1"!=f?f:""):f="";c=["//www.google.com/gen_204?atyp=i&zx=",(new Date).getTime(),"&oge=",a,"&ogex=",d("30316"),"&ogev=",d("x11GUZLWAsffwQHemYHADA"),"&ogf=",n.bv.f,"&ogp=",d("1"),"&ogrp=",d(f),"&ogsr=",Math.round(1/c),"&ogv=",d("1363125672.1362597341"),
+g?"&oggv="+d(g):"","&ogd=",d("com"),"&ogl=",d("en"),"&ogus=",Hb()];if(b){"ogw"in b&&(c.push("&ogw="+b.ogw),delete b.ogw);var l;g=b;f=[];for(l in g)0!=f.length&&f.push(","),f.push(Jb(l)),f.push("."),f.push(Jb(g[l]));l=f.join("");""!=l&&(c.push("&ogad="),c.push(d(l)))}w(c.join(""))}}function Jb(a){"number"==typeof a&&(a+="");return"string"==typeof a?a.replace(".","%2E").replace(",","%2C"):a}v=Ib;r("il",v,x);var Kb={};y.il=Kb;var Lb=function(a,b,c,d,g,f,m,l,p,s){D(function(){n.paa(a,b,c,d,g,f,m,l,p,s)})},Mb=function(){D(function(){n.prm()})},Nb=function(a){D(function(){n.spn(a)})},Ob=function(a){D(function(){n.sps(a)})},Pb=function(a){D(function(){n.spp(a)})},Qb={"27":"//ssl.gstatic.com/gb/images/silhouette_24.png","27":"//ssl.gstatic.com/gb/images/silhouette_24.png","27":"//ssl.gstatic.com/gb/images/silhouette_24.png"},Rb=function(a){return(a=Qb[a])||"//ssl.gstatic.com/gb/images/silhouette_24.png"},
+Sb=function(){D(function(){n.spd()})};r("spn",Nb);r("spp",Pb);r("sps",Ob);r("spd",Sb);r("paa",Lb);r("prm",Mb);eb("gbd4",Mb);
+if(q.a("")){var Tb={d:q.a(""),e:"",sanw:q.a(""),p:"//ssl.gstatic.com/gb/images/silhouette_96.png",cp:"1",xp:q.a("1"),mg:"%1$s (delegated)",md:"%1$s (default)",mh:"220",s:"1",pp:Rb,ppl:q.a(""),ppa:q.a(""),ppm:"Google+ page"};
+y.prf=Tb};var V,Ub,W,Vb,X=0,Wb=function(a,b,c){if(a.indexOf)return a.indexOf(b,c);if(Array.indexOf)return Array.indexOf(a,b,c);for(c=c==h?0:0>c?Math.max(0,a.length+c):c;c<a.length;c++)if(c in a&&a[c]===b)return c;return-1},Z=function(a,b){return-1==Wb(a,X)?(t(Error(X+"_"+b),"up","caa"),k):e},Yb=function(a,b){Z([1,2],"r")&&(V[a]=V[a]||[],V[a].push(b),2==X&&window.setTimeout(function(){b(Xb(a))},0))},Zb=function(a,b,c){if(Z([1],"nap")&&c){for(var d=0;d<c.length;d++)Ub[c[d]]=e;n.up.spl(a,b,"nap",c)}},$b=function(a,
+b,c){if(Z([1],"aop")&&c){if(W)for(var d in W)W[d]=W[d]&&-1!=Wb(c,d);else{W={};for(d=0;d<c.length;d++)W[c[d]]=e}n.up.spl(a,b,"aop",c)}},ac=function(){try{if(X=2,!Vb){Vb=e;for(var a in V)for(var b=V[a],c=0;c<b.length;c++)try{b[c](Xb(a))}catch(d){t(d,"up","tp")}}}catch(g){t(g,"up","mtp")}},Xb=function(a){if(Z([2],"ssp")){var b=!Ub[a];W&&(b=b&&!!W[a]);return b}};Vb=k;V={};Ub={};W=h;
+var X=1,bc=function(){try{return!!window.localStorage&&"object"==typeof window.localStorage}catch(a){return k}},cc=function(a){return a&&a.style&&a.style.g&&"undefined"!=typeof a.load},dc=function(a,b,c,d){try{d||(b="og-up-"+b),bc()?window.localStorage.setItem(b,c):cc(a)&&(a.setAttribute(b,c),a.save(a.id))}catch(g){g.code!=DOMException.QUOTA_EXCEEDED_ERR&&t(g,"up","spd")}},ec=function(a,b,c){try{c||(b="og-up-"+b);if(bc())return window.localStorage.getItem(b);if(cc(a))return a.load(a.id),a.getAttribute(b)}catch(d){d.code!=
+DOMException.QUOTA_EXCEEDED_ERR&&t(d,"up","gpd")}return""},fc=function(a,b,c){a.addEventListener?a.addEventListener(b,c,k):a.attachEvent&&a.attachEvent("on"+b,c)},gc=function(a){for(var b=0,c;c=a[b];b++){var d=n.up;c=c in d&&d[c];if(!c)return k}return e};r("up",{r:Yb,nap:Zb,aop:$b,tp:ac,ssp:Xb,spd:dc,gpd:ec,aeh:fc,aal:gc});var hc=function(a,b){a[b]=function(c){var d=arguments;n.qm(function(){a[b].apply(this,d)})}};hc(n.up,"sl");hc(n.up,"si");hc(n.up,"spl");
+n.mcf("up",{sp:q.b("0.01",1)});function ic(){function a(){for(var b;(b=f[m++])&&!("m"==b[0]||b[1].auto););b&&(E(2,b[0]),b[1].url&&pa(b[1].url,b[0]),b[1].libs&&F&&F(b[1].libs));m<f.length&&setTimeout(a,0)}function b(){0<g--?setTimeout(b,0):a()}var c=q.a("1"),d=q.a(""),g=3,f=z,m=0,l=window.gbarOnReady;if(l)try{l()}catch(p){t(p,"ml","or")}d?r("ldb",a):c?da(window,"load",b):b()}r("rdl",ic);}catch(e){window.gbar&&gbar.logger&&gbar.logger.ml(e,{"_sn":"cfg.init"});}})();
+(function(){try{var a=window.gbar;a.mcf("pm",{p:""});}catch(e){window.gbar&&gbar.logger&&gbar.logger.ml(e,{"_sn":"cfg.init"});}})();
+(function(){try{var a=window.gbar;a.mcf("mm",{s:"1"});}catch(e){window.gbar&&gbar.logger&&gbar.logger.ml(e,{"_sn":"cfg.init"});}})();
+(function(){try{var d=window.gbar.i.i;var e=window.gbar;var f=e.i;var g=f.c("1",0),h=/\bgbmt\b/,k=function(a){try{var b=document.getElementById("gb_"+g),c=document.getElementById("gb_"+a);b&&f.l(b,h.test(b.className)?"gbm0l":"gbz0l");c&&f.k(c,h.test(c.className)?"gbm0l":"gbz0l")}catch(l){d(l,"sj","ssp")}g=a},m=e.qs,n=function(a){var b;b=a.href;var c=window.location.href.match(/.*?:\/\/[^\/]*/)[0],c=RegExp("^"+c+"/search\\?");if((b=c.test(b))&&!/(^|\\?|&)ei=/.test(a.href))if((b=window.google)&&b.kEXPI)a.href+="&ei="+b.kEI},p=function(a){m(a);
+n(a)},q=function(){if(window.google&&window.google.sn){var a=/.*hp$/;return a.test(window.google.sn)?"":"1"}return"-1"};e.rp=q;e.slp=k;e.qs=p;e.qsi=n;}catch(e){window.gbar&&gbar.logger&&gbar.logger.ml(e,{"_sn":"cfg.init"});}})();
+(function(){try{window.gbar.rdl();}catch(e){window.gbar&&gbar.logger&&gbar.logger.ml(e,{"_sn":"cfg.init"});}})();
+</script> </head><body dir="ltr" bgcolor="#fff">
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/www.google.com\/";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "18";
+var displayMonth = "三月";
+var displayYear = "2013";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + ''/'' +  wbCurrentUrl;
+	document.getElementById(''wm-graph-anchor'').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px; z-index:9000;">
+<div id="wm-ipp-inside" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:''Lucida Grande'',''Arial'',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.google.com/" style="width:400px;font-size:11px;font-family:''Lucida Grande'',''Arial'',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20130318002023" /><input type="submit" value="Go" style="font-size:11px;font-family:''Lucida Grande'',''Arial'',sans-serif;margin-left:5px;" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:''Helvetica'',''Lucida Grande'',''Arial'',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20130218001756/http://www.google.com/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="18 二月 2013"><strong>二月</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 0:20:23 三月 18, 2013">三月</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       四月
+                       
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20130317235836/http://www.google.com/" title="23:58:36 三月 17, 2013" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 0:20:23 三月 18, 2013">18</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20130318002439/http://www.google.com/" title="0:24:39 三月 18, 2013" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20120318001958/http://www.google.com/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="18 三月 2012"><strong>2012</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 0:20:23 三月 18, 2013">2013</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2014
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20130318002023*/http://www.google.com/" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>109,875 captures</strong></a>
+           <div style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">11 十一月 98 - 18 三月 13</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers(''inline'');" 
+				onmouseout="showTrackers(''none'');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000011_1999:-1:210210000110_2000:-1:014254210611_2001:-1:413289657986_2002:-1:111111366552_2003:-1:033222121433_2004:-1:332224455454_2005:-1:55555555a877_2006:-1:766746775566_2007:-1:666666676776_2008:-1:555655555567_2009:-1:878787776767_2010:-1:788777797556_2011:-1:665668999cdd_2012:-1:eeedfeeeeeed_2013:2:eee000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById(''wm-ipp'').style.display=''none'';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:''Lucida Grande'',''Arial'',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:''Lucida Grande'',''Arial'',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<script>(function(){var src=''/images/srpr/nav_logo80.png'';var iesg=false;document.body.onload = function(){window.n && window.n();if (document.images){new Image().src=src;}
+if (!iesg){document.f&&document.f.q.focus();document.gbqf&&document.gbqf.q.focus();}
+}
+})();</script><textarea id="csi" style="display:none"></textarea><div id="mngb"><div id=gb><script>window.gbar&&gbar.eli&&gbar.eli()</script><div id=gbw><div id=gbz><span class=gbtcb></span><ol id=gbzc class=gbtc><li class=gbt><a onclick=gbar.logger.il(1,{t:1}); class="gbzt gbz0l gbp1" id=gb_1 href="/web/20130318002023/http://www.google.com/webhp?hl=en&tab=ww"><span class=gbtb2></span><span class=gbts>Search</span></a></li><li class=gbt><a onclick=gbar.qs(this);gbar.logger.il(1,{t:2}); class=gbzt id=gb_2 href="/web/20130318002023/http://www.google.com/imghp?hl=en&tab=wi"><span class=gbtb2></span><span class=gbts>Images</span></a></li><li class=gbt><a onclick=gbar.qs(this);gbar.logger.il(1,{t:8}); class=gbzt id=gb_8 href="/web/20130318002023/http://maps.google.com/maps?hl=en&tab=wl"><span class=gbtb2></span><span class=gbts>Maps</span></a></li><li class=gbt><a onclick=gbar.logger.il(1,{t:78}); class=gbzt id=gb_78 href="/web/20130318002023/https://play.google.com/?hl=en&tab=w8"><span class=gbtb2></span><span class=gbts>Play</span></a></li><li class=gbt><a onclick=gbar.qs(this);gbar.logger.il(1,{t:36}); class=gbzt id=gb_36 href="/web/20130318002023/http://www.youtube.com/?tab=w1"><span class=gbtb2></span><span class=gbts>YouTube</span></a></li><li class=gbt><a onclick=gbar.logger.il(1,{t:5}); class=gbzt id=gb_5 href="/web/20130318002023/http://news.google.com/nwshp?hl=en&tab=wn"><span class=gbtb2></span><span class=gbts>News</span></a></li><li class=gbt><a onclick=gbar.logger.il(1,{t:23}); class=gbzt id=gb_23 href="/web/20130318002023/https://mail.google.com/mail/?tab=wm"><span class=gbtb2></span><span class=gbts>Gmail</span></a></li><li class=gbt><a onclick=gbar.logger.il(1,{t:25}); class=gbzt id=gb_25 href="/web/20130318002023/https://drive.google.com/?tab=wo"><span class=gbtb2></span><span class=gbts>Drive</span></a></li><li class=gbt><a class=gbgt id=gbztm href="/web/20130318002023/http://www.google.com/intl/en/options/" onclick="gbar.tg(event,this)" aria-haspopup=true aria-owns=gbd><span class=gbtb2></span><span id=gbztms class="gbts gbtsa"><span id=gbztms1>More</span><span class=gbma></span></span></a><div class=gbm id=gbd aria-owner=gbztm><div id=gbmmb class="gbmc gbsb gbsbis"><ol id=gbmm class="gbmcc gbsbic"><li class=gbmtc><a onclick=gbar.logger.il(1,{t:24}); class=gbmt id=gb_24 href="/web/20130318002023/https://www.google.com/calendar?tab=wc">Calendar</a></li><li class=gbmtc><a onclick=gbar.qs(this);gbar.logger.il(1,{t:51}); class=gbmt id=gb_51 href="/web/20130318002023/http://translate.google.com/?hl=en&tab=wT">Translate</a></li><li class=gbmtc><a onclick=gbar.logger.il(1,{t:17}); class=gbmt id=gb_17 href="/web/20130318002023/http://www.google.com/mobile/?hl=en&tab=wD">Mobile</a></li><li class=gbmtc><a onclick=gbar.qs(this);gbar.logger.il(1,{t:10}); class=gbmt id=gb_10 href="/web/20130318002023/http://books.google.com/bkshp?hl=en&tab=wp">Books</a></li><li class=gbmtc><a onclick=gbar.logger.il(1,{t:172}); class=gbmt id=gb_172 href="/web/20130318002023/https://www.google.com/offers?utm_source=xsell&utm_medium=products&utm_campaign=sandbar&hl=en&tab=wG">Offers</a></li><li class=gbmtc><a onclick=gbar.logger.il(1,{t:212}); class=gbmt id=gb_212 href="/web/20130318002023/https://wallet.google.com/manage/?tab=wa">Wallet</a></li><li class=gbmtc><a onclick=gbar.qs(this);gbar.logger.il(1,{t:6}); class=gbmt id=gb_6 href="/web/20130318002023/http://www.google.com/shopping?hl=en&tab=wf">Shopping</a></li><li class=gbmtc><a onclick=gbar.logger.il(1,{t:30}); class=gbmt id=gb_30 href="/web/20130318002023/http://www.blogger.com/?tab=wj">Blogger</a></li><li class=gbmtc><a onclick=gbar.logger.il(1,{t:32}); class=gbmt id=gb_32 href="/web/20130318002023/http://www.google.com/reader/?hl=en&tab=wy">Reader</a></li><li class=gbmtc><a onclick=gbar.qs(this);gbar.logger.il(1,{t:27}); class=gbmt id=gb_27 href="/web/20130318002023/http://www.google.com/finance?tab=we">Finance</a></li><li class=gbmtc><a onclick=gbar.qs(this);gbar.logger.il(1,{t:31}); class=gbmt id=gb_31 href="/web/20130318002023/http://picasaweb.google.com/home?hl=en&tab=wq">Photos</a></li><li class=gbmtc><a onclick=gbar.qs(this);gbar.logger.il(1,{t:12}); class=gbmt id=gb_12 href="/web/20130318002023/http://video.google.com/?hl=en&tab=wv">Videos</a></li><li class=gbmtc><div class="gbmt gbmh"></div></li><li class=gbmtc><a onclick=gbar.logger.il(1,{t:66}); href="/web/20130318002023/http://www.google.com/intl/en/options/" class=gbmt>Even more &raquo;</a></li></ol><div class=gbsbt></div><div class=gbsbb></div></div></div></li></ol></div><div id=gbg><h2 class=gbxx>Account Options</h2><span class=gbtcb></span><ol class=gbtc><li class=gbt><a target=_top href="/web/20130318002023/https://accounts.google.com/ServiceLogin?hl=en&continue=http://www.google.com/" onclick="gbar.logger.il(9,{l:''i''})" id=gb_70 class=gbgt><span class=gbtb2></span><span id=gbgs4 class=gbts><span id=gbi4s1>Sign in</span></span></a></li><li class="gbt gbtb"><span class=gbts></span></li><li class=gbt><a class=gbgt id=gbg5 href="/web/20130318002023/http://www.google.com/preferences?hl=en" title="Options" onclick="gbar.tg(event,this)" aria-haspopup=true aria-owns=gbd5><span class=gbtb2></span><span id=gbgs5 class=gbts><span id=gbi5></span></span></a><div class=gbm id=gbd5 aria-owner=gbg5><div class=gbmc><ol id=gbom class=gbmcc><li class="gbkc gbmtc"><a  class=gbmt href="/web/20130318002023/http://www.google.com/preferences?hl=en">Search settings</a></li><li class=gbmtc><div class="gbmt gbmh"></div></li><li class="gbkp gbmtc"><a class=gbmt href="/web/20130318002023/http://www.google.com/history/optout?hl=en">Web History</a></li></ol></div></div></li></ol></div></div><div id=gbx3></div><div id=gbx4></div><script>window.gbar&&gbar.elp&&gbar.elp()</script></div></div><iframe name="wgjf" style="display:none"></iframe><center><br clear="all" id="lgpd"><div id="lga"><a href="/web/20130318002023/http://www.google.com/search?q=St.+Patrick''s+Day&oi=ddle&ct=st_patricks_day_2013-1108005-hp"><img alt="St. Patrick''s Day" border="0" height="152" src="/web/20130318002023im_/http://www.google.com/logos/2013/st_patricks_day_2013-1108005-hp.jpg" title="St. Patrick''s Day" width="478" id="hplogo" onload="window.lol&&lol()"></a><br><br></div><form action="/web/20130318002023/http://www.google.com/search" name="f"><table cellpadding="0" cellspacing="0"><tr valign="top"><td width="25%">&nbsp;</td><td align="center" nowrap="nowrap"><input value="en" name="hl" type="hidden"><input name="source" type="hidden" value="hp"><div class="ds" style="height:32px;margin:4px 0"><input autocomplete="off" class="lst" value="" title="Google Search" maxlength="2048" name="q" size="57" style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top"></div><br style="line-height:0"><span class="ds"><span class="lsbb"><input class="lsb" value="Google Search" name="btnG" type="submit"></span></span><span class="ds"><span class="lsbb"><input class="lsb" value="I''m Feeling Lucky" name="btnI" type="submit" onclick="if(this.form.q.value)this.checked=1; else top.location=''/doodles/''"></span></span></td><td class="fl sblc" align="left" nowrap="nowrap" width="25%"><a href="/web/20130318002023/http://www.google.com/advanced_search?hl=en&authuser=0">Advanced search</a><a href="/web/20130318002023/http://www.google.com/language_tools?hl=en&authuser=0">Language tools</a></td></tr></table><input type="hidden" id="gbv" name="gbv" value="1"><script>(function(){var a,b="1";if(document&&document.getElementById)if("undefined"!=typeof XMLHttpRequest)b="2";else if("undefined"!=typeof ActiveXObject){var c,d,e=["MSXML2.XMLHTTP.6.0","MSXML2.XMLHTTP.3.0","MSXML2.XMLHTTP","Microsoft.XMLHTTP"];for(c=0;d=e[c++];)try{new ActiveXObject(d),b="2"}catch(f){}}a=b;"2"==a&&(document.getElementById("gbv").value=a);})();</script></form><div id="gac_scont"></div><div style="font-size:83%;min-height:3.5em"><br></div><span id="footer"><div style="font-size:10pt"><div id="fll" style="margin:19px auto;text-align:center"><a href="/web/20130318002023/http://www.google.com/intl/en/ads/">Advertising&nbsp;Programs</a><a href="/web/20130318002023/http://www.google.com/services/">Business Solutions</a><a href="/web/20130318002023/https://plus.google.com/116899029375914044550" rel="publisher">+Google</a><a href="/web/20130318002023/http://www.google.com/intl/en/about.html">About Google</a></div></div><p style="color:#767676;font-size:8pt">&copy; 2013 - <a href="/web/20130318002023/http://www.google.com/intl/en/policies/">Privacy & Terms</a></p></span></center><div id=xjsd></div><div id=xjsi><script>if(google.y)google.y.first=[];(function(){var b;function c(a){window.setTimeout(function(){var d=document.createElement("script");d.src=a;document.getElementById("xjsd").appendChild(d)},0)}google.dljp=function(a){b=a;google.xjsi||(google.xjsu=a,c(b))};google.dlj=c;})();
+if(!google.xjs){google.dstr=[];google.rein=[];window._=window._||{};window._._DumpException=function(e){throw e};if(google.timers&&google.timers.load.t){google.timers.load.t.xjsls=new Date().getTime();}google.dljp(''/xjs/_/js/hp/sb_he,pcc/rt\x3dj/ver\x3dkZzP7WLWDa8.en_US./d\x3d1/sv\x3d1/rs\x3dAItRSTMrrcrCAA791p2QB-ap_BkElvsTOw'');google.xjs=1;}google.pmc={sb:{"agen":false,"cgen":true,"client":"heirloom-hp","dh":true,"ds":"","eqch":true,"fl":true,"host":"google.com","jsonp":true,"msgs":{"lcky":"I\u0026#39;m Feeling Lucky","lml":"Learn more","oskt":"Input tools","psrc":"This search was removed from your \u003Ca href=\"/history\"\u003EWeb History\u003C/a\u003E","psrl":"Remove","sbit":"Search by image","srch":"Google Search"},"ovr":{"l":1,"ms":1},"pq":"","qcpw":false,"scd":10,"sce":5,"stok":"i8GYi1NIPEUM2cksksphGh05J4s"},hp:{},pcc:{}};google.y.first.push(function(){if(google.med){google.med(''init'');google.initHistory();google.med(''history'');}google.History&&google.History.initialize(''/'');google.hs&&google.hs.init&&google.hs.init()});if(google.j&&google.j.en&&google.j.xi){window.setTimeout(google.j.xi,0);}</script></div><script>(function(){var b,c,d,e;function g(a,f){a.removeEventListener?(a.removeEventListener("load",f,!1),a.removeEventListener("error",f,!1)):(a.detachEvent("onload",f),a.detachEvent("onerror",f))}function h(a){e=(new Date).getTime();++c;a=a||window.event;a=a.target||a.srcElement;g(a,h)}var k=document.getElementsByTagName("img");b=k.length;
+for(var l=c=0,m;l<b;++l)m=k[l],m.complete||"string"!=typeof m.src||!m.src?++c:m.addEventListener?(m.addEventListener("load",h,!1),m.addEventListener("error",h,!1)):(m.attachEvent("onload",h),m.attachEvent("onerror",h));d=b-c;
+function n(){if(google.timers.load.t){google.timers.load.t.ol=(new Date).getTime();google.timers.load.t.iml=e;google.kCSI.imc=c;google.kCSI.imn=b;google.kCSI.imp=d;void 0!==google.stt&&(google.kCSI.stt=google.stt);google.csiReport&&google.csiReport()}}window.addEventListener?window.addEventListener("load",n,!1):window.attachEvent&&window.attachEvent("onload",n);google.timers.load.t.prt=e=(new Date).getTime();})();
+</script></body></html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 0:20:23 三月 18, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:00:35 三月 27, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+');
+INSERT INTO "repository_node" VALUES(21,'','/readme.txt','This is a sample of Subversion Repository for test the SVN integration of Trac.
+  -- by thinkbase.net, 20130327');
+INSERT INTO "repository_node" VALUES(22,'','/ms/www.miscrosoft.com.txt','<!DOCTYPE html>
+<html class="en-us no-js" lang="en" dir="ltr" xmlns:bi="urn:schemas-microsoft-com:mscom:bi"> 
+<head><meta http-equiv="X-UA-Compatible" content="IE=10" /><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="shortcut icon" href="/web/20130318140700im_/http://www.microsoft.com/favicon.ico?v2" /><title>
+	Microsoft Home Page | Devices and Services
+</title><link rel="stylesheet" type="text/css" href="/web/20130318140700cs_/http://i.s-microsoft.com/en-us/home/style.cssx?k=~/shared/templates/Styles/Base/viewport-css.aspx;~/shared/templates/Styles/Reset/reset-css.aspx;~/shared/templates/Styles/Views/cols-css.aspx;~/shared/templates/Styles/Base/webfont-css.aspx;~/shared/templates/Styles/Base/type-css.aspx;~/shared/templates/Styles/Base/layout-css.aspx;~/shared/templates/Styles/Views/header-css.aspx;~/shared/templates/Styles/Views/search-css.aspx;~/shared/templates/Styles/Views/list-css.aspx;~/shared/templates/Styles/Views/menu-css.aspx;~/shared/templates/Styles/Views/hero-css.aspx;~/shared/templates/Styles/Views/pivot-css.aspx;~/shared/templates/Styles/Views/highlights-css.aspx;~/shared/templates/Styles/Views/footer-css.aspx;~/shared/templates/Styles/animations-css.aspx&sc=/en-us/home/site.config&pc=&v=1911637724"></link>
+    <!--Third party scripts and code linked to or referenced from this website are licensed to you by the parties that own such code, not by Microsoft. See ASP.NET Ajax CDN Terms of Use – /web/20130318140700/http://www.asp.net/ajaxlibrary/CDN.ashx.-->
+    <script type="text/javascript" src="/web/20130318140700js_/http://i.s-microsoft.com/en-us/home/shared/templates/Scripts/Lib/modernizr.js?v1"></script>
+<script type="text/javascript" src="/web/20130318140700js_/http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">var ua,fontfix;/(Windows Phone)|(XBLWP)|(ZuneWP)/.test(navigator.userAgent)&&$("html").removeClass("fontface"),$("html").hasClass("fontface")||$("html").addClass("nofontface"),ua=navigator.userAgent.toLowerCase(),ua.indexOf("android")>-1&&ua.indexOf("android 4")===-1&&$("html").removeClass("cssanimations"),ua=navigator.userAgent.toLowerCase(),(ua.indexOf("android")>-1||ua.indexOf("silk/")>-1)&&(fontfix=document.createElement("style"),fontfix.setAttribute("type","text/css"),fontfix.innerHTML="",document.head.appendChild(fontfix))</script><script type="text/javascript" src="/web/20130318140700js_/http://www.microsoft.com/en-us/home/shared/core/2/js/js.ashx?&"></script><link rel="stylesheet" type="text/css" href="/web/20130318140700cs_/http://www.microsoft.com/en-us/home/shared/core/2/css/css.ashx?sc=/en-us/home/site.config&pt=hpHomepage" /><script type="text/javascript" src="/web/20130318140700js_/http://i3.microsoft.com/library/svy/broker.js"> </script><meta name="SearchTitle" content="Microsoft.com" scheme="" /><meta name="Description" content="At Microsoft our mission and values are to help people and businesses throughout the world realize their full potential." scheme="" /><meta name="Title" content="Microsoft Home Page | Devices and Services" scheme="" /><meta name="SearchDescription" content="Microsoft.com Homepage" scheme="" /><meta name="application-name" content="Microsoft.com" scheme="" /><meta name="msapplication-task" content="name=Search;action-uri=http://www.bing.com/;icon-uri=http://www.bing.com/fd/s/a/bing.ico" scheme="" /><meta name="msapplication-task" content="name=Shop;action-uri=http://store.microsoft.com/;icon-uri=http://img3.store.microsoft.com/prod/clusterb/v2/framework/pages/global/msstore_icon.ico" scheme="" /><meta name="msapplication-task" content="name=Download;action-uri=http://www.microsoft.com/downloads/;icon-uri=http://www.microsoft.com/favicon.ico" scheme="" /><meta name="msapplication-task" content="name=Support;action-uri=http://support.microsoft.com/;icon-uri=http://www.microsoft.com/favicon.ico" scheme="" /><meta name="msapplication-task" content="name=Secure;action-uri=http://www.microsoft.com/security/;icon-uri=http://www.microsoft.com/favicon.ico" scheme="" /><meta name="msapplication-TileColor" content="#00188f" scheme="" /><meta name="msapplication-TileImage" content="/global/ImageStore/PublishingImages/logos/144x144/microsoft_symbol_clr_144x144.png" scheme="" /></head>
+<body class="home">
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/www.microsoft.com\/en-us\/default.aspx";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "18";
+var displayMonth = "三月";
+var displayYear = "2013";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + ''/'' +  wbCurrentUrl;
+	document.getElementById(''wm-graph-anchor'').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px; z-index:9000;">
+<div id="wm-ipp-inside" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:''Lucida Grande'',''Arial'',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.microsoft.com/en-us/default.aspx" style="width:400px;font-size:11px;font-family:''Lucida Grande'',''Arial'',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20130318140700" /><input type="submit" value="Go" style="font-size:11px;font-family:''Lucida Grande'',''Arial'',sans-serif;margin-left:5px;" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:''Helvetica'',''Lucida Grande'',''Arial'',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20130218131743/http://www.microsoft.com/en-us/default.aspx" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="18 二月 2013"><strong>二月</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 14:07:00 三月 18, 2013">三月</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       四月
+                       
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20130317223931/http://www.microsoft.com/en-us/default.aspx" title="22:39:31 三月 17, 2013" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 14:07:00 三月 18, 2013">18</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20130318142557/http://www.microsoft.com/en-us/default.aspx" title="14:25:57 三月 18, 2013" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20120318132951/http://www.microsoft.com/en-us/default.aspx" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="18 三月 2012"><strong>2012</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 14:07:00 三月 18, 2013">2013</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2014
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20130318140700*/http://www.microsoft.com/en-us/default.aspx" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>2,411 captures</strong></a>
+           <div style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">28 二月 07 - 18 三月 13</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers(''inline'');" 
+				onmouseout="showTrackers(''none'');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:011000000000_2008:-1:001100000001_2009:-1:010000000000_2010:-1:000010101100_2011:-1:007999998bde_2012:-1:fddcceeeedde_2013:2:eec000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById(''wm-ipp'').style.display=''none'';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:''Lucida Grande'',''Arial'',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:''Lucida Grande'',''Arial'',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<script src="/web/20130318140700js_/http://www.microsoft.com/global/en-us/homepage/renderingAssets/wt_capi.js" type="text/javascript"></script>
+<script type="text/javascript">
+    if (typeof (WTOptimize) != ''undefined'') { try { document.body.style.visibility = ''hidden''; WTOptimize.addEventHandler(WTEvent.INVALID, function () { document.body.style.visibility = ''visible''; }); WTOptimize.addEventHandler(WTEvent.DONE, null, function () { document.body.style.visibility = ''visible''; }); WTOptimize.addEventHandler(WTEvent.PAGEVIEW, null, function () { document.body.style.visibility = ''visible''; }); var d = false; function rh(rp) { d = true; if (rp.Error != null || rp.Segments.length == 0) { WTOptimize.setup(); return; } WTOptimize.setup({ data: { segment: rp.Segments.sort().toString() } }); } var muid = ''''; var sc = document.cookie.split(''; ''); for (var i in sc) { var se = sc[i].split(''=''); if (se[0].indexOf(''MUID'') !== -1) { muid = se[1]; } } var s = document.createElement(''script''); var p = location.protocol === ''https:'' ? ''https:'' : ''http:''; s.src = p + ''//targetingservices.microsoft.com/ProfileStore/Segments?visitorId='' + muid + ''&callback=rh''; document.getElementsByTagName(''head'')[0].appendChild(s); setTimeout(function () { if (!d) { WTOptimize.setup(); } }, 2000); } catch (err) { WTOptimize.setup(); } }
+</script>
+    <script type="text/javascript" src="/web/20130318140700js_/http://i.s-microsoft.com/en-us/home/script.jsx?k=~/shared/templates/Scripts/Lib/picturefill.js&v=340844947"></script>
+    <form name="aspnetForm" method="post" action="/web/20130318140700/http://www.microsoft.com/en-us/default.aspx" id="aspnetForm" class="home-form">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUBMGRkrG4ZZMLmcMpgi9GdziiXK/43OIY=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAgKy+5CjCQK1qaLSCizpUEQtEC/vjxl9SJ+9Vp8uKxhh" />
+        <div class="top-bar account-center">
+    <div class="grid-container">
+
+<span class="top-bar-storelink " >
+    
+         <span class="store-editorial" 
+         
+           >  <a href="/web/20130318140700/http://content.microsoftstore.com/home.aspx?WT.mc_id=MSCOM_EN_US_HP_NAV_STORELOC_132M2ENUS35042">Find a Microsoft Store near you</a>
+         </span>
+         
+
+</span>
+
+
+    </div>
+</div>
+<header id="mscom-header" class="site-header" bi:type="header">
+    <div class="grid-container">
+        <h1>
+            <div data-picture data-alt="Microsoft" class="mscom-logo">
+                <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png"></div>
+                <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
+                <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-sm-1x.png" data-media="(max-width: 539px)"></div>
+                <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-sm-2x.png" data-media="(max-width: 539px) and (min-device-pixel-ratio: 2.0)"></div>
+                <noscript><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png" alt="Microsoft" /></noscript>
+            </div>
+            <script type="text/javascript">window.picturePolyfill.resolveLast();</script>
+        </h1>
+        <div class="site-header-togglers" bi:track="false">
+            <a href="/web/20130318140700/http://www.microsoft.com/en-us/default.aspx#mscom-navigation" id="toggle-menu" class="toggle toggle-menu" title="Toggle Navigation" bi:type="menu"><span class="icon-menu" aria-role="hidden"></span> <span class="screen-reader-text">Menu</span></a>
+            <a href="/web/20130318140700/http://www.microsoft.com/en-us/default.aspx#mscom-search" id="toggle-search" class="toggle toggle-search" title="Toggle Search" bi:type="search"><span class="icon-search" aria-role="hidden"></span> <span class="screen-reader-text">Search</span></a>
+        </div>
+        
+<div id="ctl00_ctl16_ctl00_ctl00_mscom-search" data-id="#mscom-search" class="mscom-search global-navigation" bi:type="Search">
+    <div role="search" class="search-form">
+        <input type="hidden" name="form" value="smc" />
+        <input type="hidden" name="setlang" value="en-us" />
+        <input type="hidden" class="search-source" name="source" value="0" />
+        <div class="input-wrapper">
+            <label for="ctl00_ctl16_ctl00_ctl00_q" class="screen-reader-text">Search Microsoft.com</label>
+            <input name="q" id="ctl00_ctl16_ctl00_ctl00_q" class="search-box" type="search" autocomplete="off" />
+        </div>
+        <button type="submit" name="ctl00$ctl16$ctl00$ctl00$searchButton" value="" id="ctl00_ctl16_ctl00_ctl00_searchButton" type="submit" class="search-submit" value="Search"><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/imagestore/PublishingImages/sprites/search-button-blue.png" alt="Submit" height="16" width="16" /></button>
+    </div>
+    <div class="search-results-box">
+        <div bi:track="false" class="search-results">
+            <ul>
+            </ul>
+        </div>
+        <div class="search-scope">
+            <ul>
+                <li><a class="checked">Search Microsoft.com</a></li>
+                <li><a>Search the Web</a></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            var search = new Ms.Search(
+                ''ctl00_ctl16_ctl00_ctl00_mscom-search'',
+                {"scope":[{"watermarkText":["Search Microsoft.com"],"searchUrlFormat":["http://search.microsoft.com/results.aspx?form=MSHOME&amp;mkt={1}&amp;setlang={1}&amp;q={0}"],"bi":[{"parameter":[{"name":["linkid"],"value":["searchmscomclick"]},{"name":["cpid"],"value":["MSCOMSearch"]},{"name":["searchtype"],"value":["MSCOM"]}]}],"autoSuggest":[{"serviceUrlFormat":["http://search.microsoft.com/shared/templates/master/smcPage/AutoSuggestHandler.ashx?q={0}&amp;site=smc&amp;locale={1}"],"jsonpCallbackName":["cb"],"resultType":["smcUnmarkedArray"],"minChars":["1"]}]},{"watermarkText":["Search the Web"],"searchUrlFormat":["http://www.bing.com/search?form=MSHPLS&amp;q={0}&amp;mkt={1}"],"bi":[{"parameter":[{"name":["cpid"],"value":["BingSearch"]},{"name":["searchtype"],"value":["Bing"]}]}],"autoSuggest":[{"serviceUrlFormat":["http://api.bing.com/qsonhs.aspx?FORM=MSHPLS&amp;mkt={1}&amp;type=cb&amp;q={0}&amp;o=s+p+a+l+h"],"jsonpCallbackName":["cb"],"resultType":["bingJSON"],"minChars":["1"]}]}]});
+        });
+    </script>
+</div>
+    </div>
+    
+<nav id="mscom-navigation" role="navigation" bi:type="menu" class="menu-component">
+    <div class="grid-container">
+        <span class="menulevel-storelink"></span>
+        <ul role="menubar" class="top-level-menubar">
+            <li role="menuitem" class="top-level-menuitem"><a class="top-level-link" bi:index="0" bi:track="false" bi:titleflag="t1" bi:title="t1" href="">Products</a>
+                <div class="dropdown-menu" bi:parenttitle="t1">
+                    <div class="grid-container">
+                        <div class="grid-row row-4"><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">Windows</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/windows/products">All Windows products</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows-8/meet">Windows 8</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/internet-explorer/download-ie">Internet Explorer</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoftstore.com/store/msstore/cat/categoryID.61721000?WT.mc_id=MSCOM_HP_nav_BuyWSoftware">Buy Windows 8</a></li>
+                                    </ul>
+                                <h5 class="heading" bi:titleflag="t2" bi:title="t2">Office</h5>
+                                <ul role="menu" bi:parenttitle="t2">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://office.microsoft.com/en-US">All Office products</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://office.microsoft.com/en-us/buy-microsoft-office-and-microsoft-office-365-online-FX102886268.aspx">Office for home</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://office.microsoft.com/en-us/business/">Office for business</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoftstore.com/store/msstore/cat/categoryID.61301000?WT.mc_id=MSCOM_HP_US_Nav_BuyOSoftware">Buy Office software</a></li>
+                                    </ul>
+                                <h5 class="heading" bi:titleflag="t3" bi:title="t3"></h5>
+                                <ul role="menu" bi:parenttitle="t3">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/en/us/sitemap.aspx">See all products</a></li>
+                                    </ul>
+                            </div><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">Devices</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/surface/en-US">Surface</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/hardware/en-US">Microsoft Hardware</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://www.xbox.com/en-us/">Xbox</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://www.windowsphone.com/en-US">Windows Phone</a></li>
+                                    </ul>
+                                <h5 class="heading" bi:titleflag="t2" bi:title="t2">Services</h5>
+                                <ul role="menu" bi:parenttitle="t2">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/windows/outlook">Outlook.com</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/skydrive/download">SkyDrive cloud storage</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://www.skype.com/go/skype/?cm_mmc=MSFT|TRAF_B1-_-mscom-hero-us">Skype</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://msn.com/">MSN</a></li>
+                                    <li role="menuitem"><a bi:index="4" bi:cpid="hpMenu" href="/web/20130318140700/http://www.bing.com/">Bing</a></li>
+                                    </ul>
+                            </div><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">Server and Tools</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/servers/en/us/default.aspx">All server &amp; tools products</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/en-us/server-cloud/ws2012/default.aspx">Windows Server</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/en-us/sqlserver/default.aspx">SQL Server</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://office.microsoft.com/en-us/exchange/">Exchange Server</a></li>
+                                    <li role="menuitem"><a bi:index="4" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/visualstudio/">Visual Studio</a></li>
+                                    <li role="menuitem"><a bi:index="5" bi:cpid="hpMenu" href="/web/20130318140700/http://www.windowsazure.com/">Windows Azure</a></li>
+                                    <li role="menuitem"><a bi:index="6" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/windows/windowsintune/">Windows Intune</a></li>
+                                    </ul>
+                                <h5 class="heading" bi:titleflag="t2" bi:title="t2">Developers &amp; IT Pros</h5>
+                                <ul role="menu" bi:parenttitle="t2">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/learning/en/us/default.aspx">Training &amp; certification</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://msdn.microsoft.com/en-us/default.aspx">MSDN (Microsoft Developer Network)</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://technet.microsoft.com/en-us/">TechNet for IT professionals</a></li>
+                                    </ul>
+                            </div><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">Business and enterprise</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/en-us/dynamics/default.aspx">Microsoft Dynamics</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoftbusinesshub.com/">Small and midsize business</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/enterprise">Enterprise and industry solutions</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://pinpoint.microsoft.com/en-US/home?WT.mc_id=MSCOM_HP_US_NAV_PC_Solutions">Find an IT Expert (Pinpoint)</a></li>
+                                    <li role="menuitem"><a bi:index="4" bi:cpid="hpMenu" href="/web/20130318140700/https://partner.microsoft.com/US/30000104">Resources for Microsoft Partners</a></li>
+                                    </ul>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </li>
+            <li role="menuitem" class="top-level-menuitem"><a class="top-level-link" bi:index="1" bi:track="false" bi:titleflag="t1" bi:title="t1" href="">Downloads</a>
+                <div class="dropdown-menu" bi:parenttitle="t1">
+                    <div class="grid-container">
+                        <div class="grid-row row-2"><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">Windows</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows/downloads">All Windows downloads</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoftstore.com/store/msstore/cat/categoryID.61721000?WT.mc_id=MSCOM_HP_nav_BuyWSoftware">Download Windows 8</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/windows/downloads">Free downloads</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/internet-explorer/download-ie">Internet Explorer</a></li>
+                                    </ul>
+                                <h5 class="heading" bi:titleflag="t2" bi:title="t2">Office</h5>
+                                <ul role="menu" bi:parenttitle="t2">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://office.microsoft.com/downloads">All Office downloads</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoftstore.com/store/msstore/cat/categoryID.61301000?WT.mc_id=MSCOM_HP_US_Nav_BuyOSoftware">Download Office</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://office.microsoft.com/try">Free trials</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://office.microsoft.com/templates/">Templates</a></li>
+                                    </ul>
+                            </div><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">More Downloads</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/en-us/download/default.aspx?WT.mc_id=MSCOM_HP_us_Nav_Downloads">Download Center</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/windows/products/security-essentials">Microsoft Security Essentials</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://www.update.microsoft.com/">Microsoft Update: Service packs &amp; fixes</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/windows/hardware-drivers-help">Drivers (sound, printer, USB, others)</a></li>
+                                    <li role="menuitem"><a bi:index="4" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/hardware/en-us/downloads">Microsoft Hardware drivers</a></li>
+                                    </ul>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </li>
+            <li role="menuitem" class="top-level-menuitem"><a class="top-level-link" bi:index="2" bi:track="false" bi:titleflag="t1" bi:title="t1" href="">Support</a>
+                <div class="dropdown-menu" bi:parenttitle="t1">
+                    <div class="grid-container">
+                        <div class="grid-row row-3"><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">By Resource</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://support.microsoft.com/">Microsoft Support home</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://answers.microsoft.com/en-US">Ask the experts</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://support.microsoft.com/contactus/">Chat or call</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://search.microsoft.com/en-us/SupportResults.aspx?q=windows%208">Search knowledge base</a></li>
+                                    </ul>
+                                <h5 class="heading" bi:titleflag="t2" bi:title="t2">By Product</h5>
+                                <ul role="menu" bi:parenttitle="t2">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/windows/support">Windows 8</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://support.microsoft.com/find-solutions/more?Family=Windows">Other Windows products</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://office.microsoft.com/en-us/support/">Office (Outlook, Excel, and others)</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/Surface/en-us/support/home">Surface</a></li>
+                                    </ul>
+                            </div><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">By Topic</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://support.microsoft.com/search/">Error messages</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://www.update.microsoft.com/">Microsoft Update: Service packs &amp; fixes</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/windows/install-upgrade-activate-help">Install, upgrade, &amp; activate (Windows)</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://support.microsoft.com/kb/811224">Product keys (locate or replace)</a></li>
+                                    <li role="menuitem"><a bi:index="4" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-us/windows/hardware-drivers-help">Drivers (sound, printer, USB, others)</a></li>
+                                    <li role="menuitem"><a bi:index="5" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/hardware/en-us/downloads">Microsoft Hardware drivers</a></li>
+                                    </ul>
+                            </div><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">By Audience</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://support.microsoft.com/">For home users</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://smallbusiness.support.microsoft.com/">For small business</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://technet.microsoft.com/en-us/ms772425">For IT professionals</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://msdn.microsoft.com/en-us/hh361695">For developers</a></li>
+                                    </ul>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </li>
+            <li role="menuitem" class="top-level-menuitem"><a class="top-level-link" bi:index="3" bi:track="false" bi:titleflag="t1" bi:title="t1" href="">Security</a>
+                <div class="dropdown-menu" bi:parenttitle="t1">
+                    <div class="grid-container">
+                        <div class="grid-row row-1"><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1"></h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/security/default.aspx">Security Home</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows/products/security-essentials">Microsoft Security Essentials</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://www.update.microsoft.com/">Microsoft Update: Service packs &amp; fixes</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/security/family-safety/default.aspx">Family safety resources</a></li>
+                                    </ul>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </li>
+            <li role="menuitem" class="top-level-menuitem"><a class="top-level-link" bi:index="4" bi:track="false" bi:titleflag="t1" bi:title="t1" href="">Shop</a>
+                <div class="dropdown-menu" bi:parenttitle="t1">
+                    <div class="grid-container">
+                        <div class="grid-row row-2"><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">For home</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoftstore.com/store/msstore/home?WT.mc_id=MSCOM_HP_nav?WT.mc_id=MSCOM_US_HP_Nav_Buy_Store">Microsoft Store</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://surface.microsoftstore.com/store/msstore/Content/pbpage.Surface_Category?WT.mc_id=MSCOM_US_HP_Nav_Buy_Surface">Surface</a></li>
+                                    <li role="menuitem"><a bi:index="2" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoftstore.com/store/msstore/cat/categoryID.61301000?WT.mc_id=MSCOM_HP_US_Nav_BuyOSoftware">Office</a></li>
+                                    <li role="menuitem"><a bi:index="3" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoftstore.com/store/msstore/cat/categoryID.61721000?WT.mc_id=MSCOM_HP_nav_BuyWSoftware">Windows</a></li>
+                                    <li role="menuitem"><a bi:index="4" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoftstore.com/store/msstore/cat/categoryID.50606600?WT.mc_id=MSCOM_HP_US_Nav_BuyXbox">Xbox</a></li>
+                                    </ul>
+                            </div><div class="grid-unit list-of-links list-of-links-sm">
+                                <h5 class="heading" bi:titleflag="t1" bi:title="t1">For business</h5>
+                                <ul role="menu" bi:parenttitle="t1">
+                                    <li role="menuitem"><a bi:index="0" bi:cpid="hpMenu" href="/web/20130318140700/http://www.microsoft.com/licensing/default.aspx">Volume Licensing</a></li>
+                                    <li role="menuitem"><a bi:index="1" bi:cpid="hpMenu" href="/web/20130318140700/http://pinpoint.microsoft.com/en-US/home?WT.mc_id=MSCOM_HP_US_NAV_PC_Solutions">Find an IT Expert (Pinpoint)</a></li>
+                                    </ul>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+</header><div bi:type="slideshow" class="slideshow slideshow-hero hero">
+    <ul class="slides">
+        <li id="slide-1" bi:index="0" selectBi="">
+<div class="heroitem  light-foreground" bi:type="heroitem">
+    <div class="media" bi:parenttitle="t1"> 
+        <a href="/web/20130318140700/http://clk.atdmt.com/MRT/go/439174651/direct/01/"  bi:track="false" bi:index="0" bi:titleflag="t1"  bi:linkid="F1A-GEN-133O1ENUS35961" bi:cpid="hpFeature">
+<div data-picture data-alt="Try Office 365 today." data-disable-swap-below >
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/Office365_HPKappaBG_0128_1600x540_EN_US.jpg"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/Office365_HPKappaBG_0128_1024x346_EN_US.jpg" data-media="(max-device-pixel-width:1024px)"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/Office365_HPKappaBG_0128_600x203_EN_US.jpg" data-media="(max-device-pixel-width:600px)"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/Office365_HPKappaBG_0128_480x162_EN_US.jpg" data-media="(max-device-pixel-width:480px)"></div>
+    
+    <noscript><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/Office365_HPKappaBG_0128_1600x540_EN_US.jpg" alt="Try Office 365 today." /></noscript>
+</div>
+<script type="text/javascript">window.picturePolyfill.resolveLast();</script>
+        </a>
+    </div>
+    <div class="text" bi:type="cta">
+<div class="text-container">
+    <div class="box" style="background: #E23300; color: #FFFFFF;">
+        <img class="box-img" src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hpfeature/hirez/Ofc365_RetLogo_500x60.png" alt="Try Office 365 today." bi:type="img" bi:parenttitle="t1" />
+        <h3 class="box-title" bi:type="title" bi:title="t1" style="color: #FFFFFF;">Your complete office in the cloud</h3>
+        <ul class="box-actions box-description">
+            <li><a bi:index="1" style="color:#FFFFFF;" bi:linkid="F1A-GEN-133O1ENUS35961" bi:cpid="hpFeature" href="/web/20130318140700/http://clk.atdmt.com/MRT/go/439174651/direct/01/">Try Office 365 for home</a></li>
+            <li><a bi:index="2" style="color:#FFFFFF;" bi:linkid="F1B-GEN-133L1ENUS40819" bi:cpid="hpFeature" href="/web/20130318140700/http://clk.atdmt.com/MRT/go/437672201/direct/01/">Try Office 365 for business</a></li>
+        </ul>
+    </div>
+</div></div>
+</div></li><li id="slide-2" bi:index="1" selectBi="" style="display:none;">
+<div class="heroitem  light-foreground" bi:type="heroitem">
+    <div class="media" bi:parenttitle="t1"> 
+        <a href="/web/20130318140700/http://clk.atdmt.com/MRT/go/431101865/direct/01/"  bi:track="false" bi:index="0" bi:titleflag="t1"  bi:linkid="F2A-GEN-133F2ENUS37332" bi:cpid="hpFeature">
+<div data-picture data-alt="Learn more about Surface Pro." data-disable-swap-below  data-defer>
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/SurfacePro_DeltaBG_0211_1600x540_EN_US.jpg"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/SurfacePro_DeltaBG_0211_1024x540_EN_US.jpg" data-media="(max-device-pixel-width:1024px)"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/SurfacePro_DeltaBG_0211_600x203_EN_US.jpg" data-media="(max-device-pixel-width:600px)"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/SurfacePro_DeltaBG_0211_480x162_EN_US.jpg" data-media="(max-device-pixel-width:480px)"></div>
+    
+    <noscript><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/SurfacePro_DeltaBG_0211_1600x540_EN_US.jpg" alt="Learn more about Surface Pro." /></noscript>
+</div>
+        </a>
+    </div>
+    <div class="text" bi:type="cta">
+<div class="text-container">
+    <div class="box" style="background: #E23300; color: #FFFFFF;">
+        <img class="box-img" src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hpfeature/hirez/SurfacePro_2x_500x60.png" alt="Learn more about Surface Pro." bi:type="img" bi:parenttitle="t1" />
+        <h3 class="box-title" bi:type="title" bi:title="t1" style="color: #FFFFFF;">A powerful PC in tablet form</h3>
+        <ul class="box-actions box-description">
+            <li><a bi:index="1" style="color:#FFFFFF;" bi:linkid="F2A-GEN-133F2ENUS37332" bi:cpid="hpFeature" href="/web/20130318140700/http://clk.atdmt.com/MRT/go/431101865/direct/01/">Learn more</a></li>
+        </ul>
+    </div>
+</div></div>
+</div></li><li id="slide-3" bi:index="2" selectBi="" style="display:none;">
+<div class="heroitem " bi:type="heroitem">
+    <div class="media" bi:parenttitle="t1"> 
+        <a href="/web/20130318140700/http://www.skype.com/en/offers/skype-with-love/?cm_mmc=MSFT%257CTRAF_B1-_-mscom-hp-fswl"  bi:track="false" bi:index="0" bi:titleflag="t1"  bi:linkid="F3A-GEN-133S2ENUS39622" bi:cpid="hpFeature">
+<div data-picture data-alt="Start using the very best of Skype today." data-disable-swap-below >
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/Skype_wLoveBG_0304_1600x540_EN_US.jpg"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/Skype_wLoveBG_0304_1024x346_EN_US.jpg" data-media="(max-device-pixel-width:1024px)"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/Skype_wLoveBG_0304_600x203_EN_US.jpg" data-media="(max-device-pixel-width:600px)"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/Skype_wLoveBG_0304_480x162_EN_US.jpg" data-media="(max-device-pixel-width:480px)"></div>
+    
+    <noscript><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/Skype_wLoveBG_0304_1600x540_EN_US.jpg" alt="Start using the very best of Skype today." /></noscript>
+</div>
+<script type="text/javascript">window.picturePolyfill.resolveLast();</script>
+        </a>
+    </div>
+    <div class="text" bi:type="cta">
+<div class="text-container">
+    <div class="box" style="background: #EEEEEE; color: #000000;">
+        <img class="box-img" src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hpfeature/hirez/Skype_2xCyanLogo_500x60.png" alt="Start using the very best of Skype today." bi:type="img" bi:parenttitle="t1" />
+        <h3 class="box-title" bi:type="title" bi:title="t1" style="color: #000000;">Try the best of Skype with a free month on us</h3>
+        <ul class="box-actions box-description">
+            <li><a bi:index="1" style="color:#000000;" bi:linkid="F3A-GEN-133S2ENUS39622" bi:cpid="hpFeature" href="/web/20130318140700/http://www.skype.com/en/offers/skype-with-love/?cm_mmc=MSFT%257CTRAF_B1-_-mscom-hp-fswl">Get started</a></li>
+        </ul>
+    </div>
+</div></div>
+</div></li><li id="slide-4" bi:index="3" selectBi="" style="display:none;">
+<div class="heroitem  light-foreground" bi:type="heroitem">
+    <div class="media" bi:parenttitle="t1"> 
+        <a href="/web/20130318140700/http://clk.atdmt.com/MRT/go/421374117/direct/01/"  bi:track="false" bi:index="0" bi:titleflag="t1"  bi:linkid="F4A-GEN-132P2ENUS28423" bi:cpid="hpFeature">
+<div data-picture data-alt="Download Windows Phone SDK to develop apps for Windows Phone 8." data-disable-swap-below  data-defer>
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/WPsdk_BG_0225_1600x540_EN_US.jpg"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/WPsdk_BG_0225_1024x346_EN_US.jpg" data-media="(max-device-pixel-width:1024px)"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/WPsdk_BG_0225_600x203_EN_US.jpg" data-media="(max-device-pixel-width:600px)"></div>
+    
+    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/WPsdk_BG_0225_480x162_EN_US.jpg" data-media="(max-device-pixel-width:480px)"></div>
+    
+    <noscript><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/features/WPsdk_BG_0225_1600x540_EN_US.jpg" alt="Download Windows Phone SDK to develop apps for Windows Phone 8." /></noscript>
+</div>
+        </a>
+    </div>
+    <div class="text" bi:type="cta">
+<div class="text-container">
+    <div class="box" style="background: #7E499B; color: #FFFFFF;">
+        <img class="box-img" src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hpfeature/hirez/WP_RetLogo_1112_500x60_EN_US.png" alt="Download Windows Phone SDK to develop apps for Windows Phone 8." bi:type="img" bi:parenttitle="t1" />
+        <h3 class="box-title" bi:type="title" bi:title="t1" style="color: #FFFFFF;">Design the next great app for Windows Phone</h3>
+        <ul class="box-actions box-description">
+            <li><a bi:index="1" style="color:#FFFFFF;" bi:linkid="F4A-GEN-132P2ENUS28423" bi:cpid="hpFeature" href="/web/20130318140700/http://clk.atdmt.com/MRT/go/421374117/direct/01/">Get the SDK</a></li>
+        </ul>
+    </div>
+</div></div>
+</div></li>
+    </ul>
+    <div class="navigation international" bi:track="false">
+        <div class="grid-container" data-title-text="Go To Slide {{idx}}"></div>
+    </div>
+    <div class="prev-next" bi:track="false">
+        <button class="prev"><span class="icon-left" aria-hidden="true"></span><span class="screen-reader-text">Previous</span></button>
+        <button class="next"><span class="icon-right" aria-hidden="true"></span><span class="screen-reader-text">Next</span></button>
+    </div>
+</div>
+<section class="row-padded"><div class="grid-container"><div class="grid-row row-4 "><div class="grid-unit col-1">
+
+<div bi:type="list" class="list-of-links list-of-links-xlg list-array">
+    <h2 bi:titleflag="t1" bi:title="t1" class="heading">Discover</h2>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="BNV-00-000000" bi:cpid="hpDiscover" href="/web/20130318140700/http://windows.microsoft.com/">Windows</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="BNV-00-000000" bi:cpid="hpDiscover" href="/web/20130318140700/http://office.microsoft.com/">Office</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="BNV-00-000000" bi:cpid="hpDiscover" href="/web/20130318140700/http://www.microsoft.com/surface/en-US">Surface</a>
+        </li>
+        <li><a bi:index="3" bi:linkid="BNV-00-000000" bi:cpid="hpDiscover" href="/web/20130318140700/http://www.windowsphone.com/">Windows Phone</a>
+        </li>
+        <li><a bi:index="4" bi:linkid="BNV-00-000000" bi:cpid="hpDiscover" href="/web/20130318140700/http://www.xbox.com/">Xbox</a>
+        </li>
+        <li><a bi:index="5" bi:linkid="BNV-00-000000" bi:cpid="hpDiscover" href="/web/20130318140700/http://www.skype.com/go/skype/?cm_mmc=MSFT|TRAF_B1-_-mscom-hero-us">Skype</a>
+        </li>
+        <li><a bi:index="6" bi:linkid="BNV-00-000000" bi:cpid="hpDiscover" href="/web/20130318140700/http://www.bing.com/">Bing</a>
+        </li>
+    </ul>
+</div></div><div class="grid-unit col-3"><div id="pivot-1" class="pivot " bi:type="pivot"><h2 class="heading" bi:titleflag="t1" bi:title="t1">For home</h2><a href="/web/20130318140700/http://www.microsoft.com/en-us/default.aspx#pivot-2" class="pivot-switch" bi:track="false">For work</a><div class="grid-row row-3 features"><div class="grid-unit">
+<div bi:type="highlight" class="">
+    <a href="/web/20130318140700/http://clk.atdmt.com/MRT/go/419363752/direct/01/" bi:linkid="HH1-GEN-132F1ENUS31176" bi:cpid="workHighlight">
+        <img  bi:parenttitle="t1" src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/highlights/Surface_covers_0128_420x210_EN_US.jpg" alt="Check out the revolutionary covers designed for Surface." bi:mimiclink="true" bi:type="img" />
+        <p  bi:parenttitle="t1" bi:mimiclink="true" bi:type="desc">Check out the revolutionary covers designed for Surface. Shop now.</p>
+        </a>
+</div></div><div class="grid-unit">
+<div bi:type="highlight" class="">
+    <a href="/web/20130318140700/http://clk.atdmt.com/MRT/go/416132243/direct/01/" bi:linkid="HH2-GEN-132W1ENUS27761" bi:cpid="homeHighlight">
+        <img  bi:parenttitle="t1" src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/highlights/Win8start_1127_420x210_EN_US.jpg" alt="Get Windows 8 upgrade today." bi:mimiclink="true" bi:type="img" />
+        <p  bi:parenttitle="t1" bi:mimiclink="true" bi:type="desc">Work and play harder with Windows 8. Get the upgrade today.</p>
+        </a>
+</div></div><div class="grid-unit">
+<div bi:type="highlight" class="">
+    <a href="/web/20130318140700/http://clk.atdmt.com/MRT/go/415959651/direct/01/" bi:linkid="HH3-GEN-131B2ENUS27668" bi:cpid="homeHighlight">
+        <img  bi:parenttitle="t1" src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/highlights/BingItOn_0211_420x210_EN_US.jpg" alt="Bing v. Google: Take the Bing It On search engine challenge." bi:mimiclink="true" bi:type="img" />
+        <p  bi:parenttitle="t1" bi:mimiclink="true" bi:type="desc">See which web search results you really prefer. Take the Bing It On challenge.</p>
+        </a>
+</div></div></div><div class="grid-row row-3 "><div class="grid-unit">
+
+<div bi:type="list" class="list-of-links list-of-links-med">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">Downloads</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="MA1-GEN-131W4ENUS22343" bi:cpid="homeModA" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows/downloads?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131W4ENUS22343">Windows</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="MA2-GEN-131O4ENUS22344" bi:cpid="homeModA" href="/web/20130318140700/http://office.microsoft.com/en-us/downloads?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131O4ENUS22344">Office</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="MA3-GEN-132I1ENUS33272" bi:cpid="homeModA" href="/web/20130318140700/http://clk.atdmt.com/MRT/go/422085667/direct/01/">Internet Explorer</a>
+        </li>
+    </ul>
+</div></div><div class="grid-unit">
+
+<div bi:type="list" class="list-of-links list-of-links-med">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">Security &amp; updates</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="MB1-GEN-131Z4ENUS21978" bi:cpid="homeModB" href="/web/20130318140700/http://update.microsoft.com/microsoftupdate?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131Z4ENUS21978">Microsoft Update</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="MB2-GEN-131Z4ENUS21979" bi:cpid="homeModB" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows/products/security-essentials?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131Z4ENUS21979">Microsoft Security Essentials</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="MB3-GEN-131W4ENUS21980" bi:cpid="homeModB" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows/downloads/service-packs?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131W4ENUS21980">Windows Service Pack Center</a>
+        </li>
+    </ul>
+</div></div><div class="grid-unit">
+
+<div bi:type="list" class="list-of-links list-of-links-med">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">Support</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="MC1-GEN-131W4ENUS21970" bi:cpid="homeModC" href="/web/20130318140700/http://windows.microsoft.com/en-us/windows/help?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131W4ENUS21970">Windows help and how-to</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="MC2-GEN-131O4ENUS21971" bi:cpid="homeModC" href="/web/20130318140700/http://office.microsoft.com/en-us/support/?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131O4ENUS21971">Office</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="MC3-GEN-131Z4ENUS21977" bi:cpid="homeModC" href="/web/20130318140700/http://support.microsoft.com/?WT.mc_id=MSCOM_EN_US_HP_MODHOME_131Z4ENUS21977">Find more support</a>
+        </li>
+    </ul>
+</div></div></div></div><div id="pivot-2" class="pivot " bi:type="pivot"><h2 class="heading" bi:titleflag="t1" bi:title="t1">For work</h2><a href="/web/20130318140700/http://www.microsoft.com/en-us/default.aspx#pivot-1" class="pivot-switch" bi:track="false">For home</a><div class="grid-row row-3 features"><div class="grid-unit">
+<div bi:type="highlight" class="">
+    <a href="/web/20130318140700/http://clk.atdmt.com/MRT/go/429310930/direct/01/" bi:linkid="HW1-GEN-133C1ENUS35299" bi:cpid="workHighlight">
+        <img  bi:parenttitle="t1" src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/highlights/WinSrv_1015_420x210_EN_US.jpg" alt="Try System Center 2012 SP1 for free." bi:mimiclink="true" bi:type="img" />
+        <p  bi:parenttitle="t1" bi:mimiclink="true" bi:type="desc">Download a trial of System Center 2012 SP1 and unlock the potential of your datacenter.</p>
+        </a>
+</div></div><div class="grid-unit">
+<div bi:type="highlight" class="">
+    <a href="/web/20130318140700/http://clk.atdmt.com/MRT/go/410971011/direct/01/" bi:linkid="HW2-GEN-131V1ENUS26853" bi:cpid="workHighlight">
+        <img  bi:parenttitle="t1" src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/highlights/VS_1127_420x210_EN_US.jpg" alt="Get the free trial of Visual Studio 2012." bi:mimiclink="true" bi:type="img" />
+        <p  bi:parenttitle="t1" bi:mimiclink="true" bi:type="desc">Visual Studio dev tools can help take your apps to the next level. Try it free.</p>
+        </a>
+</div></div><div class="grid-unit">
+<div bi:type="highlight" class="">
+    <a href="/web/20130318140700/http://clk.atdmt.com/MRT/go/417499289/direct/01/" bi:linkid="HW3-GEN-131A2ENUS30769" bi:cpid="workHighlight">
+        <img  bi:parenttitle="t1" src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/FY13/Asset/highlights/Azure_0304_420x210_EN_US.png" alt="Get the free trial of Windows Azure." bi:mimiclink="true" bi:type="img" />
+        <p  bi:parenttitle="t1" bi:mimiclink="true" bi:type="desc">Build cloud-powered .NET apps on Windows Azure. Get the free trial.</p>
+        </a>
+</div></div></div><div class="grid-row row-3 "><div class="grid-unit">
+
+<div bi:type="list" class="list-of-links list-of-links-med">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">Downloads</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="ME1-GEN-131Z4ENUS22347" bi:cpid="workModE" href="/web/20130318140700/http://msdn.microsoft.com/en-us/evalcenter/default.aspx?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22347">Downloads for developers</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="ME2-GEN-131Z4ENUS22346" bi:cpid="workModE" href="/web/20130318140700/http://technet.microsoft.com/en-us/evalcenter?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22346">Downloads for IT Pros</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="ME3-GEN-131Z4ENUS22345" bi:cpid="workModE" href="/web/20130318140700/http://www.microsoftbusinesshub.com/Solutions?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22345">Tools and solutions for businesses</a>
+        </li>
+        <li><a bi:index="3" bi:linkid="ME4-GEN-131Z4ENUS21986" bi:cpid="workModE" href="/web/20130318140700/http://www.microsoft.com/en-us/download/?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS21986">Find more downloads</a>
+        </li>
+    </ul>
+</div></div><div class="grid-unit">
+
+<div bi:type="list" class="list-of-links list-of-links-med">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">Resources</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="MF1-GEN-131Z4ENUS22348" bi:cpid="workModF" href="/web/20130318140700/http://technet.microsoft.com/en-us/bb421517?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22348">TechCenters</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="MF2-GEN-131Z4ENUS22349" bi:cpid="workModF" href="/web/20130318140700/http://www.microsoft.com/en-us/download/details.aspx?id=25175&WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22349">Microsoft Deployment Toolkit</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="MF3-GEN-131Z4ENUS21978" bi:cpid="workModF" href="/web/20130318140700/http://update.microsoft.com/microsoftupdate?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS21978">Microsoft Update</a>
+        </li>
+        <li><a bi:index="3" bi:linkid="MF4-GEN-131Z4ENUS23586" bi:cpid="workModF" href="/web/20130318140700/http://pinpoint.microsoft.com/en-us/home?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS23586">Find IT experts and solutions</a>
+        </li>
+    </ul>
+</div></div><div class="grid-unit">
+
+<div bi:type="list" class="list-of-links list-of-links-med">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">Support</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="MG1-GEN-131Z4ENUS22351" bi:cpid="workModG" href="/web/20130318140700/http://technet.microsoft.com/en-us/ms772425?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22351">For IT Pros</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="MG2-GEN-131Z4ENUS22352" bi:cpid="workModG" href="/web/20130318140700/http://msdn.microsoft.com/en-us/hh361695?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS22352">For developers</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="MG3-GEN-131Z4ENUS28306" bi:cpid="workModG" href="/web/20130318140700/http://smallbusiness.support.microsoft.com/?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS28306">For small businesses</a>
+        </li>
+        <li><a bi:index="3" bi:linkid="MG4-GEN-131Z4ENUS21977" bi:cpid="workModG" href="/web/20130318140700/http://support.microsoft.com/?WT.mc_id=MSCOM_EN_US_HP_MODWORK_131Z4ENUS21977">Find more support</a>
+        </li>
+    </ul>
+</div></div></div></div></div></div></div></section><section class="row-blue row-padded"><div class="grid-container"><div class="grid-row row-4 "><div class="grid-unit col-3 col-flow-opposite"><div bi:type="slideshow" class="slideshow slideshow-news">
+    <ul class="slides">
+        <li id="slide-1" bi:index="0" selectBi="">
+<div bi:type="highlight" class="">
+    <a href="/web/20130318140700/http://www.microsoft.com/en-us/news/features/2013/mar13/03-04Healthcare.aspx" bi:linkid="MNC-GEN-000001" bi:cpid="hpNews">
+        <img  bi:parenttitle="t1" src="/web/20130318140700im_/http://i.s-microsoft.com/global/en-us/news/publishingimages/homepage/highlights/theme_HealthMS_hl.jpg" alt="Rx for an ailing healthcare system" bi:mimiclink="true" bi:type="img" />
+        <h3 class="title" bi:mimiclink="true" bi:title="t1" bi:titleflag="t1" bi:type="title">Rx for an ailing healthcare system</h3>
+        <p  bi:parenttitle="t1" bi:mimiclink="true" bi:type="desc"><time pubdate class="pubdate">March 4, 2013 -</time> Microsoft showcases comprehensive IT solutions at this week’s HIMSS conference in New Orleans.</p>
+        </a>
+</div></li><li id="slide-2" bi:index="1" selectBi="" style="display:none;">
+<div bi:type="highlight" class="">
+    <a href="/web/20130318140700/http://aka.ms/envision" bi:linkid="MNC-GEN-000002" bi:cpid="hpNews">
+        <img  bi:parenttitle="t1" src="/web/20130318140700im_/http://i.s-microsoft.com/global/en-us/news/publishingimages/homepage/highlights/theme_Envisioning_hl.jpg" alt="Future of work and play now on display" bi:mimiclink="true" bi:type="img" />
+        <h3 class="title" bi:mimiclink="true" bi:title="t1" bi:titleflag="t1" bi:type="title">Future of work and play now on display</h3>
+        <p  bi:parenttitle="t1" bi:mimiclink="true" bi:type="desc"><time pubdate class="pubdate">March 1, 2013 -</time> Microsoft unveils new Envisioning Center, a hands-on experience with the future that also serves as a laboratory for engineering teams.</p>
+        </a>
+</div></li><li id="slide-3" bi:index="2" selectBi="" style="display:none;">
+<div bi:type="highlight" class="">
+    <a href="/web/20130318140700/http://www.microsoft.com/en-us/news/Press/2013/Feb13/02-27OfficeCommercialGAPR.aspx" bi:linkid="MNC-GEN-000003" bi:cpid="hpNews">
+        <img  bi:parenttitle="t1" src="/web/20130318140700im_/http://i.s-microsoft.com/global/en-us/news/publishingimages/homepage/highlights/Event_Office365Biz_hl.jpg" alt="Office 365 for business releases worldwide" bi:mimiclink="true" bi:type="img" />
+        <h3 class="title" bi:mimiclink="true" bi:title="t1" bi:titleflag="t1" bi:type="title">Office 365 for business releases worldwide</h3>
+        <p  bi:parenttitle="t1" bi:mimiclink="true" bi:type="desc"><time pubdate class="pubdate">Feb. 27, 2013 -</time> New cloud services tailored to the needs and budgets of small, medium and large organizations.</p>
+        </a>
+</div></li>
+    </ul>
+    <div class="navigation international" bi:track="false">
+        <div class="grid-container" data-title-text="Go To Slide {{idx}}"></div>
+    </div>
+    <div class="prev-next" bi:track="false">
+        <button class="prev"><span class="icon-left" aria-hidden="true"></span><span class="screen-reader-text">Previous</span></button>
+        <button class="next"><span class="icon-right" aria-hidden="true"></span><span class="screen-reader-text">Next</span></button>
+    </div>
+</div>
+</div><div class="grid-unit col-1">
+
+<div bi:type="list" class="list-of-links list-of-links-lg list-array">
+    <h2 bi:titleflag="t1" bi:title="t1" class="heading">Follow us</h2>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="SOC-00-000000" bi:cpid="hpSocial" href="/web/20130318140700/http://www.facebook.com/microsoft">Facebook</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="SOC-00-000000" bi:cpid="hpSocial" href="/web/20130318140700/http://www.twitter.com/microsoft">Twitter</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="SOC-00-000000" bi:cpid="hpSocial" href="/web/20130318140700/http://www.microsoft.com/news">News Center</a>
+        </li>
+    </ul>
+</div></div></div></div></section><section class="row-grey row-padded-top"><div class="grid-container"><div class="grid-row row-4 "><div class="grid-unit">
+
+<div bi:type="list" class="list-of-links list-of-links-sm footer-products-list">
+    <h2 bi:titleflag="t1" bi:title="t1" class="heading">Other Microsoft sites</h2>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="PTN-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://windows.microsoft.com/"><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/52x52/windows_symbol_clr_52x52.png" alt=""/>Windows</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="PTN-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://office.microsoft.com/"><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/52x52/office_symbol_clr_52x52.png" alt=""/>Office</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="PTN-00-132F1ENUS32267" bi:cpid="hpFatFooter" href="/web/20130318140700/http://clk.atdmt.com/MRT/go/420109147/direct/01/"><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/52x52/fallpromo_bug_black.png" alt=""/>Surface</a>
+        </li>
+        <li><a bi:index="3" bi:linkid="PTN-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.windowsphone.com/"><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/52x52/windowsphone_symbol_clr_52x52.png" alt=""/>Windows Phone</a>
+        </li>
+        <li><a bi:index="4" bi:linkid="PTN-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.xbox.com/"><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/52x52/xbox_symbol_clr_52x52.png" alt=""/>Xbox</a>
+        </li>
+        <li><a bi:index="5" bi:linkid="PTN-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.skype.com/go/skype/?cm_mmc=MSFT|TRAF_B1-_-mscom-hero-us"><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/52x52/skype_symbol_clr_52x52.png" alt=""/>Skype</a>
+        </li>
+        <li><a bi:index="6" bi:linkid="PTN-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.bing.com/"><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/52x52/bing_symbol_clr_52x52.png" alt=""/>Bing</a>
+        </li>
+        <li><a bi:index="7" bi:linkid="PTN-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.microsoftstore.com/store/msstore/home?WT.mc_id=MSCOM_HP_footer"><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/52x52/store_symbol_clr_52x52.png" alt=""/>Microsoft Store</a>
+        </li>
+    </ul>
+</div></div><div class="grid-unit">
+
+<div bi:type="list" class="list-of-links list-of-links-sm">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">Downloads</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.microsoft.com/en-us/download/default.aspx">Download Center</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows/downloads">Windows downloads</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://office.microsoft.com/downloads">Office downloads</a>
+        </li>
+    </ul>
+</div>
+
+<div bi:type="list" class="list-of-links list-of-links-sm">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">Support</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://support.microsoft.com/">Support home</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://support.microsoft.com/search">Knowledge base</a>
+        </li>
+    </ul>
+</div></div><div class="grid-unit">
+
+<div bi:type="list" class="list-of-links list-of-links-sm">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">Security</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.microsoft.com/security/default.aspx">Security home</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows/products/security-essentials">Microsoft Security Essentials</a>
+        </li>
+    </ul>
+</div>
+
+<div bi:type="list" class="list-of-links list-of-links-sm">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">About</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.microsoft.com/about/en/us/default.aspx">Microsoft</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.microsoft.com/careers">Careers</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.microsoft.com/en-us/news/">Company News</a>
+        </li>
+        <li><a bi:index="3" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.microsoft.com/investor">Investor relations</a>
+        </li>
+        <li><a bi:index="4" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.microsoft.com/en/us/sitemap.aspx">Site map</a>
+        </li>
+    </ul>
+</div></div><div class="grid-unit">
+
+<div bi:type="list" class="list-of-links list-of-links-sm">
+    <h3 bi:titleflag="t1" bi:title="t1" class="heading">Popular resources</h3>
+    <ul bi:parenttitle="t1">
+        <li><a bi:index="0" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows/rt-welcome">Windows RT</a>
+        </li>
+        <li><a bi:index="1" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows/all-pcs">PC and Laptops</a>
+        </li>
+        <li><a bi:index="2" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://windows.microsoft.com/en-US/windows/tablets-computers">Tablet and Computers</a>
+        </li>
+        <li><a bi:index="3" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.windowsphone.com/en-us">Windows Phone smartphones</a>
+        </li>
+        <li><a bi:index="4" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.windowsphone.com/en-us/store">Windows Phone apps and games</a>
+        </li>
+        <li><a bi:index="5" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.microsoft.com/security/default.aspx">Microsoft computer security</a>
+        </li>
+        <li><a bi:index="6" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://www.microsoft.com/security/pc-security/malware-removal.aspx">Malware removal tool</a>
+        </li>
+        <li><a bi:index="7" bi:linkid="FFR-00-000000" bi:cpid="hpFatFooter" href="/web/20130318140700/http://crm.dynamics.com/en-us/home">Microsoft Dynamics CRM Online</a>
+        </li>
+    </ul>
+</div></div></div></div></section><footer class="site-footer" role="contentinfo" bi:type="footer">
+    <div class="legal grid-container">
+        <div class="grid-row row-4">
+            <div class="grid-unit col-1" bi:type="locale">
+                <span class="icon-globe"></span><a href="/web/20130318140700/http://www.microsoft.com/en-us/home/locale.aspx">United States - English</a>
+            </div>
+            <div class="grid-unit col-3 inline-list" bi:type="legal">
+                <div data-picture data-alt="Microsoft" class="footer-logo">
+                    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-1x.png"></div>
+                    <div data-src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
+                    <noscript><img src="/web/20130318140700im_/http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-1x.png" alt="Microsoft" /></noscript>
+                </div>
+                <script type="text/javascript">window.picturePolyfill.resolveLast();</script>
+                <ul>
+                    <li><a bi:index="0" bi:linkid="FTR-00-000000" bi:cpid="hpFooter" href="/web/20130318140700/http://go.microsoft.com/?linkid=2028325">Contact us</a>
+                    </li>
+                    <li><a bi:index="1" bi:linkid="FTR-00-000000" bi:cpid="hpFooter" href="/web/20130318140700/http://go.microsoft.com/fwlink/?LinkId=248681">Privacy &amp; Cookies</a>
+                    </li>
+                    <li><a bi:index="2" bi:linkid="FTR-00-000000" bi:cpid="hpFooter" href="/web/20130318140700/http://go.microsoft.com/?linkid=4412892">Terms of use</a>
+                    </li>
+                    <li><a bi:index="3" bi:linkid="FTR-00-000000" bi:cpid="hpFooter" href="/web/20130318140700/http://www.microsoft.com/library/toolbar/3.0/trademarks/en-us.mspx">Trademarks</a>
+                    </li>
+                    <li id="mscom-legal-copyright">
+                        © 2013 Microsoft
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    </form>
+    <script type="text/javascript" src="/web/20130318140700js_/http://i.s-microsoft.com/en-us/home/script.jsx?k=~/shared/templates/Scripts/Views/jquery.responsiveslideshow.js;~/shared/templates/Scripts/Lib/mscomhelper.js;~/shared/templates/Scripts/Views/search.js;~/shared/templates/Scripts/mscom-homepage.js;~/shared/templates/Scripts/Views/store-loc.js;~/shared/templates/Scripts/Views/menu.js;~/shared/templates/Scripts/Views/hero.js;~/shared/templates/Scripts/Views/pivot.js&v=754469145"></script>
+    <script type="text/javascript">var varSegmentation=1;var varClickTracking=0;var varCustomerTracking=1;var varAutoFirePV=0;</script>
+    <noscript><img alt="" width="1" height="1" src="/web/20130318140700im_/http://c.microsoft.com/trans_pixel.aspx"/></noscript><script type="text/javascript" src="/web/20130318140700js_/http://i.s-microsoft.com/en-us/home/script.jsx?k=~/shared/templates/Scripts/BI/jquery.bi.js;~/shared/templates/Scripts/BI/jquery.bi.dataretrievers.attr.js;~/shared/templates/Scripts/BI/jquery.bi.dataretrievers.structure.js;~/shared/templates/Scripts/BI/jquery.bi.dataretrievers.resp.js;~/shared/templates/Scripts/BI/wedcs.js;~/shared/templates/Scripts/BI/jquery.bi.dataconsumers.wedcs.js;~/shared/templates/Scripts/BI/webtrends.js;~/shared/templates/Scripts/BI/jquery.bi.dataconsumers.webtrends.js;~/shared/templates/scripts/BI/jquery.bi.dataconsumers.saas.js&v=-1365794803"></script>
+    
+
+
+<script src="/web/20130318140700js_/http://i.s-microsoft.com/en-us/home/bimapping.js?gv=BiMapping&k=/en-us/home/Components/Config/BiMapping.xml&v=1111998060" type="text/javascript"></script>
+<script type="text/javascript">
+    if (typeof $ != "undefined" && typeof $.bi != "undefined") {
+        $.bi.baseData({ lang: ''en'' });
+        $.bi.baseData({ loc: ''us'' });
+        $.bi.baseData({ ctrl: ''44A6'' });
+        $.bi.ignoreTextClass(''bi-hidetext'');
+        $.bi.init(window.BiMapping);
+        if (typeof window.requestId != "undefined") {
+            $.bi.baseData({ requestId: window.requestId });
+        }
+        
+        if (typeof $.bi.dataConsumers != "undefined" && typeof $.bi.dataConsumers.webtrends != "undefined" && typeof $.bi.dataConsumers.webtrends.WebTrends != "undefined") {
+            $.bi.dataConsumers.webtrends.WebTrends.dcsid = "dcso6p7z7100004j151amwxpo_5q2j";
+            $.bi.dataConsumers.webtrends.WebTrends.dcsGetId();
+        }
+        
+    }
+    if (typeof QosRecord != "undefined") {
+        $(function () { QosRecord(''domready''); });
+    }
+</script>
+<script type="text/javascript">window.requestId=''c730e79e-03e4-4b08-bc3f-8fdeed2799a5'';</script>
+</body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 14:07:00 三月 18, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:56:36 三月 27, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+');
+CREATE TABLE repository_version (
+    id integer PRIMARY KEY,
+    repo text,
+    version text
+);
+INSERT INTO "repository_version" VALUES(1,'svn-testcase','23');
+INSERT INTO "repository_version" VALUES(2,'','23');
 CREATE INDEX session_last_visit_idx ON session (last_visit);
 CREATE INDEX session_authenticated_idx ON session (authenticated);
 CREATE INDEX wiki_time_idx ON wiki (time);
