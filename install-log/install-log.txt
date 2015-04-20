@@ -1,4 +1,4 @@
-E:\PortableTrac>easy_install Genshi
+﻿E:\PortableTrac>easy_install Genshi
 ========
     >>> call easy_install.exe --prefix="E:\PortableTrac\trac" Genshi
     Creating e:\portabletrac\trac\lib\site-packages\site.py
@@ -1315,3 +1315,22 @@ I:\thinkbase.net\github\PortableTrac>easy_install trac-WorkflowNotificationPlugi
     Installed i:\thinkbase.net\github\portabletrac\trac\lib\site-packages\trac-1.0.5-py2.7.egg
     Processing dependencies for trac==1.0.5
     Finished processing dependencies for trac==1.0.5
+
+
+Install ProjectMenuPlugin(http://trac-hacks.org/wiki/ProjectMenuPlugin)
+====
+I:\thinkbase.net\github\PortableTrac>easy_install.cmd http://trac-hacks.org/svn/projectmenuplugin/trunk/
+[Current timestamp: 2015-04-20 周一 23-54-27.71]
+
+>>> call easy_install.exe --prefix="I:\thinkbase.net\github\PortableTrac\trac" http://trac-hacks.org/svn/projectmenuplugin/trunk/
+Downloading http://trac-hacks.org/svn/projectmenuplugin/trunk/
+Doing subversion checkout from http://trac-hacks.org/svn/projectmenuplugin/trunk/ to d:\temp\easy_install-l44dnb\trunk
+Processing trunk
+Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-l44dnb\trunk\egg-dist-tmp-cdi_bq
+zip_safe flag not set; analyzing archive contents...
+Adding tracprojectmenu 2.0dev-r14054 to easy-install.pth file
+
+Installed i:\thinkbase.net\github\portabletrac\trac\lib\site-packages\tracprojectmenu-2.0dev_r14054-py2.7.egg
+Processing dependencies for tracprojectmenu==2.0dev-r14054
+Finished processing dependencies for tracprojectmenu==2.0dev-r14054
+

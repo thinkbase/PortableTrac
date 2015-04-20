@@ -89,3 +89,4 @@ easy_install ${SITE_PKGS_DIR}/visitcounter-0.2-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/wikitablemacro-0.1_r10997-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/workfloweditorplugin-1.1.6_r12220-py2.7.egg
 
+easy_install ${SITE_PKGS_DIR}/tracprojectmenu-2.0dev_r14054-py2.7.egg
