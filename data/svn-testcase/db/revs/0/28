@@ -1,0 +1,65 @@
+PLAIN
+END
+ENDREP
+id: 1-19.0.r28/17
+type: dir
+pred: 1-19.0.r27/977
+count: 4
+text: 28 0 4 4 2d2977d1c96f487abe4a1e202dd03b4e
+cpath: /markdown/test
+copyroot: 0 /
+
+PLAIN
+K 6
+sample
+V 18
+dir 1-20.0.r25/361
+K 4
+test
+V 17
+dir 1-19.0.r28/17
+END
+ENDREP
+id: 0-18.0.r28/244
+type: dir
+pred: 0-18.0.r27/1209
+count: 10
+text: 28 160 71 71 f4b9168b191e5eb7040baf99f4bd383a
+cpath: /markdown
+copyroot: 0 /
+
+PLAIN
+K 6
+google
+V 19
+dir 0-2.0.r12/15090
+K 8
+markdown
+V 18
+dir 0-18.0.r28/244
+K 2
+ms
+V 18
+dir 0-1.0.r8/12102
+K 10
+readme.txt
+V 19
+file 0-17.0.r17/138
+K 6
+sf.net
+V 18
+dir 0-3.0.r16/8021
+END
+ENDREP
+id: 0.0.r28/586
+type: dir
+pred: 0.0.r27/1552
+count: 28
+text: 28 389 184 184 c44dc5fba5c4f8c84d525001e0865508
+cpath: /
+copyroot: 0 /
+
+2-27.0.r27/704 delete-file false false /markdown/test/Markdown语法测试.md
+
+
+586 719
