@@ -1319,18 +1319,65 @@ I:\thinkbase.net\github\PortableTrac>easy_install trac-WorkflowNotificationPlugi
 
 Install ProjectMenuPlugin(http://trac-hacks.org/wiki/ProjectMenuPlugin)
 ====
-I:\thinkbase.net\github\PortableTrac>easy_install.cmd http://trac-hacks.org/svn/projectmenuplugin/trunk/
-[Current timestamp: 2015-04-20 周一 23-54-27.71]
+    I:\thinkbase.net\github\PortableTrac>easy_install.cmd http://trac-hacks.org/svn/projectmenuplugin/trunk/
+    [Current timestamp: 2015-04-20 周一 23-54-27.71]
 
->>> call easy_install.exe --prefix="I:\thinkbase.net\github\PortableTrac\trac" http://trac-hacks.org/svn/projectmenuplugin/trunk/
-Downloading http://trac-hacks.org/svn/projectmenuplugin/trunk/
-Doing subversion checkout from http://trac-hacks.org/svn/projectmenuplugin/trunk/ to d:\temp\easy_install-l44dnb\trunk
-Processing trunk
-Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-l44dnb\trunk\egg-dist-tmp-cdi_bq
-zip_safe flag not set; analyzing archive contents...
-Adding tracprojectmenu 2.0dev-r14054 to easy-install.pth file
+    >>> call easy_install.exe --prefix="I:\thinkbase.net\github\PortableTrac\trac" http://trac-hacks.org/svn/projectmenuplugin/trunk/
+    Downloading http://trac-hacks.org/svn/projectmenuplugin/trunk/
+    Doing subversion checkout from http://trac-hacks.org/svn/projectmenuplugin/trunk/ to d:\temp\easy_install-l44dnb\trunk
+    Processing trunk
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-l44dnb\trunk\egg-dist-tmp-cdi_bq
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracprojectmenu 2.0dev-r14054 to easy-install.pth file
 
-Installed i:\thinkbase.net\github\portabletrac\trac\lib\site-packages\tracprojectmenu-2.0dev_r14054-py2.7.egg
-Processing dependencies for tracprojectmenu==2.0dev-r14054
-Finished processing dependencies for tracprojectmenu==2.0dev-r14054
+    Installed i:\thinkbase.net\github\portabletrac\trac\lib\site-packages\tracprojectmenu-2.0dev_r14054-py2.7.egg
+    Processing dependencies for tracprojectmenu==2.0dev-r14054
+    Finished processing dependencies for tracprojectmenu==2.0dev-r14054
 
+
+Install trac-MultiRepoSearchPlugin(http://trac-hacks.org/wiki/MultiRepoSearchPlugin / https://github.com/boldprogressives/trac-MultiRepoSearchPlugin)
+====
+    I:\thinkbase.net\github\PortableTrac>easy_install.cmd http://trac-hacks.org/svn/tracsqlhelperscript/1.2/
+    [Current timestamp: 2015-04-21 周二  0-13-44.15]
+
+    >>> call easy_install.exe --prefix="I:\thinkbase.net\github\PortableTrac\trac" http://trac-hacks.org/svn/tracsqlhelperscript/1.2/
+    Downloading http://trac-hacks.org/svn/tracsqlhelperscript/1.2/
+    Doing subversion checkout from http://trac-hacks.org/svn/tracsqlhelperscript/1.2/ to d:\temp\easy_install-tzwd6s\1.2
+    Processing 1.2
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-tzwd6s\1.2\egg-dist-tmp-0afazr
+    Adding tracsqlhelper 0.3.0 to easy-install.pth file
+
+    Installed i:\thinkbase.net\github\portabletrac\trac\lib\site-packages\tracsqlhelper-0.3.0-py2.7.egg
+    Processing dependencies for tracsqlhelper==0.3.0
+    Finished processing dependencies for tracsqlhelper==0.3.0
+
+    I:\thinkbase.net\github\PortableTrac>easy_install.cmd https://github.com/boldprogressives/trac-MultiRepoSearchPlugin/archive/master.zip
+    [Current timestamp: 2015-04-21 周二  0-16-21.80]
+
+    >>> call easy_install.exe --prefix="I:\thinkbase.net\github\PortableTrac\trac" https://github.com/boldprogressives/trac-MultiRepoSearchPlugin/archive/master.zip
+    Downloading https://github.com/boldprogressives/trac-MultiRepoSearchPlugin/archive/master.zip
+    Processing master.zip
+    Running trac-MultiRepoSearchPlugin-master\setup.py -q bdist_egg --dist-dir d:\temp\easy_install-98rumc\trac-MultiRepoSearchPlugin-master\egg-dist-tmp-hocqwc
+    zip_safe flag not set; analyzing archive contents...
+    trac-multireposearchplugin 0.6 is already the active version in easy-install.pth
+
+    Installed i:\thinkbase.net\github\portabletrac\trac\lib\site-packages\trac_multireposearchplugin-0.6-py2.7.egg
+    Processing dependencies for trac-multireposearchplugin==0.6
+    Finished processing dependencies for trac-multireposearchplugin==0.6
+
+    I:\thinkbase.net\github\PortableTrac>trac-admin.cmd default upgrade
+    [Current timestamp: 2015-04-21 周二  0-22-33.20]
+
+    >>> call python.exe  "I:\thinkbase.net\github\PortableTrac\trac\Scripts\trac-admin-script.py" "I:\thinkbase.net\github\PortableTrac\tracenv\default" upgrade
+    00:22:56 Trac[env] WARNING: Component <multireposearch.sqlindexer.SqlIndexer object at 0x028CC1F0> requires environment upgrade
+    00:22:56 Trac[env] WARNING: Component <multireposearch.sqlindexer.SqlIndexer object at 0x028CC1F0> requires environment upgrade
+    Upgrade done.
+
+    You may want to upgrade the Trac documentation now by running:
+
+      trac-admin I:\thinkbase.net\github\PortableTrac\tracenv\default wiki upgrade
+
+    I:\thinkbase.net\github\PortableTrac>trac-admin.cmd default multireposearch reindex_all
+    [Current timestamp: 2015-04-21 周二  0-26-08.21]
+
+    >>> call python.exe  "I:\thinkbase.net\github\PortableTrac\trac\Scripts\trac-admin-script.py" "I:\thinkbase.net\github\PortableTrac\tracenv\default" multireposearch reindex_all
