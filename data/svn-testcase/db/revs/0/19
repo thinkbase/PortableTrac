@@ -1,0 +1,56 @@
+id: 1-19.0.r19/0
+type: dir
+count: 0
+cpath: /markdown/test
+copyroot: 0 /
+
+PLAIN
+K 4
+test
+V 16
+dir 1-19.0.r19/0
+END
+ENDREP
+id: 0-18.0.r19/121
+type: dir
+pred: 0-18.0.r18/0
+count: 1
+text: 19 73 35 35 7b87648a563d3de3d749f1c48404fec4
+cpath: /markdown
+copyroot: 0 /
+
+PLAIN
+K 6
+google
+V 19
+dir 0-2.0.r12/15090
+K 8
+markdown
+V 18
+dir 0-18.0.r19/121
+K 2
+ms
+V 18
+dir 0-1.0.r8/12102
+K 10
+readme.txt
+V 19
+file 0-17.0.r17/138
+K 6
+sf.net
+V 18
+dir 0-3.0.r16/8021
+END
+ENDREP
+id: 0.0.r19/458
+type: dir
+pred: 0.0.r18/263
+count: 19
+text: 19 261 184 184 bffbd5178a5f8d9a2c534746490ae763
+cpath: /
+copyroot: 0 /
+
+_1.0.t18-i add-dir false false /markdown/test
+
+
+458 590

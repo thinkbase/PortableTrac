@@ -1,0 +1,83 @@
+id: 2-21.0-24.r24/0
+type: file
+pred: 2-21.0.r21/310
+count: 1
+text: 21 0 297 280 819df94a3188d0f50f115509a8676cae 2a9a6b6771ed5f70ed05bf68bfd9e1932da45869 20-k/_4
+cpath: /markdown/sample/Docker管理.md
+copyfrom: 23 /markdown/sample/Docker管理.mkd
+
+PLAIN
+K 15
+Docker管理.md
+V 20
+file 2-21.0-24.r24/0
+K 16
+前端开发.mkd
+V 19
+file 2-22.0.r22/375
+END
+ENDREP
+id: 1-20.0.r24/361
+type: dir
+pred: 1-20.0.r22/682
+count: 3
+text: 24 250 98 98 375af70021314b5c77390323d9c58961
+cpath: /markdown/sample
+copyroot: 0 /
+
+PLAIN
+K 6
+sample
+V 18
+dir 1-20.0.r24/361
+K 4
+test
+V 18
+dir 1-19.0.r23/931
+END
+ENDREP
+id: 0-18.0.r24/596
+type: dir
+pred: 0-18.0.r23/1162
+count: 6
+text: 24 511 72 72 5851b16b2fe6e903046be7641fab3909
+cpath: /markdown
+copyroot: 0 /
+
+PLAIN
+K 6
+google
+V 19
+dir 0-2.0.r12/15090
+K 8
+markdown
+V 18
+dir 0-18.0.r24/596
+K 2
+ms
+V 18
+dir 0-1.0.r8/12102
+K 10
+readme.txt
+V 19
+file 0-17.0.r17/138
+K 6
+sf.net
+V 18
+dir 0-3.0.r16/8021
+END
+ENDREP
+id: 0.0.r24/937
+type: dir
+pred: 0.0.r23/1505
+count: 24
+text: 24 740 184 184 8e16d850edae06bfc52e9c4b82ef5730
+cpath: /
+copyroot: 0 /
+
+2-21._0.t23-n add-file false false /markdown/sample/Docker管理.md
+23 /markdown/sample/Docker管理.mkd
+2-21.0.r21/310 delete-file false false /markdown/sample/Docker管理.mkd
+
+
+937 1070

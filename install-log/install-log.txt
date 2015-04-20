@@ -1381,3 +1381,20 @@ Install trac-MultiRepoSearchPlugin(http://trac-hacks.org/wiki/MultiRepoSearchPlu
     [Current timestamp: 2015-04-21 周二  0-26-08.21]
 
     >>> call python.exe  "I:\thinkbase.net\github\PortableTrac\trac\Scripts\trac-admin-script.py" "I:\thinkbase.net\github\PortableTrac\tracenv\default" multireposearch reindex_all
+
+
+Install ReadmePlugin(http://trac-hacks.org/wiki/ReadmePlugin / https://github.com/Southen/trac-readme-plugin)
+====    
+    I:\thinkbase.net\github\PortableTrac>easy_install.cmd https://github.com/Southen/trac-readme-plugin/archive/master.zip
+    [Current timestamp: 2015-04-21 周二  1-19-40.23]
+
+    >>> call easy_install.exe --prefix="I:\thinkbase.net\github\PortableTrac\trac" https://github.com/Southen/trac-readme-plugin/archive/master.zip
+    Downloading https://github.com/Southen/trac-readme-plugin/archive/master.zip
+    Processing master.zip
+    Running trac-readme-plugin-master\setup.py -q bdist_egg --dist-dir d:\temp\easy_install-3lmqkv\trac-readme-plugin-master\egg-dist-tmp-0hl8_n
+    zip_safe flag not set; analyzing archive contents...
+    Adding readmerendererplugin 0.1 to easy-install.pth file
+
+    Installed i:\thinkbase.net\github\portabletrac\trac\lib\site-packages\readmerendererplugin-0.1-py2.7.egg
+    Processing dependencies for readmerendererplugin==0.1
+    Finished processing dependencies for readmerendererplugin==0.1
