@@ -30507,7 +30507,7 @@ INSERT INTO "repository" VALUES(1,'type','');
 INSERT INTO "repository" VALUES(1,'url','');
 INSERT INTO "repository" VALUES(1,'description','');
 INSERT INTO "repository" VALUES(1,'repository_dir','svn:42be0d23-f3ec-7742-9214-b333e19b708d:I:/thinkbase.net/github/PortableTrac/data/svn-testcase');
-INSERT INTO "repository" VALUES(1,'youngest_rev','29');
+INSERT INTO "repository" VALUES(1,'youngest_rev','30');
 INSERT INTO "repository" VALUES(2,'name','');
 INSERT INTO "repository" VALUES(2,'dir',NULL);
 INSERT INTO "repository" VALUES(2,'alias','svn-testcase');
@@ -30548,6 +30548,7 @@ INSERT INTO "revision" VALUES(1,'0000000026',1429552418869851,'root','The testca
 INSERT INTO "revision" VALUES(1,'0000000027',1429552423682351,'root','The testcase of markdown files');
 INSERT INTO "revision" VALUES(1,'0000000028',1429552620819070,'root','The testcase of markdown files');
 INSERT INTO "revision" VALUES(1,'0000000029',1429552625959695,'root','The testcase of markdown files');
+INSERT INTO "revision" VALUES(1,'0000000030',1429582453838689,'root','Remembeer the interested plugins');
 CREATE TABLE node_change (
     repos integer,
     rev text,
@@ -30587,6 +30588,7 @@ INSERT INTO "node_change" VALUES(1,'0000000026','markdown/test/Markdown语法测
 INSERT INTO "node_change" VALUES(1,'0000000027','markdown/test/Markdown语法测试.md','F','A',NULL,'-1');
 INSERT INTO "node_change" VALUES(1,'0000000028','markdown/test/Markdown语法测试.md','F','D','markdown/test/Markdown语法测试.md','27');
 INSERT INTO "node_change" VALUES(1,'0000000029','markdown/test/Markdown语法测试.md','F','A',NULL,'-1');
+INSERT INTO "node_change" VALUES(1,'0000000030','Trac-plugins-todo.md','F','A',NULL,'-1');
 CREATE TABLE ticket (
     id integer PRIMARY KEY,
     type text,
@@ -30921,7 +30923,7 @@ CREATE TABLE cache (
     generation integer,
     key text
 );
-INSERT INTO "cache" VALUES(648805364,29,'trac.versioncontrol.cache.CachedRepository.metadata:1');
+INSERT INTO "cache" VALUES(648805364,30,'trac.versioncontrol.cache.CachedRepository.metadata:1');
 INSERT INTO "cache" VALUES(901198563,1,'trac.wiki.api.WikiSystem.pages');
 CREATE TABLE subtickets (
     parent integer,
