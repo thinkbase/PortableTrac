@@ -95,6 +95,7 @@ easy_install ${SITE_PKGS_DIR}/workfloweditorplugin-1.1.6_r12220-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/tracprojectmenu-2.0dev_r14054-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/tracsqlhelper-0.3.0-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/trac_multireposearchplugin-0.6-py2.7.egg
+easy_install ${SITE_PKGS_DIR}/readmerendererplugin-0.1-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/readmerendererplugin-0.1-py2.7-patched.egg
 
 easy_install ${SITE_PKGS_DIR}/wikitablemacro-0.3dev-py2.7.egg
