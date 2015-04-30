@@ -13,6 +13,9 @@ echo "Directory of $_script : $_script_dir"
 
 SITE_PKGS_DIR=$_script_dir/../../trac/Lib/site-packages
 
+# Pre-install PIL
+easy_install $_script_dir/PIL/Imaging-1.1.7.tar.gz
+
 # Install trac and plugins ...
 easy_install ${SITE_PKGS_DIR}/Pygments-1.5-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/python_dateutil-2.1-py2.7.egg
