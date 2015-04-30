@@ -1398,3 +1398,22 @@ Install ReadmePlugin(http://trac-hacks.org/wiki/ReadmePlugin / https://github.co
     Installed i:\thinkbase.net\github\portabletrac\trac\lib\site-packages\readmerendererplugin-0.1-py2.7.egg
     Processing dependencies for readmerendererplugin==0.1
     Finished processing dependencies for readmerendererplugin==0.1
+
+
+Install WikiTableMacro(http://trac-hacks.org/wiki/WikiTableMacro)
+====
+    I:\thinkbase.net\github\PortableTrac>easy_install http://trac-hacks.org/svn/wikitablemacro/trunk/
+    [Current timestamp: 2015-04-30 周四 22-52-59.42]
+
+    >>> call easy_install.exe --prefix="I:\thinkbase.net\github\PortableTrac\trac" http://trac-hacks.org/svn/wikitablemacro/trunk/
+    Downloading http://trac-hacks.org/svn/wikitablemacro/trunk/
+    Doing subversion checkout from http://trac-hacks.org/svn/wikitablemacro/trunk/ to d:\temp\easy_install-bhfbn2\trunk
+    Processing trunk
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-bhfbn2\trunk\egg-dist-tmp-1gmb4q
+    zip_safe flag not set; analyzing archive contents...
+    Removing wikitablemacro 0.1-r10997 from easy-install.pth file
+    Adding wikitablemacro 0.3dev to easy-install.pth file
+
+    Installed i:\thinkbase.net\github\portabletrac\trac\lib\site-packages\wikitablemacro-0.3dev-py2.7.egg
+    Processing dependencies for wikitablemacro==0.3dev
+    Finished processing dependencies for wikitablemacro==0.3dev

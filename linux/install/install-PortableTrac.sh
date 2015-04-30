@@ -86,10 +86,12 @@ easy_install ${SITE_PKGS_DIR}/trac_workflownotificationplugin-0.4-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/tracwysiwyg-0.12.0.4_r11158-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/tracxmlrpc-1.1.2_r13203-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/visitcounter-0.2-py2.7.egg
-easy_install ${SITE_PKGS_DIR}/wikitablemacro-0.1_r10997-py2.7.egg
+#easy_install ${SITE_PKGS_DIR}/wikitablemacro-0.1_r10997-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/workfloweditorplugin-1.1.6_r12220-py2.7.egg
 
 easy_install ${SITE_PKGS_DIR}/tracprojectmenu-2.0dev_r14054-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/tracsqlhelper-0.3.0-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/trac_multireposearchplugin-0.6-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/readmerendererplugin-0.1-py2.7-patched.egg
+
+easy_install ${SITE_PKGS_DIR}/wikitablemacro-0.3dev-py2.7.egg
