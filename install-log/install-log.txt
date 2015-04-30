@@ -1435,3 +1435,21 @@ Install UsernameDecoratePlugin(http://trac-hacks.org/wiki/UsernameDecoratePlugin
     Installed i:\thinkbase.net\github\portabletrac\trac\lib\site-packages\tracusernamedecorateplugin-0.12.0.1-py2.7.egg
     Processing dependencies for tracusernamedecorateplugin==0.12.0.1
     Finished processing dependencies for tracusernamedecorateplugin==0.12.0.1
+
+
+Install CollapsiblePlugin(https://github.com/manoyes/collapsibleplugin/tree/master/0.12 | http://trac-hacks.org/wiki/CollapsiblePlugin)
+====
+    I:\thinkbase.net\github\PortableTrac>easy_install http://trac-hacks.org/svn/collapsibleplugin/0.12/
+    [Current timestamp: 2015-04-30 周四 23-51-46.15]
+
+    >>> call easy_install.exe --prefix="I:\thinkbase.net\github\PortableTrac\trac" http://trac-hacks.org/svn/collapsibleplugin/0.12/
+    Downloading http://trac-hacks.org/svn/collapsibleplugin/0.12/
+    Doing subversion checkout from http://trac-hacks.org/svn/collapsibleplugin/0.12/ to d:\temp\easy_install-lt8qcb\0.12
+    Processing 0.12
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-lt8qcb\0.12\egg-dist-tmp-n35vag
+    zip_safe flag not set; analyzing archive contents...
+    Adding traccollapsibleplugin 0.1 to easy-install.pth file
+
+    Installed i:\thinkbase.net\github\portabletrac\trac\lib\site-packages\traccollapsibleplugin-0.1-py2.7.egg
+    Processing dependencies for traccollapsibleplugin==0.1
+    Finished processing dependencies for traccollapsibleplugin==0.1
