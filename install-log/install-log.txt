@@ -1417,3 +1417,21 @@ Install WikiTableMacro(http://trac-hacks.org/wiki/WikiTableMacro)
     Installed i:\thinkbase.net\github\portabletrac\trac\lib\site-packages\wikitablemacro-0.3dev-py2.7.egg
     Processing dependencies for wikitablemacro==0.3dev
     Finished processing dependencies for wikitablemacro==0.3dev
+
+
+Install UsernameDecoratePlugin(http://trac-hacks.org/wiki/UsernameDecoratePlugin)
+====
+    I:\thinkbase.net\github\PortableTrac>easy_install http://trac-hacks.org/svn/usernamedecorateplugin/0.12
+    [Current timestamp: 2015-04-30 周四 23-17-04.81]
+
+    >>> call easy_install.exe --prefix="I:\thinkbase.net\github\PortableTrac\trac" http://trac-hacks.org/svn/usernamedecorateplugin/0.12
+    Downloading http://trac-hacks.org/svn/usernamedecorateplugin/0.12
+    Doing subversion checkout from http://trac-hacks.org/svn/usernamedecorateplugin/0.12 to d:\temp\easy_install-xovuzj\0.12
+    Processing 0.12
+    Running setup.py -q bdist_egg --dist-dir d:\temp\easy_install-xovuzj\0.12\egg-dist-tmp-klhjss
+    zip_safe flag not set; analyzing archive contents...
+    Adding tracusernamedecorateplugin 0.12.0.1 to easy-install.pth file
+
+    Installed i:\thinkbase.net\github\portabletrac\trac\lib\site-packages\tracusernamedecorateplugin-0.12.0.1-py2.7.egg
+    Processing dependencies for tracusernamedecorateplugin==0.12.0.1
+    Finished processing dependencies for tracusernamedecorateplugin==0.12.0.1

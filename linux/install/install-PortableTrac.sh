@@ -95,3 +95,4 @@ easy_install ${SITE_PKGS_DIR}/trac_multireposearchplugin-0.6-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/readmerendererplugin-0.1-py2.7-patched.egg
 
 easy_install ${SITE_PKGS_DIR}/wikitablemacro-0.3dev-py2.7.egg
+easy_install ${SITE_PKGS_DIR}/tracusernamedecorateplugin-0.12.0.1-py2.7.egg
