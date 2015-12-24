@@ -1,0 +1,4 @@
+[trac.plugins]
+mastertickets.web_ui = mastertickets.web_ui
+mastertickets.api = mastertickets.api
+
