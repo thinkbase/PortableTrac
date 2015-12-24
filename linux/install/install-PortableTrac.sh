@@ -68,6 +68,8 @@ easy_install ${SITE_PKGS_DIR}/trac_lightertheme-0.3-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/traclistofwikipagesmacro-0.4-py2.7.egg
 
 easy_install ${SITE_PKGS_DIR}/tracmastertickets-3.0.3-py2.7.egg
+easy_install ${SITE_PKGS_DIR}/tracmastertickets-3.0.3-py2.7-patched.egg
+
 easy_install ${SITE_PKGS_DIR}/tracnavcontrol-1.0-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/tracnewpagemacro-0.1-py2.7.egg
 easy_install ${SITE_PKGS_DIR}/tracnumberedheadlinesplugin-0.4_r10976-py2.7.egg
